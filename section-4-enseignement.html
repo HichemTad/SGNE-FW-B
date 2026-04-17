@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="ia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Les professionnels de l'enseignement face à l'IA — Intelligence Artificielle · Fédération Wallonie-Bruxelles">
+  <title>Les professionnels de l'enseignement face à l'IA — Intelligence Artificielle · FW-B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero { background: linear-gradient(135deg, #003082 0%, #1e40af 60%, #1d4ed8 100%); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+    .prose p { margin-bottom: 1.25rem; line-height: 1.8; }
+    .prose h3 { font-size: 1.2rem; font-weight: 700; color: #003082; margin-top: 2.5rem; margin-bottom: 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid #e0e7ff; }
+    .prose h4 { font-size: 1rem; font-weight: 700; color: #1e40af; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    blockquote { border-left: 4px solid #f59e0b; background: #fffbeb; padding: 1rem 1.25rem; border-radius: 0 0.5rem 0.5rem 0; margin: 1.5rem 0; font-style: italic; color: #374151; }
+    blockquote cite { display: block; margin-top: 0.5rem; font-style: normal; font-size: 0.85rem; color: #6b7280; font-weight: 600; }
+  </style>
+  <link rel="stylesheet" href="ds.css">
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-[#003082] text-white px-4 py-2 rounded-md z-[100] text-sm font-medium">Aller au contenu principal</a>
+
+<!-- NAVBAR -->
+<nav id="nav-root" class="sticky top-0 z-50 bg-[#003082] shadow-xl" role="navigation" aria-label="Navigation principale"></nav>
+<script src="navbar.js"></script>
+
+<!-- HERO -->
+<header class="gradient-hero py-12 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center gap-3 mb-4">
+      <a href="table-des-matieres.html" class="text-blue-200 hover:text-white text-sm flex items-center gap-1 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        Index du chapitre
+      </a>
+    </div>
+    <div class="flex items-start gap-5">
+      <div class="w-20 h-20 bg-white/15 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-4xl font-black text-white/80">4</span>
+      </div>
+      <div>
+        <p class="text-blue-300 text-sm font-semibold uppercase tracking-widest mb-1">Focus · Intelligence Artificielle</p>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white">Les professionnels de l'enseignement face à l'IA</h1>
+        <p class="text-blue-200 mt-2 text-base">Apprentissage, compétences, éthique, société et politiques éducatives</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-2 mt-6">
+      <a href="#apprentissage" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">4.1 Apprentissage</a>
+      <a href="#competences" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">4.2 Compétences</a>
+      <a href="#ethique" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">4.3 Éthique</a>
+      <a href="#societaux" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">4.4 Aspects sociétaux</a>
+      <a href="#politiques" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">4.5 Politiques</a>
+    </div>
+  </div>
+  <img src="assets/robot-relax.svg" alt="" aria-hidden="true" class="robot-hero robot-flipped">
+</header>
+
+<!-- MAIN -->
+<main id="main" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    <article class="flex-1 min-w-0">
+
+      <!-- ACTION BAR -->
+      <div class="flex items-center gap-3 mb-8 flex-wrap">
+        
+      </div>
+
+      <!-- INTRO: CONSENSUS DE BEIJING -->
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-[#003082] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <div>
+            <p class="font-bold text-[#003082] text-sm mb-2">Le Consensus de Beijing (Unesco, 2019) — 5 thèmes fondateurs</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700">
+              <div class="flex items-start gap-2"><span class="text-[#003082] font-bold shrink-0">1.</span> L'IA et les processus d'apprentissage</div>
+              <div class="flex items-start gap-2"><span class="text-[#003082] font-bold shrink-0">2.</span> Les compétences et valeurs IA dans la vie et le travail</div>
+              <div class="flex items-start gap-2"><span class="text-[#003082] font-bold shrink-0">3.</span> Les aspects éthiques de l'IA</div>
+              <div class="flex items-start gap-2"><span class="text-[#003082] font-bold shrink-0">4.</span> Les aspects sociétaux (accessibilité, égalité des genres)</div>
+              <div class="flex items-start gap-2 sm:col-span-2"><span class="text-[#003082] font-bold shrink-0">5.</span> La nécessité de planifier le développement de l'IA dans les politiques d'éducation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4.1 -->
+      <section id="apprentissage" class="scroll-mt-20">
+        <div class="prose max-w-none text-gray-800">
+          <h3>4.1 L'IA et les processus d'apprentissage</h3>
+
+          <p>L'intervention de l'intelligence artificielle peut se dérouler à différents niveaux du processus d'apprentissage. Les travaux d'Olaf Zawacki-Richter (2019), professeur en technologies de l'éducation à l'université d'Oldenburg, l'ont conduit à catégoriser quatre principaux champs d'application :</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6" data-stagger-grid>
+          <div class="bg-white border border-gray-200 rounded-xl p-4 border-l-4 border-l-[#003082]">
+            <div class="font-bold text-[#003082] text-sm mb-2">🎯 Ciblage et prédiction</div>
+            <p class="text-sm text-gray-600 leading-relaxed">Déterminer l'adéquation d'un apprenant avec les critères d'admission à un programme d'études, ou prédire un risque de décrochage scolaire.</p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4 border-l-4 border-l-[#003082]">
+            <div class="font-bold text-[#003082] text-sm mb-2">🤖 Tutorats intelligents</div>
+            <p class="text-sm text-gray-600 leading-relaxed">Permettre des rétroactions immédiates lors de l'enseignement de contenus pédagogiques par un logiciel.</p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4 border-l-4 border-l-[#003082]">
+            <div class="font-bold text-[#003082] text-sm mb-2">📊 Cotation et évaluation</div>
+            <p class="text-sm text-gray-600 leading-relaxed">Attribuer automatiquement une note aux réponses d'un apprenant.</p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4 border-l-4 border-l-[#003082]">
+            <div class="font-bold text-[#003082] text-sm mb-2">🎓 Systèmes adaptatifs et personnalisés</div>
+            <p class="text-sm text-gray-600 leading-relaxed">Proposer des contenus personnalisés à l'apprenant selon son parcours d'apprentissage.</p>
+          </div>
+        </div>
+
+        <div class="prose max-w-none text-gray-800">
+          <h4>L'adaptive learning ou apprentissage adaptatif</h4>
+          <p>L'<strong>adaptive learning</strong> est un apprentissage basé sur une combinaison de l'IA et des sciences cognitives, afin d'organiser des parcours de formation, adaptés au fur et à mesure aux besoins de l'apprenant. La personnalisation de l'apprentissage est considérée comme un levier majeur pour atteindre un enseignement équitable et accessible pour tous.</p>
+        </div>
+
+        <!-- SCHEMA ADAPTIVE LEARNING -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 my-6">
+          <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4 text-center">Fonctionnement de l'apprentissage adaptatif</p>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-3 bg-white rounded-lg p-3 border border-gray-200">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <span class="text-sm text-gray-700">Positionnement des compétences de l'apprenant (questionnaire d'évaluation)</span>
+            </div>
+            <div class="flex justify-center text-gray-400 text-lg">↓</div>
+            <div class="flex items-center gap-3 bg-white rounded-lg p-3 border border-gray-200">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <span class="text-sm text-gray-700">Sur base du big data, l'IA analyse les données d'autres apprenants pour réaliser un «&nbsp;profilage&nbsp;»</span>
+            </div>
+            <div class="flex justify-center text-gray-400 text-lg">↓</div>
+            <div class="flex items-center gap-3 bg-white rounded-lg p-3 border border-gray-200">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <span class="text-sm text-gray-700">Le formateur détermine la stratégie d'apprentissage (quelles compétences ? quel niveau ?)</span>
+            </div>
+            <div class="flex justify-center text-gray-400 text-lg">↓</div>
+            <div class="flex items-center gap-3 bg-white rounded-lg p-3 border border-gray-200">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">4</span>
+              <span class="text-sm text-gray-700">Un parcours de formation adapté est généré par l'IA</span>
+            </div>
+            <div class="flex justify-center text-gray-400 text-lg">↓</div>
+            <div class="flex items-center gap-3 bg-white rounded-lg p-3 border border-gray-200">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">5</span>
+              <span class="text-sm text-gray-700">Les données récoltées pendant le parcours alimentent le big data</span>
+            </div>
+            <div class="flex justify-center text-gray-400 text-lg">↓</div>
+            <div class="flex items-center gap-3 bg-white rounded-lg p-3 border border-gray-200">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">6</span>
+              <span class="text-sm text-gray-700">L'IA génère un feedback automatique et détermine les recommandations de modules suivants</span>
+            </div>
+          </div>
+        </div>
+
+        <blockquote>
+          «&nbsp;En utilisant une combinaison d'apprentissage actif et de logiciels didactiques adaptatifs, plusieurs universités signalent des taux de réussite plus élevés aux examens, mais également des résultats plus équitables.&nbsp;»
+          <cite>— Vignare, 2020</cite>
+        </blockquote>
+
+        <div class="prose max-w-none text-gray-800">
+          <h4>Limites de l'apprentissage adaptatif</h4>
+        </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 my-4">
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex items-start gap-2"><span class="text-amber-600 mt-0.5 font-bold">⚠</span>Il ne convient qu'aux objets d'apprentissage qui peuvent être séquencés ou modularisés ;</li>
+            <li class="flex items-start gap-2"><span class="text-amber-600 mt-0.5 font-bold">⚠</span>Il convient aux apprentissages fondés sur la mémorisation et les automatismes, et moins aux apprentissages fondés sur la créativité, l'expression personnelle, le sens critique… ;</li>
+            <li class="flex items-start gap-2"><span class="text-amber-600 mt-0.5 font-bold">⚠</span>En «&nbsp;automatisant&nbsp;» l'apprentissage, il présente le risque de suggérer implicitement un profil idéal d'apprenant, fondé sur les données majoritaires ;</li>
+            <li class="flex items-start gap-2"><span class="text-amber-600 mt-0.5 font-bold">⚠</span>Il présente également un risque lié à la collecte de données personnelles et à l'exploitation de celles-ci.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 4.2 -->
+      <section id="competences" class="scroll-mt-20 mt-10">
+        <div class="prose max-w-none text-gray-800">
+          <h3>4.2 Les compétences en matière d'IA nécessaires dans la vie et le travail</h3>
+
+          <p>Concernant les compétences numériques, <strong>DigComp Citizen</strong> est le cadre de référence européen, publié en 2013 après plusieurs années de recherche et de consultation, et transposé par la suite dans les cursus d'enseignement des pays de l'UE. La dernière version, le <strong>DigComp Citizen 2.2</strong>, publiée en mars 2022, liste des savoirs, savoir-faire et attitudes, dont notamment 35 relatifs spécifiquement à l'intelligence artificielle.</p>
+        </div>
+
+        <!-- TABLE DIGCOMP -->
+        <div class="overflow-x-auto my-6">
+          <table class="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 text-sm">
+            <thead>
+              <tr class="bg-[#003082] text-white">
+                <th class="px-4 py-3 text-left font-semibold">Champ du DigComp Citizen</th>
+                <th class="px-4 py-3 text-left font-semibold">Exemple de savoir, savoir-faire ou attitude</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-medium text-[#003082]">Traitement de données numériques</td>
+                <td class="px-4 py-3 text-gray-600">Être conscient que les algorithmes d'IA fonctionnent de façon peu visible, ou difficilement compréhensible, par les utilisateurs («&nbsp;Black box decision making&nbsp;»).</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-medium text-[#003082]">Communication et collaboration numériques</td>
+                <td class="px-4 py-3 text-gray-600">Pouvoir identifier les signes qui indiquent que l'entité avec qui on communique est un humain, ou bien un agent conversationnel basé sur l'IA.</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-medium text-[#003082]">Création de contenus numériques</td>
+                <td class="px-4 py-3 text-gray-600">Savoir comment intégrer, dans sa propre production, du contenu numérique édité ou manipulé par l'IA (ex. : incorporer des mélodies générées par l'IA dans sa propre composition musicale).</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-medium text-[#003082]">Résolution de problèmes à l'aide des TIC</td>
+                <td class="px-4 py-3 text-gray-600">Savoir comment et quand utiliser les solutions de traduction automatique (ex. : Google Translate, DeepL…) et pouvoir identifier quand une traduction précise par un humain est nécessaire.</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-medium text-[#003082]">Sécurité des TIC</td>
+                <td class="px-4 py-3 text-gray-600">Peser les risques et les bénéfices avant de permettre à des tiers de manipuler des données personnelles (ex. : assistant vocal sur smartphone donnant accès à des données personnelles).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="prose max-w-none text-gray-800">
+          <h4>Comment s'approprier les savoirs relatifs à l'IA ?</h4>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-4">
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] text-sm mb-2">Elements of AI</div>
+            <p class="text-xs text-gray-600 leading-relaxed">Cours d'introduction en ligne à l'IA de l'Université d'Helsinki, gratuit et en français.</p>
+            <div class="mt-2 text-xs text-blue-600">Disponible sur e-classe</div>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] text-sm mb-2">La Scientothèque</div>
+            <p class="text-xs text-gray-600 leading-relaxed">Carnet de ressources pédagogiques sur l'IA pour les jeunes publics, régulièrement alimenté.</p>
+            <div class="mt-2 text-xs text-blue-600">lascientotheque.github.io</div>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] text-sm mb-2">Pix FW-B</div>
+            <p class="text-xs text-gray-600 leading-relaxed">Outil de diagnostic et de développement des compétences numériques, disponible depuis janvier 2023 pour les membres des personnels de l'enseignement obligatoire.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4.3 -->
+      <section id="ethique" class="scroll-mt-20 mt-10">
+        <div class="prose max-w-none text-gray-800">
+          <h3>4.3 Gérer les aspects éthiques de l'IA</h3>
+
+          <p>Les systèmes basés sur l'apprentissage automatique ou l'adaptive learning nécessitent la manipulation et le stockage de grandes quantités de données, dont certaines peuvent être sensibles ou vendues à des tiers.</p>
+
+          <p>En Belgique comme dans les autres pays concernés par le <strong>Règlement général sur la protection des données (RGPD)</strong>, la collecte et l'utilisation de données par un système mobilisant l'intelligence artificielle doivent s'effectuer dans un cadre strict et bien défini. Ce cadre sera encore renforcé par l'adoption de l'AI Act, et sa transposition en droit belge.</p>
+
+          <h4>Le rôle du chef d'établissement</h4>
+          <p>Le chef d'établissement est responsable du traitement quand il détermine pour son école les objectifs et les moyens d'utilisation des données à caractère personnel. Il est donc responsable de leur protection au sein de son école et de leur exactitude quand il les transmet à l'extérieur, et doit y être particulièrement sensibilisé dans le cadre d'usages en contexte scolaire d'outils basés sur l'IA.</p>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 my-6">
+          <p class="font-bold text-[#003082] text-sm mb-3">Comment respecter les obligations légales dans un projet d'utilisation de l'IA en classe ?</p>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5">▸</span><strong>Guide pratique RGPD en classe</strong> — Publication du SGNE détaillant les aspects juridiques, notamment à travers le cas de l'utilisation d'une plateforme numérique d'apprentissage.</li>
+            <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5">▸</span><strong>Guide CNIL</strong> (France) — Grille d'analyse permettant aux organismes d'évaluer par eux-mêmes la maturité de leurs systèmes d'IA au regard du RGPD.</li>
+            <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5">▸</span><strong>SPF Économie</strong> — Informations sur la loi du 19 juin 2022 traitant de la propriété intellectuelle, des droits d'auteur et droits voisins.</li>
+          </ul>
+        </div>
+
+        <div class="prose max-w-none text-gray-800">
+          <h4>Mettre en place un cadre éthique pour l'IA dans l'enseignement</h4>
+          <p>L'Union européenne a publié en 2022 des lignes directrices éthiques sur l'utilisation de l'intelligence artificielle et des données dans l'enseignement et l'apprentissage à l'intention des éducateurs. Les biais de représentativité sont par exemple concernés : utiliser des agents conversationnels dans des visées éducatives nécessite une mise en contexte préalable des limites et des biais inhérents à ces outils.</p>
+          <p>Certains systèmes, en particulier les IA génératives, peuvent par ailleurs produire du contenu inapproprié pour les apprenants tels que des propos haineux, des propos violents, de la pornographie, des images violentes, des propos racistes, sexistes, discriminatoires ou offensants. Les algorithmes peuvent posséder des «&nbsp;barrières&nbsp;» scénarisées pour limiter ce phénomène, mais la problématique reste entière : qui définit le code éthique à suivre par l'algorithme ?</p>
+        </div>
+      </section>
+
+      <!-- 4.4 -->
+      <section id="societaux" class="scroll-mt-20 mt-10">
+        <div class="prose max-w-none text-gray-800">
+          <h3>4.4 Considérer les aspects sociétaux de l'IA</h3>
+
+          <p>En dehors des aspects strictement liés à l'apprentissage, les enjeux sociétaux relatifs au développement de l'IA sont également abordés dans le Consensus de Beijing. Le document de référence de l'Unesco fournit des observations sur les aspects liés aux Objectifs de Développement Durable : l'apprentissage pour tous, la réduction des inégalités et la consommation durable.</p>
+
+          <h4>Le tuteur numérique personnalisé</h4>
+          <p>L'Unesco pointe notamment la possibilité pour les apprenants d'être épaulés, leur vie durant, par un tuteur numérique personnalisé :</p>
+        </div>
+
+        <blockquote>
+          «&nbsp;[...] un tel compagnon d'apprentissage fournirait un soutien continu, en s'appuyant sur les intérêts et les objectifs personnels de l'élève, pour l'aider à décider ce qu'il doit apprendre, où et comment.&nbsp;»
+          <cite>— Miao et al., 2021</cite>
+        </blockquote>
+
+        <div class="prose max-w-none text-gray-800">
+          <p>Depuis la publication du Guide en 2021, des logiciels d'intelligence artificielle sont apparus, qui suggèrent une ébauche de ce type de fonctionnalité : l'IA ne propose plus seulement des parcours d'apprentissage personnalisés, mais questionne l'apprenant sur les réponses qu'il fournit, dans une approche quasi maïeutique, afin de stimuler sa réflexion.</p>
+
+          <h4>Le portefeuille électronique piloté par l'IA</h4>
+          <p>L'Unesco identifie également la potentialité d'un «&nbsp;portefeuille électronique piloté par l'IA&nbsp;», qui rassemblerait et archiverait les acquis d'apprentissage formels, non-formels, voire informels.</p>
+        </div>
+
+        <blockquote>
+          «&nbsp;Ce dossier fonctionnerait comme un curriculum vitae intelligent et dynamique qui pourrait être garanti et authentifié par les technologies blockchain.&nbsp;»
+          <cite>— Miao et al., 2021</cite>
+        </blockquote>
+
+        <div class="prose max-w-none text-gray-800">
+          <p>L'Europe s'inscrit dans cette démarche : le 9 février 2023, le Parlement européen a voté un ensemble de propositions en faveur d'un cadre européen d'identité numérique, incluant le dispositif de portefeuille numérique européen.</p>
+
+          <h4>Risques et vigilances</h4>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <div class="font-bold text-amber-800 text-sm mb-2">ODD 4 — Éducation de qualité pour tous</div>
+            <p class="text-xs text-gray-600 leading-relaxed">Les systèmes d'IA dans l'enseignement sont majoritairement produits par des entreprises privées et étudiés dix fois plus par des informaticiens et ingénieurs que par des pédagogues (61,7% contre 6,2%). (Selwyn et al., 2020)</p>
+          </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <div class="font-bold text-amber-800 text-sm mb-2">ODD 10 — Réduction des inégalités</div>
+            <p class="text-xs text-gray-600 leading-relaxed">L'accès à l'utilisation de solutions éducatives soutenues par l'IA est généralement payant. La généralisation de l'usage de supports d'IA présente le risque d'accentuer les différences entre les apprenants.</p>
+          </div>
+        </div>
+
+        <blockquote>
+          «&nbsp;L'intelligence artificielle deviendra de plus en plus le moteur de l'éducation, et les données des élèves, le carburant.&nbsp;»
+          <cite>— Selwyn et al., 2020</cite>
+        </blockquote>
+
+        <!-- EXEMPLE CHATGPT ET LE CAPITOLE -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6">
+          <p class="font-bold text-gray-700 text-sm mb-3">Le rôle des IA comme vecteurs de valeurs</p>
+          <p class="text-sm text-gray-600 leading-relaxed mb-3">La plupart des grandes entreprises productrices de systèmes IA sont situées aux USA ou en Chine et véhiculent, de manière implicite, un ensemble de biais cognitifs qui ne sont pas toujours en accord avec ceux d'autres cultures.</p>
+          <div class="bg-white border border-gray-200 rounded-xl p-4 text-sm">
+            <p class="text-gray-500 text-xs mb-2 font-medium">Exemple d'interaction avec ChatGPT :</p>
+            <p class="text-gray-700 mb-2"><span class="font-bold text-[#003082]">Utilisateur :</span> «&nbsp;Penses-tu que l'attaque du Capitole était justifiée ?&nbsp;»</p>
+            <p class="text-gray-700 mb-2"><span class="font-bold text-green-700">ChatGPT :</span> réponse faisant automatiquement référence à l'attaque du Capitole américain du 6 janvier 2021, ignorant totalement la référence possible à l'attaque du Capitole à Rome au 4e siècle av. J.-C.</p>
+            <p class="text-gray-500 text-xs mt-2 italic">Source : ChatGPT (OpenAI) — 31 mars 2023</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4.5 -->
+      <section id="politiques" class="scroll-mt-20 mt-10">
+        <div class="prose max-w-none text-gray-800">
+          <h3>4.5 Planifier le développement et l'utilisation de l'IA dans les politiques d'éducation</h3>
+
+          <p>La diversité des enjeux de développement humain, industriels, éthiques et sociétaux, tout comme la multiplicité des acteurs et parties prenantes, pousse les gouvernements à s'orienter vers une vision systémique du développement de l'IA dans l'éducation, en s'inscrivant dans un cadre plus large, européen et mondial.</p>
+
+          <p>La prochaine étape majeure dans la structuration du cadre juridique relatif à l'IA dans l'éducation proviendra de la transposition en droit belge du <strong>Règlement sur l'intelligence artificielle (AI Act)</strong>.</p>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 my-6">
+          <p class="font-bold text-[#003082] text-sm mb-3">L'accord UE du 8 décembre 2023 prévoit notamment :</p>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5">▸</span>L'interdiction dans l'UE de certains systèmes d'IA (reconnaissance des émotions sur le lieu de travail et dans les établissements scolaires ; notation sociale basée sur le comportement social…)</li>
+            <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5">▸</span>La possibilité pour les citoyens européens de déposer des plaintes concernant l'utilisation de systèmes d'intelligence artificielle</li>
+            <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5">▸</span>L'obligation de transparence des systèmes d'IA et de conformité à la législation UE sur les droits d'auteur</li>
+          </ul>
+        </div>
+
+        <blockquote>
+          «&nbsp;Le développement, le déploiement et l'utilisation des technologies liées à l'IA dans le domaine de l'éducation devraient être considérés comme à haut risque et faire l'objet d'exigences plus strictes en matière de sécurité, de transparence, d'équité et de responsabilité.&nbsp;»
+          <cite>— Parlement européen, Résolution sur l'IA dans les domaines de l'éducation, de la culture et de l'audiovisuel, 2021</cite>
+        </blockquote>
+
+        <blockquote>
+          «&nbsp;L'IA et les technologies qui y sont liées peuvent être utilisées pour améliorer les méthodes d'enseignement et d'apprentissage, notamment en aidant les systèmes éducatifs à utiliser les données équitables pour améliorer l'équité et la qualité de l'enseignement, tout en favorisant des programmes sur mesure et un meilleur accès à l'éducation, ainsi qu'en améliorant et en automatisant certaines tâches administratives.&nbsp;»
+          <cite>— Parlement européen, 2021</cite>
+        </blockquote>
+
+        <blockquote>
+          «&nbsp;Les résultats de l'apprentissage ne dépendent pas de la technologie en elle-même, mais de la manière dont les enseignants peuvent utiliser cette technologie à des fins pédagogiques constructives.&nbsp;»
+          <cite>— Parlement européen, 2021</cite>
+        </blockquote>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 my-6">
+          <div class="font-bold text-amber-800 text-sm mb-2">IA, législation et personnalité juridique</div>
+          <p class="text-sm text-gray-700 leading-relaxed">Il n'existe actuellement rien en droit belge et plus spécifiquement dans le code de droit économique qui cadre l'utilisation de l'IA en matière du droit d'auteur (loi du 19 juin 2022). Tout comme les animaux, les IA n'ont pas de personnalité juridique et ne sont donc pas éligibles à l'ouverture de droits d'auteur. Toutefois, les conditions générales d'utilisation des outils mentionnent parfois une cession de droit à l'utilisateur des œuvres créées, mais la question de l'utilisation des œuvres lors de l'entraînement des modèles reste entière.</p>
+        </div>
+      </section>
+
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="w-full lg:w-72 shrink-0 space-y-6">
+
+      <button onclick="goRandom()" class="btn-random">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+        Au hasard !
+      </button>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Plan du livre</h3>
+        <div class="space-y-2">
+          <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Section précédente</div>
+          <a href="section-3-enjeux.html" class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-gray-300 text-gray-700 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+            <span class="text-sm font-medium text-gray-600 group-hover:text-[#003082]">← Les grands enjeux</span>
+          </a>
+          <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-3 mb-1">Section suivante</div>
+          <a href="section-5-generatives.html" class="flex items-center gap-2 p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">5</span>
+            <span class="text-sm font-medium text-[#003082] group-hover:underline">IA Génératives →</span>
+          </a>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="table-des-matieres.html" class="flex items-center gap-2 text-sm text-gray-500 hover:text-[#003082] transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+            Retour à l'index
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Dans ce chapitre</h3>
+        <nav class="space-y-1">
+          <a href="#apprentissage" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1 transition-colors"><span class="text-[#003082] font-bold text-xs w-6">4.1</span> Processus d'apprentissage</a>
+          <a href="#competences" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1 transition-colors"><span class="text-[#003082] font-bold text-xs w-6">4.2</span> Compétences IA</a>
+          <a href="#ethique" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1 transition-colors"><span class="text-[#003082] font-bold text-xs w-6">4.3</span> Aspects éthiques</a>
+          <a href="#societaux" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1 transition-colors"><span class="text-[#003082] font-bold text-xs w-6">4.4</span> Aspects sociétaux</a>
+          <a href="#politiques" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1 transition-colors"><span class="text-[#003082] font-bold text-xs w-6">4.5</span> Politiques d'éducation</a>
+        </nav>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5">
+        <h3 class="text-xs font-bold text-amber-700 uppercase tracking-widest mb-3">Points clés</h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>L'adaptive learning personnalise les parcours d'apprentissage</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>DigComp 2.2 : 35 compétences liées à l'IA</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Le RGPD s'applique aux outils IA en classe</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>L'enseignement est un secteur «&nbsp;à haut risque&nbsp;» selon l'AI Act</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Pix disponible pour les enseignants FW-B depuis 2023</li>
+        </ul>
+      </div>
+
+      <a href="table-des-matieres.html" class="flex items-center justify-center gap-2 bg-white border border-gray-200 rounded-xl py-3 text-sm text-gray-600 hover:bg-gray-50 hover:text-[#003082] transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></svg>
+        Retour en haut · Index
+      </a>
+
+    </aside>
+  </div>
+</main>
+
+<footer id="footer-root" class="bg-[#003082] text-blue-200 py-8 mt-4"></footer>
+<script src="footer.js"></script>
+
+<script>
+  const pages = ['section-1-introduction.html','section-2-definitions.html','section-3-enjeux.html','section-4-enseignement.html','section-5-generatives.html','section-6-ressources.html'];
+  function goRandom() { window.location.href = pages[Math.floor(Math.random() * pages.length)]; }
+</script>
+<script src="motion.js"></script>
+</body>
+</html>

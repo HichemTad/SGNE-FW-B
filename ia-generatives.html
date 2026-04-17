@@ -1,0 +1,902 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="ia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zoom sur les IA génératives en classe — guide apprenant, guide enseignant, arbre décisionnel interactif, checklist et outils anti-plagiat.">
+  <title>IA Génératives — Intelligence Artificielle FW-B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero { background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 50%, #003082 100%); }
+    .card-hover { transition: transform .2s ease, box-shadow .2s ease; }
+    .card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,.1); }
+    .acc-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .acc-body.open { max-height: 600px; }
+    .chevron { transition: transform .25s ease; display: inline-block; }
+    [aria-expanded="true"] .chevron { transform: rotate(180deg); }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+
+    /* Decision tree */
+    .dt-node { transition: all .3s ease; }
+    .dt-node.hidden-node { opacity: 0; pointer-events: none; transform: translateY(-6px); }
+    .dt-node.visible-node { opacity: 1; pointer-events: all; transform: translateY(0); }
+    .dt-btn { transition: all .2s ease; }
+    .dt-btn:hover { transform: translateY(-1px); }
+
+    /* Checklist */
+    .check-item input:checked + label { text-decoration: line-through; color: #6b7280; }
+    .check-item input:checked + label .check-icon { background: #10b981; border-color: #10b981; }
+    .check-item input:checked + label .check-icon::after { content: '✓'; color: white; font-size: 10px; font-weight: bold; display: flex; align-items: center; justify-content: center; }
+    .progress-bar { transition: width .4s ease; }
+
+    /* Bloom pyramid */
+    .bloom-level { transition: all .2s ease; cursor: pointer; }
+    .bloom-level:hover { filter: brightness(1.05); transform: scaleY(1.02); }
+  </style>
+  <link rel="stylesheet" href="ds.css">
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-[#003082] text-white px-4 py-2 rounded-md z-[100] text-sm font-medium">Aller au contenu principal</a>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="sticky top-0 z-50 bg-[#003082] shadow-xl" role="navigation" aria-label="Navigation principale">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 gap-4">
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0 rounded-lg p-1" aria-label="Accueil Intelligence Artificielle">
+        <div class="w-9 h-9 bg-white/15 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+        </div>
+        <div class="leading-tight">
+          <div class="text-white font-bold text-sm tracking-wide">Intelligence Artificielle</div>
+          <div class="text-blue-200 text-xs">Numérique Éducatif · FW-B</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-0.5 flex-1 justify-center">
+        <a href="index.html" class="px-3 py-2 rounded-md text-sm text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Accueil</a>
+        <a href="index.html#comprendre" class="px-3 py-2 rounded-md text-sm text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Comprendre l'IA</a>
+        <a href="enjeux.html" class="px-3 py-2 rounded-md text-sm text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Enjeux</a>
+        <a href="enjeux.html#enseignement" class="px-3 py-2 rounded-md text-sm text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Enseignement</a>
+        <a href="ia-generatives.html" class="px-3 py-2 rounded-md text-sm font-semibold text-white bg-white/15 border border-yellow-400/40 ml-1" aria-current="page">IA Génératives ✦</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="hidden sm:block relative">
+          <input id="navSearch" type="text" placeholder="Rechercher…" class="bg-white/10 border border-white/25 text-white placeholder-blue-200 rounded-lg pl-8 pr-3 py-1.5 text-sm w-44 focus:outline-none focus:ring-2 focus:ring-yellow-400" aria-label="Recherche" autocomplete="off">
+          <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-blue-200 pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <div id="navResults" class="hidden absolute right-0 top-full mt-1.5 w-72 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 overflow-hidden max-h-72 overflow-y-auto"></div>
+        </div>
+        <button id="burgerBtn" class="lg:hidden p-2 rounded-md text-white hover:bg-white/10 transition-colors" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden lg:hidden pb-4 border-t border-white/10 pt-2">
+      <div class="flex flex-col gap-1">
+        <a href="index.html" class="px-3 py-2.5 rounded-md text-sm text-blue-100 hover:bg-white/10">Accueil</a>
+        <a href="index.html#comprendre" class="px-3 py-2.5 rounded-md text-sm text-blue-100 hover:bg-white/10">Comprendre l'IA</a>
+        <a href="enjeux.html" class="px-3 py-2.5 rounded-md text-sm text-blue-100 hover:bg-white/10">Enjeux</a>
+        <a href="enjeux.html#enseignement" class="px-3 py-2.5 rounded-md text-sm text-blue-100 hover:bg-white/10">Enseignement</a>
+        <a href="ia-generatives.html" class="px-3 py-2.5 rounded-md text-sm text-yellow-300 font-medium hover:bg-white/10">IA Génératives ✦</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ═══ HERO ═══ -->
+<section class="gradient-hero text-white py-14 px-4">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-purple-200 text-sm font-medium mb-2">Intelligence Artificielle → Zoom pratique</p>
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">IA Génératives<br><span class="text-yellow-300">en contexte scolaire</span></h1>
+    <p class="text-purple-100 text-base max-w-2xl leading-relaxed mb-6">ChatGPT, Midjourney, DALL-E… Comment les utiliser intelligemment en classe ? Guides, arbre décisionnel et checklist interactive pour les enseignants.</p>
+    <div class="flex flex-wrap gap-3 text-sm">
+      <a href="#guide-apprenant" class="bg-white/15 border border-white/30 text-white px-4 py-2 rounded-lg hover:bg-white/25 transition-colors">📖 Guide apprenant</a>
+      <a href="#guide-enseignant" class="bg-white/15 border border-white/30 text-white px-4 py-2 rounded-lg hover:bg-white/25 transition-colors">🏫 Guide enseignant</a>
+      <a href="#arbre-decisionnel" class="bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-lg hover:bg-yellow-300 transition-colors">🌳 Arbre décisionnel</a>
+      <a href="#checklist" class="bg-white/15 border border-white/30 text-white px-4 py-2 rounded-lg hover:bg-white/25 transition-colors">✅ Checklist</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CE QUE PEUT / NE PEUT PAS ═══ -->
+<section class="py-14 px-4 bg-white" aria-labelledby="capacites-title">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 id="capacites-title" class="text-2xl font-bold text-gray-900 mb-2">Ce que peut (et ne peut pas) faire une IA générative</h2>
+      <p class="text-gray-500 text-sm">ChatGPT génère des réponses par association statistique — ni jugement, ni vérification, ni conscience</p>
+    </div>
+
+    <!-- Comment ça marche -->
+    <div class="bg-slate-50 rounded-2xl p-5 border border-gray-200 mb-8">
+      <h3 class="font-semibold text-gray-900 text-sm mb-3">⚙️ Comment fonctionne un modèle de langage (GPT-3) ?</h3>
+      <p class="text-sm text-gray-700 leading-relaxed">L'algorithme est entraîné sur un vaste ensemble de contenus afin de <strong>formuler une réponse par association</strong>. Si dans la base d'entraînement le mot «fleur» est souvent associé à «jolie», le modèle associera préférentiellement ces deux termes dans sa réponse. L'objectif est de produire les <em>morphèmes les plus probables</em> — pas les plus vrais.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Peut -->
+      <div class="bg-green-50 rounded-2xl border border-green-200 overflow-hidden">
+        <div class="bg-green-600 px-5 py-3 flex items-center gap-2">
+          <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span class="text-white font-bold text-sm">Ce que PEUT faire une IA générative</span>
+        </div>
+        <ul class="divide-y divide-green-100">
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-green-500 mt-0.5 shrink-0 font-bold">✓</span>
+            <p class="text-sm text-gray-700">Produire rapidement un texte, une image ou un son à partir de quelques informations</p>
+          </li>
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-green-500 mt-0.5 shrink-0 font-bold">✓</span>
+            <p class="text-sm text-gray-700">Traduire un document, reformuler une idée ou corriger une production sur la forme</p>
+          </li>
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-green-500 mt-0.5 shrink-0 font-bold">✓</span>
+            <p class="text-sm text-gray-700">Traiter des sujets variés (dans les limites définies par les développeurs)</p>
+          </li>
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-green-500 mt-0.5 shrink-0 font-bold">✓</span>
+            <p class="text-sm text-gray-700">Fournir un support et une rétroaction immédiate sur une production</p>
+          </li>
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-green-500 mt-0.5 shrink-0 font-bold">✓</span>
+            <p class="text-sm text-gray-700">Générer automatiquement des exercices, listes ou tableaux pédagogiques</p>
+          </li>
+        </ul>
+      </div>
+      <!-- Ne peut pas -->
+      <div class="bg-red-50 rounded-2xl border border-red-200 overflow-hidden">
+        <div class="bg-red-600 px-5 py-3 flex items-center gap-2">
+          <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <span class="text-white font-bold text-sm">Ce que NE PEUT PAS faire une IA générative</span>
+        </div>
+        <ul class="divide-y divide-red-100">
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-red-500 mt-0.5 shrink-0 font-bold">✗</span>
+            <p class="text-sm text-gray-700">Prendre en compte le profil affectif ou socio-économique de l'utilisateur</p>
+          </li>
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-red-500 mt-0.5 shrink-0 font-bold">✗</span>
+            <p class="text-sm text-gray-700">Citer ses sources — les réponses sont une synthèse non sourcée d'un corpus de textes</p>
+          </li>
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-red-500 mt-0.5 shrink-0 font-bold">✗</span>
+            <p class="text-sm text-gray-700">Garantir l'exactitude — les algorithmes fournissent <strong>toujours</strong> une réponse, même totalement inventée («hallucination»)</p>
+          </li>
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-red-500 mt-0.5 shrink-0 font-bold">✗</span>
+            <p class="text-sm text-gray-700">Expliquer comment les données sont utilisées — ce sont des «boîtes noires»</p>
+          </li>
+          <li class="flex items-start gap-3 px-5 py-3.5">
+            <span class="text-red-500 mt-0.5 shrink-0 font-bold">✗</span>
+            <p class="text-sm text-gray-700">Développer un esprit critique ou une conviction argumentée sur un sujet</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GUIDE APPRENANT ═══ -->
+<section id="guide-apprenant" class="py-14 px-4 bg-slate-50 scroll-mt-20" aria-labelledby="apprenant-title">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex items-center gap-3 mb-8">
+      <div class="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>
+      </div>
+      <div>
+        <h2 id="apprenant-title" class="text-2xl font-bold text-gray-900">Guide de l'apprenant</h2>
+        <p class="text-gray-500 text-sm mt-0.5">Comment utiliser un chatbot dans son apprentissage ?</p>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-8 text-sm text-blue-700">
+      <strong>Principe fondamental :</strong> les chatbots doivent être considérés comme des outils d'<em>inspiration ou d'aide à la décision</em>, pas comme des outils pouvant remplacer l'intelligence et le jugement humains.
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8" data-stagger-grid>
+      <!-- Card 1: Info -->
+      <div class="card-hover bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+        <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-3 text-xl">🔍</div>
+        <h3 class="font-bold text-gray-900 text-sm mb-2">Source d'information</h3>
+        <p class="text-xs text-gray-600 leading-relaxed">Un chatbot fournit une réponse synthétisée et directe — à la différence des moteurs de recherche qui proposent une liste de sources.</p>
+        <div class="mt-3 p-2.5 bg-red-50 rounded-lg">
+          <p class="text-xs text-red-600">⚠️ Vérifier toujours la véracité des réponses obtenues</p>
+        </div>
+      </div>
+      <!-- Card 2: Idées -->
+      <div class="card-hover bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+        <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center mb-3 text-xl">💡</div>
+        <h3 class="font-bold text-gray-900 text-sm mb-2">Boîte à idées</h3>
+        <p class="text-xs text-gray-600 leading-relaxed mb-2">ChatGPT peut suggérer :</p>
+        <ul class="text-xs text-gray-600 space-y-0.5">
+          <li>• Le plan d'une rédaction</li>
+          <li>• Des idées pour illustrer un exposé</li>
+          <li>• Des recommandations de lectures</li>
+          <li>• Un diagnostic de panne technique</li>
+        </ul>
+      </div>
+      <!-- Card 3: Rétroaction -->
+      <div class="card-hover bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+        <div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center mb-3 text-xl">✏️</div>
+        <h3 class="font-bold text-gray-900 text-sm mb-2">Outil de rétroaction</h3>
+        <p class="text-xs text-gray-600 leading-relaxed mb-2">ChatGPT peut :</p>
+        <ul class="text-xs text-gray-600 space-y-0.5">
+          <li>• Vérifier la correction grammaticale</li>
+          <li>• Commenter et proposer des améliorations</li>
+          <li>• Reformuler une consigne</li>
+          <li>• Exemplifier les étapes d'une équation</li>
+        </ul>
+      </div>
+      <!-- Card 4: Organisation -->
+      <div class="card-hover bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+        <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center mb-3 text-xl">📅</div>
+        <h3 class="font-bold text-gray-900 text-sm mb-2">Organisation du travail</h3>
+        <p class="text-xs text-gray-600 leading-relaxed mb-2">ChatGPT peut proposer :</p>
+        <ul class="text-xs text-gray-600 space-y-0.5">
+          <li>• Objectifs et étapes de travail</li>
+          <li>• Gestion de travail collaboratif</li>
+          <li>• Planning d'étude / révision</li>
+          <li>• Résolution de conflits en groupe</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Autres outils apprenant -->
+    <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+      <button class="acc-trigger w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" aria-expanded="false">
+        <span class="text-sm font-semibold text-gray-900">Autres outils chatbots pour les apprenants (exemples)</span>
+        <svg class="chevron w-4 h-4 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="acc-body px-5">
+        <div class="grid sm:grid-cols-3 gap-4 pb-5">
+          <div class="bg-slate-50 rounded-xl p-4">
+            <h4 class="text-sm font-semibold text-gray-900 mb-1">Poe</h4>
+            <p class="text-xs text-gray-600">Interface réunissant plusieurs chatbots (ChatGPT, Claude, Sage) pour obtenir des réponses plus variées sur un même sujet.</p>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4">
+            <h4 class="text-sm font-semibold text-gray-900 mb-1">AgentGPT</h4>
+            <p class="text-xs text-gray-600">Chatbot centré sur l'opérationnalisation : génère des tâches depuis un objectif et les résout au fur et à mesure.</p>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4">
+            <h4 class="text-sm font-semibold text-gray-900 mb-1">Ali</h4>
+            <p class="text-xs text-gray-600">Chatbot canadien conçu pour accompagner les étudiants en matière de santé mentale, détresse psychologique et anxiété.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GUIDE ENSEIGNANT ═══ -->
+<section id="guide-enseignant" class="py-14 px-4 bg-white scroll-mt-20" aria-labelledby="enseignant-title">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex items-center gap-3 mb-8">
+      <div class="w-11 h-11 bg-emerald-600 rounded-xl flex items-center justify-center shrink-0">
+        <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div>
+        <h2 id="enseignant-title" class="text-2xl font-bold text-gray-900">Guide de l'enseignant</h2>
+        <p class="text-gray-500 text-sm mt-0.5">Comment utiliser un chatbot dans ses activités pédagogiques ?</p>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-5 mb-8">
+      <!-- Préparation cours -->
+      <div class="card-hover bg-white rounded-2xl p-5 border border-emerald-200 shadow-sm">
+        <div class="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center mb-3 text-xl">📝</div>
+        <h3 class="font-bold text-gray-900 text-sm mb-2">Préparation de cours</h3>
+        <p class="text-xs text-gray-600 mb-2">ChatGPT peut générer :</p>
+        <ul class="text-xs text-gray-600 space-y-1">
+          <li class="flex items-start gap-1.5"><span class="text-emerald-500 shrink-0">•</span>Idées de supports pédagogiques</li>
+          <li class="flex items-start gap-1.5"><span class="text-emerald-500 shrink-0">•</span>Listes d'exercices automatiques (équations, conjugaisons…)</li>
+          <li class="flex items-start gap-1.5"><span class="text-emerald-500 shrink-0">•</span>Supports courants (tableaux, listes de citations)</li>
+          <li class="flex items-start gap-1.5"><span class="text-emerald-500 shrink-0">•</span>Grille de correction d'une activité</li>
+        </ul>
+      </div>
+      <!-- Différenciation -->
+      <div class="card-hover bg-white rounded-2xl p-5 border border-blue-200 shadow-sm">
+        <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-3 text-xl">🔀</div>
+        <h3 class="font-bold text-gray-900 text-sm mb-2">Différenciation pédagogique</h3>
+        <p class="text-xs text-gray-600 mb-2">ChatGPT peut proposer :</p>
+        <ul class="text-xs text-gray-600 space-y-1">
+          <li class="flex items-start gap-1.5"><span class="text-blue-500 shrink-0">•</span>Reformulation d'une consigne complexe</li>
+          <li class="flex items-start gap-1.5"><span class="text-blue-500 shrink-0">•</span>Transformation rapide en tableau ou schéma</li>
+          <li class="flex items-start gap-1.5"><span class="text-blue-500 shrink-0">•</span>Simplification de textes pour les besoins spécifiques</li>
+          <li class="flex items-start gap-1.5"><span class="text-blue-500 shrink-0">•</span>Reformulation à différents niveaux de complexité</li>
+        </ul>
+      </div>
+      <!-- Éducation aux médias -->
+      <div class="card-hover bg-white rounded-2xl p-5 border border-purple-200 shadow-sm">
+        <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center mb-3 text-xl">🎯</div>
+        <h3 class="font-bold text-gray-900 text-sm mb-2">Éducation aux médias IA</h3>
+        <p class="text-xs text-gray-600 mb-2">Utiliser ChatGPT <em>comme sujet d'apprentissage</em> :</p>
+        <ul class="text-xs text-gray-600 space-y-1">
+          <li class="flex items-start gap-1.5"><span class="text-purple-500 shrink-0">•</span>Vérification critique des réponses fournies</li>
+          <li class="flex items-start gap-1.5"><span class="text-purple-500 shrink-0">•</span>Analyse des réponses sur des questions éthiques</li>
+          <li class="flex items-start gap-1.5"><span class="text-purple-500 shrink-0">•</span>Identification des biais dans les réponses</li>
+          <li class="flex items-start gap-1.5"><span class="text-purple-500 shrink-0">•</span>Exercices de fact-checking comparatif</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Autres outils enseignant -->
+    <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-6">
+      <button class="acc-trigger w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" aria-expanded="false">
+        <span class="text-sm font-semibold text-gray-900">Autres outils pour les enseignants (exemples)</span>
+        <svg class="chevron w-4 h-4 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="acc-body px-5">
+        <p class="text-xs text-gray-500 pt-4 pb-3">Outre ChatGPT, de nombreux chatbots éducatifs ont été développés par des entreprises et universités à travers le monde :</p>
+        <div class="grid sm:grid-cols-2 gap-4 pb-5">
+          <div class="bg-slate-50 rounded-xl p-4"><h4 class="text-sm font-semibold text-gray-900 mb-1">NovelAI</h4><p class="text-xs text-gray-600">Utilise l'IA pour soutenir l'écriture de récits par complétion automatique — utile pour les cours de langues et littérature.</p></div>
+          <div class="bg-slate-50 rounded-xl p-4"><h4 class="text-sm font-semibold text-gray-900 mb-1">Microsoft Copilot</h4><p class="text-xs text-gray-600">Intégration progressive de l'IA générative dans la suite Office 365 — assistance à la création de contenus (depuis mars 2023).</p></div>
+          <div class="bg-slate-50 rounded-xl p-4"><h4 class="text-sm font-semibold text-gray-900 mb-1">Duolingo / Khan Academy</h4><p class="text-xs text-gray-600">Outils d'adaptive learning gratuits — intègrent l'IA pour personnaliser les parcours d'apprentissage.</p></div>
+          <div class="bg-slate-50 rounded-xl p-4"><h4 class="text-sm font-semibold text-gray-900 mb-1">Gemini (Google)</h4><p class="text-xs text-gray-600">IA multimodale de Google — génère des éléments textuels, sonores et visuels combinés.</p></div>
+          <div class="bg-slate-50 rounded-xl p-4"><h4 class="text-sm font-semibold text-gray-900 mb-1">Botpress & Ada <span class="text-xs font-normal text-gray-500">(Canada)</span></h4><p class="text-xs text-gray-600">Chatbots éducatifs canadiens conçus pour accompagner les apprenants dans différents contextes pédagogiques.</p></div>
+          <div class="bg-slate-50 rounded-xl p-4"><h4 class="text-sm font-semibold text-gray-900 mb-1">Deakin Genie <span class="text-xs font-normal text-gray-500">(Australie)</span></h4><p class="text-xs text-gray-600">Chatbot développé par l'Université Deakin (Australie) pour accompagner les étudiants dans leur parcours académique.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Point d'attention : correction -->
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5">
+      <h3 class="font-semibold text-amber-800 text-sm mb-3">⚠️ Peut-on corriger des copies avec un chatbot ?</h3>
+      <div class="grid sm:grid-cols-2 gap-3">
+        <div class="space-y-2">
+          <div class="flex items-start gap-2 text-xs text-amber-700"><span class="shrink-0 mt-0.5">•</span>Les évaluations des élèves peuvent constituer des «données personnelles» au sens du RGPD</div>
+          <div class="flex items-start gap-2 text-xs text-amber-700"><span class="shrink-0 mt-0.5">•</span>Les chatbots généralistes actuels ne sont pas fiables et ont des biais d'entraînement</div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex items-start gap-2 text-xs text-amber-700"><span class="shrink-0 mt-0.5">•</span>Le caractère spiralaire de l'apprentissage n'est pas pris en compte par l'algorithme</div>
+          <div class="flex items-start gap-2 text-xs text-amber-700"><span class="shrink-0 mt-0.5">•</span>Les algorithmes n'ont aucune empathie ni connaissance du contexte de l'élève</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ARBRE DÉCISIONNEL ═══ -->
+<section id="arbre-decisionnel" class="py-14 px-4 bg-slate-50 scroll-mt-20" aria-labelledby="arbre-title">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-8">
+      <h2 id="arbre-title" class="text-2xl font-bold text-gray-900 mb-2">Arbre décisionnel interactif</h2>
+      <p class="text-gray-500 text-sm">Dois-je utiliser un chatbot pour cette activité ? (source : UNESCO / Aleksandr Tiulkanov)</p>
+    </div>
+
+    <div id="dt-container" class="space-y-4">
+
+      <!-- Étape 0 : Start -->
+      <div id="dt-start" class="dt-node visible-node bg-[#003082] rounded-2xl p-5 text-white text-center">
+        <p class="text-sm font-medium text-blue-200 mb-1">Point de départ</p>
+        <p class="text-lg font-bold mb-4">Je souhaite utiliser un chatbot dans une activité d'enseignement</p>
+        <button onclick="dtNext('q1')" class="dt-btn bg-yellow-400 text-gray-900 font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-yellow-300 transition-colors">Commencer l'évaluation →</button>
+      </div>
+
+      <!-- Q1 -->
+      <div id="dt-q1" class="dt-node hidden-node bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
+        <div class="flex items-center gap-2 mb-1"><span class="text-xs font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded-full">Question 1/3</span></div>
+        <h3 class="text-base font-bold text-gray-900 mb-1">La véracité de la production est-elle importante ?</h3>
+        <p class="text-sm text-gray-500 mb-5">L'exactitude des faits fournis par le chatbot est-elle critique pour cette activité ?</p>
+        <div class="flex gap-3 flex-wrap">
+          <button onclick="dtNext('q2')" class="dt-btn bg-green-600 text-white font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-green-700 transition-colors flex items-center gap-2">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            OUI — la précision est importante
+          </button>
+          <button onclick="dtResult('possible', 'Véracité non critique → utilisation possible', 'La véracité de l\'information n\'est pas déterminante pour cette activité (ex : génération créative, brainstorming, paroles d\'une chanson inventée). L\'usage du chatbot est possible.')" class="dt-btn bg-gray-200 text-gray-700 font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-gray-300 transition-colors">
+            NON — la précision est secondaire
+          </button>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div id="dt-q2" class="dt-node hidden-node bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
+        <div class="flex items-center gap-2 mb-1"><span class="text-xs font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded-full">Question 2/3</span></div>
+        <h3 class="text-base font-bold text-gray-900 mb-1">Avez-vous l'expertise pour vérifier la véracité de la production ?</h3>
+        <p class="text-sm text-gray-500 mb-5">Êtes-vous en mesure de valider ou corriger les informations fournies par le chatbot ?</p>
+        <div class="flex gap-3 flex-wrap">
+          <button onclick="dtNext('q3')" class="dt-btn bg-green-600 text-white font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-green-700 transition-colors flex items-center gap-2">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            OUI — je peux vérifier
+          </button>
+          <button onclick="dtResult('deconseille', 'Expertise insuffisante → utilisation déconseillée', 'Sans capacité à vérifier l\'exactitude des réponses du chatbot, son utilisation est déconseillée dans cette activité. Le risque de transmettre des informations erronées aux apprenants est trop élevé.')" class="dt-btn bg-red-100 text-red-700 font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-red-200 transition-colors">
+            NON — je ne peux pas vérifier
+          </button>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div id="dt-q3" class="dt-node hidden-node bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
+        <div class="flex items-center gap-2 mb-1"><span class="text-xs font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded-full">Question 3/3</span></div>
+        <h3 class="text-base font-bold text-gray-900 mb-1">Prenez-vous la responsabilité en cas d'erreurs de l'IA ?</h3>
+        <p class="text-sm text-gray-500 mb-5">Êtes-vous prêt(e) à assumer la responsabilité des informations incorrectes éventuellement transmises ?</p>
+        <div class="flex gap-3 flex-wrap">
+          <button onclick="dtResult('maitrise', 'Utilisation possible en maîtrisant les risques', 'Vous pouvez utiliser ce chatbot dans votre activité, à condition d\'exercer un contrôle rigoureux sur les productions générées et d\'en assumer la responsabilité pédagogique.')" class="dt-btn bg-green-600 text-white font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-green-700 transition-colors flex items-center gap-2">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            OUI — j'assume la responsabilité
+          </button>
+          <button onclick="dtResult('deconseille', 'Responsabilité non assumée → utilisation déconseillée', 'Si vous n\'êtes pas en mesure d\'assumer la responsabilité d\'éventuelles inexactitudes, il est préférable de ne pas recourir au chatbot pour cet acte d\'enseignement.')" class="dt-btn bg-red-100 text-red-700 font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-red-200 transition-colors">
+            NON — je ne veux pas prendre ce risque
+          </button>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div id="dt-result" class="dt-node hidden-node">
+        <div id="dt-result-box" class="rounded-2xl p-6 text-center"></div>
+        <div class="text-center mt-4">
+          <button onclick="dtReset()" class="text-sm text-gray-500 hover:text-gray-700 underline transition-colors">↺ Recommencer l'évaluation</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CHECKLIST ENSEIGNANT ═══ -->
+<section id="checklist" class="py-14 px-4 bg-white scroll-mt-20" aria-labelledby="checklist-title">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-8">
+      <h2 id="checklist-title" class="text-2xl font-bold text-gray-900 mb-2">Checklist de l'enseignant</h2>
+      <p class="text-gray-500 text-sm">Avant d'introduire un outil d'IA générative dans vos cours — cochez chaque point validé</p>
+    </div>
+
+    <!-- Progress -->
+    <div class="bg-slate-50 rounded-2xl p-4 mb-6 border border-gray-200">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-sm font-semibold text-gray-700">Progression</span>
+        <span id="check-count" class="text-sm font-bold text-blue-600">0 / 10</span>
+      </div>
+      <div class="h-2.5 bg-gray-200 rounded-full overflow-hidden">
+        <div id="check-progress" class="progress-bar h-full bg-gradient-to-r from-blue-500 to-green-500 rounded-full" style="width: 0%"></div>
+      </div>
+      <p id="check-msg" class="text-xs text-gray-500 mt-2">Commencez à cocher les points validés…</p>
+    </div>
+
+    <form class="space-y-3" onsubmit="return false" aria-label="Checklist de bonnes pratiques IA en classe">
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c1" class="hidden" onchange="updateProgress()">
+        <label for="c1" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Conditions d'utilisation et limite d'âge</p>
+            <p class="text-xs text-gray-500 mt-0.5">Vérifier les CGU du logiciel — s'assurer du respect de la limite d'âge et du RGPD</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c2" class="hidden" onchange="updateProgress()">
+        <label for="c2" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Conformité RGPD vérifiée</p>
+            <p class="text-xs text-gray-500 mt-0.5">S'assurer que l'outil ne collecte pas de données personnelles sensibles sur les élèves</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c3" class="hidden" onchange="updateProgress()">
+        <label for="c3" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Charte d'utilisation à l'école</p>
+            <p class="text-xs text-gray-500 mt-0.5">Réaliser ou consulter une charte d'utilisation responsable, éthique et environnementale</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c4" class="hidden" onchange="updateProgress()">
+        <label for="c4" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Sensibilisation à la citation des sources</p>
+            <p class="text-xs text-gray-500 mt-0.5">Sensibiliser les apprenants à préciser si un logiciel d'IA générative a été utilisé dans leur production</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c5" class="hidden" onchange="updateProgress()">
+        <label for="c5" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Vérification des informations enseignée</p>
+            <p class="text-xs text-gray-500 mt-0.5">Insister sur la nécessité de vérifier les réponses — l'IA peut générer des fake news, hallucinations ou biais</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c6" class="hidden" onchange="updateProgress()">
+        <label for="c6" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Modalités de recueil des productions réfléchies</p>
+            <p class="text-xs text-gray-500 mt-0.5">Réfléchir à comment distinguer les traces d'apprentissage authentiques des productions IA</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c7" class="hidden" onchange="updateProgress()">
+        <label for="c7" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Méthodes d'évaluation adaptées</p>
+            <p class="text-xs text-gray-500 mt-0.5">Adapter les évaluations : favoriser l'oral, la démarche, la réflexion plutôt que la restitution pure</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c8" class="hidden" onchange="updateProgress()">
+        <label for="c8" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Activités aux niveaux supérieurs de Bloom</p>
+            <p class="text-xs text-gray-500 mt-0.5">Privilégier Analyser, Évaluer, Créer — niveaux où l'IA montre ses limites et l'humain garde sa valeur</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c9" class="hidden" onchange="updateProgress()">
+        <label for="c9" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Équité d'accès entre les élèves</p>
+            <p class="text-xs text-gray-500 mt-0.5">S'assurer que tous les élèves ont un accès équitable à l'outil — ne pas creuser la fracture numérique</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="check-item bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-200 transition-colors">
+        <input type="checkbox" id="c10" class="hidden" onchange="updateProgress()">
+        <label for="c10" class="flex items-start gap-3 cursor-pointer">
+          <span class="check-icon w-5 h-5 border-2 border-gray-300 rounded-md shrink-0 mt-0.5 flex items-center justify-center transition-colors"></span>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Impact environnemental abordé</p>
+            <p class="text-xs text-gray-500 mt-0.5">Sensibiliser les élèves au coût énergétique des requêtes IA et à la sobriété numérique</p>
+          </div>
+        </label>
+      </div>
+
+    </form>
+
+    <div id="check-complete" class="hidden mt-6 bg-green-50 border border-green-200 rounded-2xl p-5 text-center">
+      <p class="text-2xl mb-2">🎉</p>
+      <p class="text-sm font-bold text-green-800">Excellente préparation !</p>
+      <p class="text-xs text-green-700 mt-1">Vous avez validé tous les points de vigilance. Vous pouvez introduire cet outil d'IA en classe de façon responsable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TAXONOMIE DE BLOOM ═══ -->
+<section class="py-14 px-4 bg-slate-50" aria-labelledby="bloom-title">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-8">
+      <h2 id="bloom-title" class="text-2xl font-bold text-gray-900 mb-2">Taxonomie de Bloom & IA</h2>
+      <p class="text-gray-500 text-sm">L'IA est performante aux niveaux inférieurs — l'humain reste irremplaçable aux niveaux supérieurs</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <!-- Pyramid -->
+      <div class="flex flex-col items-center gap-1.5">
+        <div class="bloom-level w-24 bg-red-500 text-white text-xs font-bold text-center py-3 rounded-lg shadow-sm" title="IA très limitée à ce niveau">
+          <div>CRÉER</div><div class="text-[10px] font-normal opacity-80">IA très limitée</div>
+        </div>
+        <div class="bloom-level w-36 bg-orange-500 text-white text-xs font-bold text-center py-3 rounded-lg shadow-sm">
+          <div>ÉVALUER</div><div class="text-[10px] font-normal opacity-80">IA limitée</div>
+        </div>
+        <div class="bloom-level w-48 bg-yellow-500 text-white text-xs font-bold text-center py-3 rounded-lg shadow-sm">
+          <div>ANALYSER</div><div class="text-[10px] font-normal opacity-80">IA partielle</div>
+        </div>
+        <div class="bloom-level w-56 bg-lime-600 text-white text-xs font-bold text-center py-3 rounded-lg shadow-sm">
+          <div>APPLIQUER</div><div class="text-[10px] font-normal opacity-80">IA performante</div>
+        </div>
+        <div class="bloom-level w-64 bg-green-600 text-white text-xs font-bold text-center py-3 rounded-lg shadow-sm">
+          <div>COMPRENDRE</div><div class="text-[10px] font-normal opacity-80">IA très performante</div>
+        </div>
+        <div class="bloom-level w-72 bg-blue-600 text-white text-xs font-bold text-center py-3 rounded-lg shadow-sm">
+          <div>CONNAÎTRE</div><div class="text-[10px] font-normal opacity-80">IA très performante</div>
+        </div>
+      </div>
+      <!-- Explication -->
+      <div class="space-y-4">
+        <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+          <p class="text-sm font-semibold text-red-800 mb-1">🎯 Niveaux supérieurs — Humain indispensable</p>
+          <p class="text-xs text-red-700">Analyser, Évaluer, Créer : l'IA montre ses limites. Ces tâches requièrent jugement personnel, créativité authentique, sens critique. Privilégier ces niveaux dans les activités avec l'IA.</p>
+        </div>
+        <div class="bg-green-50 border border-green-200 rounded-xl p-4">
+          <p class="text-sm font-semibold text-green-800 mb-1">⚡ Niveaux inférieurs — IA très efficace</p>
+          <p class="text-xs text-green-700">Connaître, Comprendre, Appliquer : l'IA génère facilement des productions à ces niveaux (résumés, restitutions, applications de règles). Le risque de «triche» est réel et difficilement détectable.</p>
+        </div>
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+          <p class="text-sm font-semibold text-blue-800 mb-1">💡 Recommandation pédagogique</p>
+          <p class="text-xs text-blue-700">Accepter l'IA comme <em>base</em> (niveaux inférieurs) que l'élève doit améliorer, analyser ou utiliser comme point de départ vers les niveaux supérieurs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRICHE & PLAGIAT — FAQ ═══ -->
+<section class="py-14 px-4 bg-white" aria-labelledby="faq-title">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-8">
+      <h2 id="faq-title" class="text-2xl font-bold text-gray-900 mb-2">Triche, Plagiat & Outils de détection</h2>
+      <p class="text-gray-500 text-sm">Questions fréquentes des enseignants</p>
+    </div>
+
+    <div class="space-y-3">
+
+      <!-- FAQ 1 -->
+      <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+        <button class="acc-trigger w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" aria-expanded="false">
+          <span class="text-sm font-semibold text-gray-900">Un élève qui utilise ChatGPT triche-t-il ?</span>
+          <svg class="chevron w-4 h-4 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="acc-body px-5">
+          <div class="pb-5 text-sm text-gray-700 space-y-2">
+            <p>La démarche d'utiliser un chatbot pour obtenir des réponses n'est pas fondamentalement différente de consulter un moteur de recherche ou une encyclopédie. <strong>C'est à l'enseignant de définir si cette méthode relève de la triche</strong> dans le cadre de son activité.</p>
+            <p>Maîtriser totalement les outils d'IA en les excluant semble illusoire : les suites bureautiques (Office 365, Google Workspace) intègreront progressivement des IA génératives. Les apprenants y seront de plus en plus confrontés dans leur vie professionnelle.</p>
+            <div class="bg-blue-50 rounded-xl p-3 mt-2"><p class="text-xs text-blue-700">La vraie question est : <strong>quel sens donner aux activités d'apprentissage</strong> à l'ère de l'IA ? Adapter les méthodes d'évaluation est préférable à une interdiction impossible à faire respecter.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+        <button class="acc-trigger w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" aria-expanded="false">
+          <span class="text-sm font-semibold text-gray-900">Comment détecter un texte écrit par une IA ?</span>
+          <svg class="chevron w-4 h-4 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="acc-body px-5">
+          <div class="pb-5 space-y-3">
+            <p class="text-sm text-gray-700 font-semibold">Indices visuels dans un texte IA :</p>
+            <ul class="text-sm text-gray-700 space-y-1.5">
+              <li class="flex items-start gap-2"><span class="text-gray-400 shrink-0 mt-0.5">•</span>Structures répétitives, phrases courtes et régulières</li>
+              <li class="flex items-start gap-2"><span class="text-gray-400 shrink-0 mt-0.5">•</span>Absence de ruptures de ton (questions, digressions, humour)</li>
+              <li class="flex items-start gap-2"><span class="text-gray-400 shrink-0 mt-0.5">•</span>Aucune idée personnelle, aucun exemple vécu</li>
+              <li class="flex items-start gap-2"><span class="text-gray-400 shrink-0 mt-0.5">•</span>Tournures récurrentes : «Il est important de rappeler…», «Il convient de noter que…»</li>
+              <li class="flex items-start gap-2"><span class="text-gray-400 shrink-0 mt-0.5">•</span>Réponses prudentes et mesurées, jamais d'opinion tranchée</li>
+            </ul>
+            <p class="text-sm text-gray-700 font-semibold mt-3">Outils de détection automatique (gratuits) :</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <a href="https://gptzero.me" target="_blank" rel="noopener" class="bg-slate-50 rounded-lg p-2.5 text-xs text-blue-600 font-medium hover:bg-blue-50 transition-colors border border-gray-200">GPTZero.me →</a>
+              <a href="https://writer.com/ai-content-detector" target="_blank" rel="noopener" class="bg-slate-50 rounded-lg p-2.5 text-xs text-blue-600 font-medium hover:bg-blue-50 transition-colors border border-gray-200">Writer AI Detector →</a>
+              <a href="https://contentatscale.ai/ai-content-detector" target="_blank" rel="noopener" class="bg-slate-50 rounded-lg p-2.5 text-xs text-blue-600 font-medium hover:bg-blue-50 transition-colors border border-gray-200">Content at Scale →</a>
+              <a href="https://detector.dng.ai/fr" target="_blank" rel="noopener" class="bg-slate-50 rounded-lg p-2.5 text-xs text-blue-600 font-medium hover:bg-blue-50 transition-colors border border-gray-200">Detector DNG →</a>
+              <a href="https://platform.openai.com" target="_blank" rel="noopener" class="bg-slate-50 rounded-lg p-2.5 text-xs text-blue-600 font-medium hover:bg-blue-50 transition-colors border border-gray-200">OpenAI Classifier →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+        <button class="acc-trigger w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" aria-expanded="false">
+          <span class="text-sm font-semibold text-gray-900">Comment intégrer positivement les chatbots dans les évaluations ?</span>
+          <svg class="chevron w-4 h-4 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="acc-body px-5">
+          <div class="pb-5 space-y-2.5">
+            <div class="flex items-start gap-3 p-3 bg-green-50 rounded-xl text-sm text-green-800"><span class="shrink-0 text-lg">✓</span><div><strong>Évaluations orales</strong> ou basées sur une activité pratique — l'IA ne peut pas s'exprimer à la place de l'élève</div></div>
+            <div class="flex items-start gap-3 p-3 bg-green-50 rounded-xl text-sm text-green-800"><span class="shrink-0 text-lg">✓</span><div><strong>Base + amélioration :</strong> accepter la base IA mais exiger que l'élève l'améliore et l'enrichisse personnellement</div></div>
+            <div class="flex items-start gap-3 p-3 bg-green-50 rounded-xl text-sm text-green-800"><span class="shrink-0 text-lg">✓</span><div><strong>Transparence :</strong> demander aux élèves d'indiquer les passages où un chatbot a été utilisé</div></div>
+            <div class="flex items-start gap-3 p-3 bg-green-50 rounded-xl text-sm text-green-800"><span class="shrink-0 text-lg">✓</span><div><strong>Niveaux supérieurs de Bloom :</strong> analyse critique, synthèse personnelle, création originale</div></div>
+            <div class="flex items-start gap-3 p-3 bg-green-50 rounded-xl text-sm text-green-800"><span class="shrink-0 text-lg">✓</span><div><strong>Fact-checking :</strong> évaluer la capacité à identifier les erreurs dans une réponse IA fournie</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+        <button class="acc-trigger w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" aria-expanded="false">
+          <span class="text-sm font-semibold text-gray-900">Un texte IA peut-il constituer un plagiat ?</span>
+          <svg class="chevron w-4 h-4 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="acc-body px-5">
+          <div class="pb-5 text-sm text-gray-700 space-y-2">
+            <p>Les textes produits par les chatbots sont une compilation de millions de textes présents sur internet, remaniés sans que les sources ne soient citées. Même en utilisant un chatbot de façon transparente, un utilisateur pourrait se retrouver en situation de plagiat.</p>
+            <p>OpenAI a annoncé le développement d'une <strong>signature cryptographique</strong> pour les textes générés par ChatGPT. Le Parlement européen impose d'ailleurs des règles de transparence sur les contenus générés par IA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RESSOURCES ═══ -->
+<section class="py-14 px-4 bg-[#003082]">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-bold text-white mb-3">Pour aller plus loin</h2>
+    <p class="text-blue-200 text-sm mb-8">Ressources complémentaires disponibles sur e-classe et au-delà</p>
+    <div class="grid sm:grid-cols-3 gap-4">
+      <a href="https://www.e-classe.be" target="_blank" rel="noopener" class="bg-white/10 border border-white/20 text-white rounded-xl p-4 hover:bg-white/20 transition-colors text-left">
+        <div class="text-xl mb-2">📚</div>
+        <p class="text-sm font-bold mb-1">Dossier IA — e-classe</p>
+        <p class="text-xs text-blue-200">Documents de référence, vidéos explicatives et supports pédagogiques (FW-B)</p>
+      </a>
+      <a href="https://www.e-classe.be/guide-pratique-rgpd" target="_blank" rel="noopener" class="bg-white/10 border border-white/20 text-white rounded-xl p-4 hover:bg-white/20 transition-colors text-left">
+        <div class="text-xl mb-2">🔐</div>
+        <p class="text-sm font-bold mb-1">Guide RGPD en classe</p>
+        <p class="text-xs text-blue-200">Comprendre et appliquer le RGPD — publication SGNE</p>
+      </a>
+      <a href="https://www.csem.be/eduquer-aux-medias/productions/la-collection-reperes" target="_blank" rel="noopener" class="bg-white/10 border border-white/20 text-white rounded-xl p-4 hover:bg-white/20 transition-colors text-left">
+        <div class="text-xl mb-2">📡</div>
+        <p class="text-sm font-bold mb-1">Collection Repères — CSEM</p>
+        <p class="text-xs text-blue-200">Éducation aux médias, deep fakes et désinformation</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="bg-gray-900 text-gray-400 py-12 px-4" role="contentinfo">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid sm:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <svg class="w-5 h-5 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+          <span class="font-bold text-white text-sm">Intelligence Artificielle</span>
+        </div>
+        <p class="text-xs leading-relaxed">Service général du Numérique Éducatif — Fédération Wallonie-Bruxelles</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white text-sm mb-3">Navigation</h3>
+        <ul class="space-y-1.5 text-xs">
+          <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
+          <li><a href="index.html#comprendre" class="hover:text-white transition-colors">Comprendre l'IA</a></li>
+          <li><a href="enjeux.html" class="hover:text-white transition-colors">Enjeux</a></li>
+          <li><a href="enjeux.html#enseignement" class="hover:text-white transition-colors">IA & Enseignement</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white text-sm mb-3">Sur cette page</h3>
+        <ul class="space-y-1.5 text-xs">
+          <li><a href="#guide-apprenant" class="hover:text-white transition-colors">Guide apprenant</a></li>
+          <li><a href="#guide-enseignant" class="hover:text-white transition-colors">Guide enseignant</a></li>
+          <li><a href="#arbre-decisionnel" class="hover:text-white transition-colors">Arbre décisionnel</a></li>
+          <li><a href="#checklist" class="hover:text-white transition-colors">Checklist interactive</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs">
+      <p>© Service général du Numérique Éducatif — Fédération Wallonie-Bruxelles</p>
+      <p class="text-gray-500 italic">Ce document a été entièrement rédigé par des humains.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ JS ═══ -->
+<script>
+  // ── Accordions ──
+  document.querySelectorAll('.acc-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const body = btn.nextElementSibling;
+      const isOpen = body.classList.contains('open');
+      document.querySelectorAll('.acc-body').forEach(b => b.classList.remove('open'));
+      document.querySelectorAll('.acc-trigger').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      if (!isOpen) { body.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+    });
+  });
+
+  // ── Decision Tree ──
+  let dtHistory = [];
+
+  function dtNext(nodeId) {
+    const node = document.getElementById('dt-' + nodeId);
+    if (!node) return;
+    dtHistory.push(nodeId);
+    // Hide all nodes except start
+    document.querySelectorAll('.dt-node').forEach(n => {
+      if (n.id !== 'dt-start') {
+        n.classList.add('hidden-node');
+        n.classList.remove('visible-node');
+      }
+    });
+    // Show up to current
+    dtHistory.forEach(id => {
+      const n = document.getElementById('dt-' + id);
+      if (n) { n.classList.remove('hidden-node'); n.classList.add('visible-node'); }
+    });
+    node.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function dtResult(type, title, message) {
+    const box = document.getElementById('dt-result-box');
+    const colors = {
+      possible: { bg: 'bg-green-50', border: 'border-green-300', icon: '✅', titleColor: 'text-green-800', msgColor: 'text-green-700' },
+      maitrise: { bg: 'bg-amber-50', border: 'border-amber-300', icon: '⚠️', titleColor: 'text-amber-800', msgColor: 'text-amber-700' },
+      deconseille: { bg: 'bg-red-50', border: 'border-red-300', icon: '❌', titleColor: 'text-red-800', msgColor: 'text-red-700' }
+    };
+    const c = colors[type] || colors.deconseille;
+    box.className = `rounded-2xl p-6 text-center border ${c.bg} ${c.border}`;
+    box.innerHTML = `
+      <div class="text-4xl mb-3">${c.icon}</div>
+      <h3 class="text-base font-bold ${c.titleColor} mb-2">${title}</h3>
+      <p class="text-sm ${c.msgColor} leading-relaxed">${message}</p>
+    `;
+    const resultNode = document.getElementById('dt-result');
+    resultNode.classList.remove('hidden-node');
+    resultNode.classList.add('visible-node');
+    resultNode.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function dtReset() {
+    dtHistory = [];
+    document.querySelectorAll('.dt-node').forEach(n => {
+      if (n.id === 'dt-start') { n.classList.add('visible-node'); n.classList.remove('hidden-node'); }
+      else { n.classList.add('hidden-node'); n.classList.remove('visible-node'); }
+    });
+    document.getElementById('dt-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ── Checklist progress ──
+  const msgs = ['Commencez à cocher les points validés…','Bon début ! Continuez…','C\'est parti !','À mi-chemin…','Plus que quelques points !','Excellent travail ! Presque là…','Parfait — tout est validé ! 🎉'];
+  function updateProgress() {
+    const total = 10;
+    const checked = document.querySelectorAll('.check-item input:checked').length;
+    document.getElementById('check-count').textContent = checked + ' / ' + total;
+    document.getElementById('check-progress').style.width = (checked / total * 100) + '%';
+    const idx = Math.min(Math.floor(checked / total * (msgs.length - 1)), msgs.length - 1);
+    document.getElementById('check-msg').textContent = msgs[idx];
+    document.getElementById('check-complete').classList.toggle('hidden', checked < total);
+  }
+
+  // Style checkboxes on change
+  document.querySelectorAll('.check-item input').forEach(input => {
+    input.addEventListener('change', function () {
+      const icon = this.nextElementSibling.querySelector('.check-icon');
+      if (this.checked) {
+        icon.style.background = '#10b981';
+        icon.style.borderColor = '#10b981';
+        icon.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" width="12" height="12"><polyline points="20 6 9 17 4 12"/></svg>';
+      } else {
+        icon.style.background = '';
+        icon.style.borderColor = '';
+        icon.innerHTML = '';
+      }
+    });
+  });
+
+  // ── Search ──
+  const SEARCH_DATA = [
+    { t: 'IA Générative', d: 'IA capable de créer du contenu inédit — texte, image, son (ChatGPT, Midjourney).', url: 'ia-generatives.html' },
+    { t: 'Hallucination', d: 'Réponse totalement fausse produite par une IA avec autant d\'assurance qu\'une vraie.', url: 'ia-generatives.html' },
+    { t: 'Guide apprenant ChatGPT', d: 'Boîte à idées, rétroaction, organisation du travail — usages légitimes.', url: 'ia-generatives.html#guide-apprenant' },
+    { t: 'Guide enseignant ChatGPT', d: 'Préparation cours, différenciation, éducation aux médias.', url: 'ia-generatives.html#guide-enseignant' },
+    { t: 'Arbre décisionnel', d: 'Outil interactif pour décider si utiliser un chatbot dans une activité.', url: 'ia-generatives.html#arbre-decisionnel' },
+    { t: 'Checklist enseignant', d: '10 points à valider avant d\'introduire un outil IA en classe.', url: 'ia-generatives.html#checklist' },
+    { t: 'Taxonomie de Bloom', d: 'Les niveaux supérieurs (Analyser, Évaluer, Créer) résistent mieux à l\'IA.', url: 'ia-generatives.html' },
+    { t: 'Détection texte IA', d: 'GPTZero, Writer AI Detector, Content at Scale — outils gratuits.', url: 'ia-generatives.html' },
+    { t: 'Triche et plagiat IA', d: 'ChatGPT ne cite pas ses sources — risque de plagiat même en usage transparent.', url: 'ia-generatives.html' },
+  ];
+
+  function doSearch(q, container) {
+    if (!q || q.length < 2) { container.classList.add('hidden'); return; }
+    const r = SEARCH_DATA.filter(i => i.t.toLowerCase().includes(q.toLowerCase()) || i.d.toLowerCase().includes(q.toLowerCase())).slice(0, 6);
+    container.innerHTML = r.length ? r.map(i =>
+      `<a href="${i.url}" class="flex items-start gap-3 px-4 py-3 hover:bg-blue-50 border-b border-gray-100 last:border-0 transition-colors">
+        <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <div><div class="text-sm font-semibold text-gray-900">${i.t}</div><div class="text-xs text-gray-500 mt-0.5">${i.d}</div></div>
+      </a>`).join('') : '<div class="px-4 py-3 text-sm text-gray-500">Aucun résultat</div>';
+    container.classList.remove('hidden');
+  }
+
+  const navSearch = document.getElementById('navSearch');
+  const navResults = document.getElementById('navResults');
+  if (navSearch) {
+    navSearch.addEventListener('input', e => doSearch(e.target.value, navResults));
+    document.addEventListener('click', e => { if (!navSearch.contains(e.target)) navResults.classList.add('hidden'); });
+  }
+</script>
+<script src="motion.js"></script>
+</body>
+</html>

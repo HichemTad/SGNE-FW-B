@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="ia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zoom sur les IA génératives — Intelligence Artificielle · Fédération Wallonie-Bruxelles">
+  <title>Zoom sur les IA génératives — Intelligence Artificielle · FW-B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero { background: linear-gradient(135deg, #003082 0%, #1e40af 60%, #1d4ed8 100%); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+    .prose p { margin-bottom: 1.25rem; line-height: 1.8; }
+    .prose h3 { font-size: 1.2rem; font-weight: 700; color: #003082; margin-top: 2.5rem; margin-bottom: 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid #dbeafe; }
+    .prose h4 { font-size: 1rem; font-weight: 700; color: #1A4496; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    blockquote { border-left: 4px solid #1A4496; background: #eff6ff; padding: 1rem 1.25rem; border-radius: 0 0.5rem 0.5rem 0; margin: 1.5rem 0; font-style: italic; color: #374151; }
+
+    /* ── Decision tree ─────────────────────────────────────── */
+    #dt-wrap {
+      min-height: 200px;
+      position: relative;
+    }
+    .dt-step {
+      animation: dtIn 0.32s cubic-bezier(0,0,0.2,1) both;
+    }
+    @keyframes dtIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .dt-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 0.875rem;
+      padding: 0.75rem 1.75rem;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+    }
+    .dt-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+    .dt-btn:active { transform: translateY(0); }
+    .dt-btn-yes { background: #003082; color: #fff; }
+    .dt-btn-yes:hover { background: #1A4496; }
+    .dt-btn-no  { background: #fff; color: #003082; border-color: #003082; }
+    .dt-btn-no:hover  { background: #eff6ff; }
+    .dt-result-ok   { background: #dcfce7; border-color: #16a34a; }
+    .dt-result-warn { background: #fefce8; border-color: #ca8a04; }
+    .dt-result-ko   { background: #fee2e2; border-color: #dc2626; }
+    .dt-progress-bar {
+      height: 4px;
+      border-radius: 2px;
+      background: #dbeafe;
+      overflow: hidden;
+    }
+    .dt-progress-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: #003082;
+      transition: width 0.4s cubic-bezier(0.2,0,0,1);
+    }
+    .dt-path-trail {
+      font-size: 0.7rem;
+      color: #79766E;
+      line-height: 1.6;
+    }
+    .dt-path-trail span { font-weight: 600; }
+  </style>
+  <link rel="stylesheet" href="ds.css">
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-[#003082] text-white px-4 py-2 rounded-md z-[100] text-sm font-medium">Aller au contenu principal</a>
+
+<!-- NAVBAR -->
+<nav id="nav-root" class="sticky top-0 z-50 bg-[#003082] shadow-xl" role="navigation" aria-label="Navigation principale"></nav>
+<script src="navbar.js"></script>
+
+<!-- HERO -->
+<header class="gradient-hero py-12 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center gap-3 mb-4">
+      <a href="table-des-matieres.html" class="text-blue-200 hover:text-white text-sm flex items-center gap-1 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        Index du chapitre
+      </a>
+    </div>
+    <div class="flex items-start gap-5">
+      <div class="w-20 h-20 bg-white/15 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-4xl font-black text-white/80">5</span>
+      </div>
+      <div>
+        <p class="text-blue-300 text-sm font-semibold uppercase tracking-widest mb-1">Focus · Intelligence Artificielle</p>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white">Zoom sur les IA génératives</h1>
+        <p class="text-blue-200 mt-2 text-base">ChatGPT, chatbots éducatifs, usages et précautions</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-2 mt-6">
+      <a href="#capabilities" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">5.1 Ce que peut faire une IA générative</a>
+      <a href="#apprenant" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">5.2 L'apprenant et le chatbot</a>
+      <a href="#enseignant" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">5.3 L'enseignant et le chatbot</a>
+      <a href="#precautions" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">5.4 Précautions d'utilisation</a>
+    </div>
+  </div>
+  <img src="assets/robot-running.svg" alt="" aria-hidden="true" class="robot-hero">
+</header>
+
+<!-- MAIN -->
+<main id="main" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    <article class="flex-1 min-w-0">
+
+      <!-- ACTION BAR -->
+      <div class="flex items-center gap-3 mb-8 flex-wrap">
+        
+      </div>
+
+      <!-- INTRO -->
+      <div class="prose max-w-none text-gray-800 mb-8">
+        <p>Une <strong>IA générative</strong> est un type d'IA capable de générer des contenus inédits imitant les créations humaines : textes, images, vidéos, musiques… Ce type d'IA en particulier a fait l'objet d'une large exposition médiatique en début d'année 2023, notamment à la suite de la mise à disposition publique du prototype de l'agent conversationnel (ou chatbot) <strong>ChatGPT</strong>.</p>
+      </div>
+
+      <!-- STAT BANNER -->
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5 mb-10 flex flex-col sm:flex-row items-center gap-6">
+        <div class="text-center shrink-0">
+          <div class="text-4xl font-black text-[#003082]">100M</div>
+          <div class="text-xs text-gray-600 mt-1">utilisateurs de ChatGPT<br>en janvier 2023</div>
+        </div>
+        <div class="text-center shrink-0">
+          <div class="text-4xl font-black text-[#003082]">2 mois</div>
+          <div class="text-xs text-gray-600 mt-1">seulement après<br>son lancement</div>
+        </div>
+        <div class="text-sm text-gray-700 leading-relaxed border-l border-blue-300 pl-6">
+          Les IA génératives telles que <strong>ChatGPT</strong> (générateur de texte) ou encore <strong>Dall·E</strong> et <strong>Midjourney</strong> (générateurs d'images) se caractérisent par une possibilité de création multimodale (traitant du texte, de l'image, du son) et une qualité de résultat très élevée.
+        </div>
+      </div>
+
+      <!-- 5.1 -->
+      <section id="capabilities" class="scroll-mt-20">
+        <div class="prose max-w-none text-gray-800">
+          <h3>5.1 Ce que peut faire une IA générative</h3>
+          <h4>Comment fonctionne un modèle de langage ?</h4>
+          <p>Dans le cas du modèle de type <strong>GPT-3</strong> (Generative Pre-trained Transformer 3) utilisé par ChatGPT, l'algorithme est entraîné sur un vaste ensemble de contenus afin de formuler une réponse par association. Il s'agit d'un réseau de neurones profonds (apprentissage profond) capable de traiter des données séquentielles.</p>
+          <p>Par exemple, si dans l'ensemble de contenus formant la base d'entraînement, le mot «&nbsp;fleur&nbsp;» est souvent associé au mot «&nbsp;jolie&nbsp;», le modèle statistique de l'algorithme associera préférentiellement ces deux termes dans sa réponse. L'objectif d'un tel modèle de langage est de produire une réponse textuelle en assemblant les morphèmes les plus probables afin d'apporter une réponse rapide à toutes les requêtes.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 my-6" data-stagger-grid>
+          <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+            <div class="font-bold text-green-800 text-sm mb-3 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✓</span>
+              Ce que peut faire une IA générative
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex items-start gap-2"><span class="text-green-600 mt-0.5">▸</span>Produire rapidement un texte, une image, un son à partir de quelques informations</li>
+              <li class="flex items-start gap-2"><span class="text-green-600 mt-0.5">▸</span>Traduire un document, reformuler une idée ou un concept, corriger une production sur la forme</li>
+              <li class="flex items-start gap-2"><span class="text-green-600 mt-0.5">▸</span>Traiter des sujets variés (limités par les barrières introduites par les développeurs)</li>
+              <li class="flex items-start gap-2"><span class="text-green-600 mt-0.5">▸</span>Fournir un support, une rétroaction immédiate</li>
+            </ul>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+            <div class="font-bold text-red-800 text-sm mb-3 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-red-500 text-white flex items-center justify-center text-xs">✗</span>
+              Ce que ne peut pas faire une IA générative
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex items-start gap-2"><span class="text-red-600 mt-0.5">▸</span>Prendre en compte le profil affectif ou socio-économique de l'utilisateur</li>
+              <li class="flex items-start gap-2"><span class="text-red-600 mt-0.5">▸</span>Donner les sources utilisées pour produire sa réponse</li>
+              <li class="flex items-start gap-2"><span class="text-red-600 mt-0.5">▸</span>Être précis et nuancé — les algorithmes fournissent toujours une réponse, même totalement erronée (hallucinations)</li>
+              <li class="flex items-start gap-2"><span class="text-red-600 mt-0.5">▸</span>Expliquer comment les données perçues par le système sont utilisées («&nbsp;boîte noire&nbsp;»)</li>
+              <li class="flex items-start gap-2"><span class="text-red-600 mt-0.5">▸</span>Développer un esprit critique, une conviction forte sur un sujet</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 my-4">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-[#003082] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            <div>
+              <span class="font-bold text-[#003082] text-sm">Hallucinations :</span>
+              <span class="text-sm text-gray-700"> terme désignant une production totalement fausse d'un algorithme d'intelligence artificielle par rapport à ce qui est attendu. Les chatbots fournissent toujours une réponse — même inventée — ce qui nécessite une vérification systématique par l'utilisateur.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5.2 -->
+      <section id="apprenant" class="scroll-mt-20 mt-10">
+        <div class="prose max-w-none text-gray-800">
+          <h3>5.2 Comment un apprenant peut-il utiliser un chatbot dans son apprentissage ?</h3>
+          <p>Les agents conversationnels ou chatbots peuvent être utilisés de plusieurs manières, souvent innovantes, par un apprenant dans son processus d'apprentissage. Comme tout système fondé sur l'IA, les chatbots devraient être considérés davantage comme des <strong>outils d'inspiration ou d'aide à la décision</strong> que comme des outils pouvant remplacer l'intelligence et le jugement humains.</p>
+          <p>Un chatbot n'a pas de capacité à vérifier la véracité de l'information fournie. Les réponses proposées peuvent être obsolètes, incomplètes ou inexactes. Cette limitation peut être en elle-même un support à l'apprentissage, en servant de socle à l'exercice de l'esprit critique par la vérification et la nuance des informations fournies.</p>
+          <h4>Comme boîte à idées et support préalable</h4>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-xl p-5 my-4">
+          <p class="text-sm font-medium text-gray-700 mb-3">ChatGPT peut suggérer par exemple :</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-600">
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Le plan d'une rédaction</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Des idées pour illustrer un principe scientifique</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Des recommandations de lectures pour approfondir un thème</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Un plan d'entraînement sportif</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Un diagnostic de pannes possibles d'après la description d'un dysfonctionnement</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Un objectif, des échéances et des étapes de travail</div>
+          </div>
+        </div>
+
+        <div class="prose max-w-none text-gray-800">
+          <h4>Comme outil de rétroaction sur une production</h4>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-xl p-5 my-4">
+          <p class="text-sm font-medium text-gray-700 mb-3">Au stade de la production, ChatGPT peut :</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-600">
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Vérifier qu'une phrase, en français ou dans une langue étrangère, est correcte</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Attribuer une note appréciative à un texte qui lui est soumis</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Commenter un texte et proposer des améliorations</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Reformuler une consigne, expliciter le thème d'une dissertation</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Exemplifier les étapes de résolution d'une équation</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Suggérer des stratégies et un planning d'étude ou de révision</div>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 my-4">
+          <p class="text-sm text-gray-700 italic">Les réponses fournies par l'IA devraient être perçues par l'apprenant comme <strong>à titre indicatif et potentiellement faillibles</strong>, sans vocation à remplacer le jugement humain.</p>
+        </div>
+
+        <div class="prose max-w-none text-gray-800">
+          <h4>Exemples d'outils (autres que ChatGPT)</h4>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 my-4">
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] text-sm mb-1">Poe</div>
+            <p class="text-xs text-gray-600">Interface permettant l'usage de différents chatbots réunis sur un seul site (ChatGPT, Claude, Sage, Dragonfly) pour obtenir des réponses plus variées.</p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] text-sm mb-1">AgentGPT</div>
+            <p class="text-xs text-gray-600">Chatbot centré sur l'opérationnalisation. Sur base de la définition d'un objectif, il génère des tâches qu'il résout au fur et à mesure.</p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] text-sm mb-1">Ali</div>
+            <p class="text-xs text-gray-600">Chatbot canadien spécifiquement conçu pour accompagner les étudiants de l'enseignement supérieur en matière de santé mentale et d'anxiété.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5.3 -->
+      <section id="enseignant" class="scroll-mt-20 mt-10">
+        <div class="prose max-w-none text-gray-800">
+          <h3>5.3 Comment un enseignant peut-il utiliser un chatbot dans ses activités ?</h3>
+          <p>Les chatbots peuvent être utilisés par un enseignant dans un aspect didactique ou pédagogique. Comme tout système fondé sur l'IA, les chatbots devraient être considérés davantage comme des <strong>outils d'inspiration ou d'aide à la décision</strong> que comme des outils pouvant remplacer l'intelligence et le jugement humains.</p>
+          <h4>Préparation de cours et gain de temps</h4>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-xl p-5 my-4">
+          <p class="text-sm font-medium text-gray-700 mb-3">ChatGPT peut formuler des propositions pour :</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-600">
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Suggérer des idées de supports pédagogiques et des façons de les exploiter en classe</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Générer automatiquement des listes d'exercices (ex. : équations, verbes à conjuguer…)</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Générer automatiquement des supports d'apprentissage courants (tableau chimique des éléments, tables de multiplication, liste de citations…)</div>
+            <div class="flex items-start gap-2"><span class="text-[#003082]">▸</span>Reformuler une consigne pour la différenciation (mise de l'information sous une autre forme, ex. : un tableau)</div>
+          </div>
+        </div>
+
+        <div class="prose max-w-none text-gray-800">
+          <h4>Le chatbot comme sujet d'apprentissage</h4>
+          <p>Un chatbot peut être utilisé en tant que <strong>sujet d'apprentissage</strong>, dans une optique d'éducation aux médias fondés sur l'intelligence artificielle. Par exemple, ChatGPT peut être utilisé comme support à l'exercice de l'esprit critique par les élèves :</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
+          <div class="bg-white border border-gray-200 rounded-xl p-4 border-l-4 border-l-[#003082]">
+            <div class="font-bold text-[#003082] text-sm mb-1">Esprit critique</div>
+            <p class="text-xs text-gray-600">Par la vérification des informations fournies (ex. : critiquer la véracité d'une réponse fournie par l'intelligence artificielle)</p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4 border-l-4 border-l-[#003082]">
+            <div class="font-bold text-[#003082] text-sm mb-1">Analyse éthique</div>
+            <p class="text-xs text-gray-600">Par l'analyse des réponses fournies par l'intelligence artificielle sur des questions éthiques</p>
+          </div>
+        </div>
+
+        <div class="prose max-w-none text-gray-800">
+          <h4>Exemples d'outils (autres que ChatGPT)</h4>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] text-sm mb-1">NovelAI</div>
+            <p class="text-xs text-gray-600">Plateforme utilisant l'IA pour soutenir l'écriture de récits, en proposant par complétion automatique des éléments narratifs.</p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] text-sm mb-1">Gemini AI (Google)</div>
+            <p class="text-xs text-gray-600">IA conçue par Google capable de générer des éléments textuels, sonores et visuels et de les combiner.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5.4 -->
+      <section id="precautions" class="scroll-mt-20 mt-10">
+        <div class="prose max-w-none text-gray-800">
+          <h3>5.4 À quoi faut-il faire attention lors de l'utilisation des IA génératives dans l'enseignement ?</h3>
+          <p>Outre les chatbots plus généralistes comme ChatGPT, il existe aussi de nombreux chatbots éducatifs développés à travers le monde : à côté des américains Duolingo et Khan Academy figurent à titre d'exemple les canadiens Botpress et Ada, ou l'australien Deakin Genie. Google et Microsoft envisagent une intégration progressive d'IA génératives dans leurs suites bureautiques (Microsoft Copilot, etc.).</p>
+          <p>Si les perspectives liées aux outils performants d'IA génératives sont intéressantes, il peut être utile de cadrer leur utilisation, en particulier avec les apprenants. Les lignes directrices éthiques publiées par l'UE peuvent être une base de réflexion à une utilisation raisonnée et raisonnable de l'intelligence artificielle dans l'éducation.</p>
+        </div>
+
+        <!-- PRÉCAUTIONS -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 my-6">
+          <p class="font-bold text-gray-700 text-sm mb-4">Liste non exhaustive d'éléments de réflexion :</p>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <p class="text-sm text-gray-700">Vérifier les conditions d'utilisation des logiciels qui indiquent généralement une <strong>limite d'âge</strong> et s'assurer du respect de cette limite et de l'application des conditions réglementaires comme le RGPD.</p>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <p class="text-sm text-gray-700">Réaliser au sein de l'école une <strong>charte d'utilisation responsable</strong>, éthique et environnementale de l'outil.</p>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <p class="text-sm text-gray-700">Sensibiliser les apprenants à la nécessité de <strong>citer ses sources</strong> et donc de préciser si un logiciel d'IA générative a été utilisé pour une production personnelle.</p>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">4</span>
+              <p class="text-sm text-gray-700">Insister sur la <strong>vérification des informations</strong> fournies par le logiciel dont l'algorithme est susceptible de proposer des réponses totalement fausses et de générer des «&nbsp;fake news&nbsp;», «&nbsp;deep fake&nbsp;» ou encore des biais.</p>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+              <span class="w-7 h-7 rounded-full bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">5</span>
+              <p class="text-sm text-gray-700">Réfléchir sur les modalités de <strong>recueil des productions des élèves</strong> (traces d'apprentissages). Les IA génératives textuelles peuvent facilement atteindre des résultats satisfaisants si les tâches sont axées sur la restitution et l'application d'une règle.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════
+             ARBRE DÉCISIONNEL INTERACTIF
+             ═══════════════════════════════════════════════════ -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 my-6" id="decision-tree">
+          <div class="flex items-start gap-4 mb-5">
+            <div class="w-10 h-10 bg-[#003082] rounded-xl flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-800 text-base">Arbre décisionnel interactif</p>
+              <p class="text-xs text-gray-500 mt-0.5">Dois-je utiliser une IA générative pour cet enseignement ?</p>
+              <p class="text-xs text-gray-400 italic mt-0.5">Adapté du guide Unesco (Sabzalieva, 2023) — Aleksandr Tiulkanov, AI and Data Policy Lawyer</p>
+            </div>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="dt-progress-bar mb-5">
+            <div class="dt-progress-fill" id="dt-progress" style="width: 33%"></div>
+          </div>
+
+          <!-- Dynamic zone -->
+          <div id="dt-wrap"></div>
+
+          <!-- Reset -->
+          <button id="dt-reset" class="mt-5 text-xs text-gray-400 hover:text-[#003082] flex items-center gap-1.5 transition-colors" style="display:none">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            Recommencer depuis le début
+          </button>
+        </div>
+
+        <!-- TRICHE -->
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 my-6">
+          <div class="font-bold text-[#003082] text-base mb-3 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            Un élève pourrait-il «&nbsp;tricher&nbsp;» grâce à un chatbot ?
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-3">La popularisation des chatbots a porté l'attention médiatique sur ce phénomène : au lieu de se livrer à un exercice de réflexion, un élève pourrait utiliser un chatbot pour résoudre un problème mathématique, fournir des réponses à un questionnaire ou rédiger une dissertation.</p>
+          <p class="text-sm text-gray-700 leading-relaxed mb-3">Une question à se poser : ce phénomène relève-t-il de la «&nbsp;triche&nbsp;» ? La démarche d'utiliser un chatbot pour apporter des réponses ou fournir des informations n'est pas très différente de celle consistant à interroger un moteur de recherche ou consulter une encyclopédie en ligne. C'est à l'enseignant qu'il revient de déterminer si cette méthode relève de la triche.</p>
+          <p class="text-sm text-gray-700 leading-relaxed">Il est à noter également que maîtriser totalement les outils d'IA comme les chatbots, en les excluant de tout processus d'apprentissage, semble a priori illusoire. Les outils de bureautique les plus courants (ex. : Office 365) intégreront à très court terme des modèles de langage de type GPT.</p>
+        </div>
+
+        <!-- CONTRER LA TRICHE -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 my-6">
+          <p class="font-bold text-gray-700 text-sm mb-4">Comment contrer le phénomène de «&nbsp;tricherie&nbsp;» ?</p>
+          <div class="space-y-2 text-sm text-gray-700">
+            <div class="flex items-start gap-2 p-2 rounded-lg bg-gray-50">
+              <span class="text-[#003082] mt-0.5 font-bold shrink-0">▸</span>
+              <div>Utiliser des outils détectant les contenus rédigés par une IA :
+                <span class="text-xs text-gray-500 ml-1">detector.dng.ai/fr · platform.openai.com · writer.com/ai-content-detector · gptzero.me</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-2 p-2 rounded-lg bg-gray-50">
+              <span class="text-[#003082] mt-0.5 font-bold shrink-0">▸</span>
+              <p>Apprendre à reconnaître les indices de textes rédigés par une IA : structures répétitives, phrases courtes, absence de ruptures de ton, de questions, d'exclamations, de digressions, d'idées personnelles.</p>
+            </div>
+            <div class="flex items-start gap-2 p-2 rounded-lg bg-gray-50">
+              <span class="text-[#003082] mt-0.5 font-bold shrink-0">▸</span>
+              <p>Procéder à des évaluations orales ou à celles fondées sur une activité pratique.</p>
+            </div>
+            <div class="flex items-start gap-2 p-2 rounded-lg bg-gray-50">
+              <span class="text-[#003082] mt-0.5 font-bold shrink-0">▸</span>
+              <p>Intégrer les chatbots comme outils de support légitimes, en cadrant leur usage avec les élèves.</p>
+            </div>
+            <div class="flex items-start gap-2 p-2 rounded-lg bg-gray-50">
+              <span class="text-[#003082] mt-0.5 font-bold shrink-0">▸</span>
+              <p>Favoriser les activités situées dans les niveaux supérieurs de la <strong>taxonomie de Bloom</strong> et axées sur la réflexion et la créativité.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAXONOMIE DE BLOOM -->
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 my-6">
+          <p class="font-bold text-gray-700 text-sm mb-4">Les niveaux de la taxonomie de Bloom révisée</p>
+          <div class="flex flex-wrap gap-2">
+            <div class="bg-green-100 border border-green-300 rounded-lg px-3 py-2 text-xs font-medium text-green-800">1. Connaître</div>
+            <div class="text-gray-400 flex items-center">→</div>
+            <div class="bg-green-100 border border-green-300 rounded-lg px-3 py-2 text-xs font-medium text-green-800">2. Comprendre</div>
+            <div class="text-gray-400 flex items-center">→</div>
+            <div class="bg-blue-100 border border-blue-300 rounded-lg px-3 py-2 text-xs font-medium text-blue-800">3. Appliquer</div>
+            <div class="text-gray-400 flex items-center">→</div>
+            <div class="bg-orange-100 border border-orange-300 rounded-lg px-3 py-2 text-xs font-medium text-orange-800">4. Analyser</div>
+            <div class="text-gray-400 flex items-center">→</div>
+            <div class="bg-red-100 border border-red-300 rounded-lg px-3 py-2 text-xs font-medium text-red-800">5. Évaluer</div>
+            <div class="text-gray-400 flex items-center">→</div>
+            <div class="bg-purple-100 border border-purple-300 rounded-lg px-3 py-2 text-xs font-medium text-purple-800">6. Créer</div>
+          </div>
+          <p class="text-xs text-gray-600 mt-3 leading-relaxed">Les chatbots sont généralement efficaces pour les niveaux <strong>inférieurs</strong> (1–3 : Connaître, Comprendre, Appliquer). Ils montrent davantage de limites dans les tâches relevant des niveaux <strong>supérieurs</strong> (4–6 : Analyser, Évaluer, Créer).</p>
+        </div>
+
+        <!-- CORRECTION PAR IA -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-5 my-6">
+          <p class="font-bold text-gray-700 text-sm mb-3">Un enseignant pourrait-il corriger des copies d'élèves aidé d'un chatbot ?</p>
+          <p class="text-sm text-gray-700 mb-3">Il est possible de demander à l'algorithme de produire une grille de correction, d'attribuer une note à un texte et de proposer des pistes d'amélioration. Cependant, plusieurs points d'attention s'imposent :</p>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">⚠</span>Les évaluations des élèves peuvent constituer des «&nbsp;données personnelles&nbsp;» au sens du RGPD, ce qui est incompatible avec l'absence de transparence dans la gestion des données de certains chatbots.</li>
+            <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">⚠</span>Les chatbots généralistes actuels ne sont pas fiables et possèdent des biais liés aux données d'entraînement.</li>
+            <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">⚠</span>Si certaines applications de l'IA peuvent être une aide à la décision, le contrôle par l'enseignant reste primordial.</li>
+            <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">⚠</span>Le caractère spiralaire de l'apprentissage n'est pas pris en compte par l'algorithme.</li>
+            <li class="flex items-start gap-2"><span class="text-red-500 font-bold mt-0.5">⚠</span>Les algorithmes ne présentent aucune empathie, ne tiennent pas compte du contexte dans lequel l'évaluation est effectuée.</li>
+          </ul>
+        </div>
+      </section>
+
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="w-full lg:w-72 shrink-0 space-y-4">
+
+      <button onclick="goRandom()" class="btn-random">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+        Au hasard !
+      </button>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Dans ce chapitre</h3>
+        <nav class="space-y-1">
+          <a href="#capabilities" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1.5 px-2 rounded-lg hover:bg-blue-50 transition-colors"><span class="text-[#003082] font-bold text-xs w-6">5.1</span> Ce que peut faire une IA générative</a>
+          <a href="#apprenant" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1.5 px-2 rounded-lg hover:bg-blue-50 transition-colors"><span class="text-[#003082] font-bold text-xs w-6">5.2</span> L'apprenant et le chatbot</a>
+          <a href="#enseignant" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1.5 px-2 rounded-lg hover:bg-blue-50 transition-colors"><span class="text-[#003082] font-bold text-xs w-6">5.3</span> L'enseignant et le chatbot</a>
+          <a href="#precautions" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1.5 px-2 rounded-lg hover:bg-blue-50 transition-colors"><span class="text-[#003082] font-bold text-xs w-6">5.4</span> Précautions d'utilisation</a>
+        </nav>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Navigation</h3>
+        <div class="space-y-2">
+          <p class="text-xs text-gray-400 font-semibold uppercase">Section précédente</p>
+          <a href="section-4-enseignement.html" class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-gray-300 text-gray-700 flex items-center justify-center text-xs font-bold shrink-0">4</span>
+            <span class="text-sm font-medium text-gray-600 group-hover:text-[#003082]">← Enseignement</span>
+          </a>
+          <p class="text-xs text-gray-400 font-semibold uppercase mt-3">Section suivante</p>
+          <a href="section-6-ressources.html" class="flex items-center gap-2 p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">6</span>
+            <span class="text-sm font-medium text-[#003082] group-hover:underline">Ressources →</span>
+          </a>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="table-des-matieres.html" class="flex items-center gap-2 text-sm text-gray-500 hover:text-[#003082] transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+            Retour à l'index
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Outils cités</h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5 font-bold">·</span>ChatGPT (OpenAI)</li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5 font-bold">·</span>Dall·E &amp; Midjourney (images)</li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5 font-bold">·</span>Duolingo &amp; Khan Academy</li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5 font-bold">·</span>Microsoft Copilot</li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5 font-bold">·</span>Poe, AgentGPT, NovelAI</li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-0.5 font-bold">·</span>Gemini AI (Google)</li>
+        </ul>
+      </div>
+
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <h3 class="text-xs font-bold text-red-700 uppercase tracking-widest mb-3">Vigilances clés</h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5">⚠</span>Vérifier l'âge minimum d'utilisation</li>
+          <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5">⚠</span>L'IA peut «&nbsp;halluciner&nbsp;» des faits</li>
+          <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5">⚠</span>RGPD applicable aux données d'élèves</li>
+          <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5">⚠</span>Favoriser la taxonomie de Bloom niveaux 4–6</li>
+        </ul>
+      </div>
+
+    </aside>
+  </div>
+</main>
+
+<footer id="footer-root" class="bg-[#003082] text-blue-200 py-8 mt-4"></footer>
+<script src="footer.js"></script>
+
+<!-- ══════════════════════════════════════════════════════════════
+     DECISION TREE SCRIPT
+     ══════════════════════════════════════════════════════════════ -->
+<script>
+(function () {
+  /* ── Data ───────────────────────────────────────────────── */
+  const STEPS = {
+    q1: {
+      question: 'La véracité de la production est-elle importante pour cet usage ?',
+      hint: 'Ex. : générer un brouillon créatif (non) vs. fournir des faits vérifiables (oui)',
+      step: 1,
+      yes: 'q2',
+      no:  'ok'
+    },
+    q2: {
+      question: 'Avez-vous l\'expertise nécessaire pour vérifier la véracité des informations produites ?',
+      hint: 'Êtes-vous en mesure de détecter les erreurs ou « hallucinations » de l\'IA dans ce domaine ?',
+      step: 2,
+      yes: 'q3',
+      no:  'ko'
+    },
+    q3: {
+      question: 'Êtes-vous prêt·e à endosser la responsabilité en cas d\'erreur de l\'IA ?',
+      hint: 'L\'enseignant reste garant de l\'information transmise aux apprenants.',
+      step: 3,
+      yes: 'warn',
+      no:  'ko'
+    }
+  };
+
+  const RESULTS = {
+    ok: {
+      type: 'ok',
+      icon: '✓',
+      title: 'Utilisation possible',
+      text: 'La véracité n\'étant pas un critère critique pour cet usage, vous pouvez utiliser une IA générative de façon sereine. Veillez tout de même à encadrer son usage avec les apprenants.',
+      color: 'dt-result-ok',
+      iconBg: 'bg-green-600'
+    },
+    warn: {
+      type: 'warn',
+      icon: '⚠',
+      title: 'Utilisation possible avec précautions',
+      text: 'Vous pouvez utiliser une IA générative, à condition de vérifier systématiquement les productions et d\'informer les apprenants des limites et risques de l\'outil.',
+      color: 'dt-result-warn',
+      iconBg: 'bg-blue-500'
+    },
+    ko: {
+      type: 'ko',
+      icon: '✗',
+      title: 'Utilisation déconseillée',
+      text: 'Sans expertise suffisante pour vérifier les productions de l\'IA, ou sans acceptation de la responsabilité en cas d\'erreur, l\'utilisation d\'une IA générative dans ce contexte comporte des risques importants.',
+      color: 'dt-result-ko',
+      iconBg: 'bg-red-600'
+    }
+  };
+
+  /* ── State ──────────────────────────────────────────────── */
+  let history = [];   // array of { stepId, answer }
+
+  /* ── DOM refs ───────────────────────────────────────────── */
+  const wrap     = document.getElementById('dt-wrap');
+  const progress = document.getElementById('dt-progress');
+  const resetBtn = document.getElementById('dt-reset');
+
+  /* ── Render helpers ─────────────────────────────────────── */
+  function setProgress(pct) {
+    progress.style.width = pct + '%';
+  }
+
+  function trailHTML() {
+    if (!history.length) return '';
+    const lines = history.map(h => {
+      const s = STEPS[h.stepId];
+      return `<span>${s ? s.question.substring(0, 48) + '…' : ''}</span> → <span style="color:#003082">${h.answer === 'yes' ? 'OUI' : 'NON'}</span>`;
+    });
+    return `<div class="dt-path-trail mt-4 pt-4 border-t border-gray-100 space-y-1">${lines.map(l => `<div>${l}</div>`).join('')}</div>`;
+  }
+
+  function render(key) {
+    wrap.innerHTML = '';
+
+    // ── Question step ──
+    if (STEPS[key]) {
+      const s = STEPS[key];
+      setProgress(((s.step - 1) / 3) * 100 + 11);
+      resetBtn.style.display = history.length ? 'flex' : 'none';
+
+      const div = document.createElement('div');
+      div.className = 'dt-step';
+      div.innerHTML = `
+        <div class="mb-5">
+          <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Question ${s.step} / 3</p>
+          <p class="text-gray-900 font-semibold text-base leading-snug">${s.question}</p>
+          <p class="text-xs text-gray-500 mt-2 leading-relaxed">${s.hint}</p>
+        </div>
+        <div class="flex gap-3 flex-wrap">
+          <button class="dt-btn dt-btn-yes" data-next="${s.yes}" data-ans="yes">
+            <svg style="width:1rem;height:1rem" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            OUI
+          </button>
+          <button class="dt-btn dt-btn-no" data-next="${s.no}" data-ans="no">
+            <svg style="width:1rem;height:1rem" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            NON
+          </button>
+        </div>
+        ${trailHTML()}
+      `;
+      div.querySelectorAll('.dt-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          history.push({ stepId: key, answer: btn.dataset.ans });
+          render(btn.dataset.next);
+        });
+      });
+      wrap.appendChild(div);
+      return;
+    }
+
+    // ── Result ──
+    if (RESULTS[key]) {
+      const r = RESULTS[key];
+      setProgress(100);
+      resetBtn.style.display = 'flex';
+
+      const div = document.createElement('div');
+      div.className = 'dt-step';
+      div.innerHTML = `
+        <div class="rounded-xl border-2 p-5 ${r.color}">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-9 h-9 rounded-full ${r.iconBg} text-white flex items-center justify-center font-bold text-lg">${r.icon}</span>
+            <p class="font-bold text-gray-800 text-base">${r.title}</p>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed">${r.text}</p>
+        </div>
+        ${trailHTML()}
+      `;
+      wrap.appendChild(div);
+      return;
+    }
+  }
+
+  /* ── Reset ──────────────────────────────────────────────── */
+  resetBtn.addEventListener('click', () => {
+    history = [];
+    render('q1');
+  });
+
+  /* ── Boot ───────────────────────────────────────────────── */
+  render('q1');
+})();
+</script>
+
+<script>
+  const pages = ['section-1-introduction.html','section-2-definitions.html','section-3-enjeux.html','section-4-enseignement.html','section-5-generatives.html','section-6-ressources.html'];
+  function goRandom() { window.location.href = pages[Math.floor(Math.random() * pages.length)]; }
+</script>
+<script src="motion.js"></script>
+</body>
+</html>

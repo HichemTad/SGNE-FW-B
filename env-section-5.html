@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="env">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Éduquer au numérique responsable — Impact environnemental du numérique · Fédération Wallonie-Bruxelles">
+  <title>Éduquer au numérique responsable — Impact environnemental · FW-B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero { background: linear-gradient(135deg, #1C4A2A 0%, #2D7040 100%); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+    .prose p { margin-bottom: 1.25rem; line-height: 1.8; }
+    .prose h3 { font-size: 1.15rem; font-weight: 700; color: #1C4A2A; margin-top: 2rem; margin-bottom: 0.75rem; }
+    blockquote { border-left: 4px solid #2D7040; background: #f0faf2; padding: 1rem 1.25rem; border-radius: 0 0.5rem 0.5rem 0; margin: 1.5rem 0; color: #374151; }
+  </style>
+  <link rel="stylesheet" href="ds.css">
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-green-800 text-white px-4 py-2 rounded-md z-[100] text-sm font-medium">Aller au contenu principal</a>
+
+<nav id="nav-root" class="sticky top-0 z-50 bg-green-900 shadow-xl" role="navigation" aria-label="Navigation principale"></nav>
+<script src="navbar.js"></script>
+
+<header class="gradient-hero py-12 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center gap-3 mb-4">
+      <a href="env-table-des-matieres.html" class="text-green-200 hover:text-white text-sm flex items-center gap-1 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        Index du chapitre
+      </a>
+    </div>
+    <div class="flex items-start gap-5">
+      <div class="w-20 h-20 bg-white/15 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-4xl font-black text-white/80">5</span>
+      </div>
+      <div>
+        <p class="text-green-300 text-sm font-semibold uppercase tracking-widest mb-1">Focus · Impact environnemental</p>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white">Éduquer au numérique responsable</h1>
+        <p class="text-green-200 mt-2 text-base">Éco-gestes, stockage des données, recherche et communication</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-2 mt-6">
+      <a href="#energie" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">5.1 Énergie</a>
+      <a href="#donnees" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">5.2 Données</a>
+      <a href="#recherche" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">5.3 Recherche</a>
+      <a href="#communication" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">5.4 Communication</a>
+    </div>
+  </div>
+  <img src="assets/robot-playful.svg" alt="" aria-hidden="true" class="robot-hero robot-flipped">
+</header>
+
+<main id="main" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    <article class="flex-1 min-w-0">
+
+      <div class="flex items-center gap-3 mb-8 flex-wrap">
+      </div>
+
+      <!-- Intro note -->
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-5 mb-8 flex gap-4 items-start">
+        <svg class="w-6 h-6 text-green-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22c0 0-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>
+          <p class="font-bold text-green-800 text-base mb-1">Éduquer au numérique responsable</p>
+          <p class="text-sm text-gray-700 leading-relaxed">Dans le cadre général de l'éducation au numérique, une approche réflexive de l'usage du numérique s'est développée, incluant les préoccupations liées au développement durable. Le Cadre européen DigComp 2.1 reprend comme compétence à part entière la capacité à comprendre l'impact environnemental des technologies numériques.</p>
+        </div>
+      </div>
+
+      <div class="prose max-w-none text-gray-800">
+
+        <h3 id="energie">5.1 Consommer l'énergie de manière responsable</h3>
+
+        <p>Quand les attendus d'apprentissage évoquent l'usage d'internet et de matériel numérique, les élèves peuvent être sensibilisés à la <strong>consommation énergétique responsable</strong>. Voici quelques éco-gestes à enseigner :</p>
+
+      </div>
+
+      <!-- Éco-gestes energy -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-6">
+        <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-3">
+          <span class="text-green-600 text-xl shrink-0">🔌</span>
+          <p class="text-sm text-gray-700">Préférer les connexions moins énergivores : <strong>filaire &gt; wifi &gt; 4G/5G</strong></p>
+        </div>
+        <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-3">
+          <span class="text-green-600 text-xl shrink-0">📱</span>
+          <p class="text-sm text-gray-700">Limiter le nombre de programmes ou d'applications ouverts en même temps</p>
+        </div>
+        <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-3">
+          <span class="text-green-600 text-xl shrink-0">📍</span>
+          <p class="text-sm text-gray-700">Désactiver la géolocalisation, la 4G, le wifi, le Bluetooth quand leur usage n'est pas nécessaire</p>
+        </div>
+        <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-3">
+          <span class="text-green-600 text-xl shrink-0">⚡</span>
+          <p class="text-sm text-gray-700">Utiliser les versions « Lite » des applications pour limiter la consommation de données et batterie</p>
+        </div>
+        <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-3">
+          <span class="text-green-600 text-xl shrink-0">🔋</span>
+          <p class="text-sm text-gray-700">Activer le mode économiseur de batterie du smartphone (ferme ~35 applications tournant en arrière-plan)</p>
+        </div>
+        <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-3">
+          <span class="text-green-600 text-xl shrink-0">🖥️</span>
+          <p class="text-sm text-gray-700">Éteindre le matériel quand il n'est plus utilisé — débrancher les chargeurs une fois les appareils chargés</p>
+        </div>
+        <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-3">
+          <span class="text-green-600 text-xl shrink-0">🌐</span>
+          <p class="text-sm text-gray-700">Éviter l'ouverture de plusieurs onglets simultanés et fermer ceux qui ne sont plus utilisés</p>
+        </div>
+        <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-3">
+          <span class="text-green-600 text-xl shrink-0">🛑</span>
+          <p class="text-sm text-gray-700">Utiliser un bloqueur de publicités pour limiter le déclenchement d'animations et vidéos non sollicitées</p>
+        </div>
+      </div>
+
+      <div class="prose max-w-none text-gray-800">
+
+        <h3 id="donnees">5.2 Utiliser et stocker des données</h3>
+
+        <p>Dans une démarche de développement durable, il est recommandé de ne stocker sur un <strong>cloud que des données utiles</strong> pour minimiser l'utilisation des data centers dont l'impact environnemental est important.</p>
+
+        <p>Il est ainsi recommandé, pour limiter la consommation énergétique, de sauvegarder les fichiers de préférence sur un <strong>matériel physique</strong> (ordinateur, clé USB, disque dur externe) pour les données non-sensibles.</p>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 my-4 not-prose">
+          <p class="text-sm font-semibold text-amber-800 mb-2">⚠️ Remarque importante</p>
+          <p class="text-sm text-gray-700">Cette recommandation vaut particulièrement pour les données non-sensibles. Il est préférable de stocker les données sensibles dans un cloud sécurisé, le matériel physique étant davantage sujet au vol, à la perte et à la détérioration.</p>
+        </div>
+
+        <h3 id="recherche">5.3 Développer une stratégie de recherche en ligne</h3>
+
+        <p>L'utilisation d'une stratégie de recherche adaptée, en mobilisant moins de volume de données, concourt à réduire l'impact environnemental. Quelques gestes concrets :</p>
+
+      </div>
+
+      <!-- Search strategy -->
+      <ul class="space-y-3 my-6">
+        <li class="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4">
+          <span class="w-8 h-8 rounded-full bg-green-100 text-green-700 font-bold text-sm flex items-center justify-center shrink-0">1</span>
+          <div>
+            <p class="font-semibold text-gray-800 text-sm">Entrer directement l'URL d'un site</p>
+            <p class="text-xs text-gray-500">Préférer l'entrée directe dans la barre de navigation plutôt que de passer par un moteur de recherche</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4">
+          <span class="w-8 h-8 rounded-full bg-green-100 text-green-700 font-bold text-sm flex items-center justify-center shrink-0">2</span>
+          <div>
+            <p class="font-semibold text-gray-800 text-sm">Créer des favoris</p>
+            <p class="text-xs text-gray-500">Lister les sites régulièrement visités pour éviter des recherches répétées</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4">
+          <span class="w-8 h-8 rounded-full bg-green-100 text-green-700 font-bold text-sm flex items-center justify-center shrink-0">3</span>
+          <div>
+            <p class="font-semibold text-gray-800 text-sm">Utiliser des mots-clés précis</p>
+            <p class="text-xs text-gray-500">Ou la recherche avancée pour favoriser une recherche efficace du premier coup</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4">
+          <span class="w-8 h-8 rounded-full bg-green-100 text-green-700 font-bold text-sm flex items-center justify-center shrink-0">4</span>
+          <div>
+            <p class="font-semibold text-gray-800 text-sm">Minimiser le recours à l'assistant vocal</p>
+            <p class="text-xs text-gray-500">Plus énergivore que la saisie textuelle</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="prose max-w-none text-gray-800">
+
+        <h3 id="communication">5.4 Communiquer avec les outils numériques</h3>
+
+        <p>L'utilisation de messageries, de courriel et d'outils de communication numérique peut aussi faire l'objet d'une pratique responsable. Bonnes pratiques pour les courriels :</p>
+
+        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+          <li>Vérifier la nécessité de rédiger et envoyer un courriel</li>
+          <li>Cibler les interlocuteurs pour éviter des destinataires superflus</li>
+          <li>Veiller à ce que les éléments graphiques (signature) ne soient pas exagérément lourds</li>
+          <li>Privilégier des pièces jointes les moins volumineuses possibles</li>
+          <li>Se désabonner des newsletters inutiles — supprimer les anciennes adresses mails</li>
+          <li>Questionner l'utilité du mode vidéo lors de communications en ligne</li>
+        </ul>
+
+        <p>La plupart des <strong>réseaux sociaux sont énergivores</strong> car ils utilisent un grand nombre de données et sont fondés sur le streaming vidéo. Des éco-gestes peuvent réduire l'impact :</p>
+
+        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+          <li>Diminuer le temps passé sur les différents réseaux</li>
+          <li>Désactiver la lecture automatique des vidéos sur les fils d'actualité</li>
+          <li>Utiliser les versions « Lite » des applications des réseaux sociaux</li>
+          <li>Définir une limite de durée d'utilisation quotidienne dans les paramètres</li>
+        </ul>
+
+      </div>
+
+      <!-- Annexe poster -->
+      <div class="bg-green-700 rounded-2xl p-6 my-8 text-white">
+        <h3 class="font-bold text-lg mb-4">🌱 Les éco-gestes à adopter en classe</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div class="bg-white/10 rounded-xl p-3 text-center text-sm">Connexion filaire plutôt que wifi ou 4G/5G</div>
+          <div class="bg-white/10 rounded-xl p-3 text-center text-sm">Éteindre le matériel inutilisé</div>
+          <div class="bg-white/10 rounded-xl p-3 text-center text-sm">Utiliser un bloqueur de publicités</div>
+          <div class="bg-white/10 rounded-xl p-3 text-center text-sm">Débrancher les chargeurs des appareils chargés</div>
+          <div class="bg-white/10 rounded-xl p-3 text-center text-sm">Désactiver bluetooth et localisation</div>
+          <div class="bg-white/10 rounded-xl p-3 text-center text-sm">Évaluer la nécessité d'envoyer un courriel</div>
+          <div class="bg-white/10 rounded-xl p-3 text-center text-sm">Limiter les vidéos en haute définition</div>
+          <div class="bg-white/10 rounded-xl p-3 text-center text-sm">Désactiver la lecture auto des vidéos</div>
+          <div class="bg-white/10 rounded-xl p-3 text-center text-sm">Sauvegarder sur support physique plutôt que cloud</div>
+        </div>
+      </div>
+
+
+    </article>
+
+    <aside class="w-full lg:w-72 shrink-0 space-y-6">
+
+      <button onclick="goRandom()" class="btn-random">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+        Au hasard !
+      </button>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Navigation</h3>
+        <div class="space-y-2">
+          <a href="env-section-4.html" class="flex items-center gap-2 p-2 rounded-lg hover:bg-green-50 transition-colors group">
+            <span class="w-6 h-6 rounded bg-green-100 text-green-700 flex items-center justify-center text-xs font-bold shrink-0">4</span>
+            <span class="text-sm text-gray-600 group-hover:text-green-700">← Agir à l'établissement</span>
+          </a>
+          <a href="env-section-6.html" class="flex items-center gap-2 p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-green-700 text-white flex items-center justify-center text-xs font-bold shrink-0">6</span>
+            <span class="text-sm font-medium text-green-700 group-hover:underline">En savoir plus →</span>
+          </a>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="env-table-des-matieres.html" class="flex items-center gap-2 text-sm text-gray-500 hover:text-green-700 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+            Retour à l'index
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5">
+        <h3 class="text-xs font-bold text-amber-700 uppercase tracking-widest mb-3">Éco-gestes clés</h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Filaire plutôt que wifi ou 4G/5G</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Éteindre le matériel inutilisé</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Sauvegarder sur support physique</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Limiter les vidéos en haute définition</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Désactiver les fonctionnalités inutilisées</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
+        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Sections dans ce chapitre</p>
+        <div class="space-y-1">
+          <a href="#energie" class="flex items-center gap-2 text-sm text-gray-600 hover:text-green-700 px-2 py-1.5 rounded-lg hover:bg-green-50 transition-colors">5.1 — Consommer l'énergie</a>
+          <a href="#donnees" class="flex items-center gap-2 text-sm text-gray-600 hover:text-green-700 px-2 py-1.5 rounded-lg hover:bg-green-50 transition-colors">5.2 — Utiliser et stocker</a>
+          <a href="#recherche" class="flex items-center gap-2 text-sm text-gray-600 hover:text-green-700 px-2 py-1.5 rounded-lg hover:bg-green-50 transition-colors">5.3 — Stratégie de recherche</a>
+          <a href="#communication" class="flex items-center gap-2 text-sm text-gray-600 hover:text-green-700 px-2 py-1.5 rounded-lg hover:bg-green-50 transition-colors">5.4 — Communiquer</a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</main>
+
+<footer id="footer-root" class="bg-green-900 text-green-200 py-8 mt-4"></footer>
+<script src="footer.js"></script>
+<script>
+  const pages = ['env-section-1.html','env-section-2.html','env-section-3.html','env-section-4.html','env-section-5.html','env-section-6.html'];
+  function goRandom() { window.location.href = pages[Math.floor(Math.random() * pages.length)]; }
+</script>
+<script src="motion.js"></script>
+</body>
+</html>

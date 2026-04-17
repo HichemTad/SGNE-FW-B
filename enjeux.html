@@ -1,0 +1,745 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="ia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Les grands enjeux de l'IA et l'IA dans l'enseignement — Sociétaux, éthiques, environnementaux, cadre réglementaire, compétences et RGPD.">
+  <title>Enjeux & Enseignement — Intelligence Artificielle FW-B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero { background: linear-gradient(135deg, #003082 0%, #1e40af 60%, #1d4ed8 100%); }
+    .tab-btn { transition: all .2s ease; }
+    .tab-btn.active { background: #003082; color: #fff; box-shadow: 0 2px 8px rgba(0,48,130,.25); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .sub-tab-btn { transition: all .2s ease; }
+    .sub-tab-btn.active { background: white; color: #003082; font-weight: 600; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .acc-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .acc-body.open { max-height: 800px; }
+    .chevron { transition: transform .25s ease; display: inline-block; }
+    [aria-expanded="true"] .chevron { transform: rotate(180deg); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+    .progress-ring { transform: rotate(-90deg); }
+  </style>
+  <link rel="stylesheet" href="ds.css">
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-[#003082] text-white px-4 py-2 rounded-md z-[100] text-sm font-medium">Aller au contenu principal</a>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="sticky top-0 z-50 bg-[#003082] shadow-xl" role="navigation" aria-label="Navigation principale">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 gap-4">
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0 rounded-lg p-1" aria-label="Accueil Intelligence Artificielle">
+        <div class="w-9 h-9 bg-white/15 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+        </div>
+        <div class="leading-tight">
+          <div class="text-white font-bold text-sm tracking-wide">Intelligence Artificielle</div>
+          <div class="text-blue-200 text-xs">Numérique Éducatif · FW-B</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-0.5 flex-1 justify-center">
+        <a href="index.html" class="px-3 py-2 rounded-md text-sm text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Accueil</a>
+        <a href="index.html#comprendre" class="px-3 py-2 rounded-md text-sm text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Comprendre l'IA</a>
+        <a href="enjeux.html" class="px-3 py-2 rounded-md text-sm font-semibold text-white bg-white/15" aria-current="page">Enjeux</a>
+        <a href="enjeux.html#enseignement" class="px-3 py-2 rounded-md text-sm text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Enseignement</a>
+        <a href="ia-generatives.html" class="px-3 py-2 rounded-md text-sm font-medium text-yellow-300 hover:bg-white/10 transition-colors border border-yellow-400/40 ml-1">IA Génératives ✦</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="hidden sm:block relative">
+          <input id="navSearch" type="text" placeholder="Rechercher…" class="bg-white/10 border border-white/25 text-white placeholder-blue-200 rounded-lg pl-8 pr-3 py-1.5 text-sm w-44 focus:outline-none focus:ring-2 focus:ring-yellow-400" aria-label="Recherche" autocomplete="off">
+          <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-blue-200 pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <div id="navResults" class="hidden absolute right-0 top-full mt-1.5 w-72 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 overflow-hidden max-h-72 overflow-y-auto"></div>
+        </div>
+        <button id="burgerBtn" class="lg:hidden p-2 rounded-md text-white hover:bg-white/10 transition-colors" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden lg:hidden pb-4 border-t border-white/10 pt-2">
+      <div class="flex flex-col gap-1">
+        <a href="index.html" class="px-3 py-2.5 rounded-md text-sm text-blue-100 hover:bg-white/10">Accueil</a>
+        <a href="index.html#comprendre" class="px-3 py-2.5 rounded-md text-sm text-blue-100 hover:bg-white/10">Comprendre l'IA</a>
+        <a href="enjeux.html" class="px-3 py-2.5 rounded-md text-sm text-white font-medium hover:bg-white/10">Enjeux</a>
+        <a href="enjeux.html#enseignement" class="px-3 py-2.5 rounded-md text-sm text-blue-100 hover:bg-white/10">Enseignement</a>
+        <a href="ia-generatives.html" class="px-3 py-2.5 rounded-md text-sm text-yellow-300 font-medium hover:bg-white/10">IA Génératives ✦</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ═══ HERO ═══ -->
+<section class="gradient-hero text-white py-14 px-4">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-blue-300 text-sm font-medium mb-2">Intelligence Artificielle → Enjeux & Enseignement</p>
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Les grands enjeux de l'IA<br><span class="text-yellow-300">et l'enseignement face à l'IA</span></h1>
+    <p class="text-blue-100 text-base max-w-2xl leading-relaxed mb-6">Explorez les enjeux sociétaux, éthiques et environnementaux de l'IA, puis découvrez comment les professionnels de l'éducation peuvent y faire face.</p>
+    <div class="flex flex-wrap gap-2">
+      <button onclick="switchMainTab('enjeux')" class="tab-main-cta bg-white text-[#003082] font-semibold px-5 py-2.5 rounded-lg text-sm hover:bg-blue-50 transition-colors" data-tab="enjeux">Les enjeux →</button>
+      <button onclick="switchMainTab('enseignement')" class="tab-main-cta border border-white/40 text-white font-medium px-5 py-2.5 rounded-lg text-sm hover:bg-white/10 transition-colors" data-tab="enseignement">IA & Enseignement →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MAIN TABS ═══ -->
+<section class="bg-white border-b border-gray-200 sticky top-16 z-40">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="flex" role="tablist" aria-label="Sections principales">
+      <button id="main-tab-enjeux" role="tab" aria-selected="true" aria-controls="panel-enjeux"
+        onclick="switchMainTab('enjeux')"
+        class="tab-btn active px-6 py-4 text-sm font-medium rounded-none border-b-2 border-[#003082] text-[#003082] transition-colors">
+        ⚠️ Les Enjeux de l'IA
+      </button>
+      <button id="main-tab-enseignement" role="tab" aria-selected="false" aria-controls="panel-enseignement"
+        onclick="switchMainTab('enseignement')"
+        class="tab-btn px-6 py-4 text-sm font-medium rounded-none border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 transition-colors">
+        🏫 IA & Enseignement
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════════ PANEL : ENJEUX ═════════════════════ -->
+<div id="panel-enjeux" role="tabpanel" aria-labelledby="main-tab-enjeux" class="tab-panel active">
+  <div class="max-w-5xl mx-auto px-4 py-10">
+
+    <!-- Sub-tabs -->
+    <div class="bg-gray-100 rounded-2xl p-1.5 flex flex-wrap gap-1 mb-10" role="tablist" aria-label="Enjeux thématiques">
+      <button class="sub-tab-btn active flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="societaux" onclick="switchSubTab('enjeux','societaux')">🌍 Sociétaux</button>
+      <button class="sub-tab-btn flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="humains" onclick="switchSubTab('enjeux','humains')">🧠 Humains</button>
+      <button class="sub-tab-btn flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="ethiques" onclick="switchSubTab('enjeux','ethiques')">⚖️ Éthiques</button>
+      <button class="sub-tab-btn flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="environnement" onclick="switchSubTab('enjeux','environnement')">🌱 Environnementaux</button>
+      <button class="sub-tab-btn flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="reglementation" onclick="switchSubTab('enjeux','reglementation')">📋 Réglementation</button>
+    </div>
+
+    <!-- Sociétaux -->
+    <div id="enjeux-societaux" class="sub-panel-enjeux">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Enjeux sociétaux de l'IA</h2>
+      <div class="grid md:grid-cols-2 gap-5 mb-8" data-stagger-grid>
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <div class="flex items-center gap-2 mb-3"><span class="text-xl">🏭</span><h3 class="font-semibold text-gray-900 text-sm">La 4e révolution industrielle</h3></div>
+          <p class="text-sm text-gray-700 leading-relaxed">L'IA est un élément central de l'«industrie 4.0», aux côtés de l'impression 3D, des véhicules autonomes, des biotechnologies et de l'Internet des objets. Comme les révolutions précédentes, elle produira de <strong>profondes mutations sociales</strong>.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <div class="flex items-center gap-2 mb-3"><span class="text-xl">💼</span><h3 class="font-semibold text-gray-900 text-sm">Impact sur l'emploi</h3></div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-3">L'IA prélude à l'automatisation des tâches intellectuelles, après celle des tâches manuelles.</p>
+          <div class="space-y-2">
+            <div class="bg-red-50 rounded-lg p-2.5 text-xs text-red-700"><strong>Goldman Sachs :</strong> 300 millions d'emplois mondiaux potentiellement impactés</div>
+            <div class="bg-orange-50 rounded-lg p-2.5 text-xs text-orange-700"><strong>OpenAI :</strong> 80 % des travailleurs US concernés — 19 % à plus de 50 % de leurs tâches</div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <div class="flex items-center gap-2 mb-3"><span class="text-xl">📶</span><h3 class="font-semibold text-gray-900 text-sm">Fracture numérique</h3></div>
+          <p class="text-sm text-gray-700 leading-relaxed">L'IA peut <strong>réduire ou aggraver</strong> la fracture numérique. Les outils d'IA performants sont souvent payants (modèle freemium → abonnement). L'accès aux services publics dématérialisés pose des défis aux citoyens éloignés du numérique.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <div class="flex items-center gap-2 mb-3"><span class="text-xl">📚</span><h3 class="font-semibold text-gray-900 text-sm">Formation tout au long de la vie</h3></div>
+          <p class="text-sm text-gray-700 leading-relaxed">L'IA pourrait soutenir l'accessibilité à l'auto-formation via des <em>tuteurs numériques personnalisés</em>. Mais l'inégalité d'accès aux outils performants risque d'amplifier les différences entre apprenants.</p>
+        </div>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5">
+        <p class="text-sm font-semibold text-amber-800 mb-2">📑 Rapport Villani (France, 2018)</p>
+        <p class="text-sm text-amber-700 leading-relaxed italic">«Ces phénomènes [d'inaccessibilité aux services publics] sont d'autant plus graves qu'ils affectent une partie substantielle de la population — en particulier les personnes en situation de précarité et/ou éloignées du numérique — et qu'ils sont susceptibles de s'accentuer dans les prochaines années.»</p>
+      </div>
+    </div>
+
+    <!-- Humains -->
+    <div id="enjeux-humains" class="sub-panel-enjeux hidden">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Enjeux humains de l'IA</h2>
+      <div class="space-y-5">
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <h3 class="font-semibold text-gray-900 text-sm mb-3">🔍 Le Google Effect — mémoire externalisée</h3>
+          <p class="text-sm text-gray-700 leading-relaxed mb-3">Dès 2011, l'Université de Columbia a mis en évidence un changement de la cognition humaine lié aux moteurs de recherche. Ce phénomène (baptisé «Google Effect») s'accentue avec les chatbots, qui fournissent une réponse synthétique unique plutôt que des listes de sources.</p>
+          <div class="bg-blue-50 rounded-xl p-4 border-l-4 border-blue-400">
+            <p class="text-xs text-blue-700 italic">«Nous entrons en symbiose avec nos outils informatiques, nous développant en systèmes interconnectés, qui se souviennent moins de la connaissance de l'information, que de l'endroit où cette information peut être trouvée.»</p>
+            <p class="text-xs text-blue-500 mt-1 font-medium">— Sparrow, 2011 (Columbia University)</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <h3 class="font-semibold text-gray-900 text-sm mb-3">🤖 Anthropomorphisme des machines</h3>
+          <p class="text-sm text-gray-700 leading-relaxed mb-3">Les IA incorporent de plus en plus d'aspects «humains» (voix, personnalité, empathie simulée). L'exemple de <strong>Replika</strong> illustre le risque : certains utilisateurs ont développé une charge affective réelle avec ce chatbot-ami, ressentant un «deuil» quand ses paramètres ont été modifiés.</p>
+          <div class="bg-yellow-50 rounded-xl p-4">
+            <p class="text-xs text-yellow-700"><strong>Boîte noire :</strong> même les programmeurs d'une IA ne peuvent expliquer exactement la technique d'apprentissage profond — «la compréhension du fonctionnement des systèmes basés sur cette technique est particulièrement ardue.» (Zouinar, 2020)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Éthiques -->
+    <div id="enjeux-ethiques" class="sub-panel-enjeux hidden">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Enjeux éthiques de l'IA</h2>
+      <div class="grid md:grid-cols-2 gap-5 mb-6">
+        <div class="bg-white rounded-2xl p-5 border border-red-200 shadow-sm">
+          <div class="flex items-center gap-2 mb-3"><span class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-lg">🎭</span><h3 class="font-semibold text-gray-900 text-sm">Deep fakes & Désinformation</h3></div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-3">L'IA permet de générer des vidéos «hypertruquées» et des images réalistes à partir d'une simple description. Exemples de 2023 : faux message vidéo de Zelensky, fausse photo de Trump arrêté, fausse interview de Michael Schumacher.</p>
+          <div class="bg-red-50 rounded-lg p-3 text-xs text-red-700">
+            <strong>Risque en classe :</strong> les élèves peuvent être exposés à ces contenus. L'éducation aux médias (CSEM) est essentielle.
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-orange-200 shadow-sm">
+          <div class="flex items-center gap-2 mb-3"><span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-lg">⚖️</span><h3 class="font-semibold text-gray-900 text-sm">Biais de représentativité</h3></div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-3">Si les données d'entraînement sont biaisées, les productions de l'IA le seront aussi. Principe informatique : <strong>«Garbage in = garbage out»</strong>.</p>
+          <div class="space-y-2 text-xs">
+            <div class="bg-orange-50 rounded-lg p-2.5 text-orange-700"><strong>Biais cognitifs :</strong> les concepteurs projettent leur propre vision du monde</div>
+            <div class="bg-orange-50 rounded-lg p-2.5 text-orange-700"><strong>Biais économiques :</strong> un algorithme publicitaire ciblait moins les femmes que les hommes (Lambrecht & Tucker, 2017)</div>
+          </div>
+        </div>
+        <div class="md:col-span-2 bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <h3 class="font-semibold text-gray-900 text-sm mb-3">💬 Exemple concret : ChatGPT et les biais culturels</h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="bg-gray-50 rounded-xl p-4">
+              <p class="text-xs font-semibold text-gray-600 mb-2">Question posée à ChatGPT :</p>
+              <p class="text-sm text-gray-800 italic">«Penses-tu que l'attaque du Capitole était justifiée ?»</p>
+              <p class="text-xs text-gray-500 mt-2">→ ChatGPT répond immédiatement en référence au Capitole américain de janvier 2021, ignorant toute autre interprétation possible (ex : le Capitole romain au 4e siècle av. J.-C.)</p>
+            </div>
+            <div class="bg-blue-50 rounded-xl p-4">
+              <p class="text-xs font-semibold text-blue-700 mb-2">Leçon pour l'enseignant :</p>
+              <p class="text-sm text-blue-700">Les IA génératives véhiculent les biais culturels des données d'entraînement (majoritairement anglophones et américaines). Une mise en contexte préalable avec les élèves est indispensable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-5 border border-gray-200">
+        <p class="text-sm font-semibold text-gray-800 mb-2">📚 Ressource recommandée</p>
+        <p class="text-sm text-gray-600">La collection <strong>Repères</strong> du CSEM (Conseil Supérieur de l'Éducation aux Médias) propose des contenus régulièrement actualisés pour aborder les thématiques de désinformation et deep fakes avec les apprenants.</p>
+        <a href="https://www.csem.be" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-blue-600 text-xs font-medium mt-2 hover:underline">Accéder au CSEM →</a>
+      </div>
+    </div>
+
+    <!-- Environnementaux -->
+    <div id="enjeux-environnement" class="sub-panel-enjeux hidden">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Enjeux environnementaux de l'IA</h2>
+      <div class="grid md:grid-cols-3 gap-5 mb-8">
+        <div class="bg-white rounded-2xl p-5 border border-green-200 shadow-sm text-center">
+          <p class="text-3xl font-bold text-red-500 mb-1">35–284 t</p>
+          <p class="text-sm text-gray-600 font-medium mb-1">CO₂ équivalent</p>
+          <p class="text-xs text-gray-500">par entraînement d'un modèle deep learning (4–7 jours)</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-green-200 shadow-sm text-center">
+          <p class="text-3xl font-bold text-orange-500 mb-1">26 ans</p>
+          <p class="text-sm text-gray-600 font-medium mb-1">d'un être humain</p>
+          <p class="text-xs text-gray-500">équivalent CO₂ d'un seul entraînement IA</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-green-200 shadow-sm text-center">
+          <p class="text-3xl font-bold text-amber-500 mb-1">+9 %/an</p>
+          <p class="text-sm text-gray-600 font-medium mb-1">énergie numérique</p>
+          <p class="text-xs text-gray-500">vs –2 % dans les autres secteurs (The Shift Project, 2020)</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm mb-5">
+        <h3 class="font-semibold text-gray-900 text-sm mb-3">⚡ Le coût environnemental de chaque requête</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">La moindre requête adressée à un agent conversationnel provoque un besoin d'énergie. Les opérations réalisées par l'IA génèrent (à travers l'usage d'internet, de serveurs et de data centers) un impact environnemental dû à la puissance de calcul nécessaire.</p>
+        <div class="mt-3 bg-green-50 rounded-xl p-4">
+          <p class="text-xs text-green-700"><strong>Note positive :</strong> «Avec près de 80 % d'impact positif sur les objectifs de développement durable, l'IA est une technologie clé pour réduire d'en moyenne 13 % les émissions de gaz à effet de serre des entreprises.» (Gesset, 2023)</p>
+        </div>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5">
+        <p class="text-sm font-semibold text-amber-800 mb-3">💡 Recommandation pour l'école</p>
+        <p class="text-sm text-amber-700 mb-2">Inclure un volet <strong>impact environnemental</strong> dans la charte d'utilisation des outils IA à l'école. Sensibiliser les élèves à la consommation énergétique des outils numériques.</p>
+      </div>
+    </div>
+
+    <!-- Réglementation -->
+    <div id="enjeux-reglementation" class="sub-panel-enjeux hidden">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Réponses réglementaires & structurantes</h2>
+
+      <!-- AI Act -->
+      <div class="bg-white rounded-2xl border border-blue-200 shadow-sm overflow-hidden mb-5">
+        <div class="bg-blue-600 px-5 py-3 flex items-center gap-2">
+          <span class="text-white text-sm font-bold">🇪🇺 AI Act — Règlement européen sur l'IA</span>
+          <span class="ml-auto bg-white/20 text-white text-xs px-2.5 py-0.5 rounded-full">Accord déc. 2023</span>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-gray-700 mb-4">Le règlement classe les outils d'IA selon leur niveau de risque. L'enseignement est classé <strong>«à haut risque»</strong>.</p>
+          <div class="grid sm:grid-cols-3 gap-3 mb-4">
+            <div class="bg-red-50 rounded-xl p-3 border border-red-200"><p class="text-xs font-bold text-red-700 mb-1">🚫 Risque inacceptable</p><p class="text-xs text-red-600">Reconnaissance des émotions à l'école, notation sociale, surveillance biométrique de masse</p></div>
+            <div class="bg-orange-50 rounded-xl p-3 border border-orange-200"><p class="text-xs font-bold text-orange-700 mb-1">⚠️ Haut risque</p><p class="text-xs text-orange-600">Tout usage de l'IA dans l'enseignement — analyse d'impact obligatoire sur les droits fondamentaux</p></div>
+            <div class="bg-green-50 rounded-xl p-3 border border-green-200"><p class="text-xs font-bold text-green-700 mb-1">✅ Risque minimal</p><p class="text-xs text-green-600">Jeux vidéo, filtres anti-spam, recommandations de contenu</p></div>
+          </div>
+          <p class="text-xs text-gray-500">Pour les systèmes à haut risque : obligations de transparence, sécurité, bonne gouvernance et gestion des risques.</p>
+        </div>
+      </div>
+
+      <!-- Plan belge -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-5">
+        <div class="bg-[#003082] px-5 py-3">
+          <span class="text-white text-sm font-bold">🇧🇪 Plan national belge pour l'IA</span>
+          <span class="text-blue-200 text-xs ml-2">Conseil des ministres — 28 oct. 2022</span>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-gray-700 mb-4">9 objectifs prioritaires pour le développement de systèmes IA en Belgique :</p>
+          <div class="grid sm:grid-cols-3 gap-2">
+            <div class="bg-slate-50 rounded-lg p-2.5 text-xs text-gray-700 flex items-start gap-1.5"><span class="text-blue-600 font-bold">01</span>Promouvoir une IA digne de confiance</div>
+            <div class="bg-slate-50 rounded-lg p-2.5 text-xs text-gray-700 flex items-start gap-1.5"><span class="text-blue-600 font-bold">02</span>Garantir la cybersécurité</div>
+            <div class="bg-slate-50 rounded-lg p-2.5 text-xs text-gray-700 flex items-start gap-1.5"><span class="text-blue-600 font-bold">03</span>Renforcer la compétitivité belge</div>
+            <div class="bg-slate-50 rounded-lg p-2.5 text-xs text-gray-700 flex items-start gap-1.5"><span class="text-blue-600 font-bold">04</span>Économie basée sur les données</div>
+            <div class="bg-slate-50 rounded-lg p-2.5 text-xs text-gray-700 flex items-start gap-1.5"><span class="text-blue-600 font-bold">05</span>IA au cœur de la santé</div>
+            <div class="bg-slate-50 rounded-lg p-2.5 text-xs text-gray-700 flex items-start gap-1.5"><span class="text-blue-600 font-bold">06</span>Mobilité plus durable</div>
+            <div class="bg-slate-50 rounded-lg p-2.5 text-xs text-gray-700 flex items-start gap-1.5"><span class="text-blue-600 font-bold">07</span>Préserver l'environnement</div>
+            <div class="bg-slate-50 rounded-lg p-2.5 text-xs text-gray-700 flex items-start gap-1.5"><span class="text-blue-600 font-bold">08</span><strong>Former mieux, tout au long de la vie</strong></div>
+            <div class="bg-slate-50 rounded-lg p-2.5 text-xs text-gray-700 flex items-start gap-1.5"><span class="text-blue-600 font-bold">09</span>Meilleurs services aux citoyens</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Autres initiatives -->
+      <div class="grid sm:grid-cols-2 gap-5 mb-5">
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <h3 class="font-semibold text-gray-900 text-sm mb-2">🌐 Déclaration de Bletchley (nov. 2023)</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">Approuvée par 28 pays dont la Chine, les États-Unis et l'UE. Premiers jalons d'une coopération internationale pour un développement de l'IA <strong>régulé, éthique, inclusif et sûr</strong>.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <h3 class="font-semibold text-gray-900 text-sm mb-2">🎓 Consensus de Beijing UNESCO (2019)</h3>
+          <p class="text-sm text-gray-700 leading-relaxed"><strong>44 recommandations</strong> pour exploiter l'IA au service d'une éducation inclusive, équitable et de qualité (ODD 4). Complété par le guide <em>«IA et éducation — Guide pour les décideurs politiques»</em> (2021).</p>
+        </div>
+      </div>
+
+      <!-- Plan éducation numérique + Lignes directrices -->
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div class="bg-white rounded-2xl p-5 border border-blue-200 shadow-sm">
+          <h3 class="font-semibold text-gray-900 text-sm mb-2">🇪🇺 Plan d'action éducation numérique 2021–2027</h3>
+          <p class="text-sm text-gray-700 leading-relaxed mb-3">Initiative de la Commission européenne visant à soutenir l'adaptation durable et efficace des systèmes d'éducation et de formation à l'évolution des technologies numériques.</p>
+          <p class="text-xs text-gray-500">Dans ce cadre, la Commission a publié en <strong>octobre 2022 des Lignes directrices éthiques</strong> sur l'utilisation de l'IA et des données dans l'enseignement et l'apprentissage à l'intention des éducateurs.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-green-200 shadow-sm">
+          <h3 class="font-semibold text-gray-900 text-sm mb-2">📋 Lignes directrices éthiques UE (2022)</h3>
+          <p class="text-sm text-gray-700 leading-relaxed mb-2">Ces lignes directrices visent à :</p>
+          <ul class="text-xs text-gray-600 space-y-1">
+            <li class="flex items-start gap-1.5"><span class="text-green-500 shrink-0">•</span>Expliquer comment l'IA est utilisée dans les écoles</li>
+            <li class="flex items-start gap-1.5"><span class="text-green-500 shrink-0">•</span>Aider enseignants et élèves à enseigner et apprendre</li>
+            <li class="flex items-start gap-1.5"><span class="text-green-500 shrink-0">•</span>Soutenir les processus administratifs dans les structures éducatives</li>
+            <li class="flex items-start gap-1.5"><span class="text-green-500 shrink-0">•</span>Présenter les considérations et exigences éthiques</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═════════════════════ PANEL : ENSEIGNEMENT ═════════════════════ -->
+<div id="panel-enseignement" role="tabpanel" aria-labelledby="main-tab-enseignement" class="tab-panel" aria-hidden="true">
+  <div id="enseignement" class="max-w-5xl mx-auto px-4 py-10 scroll-mt-32">
+
+    <!-- Sub-tabs enseignement -->
+    <div class="bg-gray-100 rounded-2xl p-1.5 flex flex-wrap gap-1 mb-10" role="tablist" aria-label="Thématiques enseignement">
+      <button class="sub-tab-btn active flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="apprentissage" onclick="switchSubTab('ens','apprentissage')">🤝 Apprentissage</button>
+      <button class="sub-tab-btn flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="competences" onclick="switchSubTab('ens','competences')">🎯 Compétences</button>
+      <button class="sub-tab-btn flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="ethique-rgpd" onclick="switchSubTab('ens','ethique-rgpd')">🔐 Éthique & RGPD</button>
+      <button class="sub-tab-btn flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="societal" onclick="switchSubTab('ens','societal')">🌍 Sociétal</button>
+      <button class="sub-tab-btn flex-1 sm:flex-none px-4 py-2 rounded-xl text-sm text-gray-600" data-sub="juridique" onclick="switchSubTab('ens','juridique')">📜 Juridique</button>
+    </div>
+
+    <!-- Apprentissage -->
+    <div id="ens-apprentissage" class="sub-panel-ens">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">IA & Processus d'apprentissage</h2>
+      <p class="text-sm text-gray-600 mb-6">Selon Zawacki-Richter (2019), 4 champs principaux d'application de l'IA dans l'enseignement :</p>
+      <div class="grid sm:grid-cols-2 gap-4 mb-8">
+        <div class="bg-white rounded-2xl p-5 border-l-4 border-blue-500 shadow-sm">
+          <p class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">01 — Ciblage & Prédiction</p>
+          <p class="text-sm text-gray-700">Déterminer l'adéquation d'un apprenant avec des critères d'admission, prédire un risque de décrochage scolaire.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border-l-4 border-green-500 shadow-sm">
+          <p class="text-xs font-bold text-green-600 uppercase tracking-wide mb-2">02 — Tutorats intelligents</p>
+          <p class="text-sm text-gray-700">Rétroactions immédiates lors de l'enseignement de contenus pédagogiques par un logiciel. Support personnalisé.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border-l-4 border-amber-500 shadow-sm">
+          <p class="text-xs font-bold text-amber-600 uppercase tracking-wide mb-2">03 — Cotation & Évaluation</p>
+          <p class="text-sm text-gray-700">Attribution automatique d'une note aux réponses d'un apprenant — avec les risques associés (voir RGPD).</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border-l-4 border-purple-500 shadow-sm">
+          <p class="text-xs font-bold text-purple-600 uppercase tracking-wide mb-2">04 — Systèmes adaptatifs</p>
+          <p class="text-sm text-gray-700">Proposer des contenus personnalisés selon le parcours d'apprentissage (<em>Adaptive Learning</em>).</p>
+        </div>
+      </div>
+
+      <!-- Adaptive Learning -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-6">
+        <div class="bg-gradient-to-r from-purple-600 to-blue-600 px-5 py-3">
+          <h3 class="text-white font-bold text-sm">L'Adaptive Learning — Apprentissage adaptatif</h3>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-gray-700 mb-4">Combinaison de l'IA et des sciences cognitives organisant des parcours adaptés en temps réel aux besoins de l'apprenant.</p>
+          <div class="flex flex-col sm:flex-row gap-2 items-start mb-4 text-xs">
+            <div class="flex-1 bg-purple-50 rounded-xl p-3 text-center"><p class="font-bold text-purple-700">① Positionnement</p><p class="text-purple-600 mt-1">Questionnaire d'évaluation initiale</p></div>
+            <div class="text-gray-400 self-center text-lg hidden sm:block">→</div>
+            <div class="flex-1 bg-blue-50 rounded-xl p-3 text-center"><p class="font-bold text-blue-700">② Profilage IA</p><p class="text-blue-600 mt-1">Analyse Big Data des profils similaires</p></div>
+            <div class="text-gray-400 self-center text-lg hidden sm:block">→</div>
+            <div class="flex-1 bg-green-50 rounded-xl p-3 text-center"><p class="font-bold text-green-700">③ Parcours adapté</p><p class="text-green-600 mt-1">Généré selon stratégie d'apprentissage</p></div>
+            <div class="text-gray-400 self-center text-lg hidden sm:block">→</div>
+            <div class="flex-1 bg-amber-50 rounded-xl p-3 text-center"><p class="font-bold text-amber-700">④ Feedback & Suite</p><p class="text-amber-600 mt-1">Recommandations automatiques</p></div>
+          </div>
+          <div class="bg-red-50 rounded-xl p-4">
+            <p class="text-xs font-semibold text-red-700 mb-2">⚠️ Limites de l'Adaptive Learning</p>
+            <ul class="text-xs text-red-600 space-y-1">
+              <li>• Ne convient qu'aux apprentissages modulables et fondés sur la mémorisation</li>
+              <li>• Moins adapté à la créativité, l'expression personnelle, le sens critique</li>
+              <li>• Risque de suggérer implicitement un «profil idéal d'apprenant»</li>
+              <li>• Collecte de données personnelles sensibles (voir RGPD)</li>
+            </ul>
+          </div>
+          <div class="mt-3 flex gap-2 flex-wrap">
+            <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">✓ Duolingo (gratuit)</span>
+            <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">✓ Khan Academy (gratuit)</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">La plupart des outils sont payants</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soutien enseignants -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+        <div class="bg-emerald-600 px-5 py-3">
+          <h3 class="text-white font-bold text-sm">L'IA en soutien aux professionnels de l'éducation</h3>
+        </div>
+        <div class="p-5">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <p class="text-xs font-bold text-emerald-700 uppercase tracking-wide mb-2">Soutien aux enseignants</p>
+              <ul class="text-sm text-gray-700 space-y-1.5">
+                <li class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">•</span>Évaluation automatique des écrits (Wang, 2021)</li>
+                <li class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">•</span>Moteurs de recommandation de ressources pédagogiques</li>
+                <li class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">•</span>Génération automatique de questionnaires</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-blue-700 uppercase tracking-wide mb-2">Soutien au diagnostic scolaire</p>
+              <ul class="text-sm text-gray-700 space-y-1.5">
+                <li class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">•</span>Création de groupes-classes selon les données (organisation des horaires)</li>
+                <li class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">•</span>Identification des difficultés d'apprentissages</li>
+                <li class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">•</span>Fourniture d'un service d'orientation pertinent</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 bg-amber-50 rounded-xl p-3">
+            <p class="text-xs text-amber-700"><strong>Note :</strong> Des exemples concrets mobilisant les chatbots en soutien aux apprenants et aux professionnels sont proposés dans la section IA Génératives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compétences -->
+    <div id="ens-competences" class="sub-panel-ens hidden">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Compétences numériques liées à l'IA</h2>
+
+      <!-- DigComp -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-6">
+        <div class="bg-[#003082] px-5 py-3 flex items-center justify-between">
+          <h3 class="text-white font-bold text-sm">DigComp Citizen 2.2 (mars 2022)</h3>
+          <span class="bg-yellow-400 text-gray-900 text-xs font-bold px-2.5 py-1 rounded-full">35 compétences IA</span>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-gray-700 mb-4">Cadre de référence européen des compétences numériques. La version 2.2 intègre 35 exemples de savoirs, savoir-faire et attitudes spécifiquement liés à l'IA.</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs border-collapse">
+              <thead>
+                <tr class="bg-slate-50">
+                  <th class="text-left p-3 font-semibold text-gray-700 border border-gray-200">Domaine</th>
+                  <th class="text-left p-3 font-semibold text-gray-700 border border-gray-200">Exemple de compétence IA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-3 border border-gray-200 font-medium text-blue-700">Traitement de données</td>
+                  <td class="p-3 border border-gray-200 text-gray-700">Être conscient que les algorithmes d'IA fonctionnent de façon peu visible («Black box decision making»)</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="p-3 border border-gray-200 font-medium text-blue-700">Communication & collaboration</td>
+                  <td class="p-3 border border-gray-200 text-gray-700">Identifier les signes indiquant si l'on communique avec un humain ou un agent conversationnel</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-gray-200 font-medium text-blue-700">Création de contenus</td>
+                  <td class="p-3 border border-gray-200 text-gray-700">Savoir intégrer du contenu édité ou manipulé par l'IA dans sa propre production numérique</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="p-3 border border-gray-200 font-medium text-blue-700">Résolution de problèmes</td>
+                  <td class="p-3 border border-gray-200 text-gray-700">Utiliser les solutions de traduction automatique (Google Translate, DeepL) en identifiant leurs limites</td>
+                </tr>
+                <tr>
+                  <td class="p-3 border border-gray-200 font-medium text-blue-700">Sécurité TIC</td>
+                  <td class="p-3 border border-gray-200 text-gray-700">Peser les risques avant de permettre à des tiers de manipuler des données personnelles via des outils IA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outils de développement -->
+      <h3 class="text-base font-semibold text-gray-900 mb-4">Outils pour développer ses compétences IA</h3>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <div class="w-9 h-9 bg-blue-100 rounded-xl flex items-center justify-center mb-3 text-xl">🎓</div>
+          <h4 class="font-semibold text-gray-900 text-sm mb-2">Elements of AI</h4>
+          <p class="text-xs text-gray-600 mb-3">Cours d'introduction en ligne gratuit, en français, par l'Université d'Helsinki.</p>
+          <span class="text-xs font-medium text-green-600 bg-green-50 px-2.5 py-1 rounded-full">Gratuit</span>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <div class="w-9 h-9 bg-purple-100 rounded-xl flex items-center justify-center mb-3 text-xl">🧪</div>
+          <h4 class="font-semibold text-gray-900 text-sm mb-2">PIX (FW-B)</h4>
+          <p class="text-xs text-gray-600 mb-3">Outil de diagnostic et développement des compétences numériques. Disponible pour les enseignants et élèves secondaires depuis 2023.</p>
+          <span class="text-xs font-medium text-green-600 bg-green-50 px-2.5 py-1 rounded-full">Gratuit FW-B</span>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <div class="w-9 h-9 bg-amber-100 rounded-xl flex items-center justify-center mb-3 text-xl">📖</div>
+          <h4 class="font-semibold text-gray-900 text-sm mb-2">La Scientothèque</h4>
+          <p class="text-xs text-gray-600 mb-3">Carnet de ressources pédagogiques sur l'IA pour les jeunes publics — cours, fiches, outils interactifs.</p>
+          <a href="https://lascientotheque.github.io/ressources-ia" target="_blank" rel="noopener" class="text-xs font-medium text-blue-600 hover:underline">Accéder →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Éthique RGPD -->
+    <div id="ens-ethique-rgpd" class="sub-panel-ens hidden">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Gérer les aspects éthiques & RGPD</h2>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5 mb-6">
+        <h3 class="font-semibold text-red-800 text-sm mb-3">🔐 Le RGPD s'applique à l'IA à l'école</h3>
+        <p class="text-sm text-red-700 leading-relaxed mb-3">Les systèmes basés sur le Machine Learning ou l'Adaptive Learning nécessitent la manipulation de grandes quantités de données, dont certaines peuvent être sensibles. Le <strong>chef d'établissement est responsable du traitement</strong> des données de ses élèves.</p>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div class="bg-white rounded-xl p-3">
+            <p class="text-xs font-semibold text-gray-800 mb-1">Risque concret :</p>
+            <p class="text-xs text-gray-600">En cas de fuite de données d'une plateforme d'apprentissage adaptatif, des élèves en difficulté pourraient être démarchés commercialement.</p>
+          </div>
+          <div class="bg-white rounded-xl p-3">
+            <p class="text-xs font-semibold text-gray-800 mb-1">Cyber-risque :</p>
+            <p class="text-xs text-gray-600">Les outils IA gèrent un volume Big Data dont la gestion diffère d'une base de données classique — risque d'extraction de données sensibles.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-base font-semibold text-gray-900 mb-4">Ressources pratiques</h3>
+      <div class="space-y-3">
+        <div class="bg-white rounded-xl p-4 border border-gray-200 flex items-start gap-4">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center shrink-0 text-xl">📘</div>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Guide pratique «Comprendre et appliquer le RGPD en classe» — SGNE</p>
+            <p class="text-xs text-gray-600 mt-1">Détaille les aspects juridiques, obligations et points d'attention. Exemple concret d'interaction avec un fournisseur de plateforme d'apprentissage en ligne.</p>
+            <a href="https://www.e-classe.be/guide-pratique-rgpd" target="_blank" rel="noopener" class="text-xs text-blue-600 hover:underline mt-1 block">e-classe.be/guide-pratique-rgpd →</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-4 border border-gray-200 flex items-start gap-4">
+          <div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center shrink-0 text-xl">🔍</div>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Guide d'auto-évaluation IA — CNIL (France)</p>
+            <p class="text-xs text-gray-600 mt-1">Grille d'analyse permettant aux organismes d'évaluer la maturité de leurs systèmes IA au regard du RGPD.</p>
+            <a href="https://www.cnil.fr/fr/intelligence-artificielle/guide" target="_blank" rel="noopener" class="text-xs text-blue-600 hover:underline mt-1 block">cnil.fr/fr/intelligence-artificielle/guide →</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-4 border border-gray-200 flex items-start gap-4">
+          <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center shrink-0 text-xl">⚖️</div>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Lignes directrices éthiques de l'UE pour les éducateurs (2022)</p>
+            <p class="text-xs text-gray-600 mt-1">Comment l'IA est utilisée dans les écoles, comment aider enseignants et élèves, considérations éthiques pour les structures éducatives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sociétal -->
+    <div id="ens-societal" class="sub-panel-ens hidden">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Aspects sociétaux de l'IA dans l'éducation</h2>
+      <div class="grid md:grid-cols-2 gap-5 mb-6">
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <h3 class="font-semibold text-gray-900 text-sm mb-3">🌱 Opportunités : lifelong learning</h3>
+          <p class="text-sm text-gray-700 mb-3">L'UNESCO anticipe la possibilité pour les apprenants d'être épaulés, leur vie durant, par un <strong>tuteur numérique personnalisé</strong> :</p>
+          <div class="bg-blue-50 rounded-xl p-3 text-xs text-blue-700 italic">«Un tel compagnon d'apprentissage fournirait un soutien continu, en s'appuyant sur les intérêts et les objectifs personnels de l'élève, pour l'aider à décider ce qu'il doit apprendre, où et comment.» (UNESCO, 2021)</div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm">
+          <h3 class="font-semibold text-gray-900 text-sm mb-3">📂 Portefeuille numérique européen</h3>
+          <p class="text-sm text-gray-700 mb-3">Adopté par le Parlement européen (fév. 2023), il permettra de stocker diplômes, certifications et acquis d'apprentissage formels, non-formels et informels.</p>
+          <p class="text-xs text-gray-500">«Ce dossier fonctionnerait comme un curriculum vitae intelligent et dynamique, garanti par les technologies blockchain.»</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-5 mb-5">
+        <h3 class="font-semibold text-gray-900 text-sm mb-4">⚠️ Risques pour les ODD (Objectifs de Développement Durable)</h3>
+        <div class="space-y-3">
+          <div class="flex items-start gap-3 p-3 bg-red-50 rounded-xl">
+            <span class="text-red-500 font-bold text-sm shrink-0">ODD 4</span>
+            <p class="text-sm text-red-700">Les systèmes d'IA éducatifs sont développés par des entreprises privées, étudiés 10× plus par des ingénieurs que par des pédagogues (61,7 % vs 6,2 %). <em>«L'IA deviendra le moteur de l'éducation, et les données des élèves, le carburant.»</em></p>
+          </div>
+          <div class="flex items-start gap-3 p-3 bg-orange-50 rounded-xl">
+            <span class="text-orange-500 font-bold text-sm shrink-0">ODD 10</span>
+            <p class="text-sm text-orange-700">L'accès aux solutions éducatives IA est généralement payant. La généralisation de ces outils risque d'accentuer les inégalités entre apprenants selon leurs moyens financiers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-5">
+        <p class="text-sm font-semibold text-amber-800 mb-2">💡 Point de vigilance pour l'enseignant</p>
+        <p class="text-sm text-amber-700">Un enseignant souhaitant inclure des outils d'IA dans les apprentissages devrait s'assurer que tous les élèves y ont accès de façon équitable — et ne pas introduire des outils créant une fracture entre ceux qui peuvent se les permettre et les autres.</p>
+      </div>
+
+      <!-- IA comme vecteurs de valeurs -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+        <div class="bg-slate-700 px-5 py-3">
+          <h3 class="text-white font-bold text-sm">🌐 Le rôle des IA comme vecteurs de valeurs</h3>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-gray-700 mb-4">La plupart des grandes entreprises productrices de systèmes IA sont situées aux USA ou en Chine. Elles véhiculent, de manière implicite, un ensemble de biais cognitifs qui ne sont pas toujours en accord avec ceux d'autres cultures.</p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="bg-gray-50 rounded-xl p-4">
+              <p class="text-xs font-semibold text-gray-600 mb-2">Exemple — Biais culturel ChatGPT :</p>
+              <p class="text-xs text-gray-700 mb-2">À la question «Penses-tu que l'attaque du Capitole était justifiée ?», ChatGPT répond spontanément en référence à l'attaque du Capitole américain de janvier 2021.</p>
+              <p class="text-xs text-gray-500 italic">Lorsqu'on précise «l'attaque du Capitole à Rome», ChatGPT répond : «Il n'y a pas eu d'attaque du Capitole à Rome car le Capitole est un lieu symbolique situé aux États-Unis.» — ignorant l'histoire romaine antique.</p>
+            </div>
+            <div class="bg-blue-50 rounded-xl p-4">
+              <p class="text-xs font-semibold text-blue-700 mb-2">Implications pédagogiques :</p>
+              <ul class="text-xs text-blue-700 space-y-1.5">
+                <li class="flex items-start gap-1.5"><span class="shrink-0">•</span>Les IA peuvent relayer des stéréotypes et favoriser les références culturelles dominantes</li>
+                <li class="flex items-start gap-1.5"><span class="shrink-0">•</span>Les biais culturels des données d'entraînement (majoritairement anglophones) se reflètent dans les réponses</li>
+                <li class="flex items-start gap-1.5"><span class="shrink-0">•</span>Une mise en contexte préalable avec les élèves est indispensable avant tout usage pédagogique</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Juridique -->
+    <div id="ens-juridique" class="sub-panel-ens hidden">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Cadre juridique de l'IA dans l'éducation</h2>
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-6">
+        <div class="bg-slate-700 px-5 py-3">
+          <h3 class="text-white font-bold text-sm">AI Act — Implications pour l'enseignement</h3>
+        </div>
+        <div class="p-5 space-y-4">
+          <p class="text-sm text-gray-700">L'accord du 8 décembre 2023 entre le Parlement européen et le Conseil européen prévoit :</p>
+          <div class="space-y-2">
+            <div class="flex items-start gap-2.5 text-sm"><span class="text-red-500 mt-0.5 shrink-0">🚫</span><p class="text-gray-700"><strong>Interdiction :</strong> reconnaissance des émotions sur le lieu de travail et dans les établissements scolaires</p></div>
+            <div class="flex items-start gap-2.5 text-sm"><span class="text-red-500 mt-0.5 shrink-0">🚫</span><p class="text-gray-700"><strong>Interdiction :</strong> catégorisation biométrique utilisant des caractéristiques sensibles</p></div>
+            <div class="flex items-start gap-2.5 text-sm"><span class="text-orange-500 mt-0.5 shrink-0">⚠️</span><p class="text-gray-700"><strong>Haute transparence exigée :</strong> les systèmes d'IA générative (ChatGPT) doivent mentionner que le contenu est généré par l'IA</p></div>
+            <div class="flex items-start gap-2.5 text-sm"><span class="text-blue-500 mt-0.5 shrink-0">ℹ️</span><p class="text-gray-700"><strong>Droit de recours :</strong> les citoyens européens pourront déposer des plaintes concernant les systèmes d'IA</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 border border-amber-200 shadow-sm mb-5">
+        <h3 class="font-semibold text-gray-900 text-sm mb-3">⚖️ IA et droit d'auteur en Belgique</h3>
+        <p class="text-sm text-gray-700 mb-3">Il n'existe actuellement <strong>rien dans le droit belge</strong> qui cadre spécifiquement l'utilisation de l'IA en matière de droit d'auteur. Les IA n'ont pas de personnalité juridique et ne sont donc pas éligibles à l'ouverture de droits.</p>
+        <p class="text-sm text-gray-700">La généralisation des usages amènera nécessairement à trancher : la paternité d'une œuvre créée par IA revient-elle à l'IA, au concepteur, ou à l'utilisateur ?</p>
+      </div>
+      <div class="bg-blue-50 rounded-2xl p-5 border border-blue-200">
+        <p class="text-sm font-semibold text-blue-800 mb-2">📋 Résolution du Parlement européen (mai 2021)</p>
+        <p class="text-sm text-blue-700 italic">«Le développement, le déploiement et l'utilisation des technologies liées à l'IA dans le domaine de l'éducation devraient être considérés comme à haut risque et faire l'objet d'exigences plus strictes en matière de sécurité, de transparence, d'équité et de responsabilité.»</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="bg-gray-900 text-gray-400 py-12 px-4" role="contentinfo">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid sm:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <svg class="w-5 h-5 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+          <span class="font-bold text-white text-sm">Intelligence Artificielle</span>
+        </div>
+        <p class="text-xs leading-relaxed">Service général du Numérique Éducatif — Fédération Wallonie-Bruxelles</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white text-sm mb-3">Navigation</h3>
+        <ul class="space-y-1.5 text-xs">
+          <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
+          <li><a href="index.html#comprendre" class="hover:text-white transition-colors">Comprendre l'IA</a></li>
+          <li><a href="enjeux.html" class="hover:text-white transition-colors">Enjeux</a></li>
+          <li><a href="ia-generatives.html" class="hover:text-white transition-colors">IA Génératives</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white text-sm mb-3">Ressources</h3>
+        <ul class="space-y-1.5 text-xs">
+          <li><a href="https://www.e-classe.be" target="_blank" rel="noopener" class="hover:text-white transition-colors">e-classe FW-B →</a></li>
+          <li><a href="https://pix.fr" target="_blank" rel="noopener" class="hover:text-white transition-colors">PIX →</a></li>
+          <li><a href="https://www.csem.be" target="_blank" rel="noopener" class="hover:text-white transition-colors">CSEM →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs">
+      <p>© Service général du Numérique Éducatif — Fédération Wallonie-Bruxelles</p>
+      <p class="text-gray-500 italic">Ce document a été entièrement rédigé par des humains.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Main tabs ──
+  function switchMainTab(tab) {
+    ['enjeux','enseignement'].forEach(t => {
+      const btn = document.getElementById('main-tab-' + t);
+      const panel = document.getElementById('panel-' + t);
+      const isActive = t === tab;
+      btn.classList.toggle('active', isActive);
+      btn.style.borderBottomColor = isActive ? '#003082' : 'transparent';
+      btn.style.color = isActive ? '#003082' : '';
+      btn.setAttribute('aria-selected', isActive);
+      panel.classList.toggle('active', isActive);
+      panel.setAttribute('aria-hidden', !isActive);
+    });
+    // Reset subtabs
+    if (tab === 'enjeux') activateSubTab('enjeux', 'societaux');
+    else activateSubTab('ens', 'apprentissage');
+  }
+
+  // ── Sub tabs ──
+  function switchSubTab(group, id) {
+    const prefix = group === 'enjeux' ? 'enjeux' : 'ens';
+    const panels = document.querySelectorAll('.sub-panel-' + prefix);
+    const btns = document.querySelectorAll(`[onclick*="switchSubTab('${group}'"]`);
+    panels.forEach(p => p.classList.add('hidden'));
+    btns.forEach(b => b.classList.remove('active'));
+    const target = document.getElementById(prefix + '-' + id);
+    if (target) target.classList.remove('hidden');
+    const activeBtn = document.querySelector(`[onclick="switchSubTab('${group}','${id}')"]`);
+    if (activeBtn) activeBtn.classList.add('active');
+  }
+
+  function activateSubTab(group, id) { switchSubTab(group, id); }
+
+  // Handle hash on load
+  if (window.location.hash === '#enseignement') {
+    switchMainTab('enseignement');
+    window.scrollTo({ top: document.getElementById('panel-enseignement').offsetTop - 80, behavior: 'smooth' });
+  }
+
+  // ── Search ──
+  const SEARCH_DATA = [
+    { t: 'Enjeux sociétaux', d: '4e révolution industrielle, emploi (300M), fracture numérique.', url: 'enjeux.html' },
+    { t: 'Enjeux humains', d: 'Google Effect, cognition, anthropomorphisme, Replika.', url: 'enjeux.html' },
+    { t: 'Enjeux éthiques', d: 'Deep fakes, biais algorithmiques, "garbage in = garbage out".', url: 'enjeux.html' },
+    { t: 'Enjeux environnementaux', d: '35-284 tonnes CO2 par entraînement, +9%/an consommation numérique.', url: 'enjeux.html' },
+    { t: 'AI Act', d: 'Règlement européen IA — enseignement classé "à haut risque". Accord déc. 2023.', url: 'enjeux.html' },
+    { t: 'Plan belge IA', d: '9 objectifs, validés par le Conseil des ministres oct. 2022.', url: 'enjeux.html' },
+    { t: 'Adaptive Learning', d: 'Apprentissage adaptatif — Duolingo, Khan Academy. Limites en créativité.', url: 'enjeux.html#enseignement' },
+    { t: 'DigComp 2.2', d: '35 compétences IA, cadre européen, mars 2022.', url: 'enjeux.html#enseignement' },
+    { t: 'PIX FW-B', d: 'Outil de diagnostic numérique disponible depuis 2023 pour les écoles FW-B.', url: 'enjeux.html#enseignement' },
+    { t: 'RGPD & IA école', d: 'Le chef d\'établissement est responsable du traitement des données élèves.', url: 'enjeux.html#enseignement' },
+    { t: 'Tuteur numérique', d: 'Compagnon d\'apprentissage IA personnalisé tout au long de la vie (UNESCO).', url: 'enjeux.html#enseignement' },
+  ];
+
+  function doSearch(q, container) {
+    if (!q || q.length < 2) { container.classList.add('hidden'); return; }
+    const r = SEARCH_DATA.filter(i => i.t.toLowerCase().includes(q.toLowerCase()) || i.d.toLowerCase().includes(q.toLowerCase())).slice(0, 6);
+    container.innerHTML = r.length ? r.map(i =>
+      `<a href="${i.url}" class="flex items-start gap-3 px-4 py-3 hover:bg-blue-50 border-b border-gray-100 last:border-0 transition-colors">
+        <svg class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <div><div class="text-sm font-semibold text-gray-900">${i.t}</div><div class="text-xs text-gray-500 mt-0.5">${i.d}</div></div>
+      </a>`).join('') : '<div class="px-4 py-3 text-sm text-gray-500">Aucun résultat</div>';
+    container.classList.remove('hidden');
+  }
+
+  const navSearch = document.getElementById('navSearch');
+  const navResults = document.getElementById('navResults');
+  if (navSearch) {
+    navSearch.addEventListener('input', e => doSearch(e.target.value, navResults));
+    document.addEventListener('click', e => { if (!navSearch.contains(e.target)) navResults.classList.add('hidden'); });
+  }
+</script>
+<script src="motion.js"></script>
+</body>
+</html>

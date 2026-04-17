@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="ia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Définitions et concepts clés — Intelligence Artificielle · Fédération Wallonie-Bruxelles">
+  <title>Définitions et concepts clés — Intelligence Artificielle · FW-B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero { background: linear-gradient(135deg, #003082 0%, #1e40af 60%, #1d4ed8 100%); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+    .prose p { margin-bottom: 1.25rem; line-height: 1.8; }
+    .prose h3 { font-size: 1.2rem; font-weight: 700; color: #003082; margin-top: 2.5rem; margin-bottom: 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid #e0e7ff; }
+    .prose h4 { font-size: 1rem; font-weight: 700; color: #1e40af; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    blockquote { border-left: 4px solid #f59e0b; background: #fffbeb; padding: 1rem 1.25rem; border-radius: 0 0.5rem 0.5rem 0; margin: 1.5rem 0; font-style: italic; color: #374151; }
+    blockquote cite { display: block; margin-top: 0.5rem; font-style: normal; font-size: 0.85rem; color: #6b7280; font-weight: 600; }
+    .glossary-term { background: white; border: 1px solid #e5e7eb; border-left: 4px solid #003082; border-radius: 0 0.5rem 0.5rem 0; padding: 1rem 1.25rem; margin-bottom: 1rem; }
+    .glossary-term dt { font-weight: 700; color: #003082; font-size: 0.95rem; margin-bottom: 0.25rem; }
+    .glossary-term dd { color: #4b5563; font-size: 0.9rem; line-height: 1.6; margin: 0; }
+  </style>
+  <link rel="stylesheet" href="ds.css">
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-[#003082] text-white px-4 py-2 rounded-md z-[100] text-sm font-medium">Aller au contenu principal</a>
+
+<!-- NAVBAR -->
+<nav id="nav-root" class="sticky top-0 z-50 bg-[#003082] shadow-xl" role="navigation" aria-label="Navigation principale"></nav>
+<script src="navbar.js"></script>
+
+<!-- HERO -->
+<header class="gradient-hero py-12 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center gap-3 mb-4">
+      <a href="table-des-matieres.html" class="text-blue-200 hover:text-white text-sm flex items-center gap-1 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        Index du chapitre
+      </a>
+    </div>
+    <div class="flex items-start gap-5">
+      <div class="w-20 h-20 bg-white/15 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-4xl font-black text-white/80">2</span>
+      </div>
+      <div>
+        <p class="text-blue-300 text-sm font-semibold uppercase tracking-widest mb-1">Focus · Intelligence Artificielle</p>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white">Définitions et concepts clés</h1>
+        <p class="text-blue-200 mt-2 text-base">Qu'est-ce que l'IA ? Types, glossaire complet</p>
+      </div>
+    </div>
+    <!-- Sub-nav -->
+    <div class="flex flex-wrap gap-2 mt-6">
+      <a href="#def-ia" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">2.1 Définitions</a>
+      <a href="#types-ia" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">2.2 Types d'IA</a>
+      <a href="#glossaire" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">2.3 Glossaire</a>
+    </div>
+  </div>
+  <img src="assets/robot-finger pointing.svg" alt="" aria-hidden="true" class="robot-hero robot-flipped">
+</header>
+
+<!-- MAIN -->
+<main id="main" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    <!-- CONTENT -->
+    <article class="flex-1 min-w-0">
+
+      <!-- ACTION BAR -->
+      <div class="flex items-center gap-3 mb-8 flex-wrap">
+        
+      </div>
+
+      <!-- SECTION 2.1 -->
+      <section id="def-ia" class="prose max-w-none text-gray-800 scroll-mt-20">
+        <h3>2.1 Définitions de l'intelligence artificielle</h3>
+
+        <p>Les machines sont-elles capables de penser ? <strong>Alan Turing</strong>, inventeur du concept d'ordinateur, pose cette question dès 1950 dans son article <em>Computing Machinery and Intelligence</em>. Il y développe la possibilité qu'une machine puisse un jour simuler une conversation humaine.</p>
+
+        <p>Le terme d'<strong>intelligence artificielle</strong> (souvent abrégé en IA) est utilisé pour la première fois en <strong>1956</strong> lors d'une conférence donnée au Dartmouth College, dédiée aux «&nbsp;machines pensantes&nbsp;». Les scientifiques présents estimaient alors que «&nbsp;quelques milliers de lignes de codes informatiques, quelques millions de dollars et vingt années de travail allaient permettre d'égaler le cerveau humain, qui était considéré comme un ordinateur assez simple.&nbsp;» (Alexandre, 2017)</p>
+
+        <p>Le MIT (Massachusetts Institute of Technology) développe en 1965 un programme informatique, <strong>ELIZA</strong>, capable d'entretenir une conversation avec un humain. Il s'agit du premier <em>chatbot</em> ou agent conversationnel. En 2018, le MIT Technology Review souligne que la définition de l'intelligence artificielle est en évolution constante :</p>
+
+        <blockquote>
+          «&nbsp;Qu'est-ce que l'IA, exactement ? La question peut sembler basique, mais la réponse est relativement compliquée. Dans son acception la plus large, l'IA réfère à des machines qui peuvent apprendre, raisonner et agir par elles-mêmes. Elles sont capables de prendre leurs propres décisions quand elles sont confrontées à de nouvelles situations, de la même manière que peuvent le faire les humains et les animaux.&nbsp;»
+          <cite>— Hao, MIT Technology Review, 2018</cite>
+        </blockquote>
+
+        <p>Le <strong>Parlement européen</strong>, à l'occasion de l'adoption d'une résolution en 2020, a établi sa propre définition :</p>
+
+        <blockquote>
+          «&nbsp;L'intelligence artificielle (IA) désigne la possibilité pour une machine de reproduire des comportements liés aux humains, tels que le raisonnement, la planification et la créativité. L'IA permet à des systèmes techniques de percevoir leur environnement, gérer ces perceptions, résoudre des problèmes et entreprendre des actions pour atteindre un but précis. L'ordinateur reçoit des données (déjà préparées ou collectées via ses capteurs - une caméra, par exemple), les analyse et réagit. Les systèmes dotés d'IA sont capables d'adapter leurs comportements (plus ou moins) en analysant les effets produits par leurs actions précédentes, travaillant de manière autonome.&nbsp;»
+          <cite>— Parlement européen, 2021</cite>
+        </blockquote>
+
+        <p>Un périmètre plus large a été retenu par Zhong Yi Xin de l'Université de Beijing, qui définit l'IA comme étant :</p>
+
+        <blockquote>
+          «&nbsp;Une branche de la science et de la technologie modernes visant d'une part à explorer les secrets de l'intelligence humaine, d'autre part à implémenter autant que possible l'intelligence humaine dans les machines, afin que ces dernières soient capables d'exécuter des fonctions aussi intelligemment qu'elles le peuvent.&nbsp;»
+          <cite>— Zhong, 2006</cite>
+        </blockquote>
+
+        <p>Les facultés concernées par l'exercice de cette intelligence sont également multiples :</p>
+        <ul class="list-none space-y-2 my-4">
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-1">▸</span><span>La réception ou la perception de données, et leur analyse ;</span></li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-1">▸</span><span>L'application d'un raisonnement conduisant à la prise de décision ;</span></li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-1">▸</span><span>La faculté d'apprentissage, en analysant les résultats des prises de décision précédentes ;</span></li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-1">▸</span><span>La simulation de comportements humains, y compris la créativité.</span></li>
+        </ul>
+
+        <p>La notion d'intelligence artificielle peut ainsi désigner plusieurs concepts à la fois :</p>
+        <ul class="list-none space-y-2 my-4">
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-1">▸</span><span>Un domaine de recherche scientifique et technologique ;</span></li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-1">▸</span><span>L'application concrète de cette technologie et les capacités qui en découlent pour des machines ;</span></li>
+          <li class="flex items-start gap-2"><span class="text-[#003082] mt-1">▸</span><span>Ces machines en elles-mêmes.</span></li>
+        </ul>
+
+        <!-- ENCART: LE TERME EST-IL BIEN CHOISI? -->
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 my-8 not-prose">
+          <div class="flex items-start gap-3 mb-3">
+            <svg class="w-6 h-6 text-[#003082] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            <h4 class="font-bold text-[#003082] text-base">"Intelligence" — le terme est-il bien choisi ?</h4>
+          </div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-3">À ce jour, l'intelligence artificielle n'est pas capable de reproduire l'intelligence humaine : elle «&nbsp;se contente&nbsp;» d'exercer une immense puissance de calcul sur un volume colossal de données, en un temps très court. Le résultat, qu'il s'agisse de décisions successives dans une partie d'échecs, ou d'une production langagière dans le cas des chatbots, génère l'impression d'une «&nbsp;intelligence&nbsp;».</p>
+          <p class="text-gray-700 text-sm leading-relaxed mb-3">L'intelligence artificielle ne possède cependant pas les facultés humaines correspondant au jugement, ou encore au «&nbsp;bon sens&nbsp;». Le créateur du chatbot ELIZA, <strong>Joseph Weizenbaum</strong> (1976), opère cette distinction entre la décision et le choix : la décision est le produit d'une activité reposant sur le calcul informatique et pouvant être programmée ; le choix est basé sur le jugement humain et suppose un plus large panel de facteurs, non mathématiques.</p>
+          <p class="text-gray-700 text-sm leading-relaxed">Les chatbots tels que ChatGPT utilisent le même procédé pour produire leurs contenus. Les réponses fournies par ChatGPT sont la synthèse d'informations retrouvées dans un immense corpus de textes dans lequel les fréquences des associations entre les mots sont identifiées et reproduites. Si statistiquement, dans le corpus utilisé par un chatbot, le mot «&nbsp;rectangle&nbsp;» est le plus régulièrement côtoyé par l'adjectif «&nbsp;praliné&nbsp;», ce chatbot pourrait affirmer que les rectangles sont pralinés, sans être capable de discerner que cette déclaration n'a absolument aucun sens.</p>
+        </div>
+
+        <p>Dans notre vie quotidienne, l'intelligence artificielle est beaucoup plus présente qu'on ne peut le supposer. Les résultats proposés par un moteur de recherche, les systèmes d'aide à la conduite des voitures, les réactions d'un personnage dans un jeu vidéo, les suggestions de contenus sur les réseaux sociaux, les montres connectées capables d'alerter les secours en cas de chute… sont autant d'éléments soutenus par les tâches de collecte de données, d'analyse et de décision d'une intelligence artificielle.</p>
+      </section>
+
+      <!-- SECTION 2.2 -->
+      <section id="types-ia" class="prose max-w-none text-gray-800 scroll-mt-20">
+        <h3>2.2 Les principaux types d'intelligence artificielle</h3>
+
+        <p>Selon De Lièvre (2019), on peut généralement identifier deux niveaux ou stades de développement dans les logiciels d'intelligence artificielle (ou IA) :</p>
+
+        <h4>Les applications contextualisées (ou IA faible)</h4>
+
+        <div class="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] mb-2 text-sm">IA basées sur des règles <span class="text-gray-400 font-normal">(if... then...)</span></div>
+            <p class="text-sm text-gray-600 leading-relaxed">Ces logiciels sont spécialisés dans un domaine restreint et ne présentent pas de transversalité. Ils se basent sur des règles logiques (si «&nbsp;condition&nbsp;», alors «&nbsp;réponse&nbsp;») et utilisent leur puissance de calcul pour effectuer rapidement des tâches répétitives.</p>
+            <div class="mt-3 text-xs text-gray-500"><strong>Exemples :</strong> programme de jeu d'échec basique ; ELIZA, le premier chatbot.</div>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-4">
+            <div class="font-bold text-[#003082] mb-2 text-sm">IA apprenantes <span class="text-gray-400 font-normal">(machine learning)</span></div>
+            <p class="text-sm text-gray-600 leading-relaxed">Ces logiciels analysent une grande quantité de données pour identifier des liens et construire des modèles prédictifs en se basant sur des approches statistiques.</p>
+            <div class="mt-3 text-xs text-gray-500"><strong>Exemples :</strong> traitement du langage naturel (ChatGPT) ; reconnaissance d'image (Google Lens).</div>
+          </div>
+        </div>
+
+        <h4>Les applications autonomes (ou IA forte)</h4>
+
+        <p>Ces logiciels seraient théoriquement identiques à l'intelligence humaine, capables de résoudre des problèmes, de planifier en autonomie des actions sur base de l'expérience et de développer une conscience de soi.</p>
+
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 my-4 not-prose">
+          <p class="text-sm text-gray-600 italic">Exemple fictif : HAL 9000, l'ordinateur de bord dans le film <em>2001, l'Odyssée de l'espace</em> (Kubrick, 1968)</p>
+        </div>
+
+        <!-- ENCART IA FORTE -->
+        <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-5 my-6 not-prose">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+            <div>
+              <div class="font-bold text-amber-800 text-sm mb-2">L'IA forte : entre fantasme et réalité</div>
+              <p class="text-sm text-gray-700 leading-relaxed mb-2">Cette forme d'IA <strong>n'existe pas à l'heure actuelle</strong> et est principalement issue d'un mythe de la création, alimenté par l'imaginaire populaire, le cinéma et les ouvrages de science-fiction.</p>
+              <p class="text-sm text-gray-700 leading-relaxed">Jean-Gabriel Ganascia, expert en intelligence artificielle et philosophe, chercheur au LIP6, précise :</p>
+              <blockquote class="mt-2 border-l-4 border-amber-300 pl-3 text-sm italic text-gray-600">«&nbsp;[...] il est facile de simuler l'intelligence et des émotions, mais rendre une machine consciente, c'est de la pure science-fiction&nbsp;» et «&nbsp;[...] il y a derrière tout cela une croyance en la toute-puissance de la technologie, très proche d'une religion... peut être celle des transhumanistes&nbsp;».&nbsp;»</blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2.3 -->
+      <section id="glossaire" class="scroll-mt-20">
+        <div class="prose max-w-none text-gray-800">
+          <h3>2.3 Glossaire</h3>
+          <p>Pour faciliter la lecture du document, voici les définitions des principaux termes techniques utilisés, organisés en trois catégories.</p>
+        </div>
+
+        <h4 class="font-bold text-[#003082] text-base mt-6 mb-3">a) Quelques termes importants pour comprendre l'IA</h4>
+        <dl class="space-y-3">
+          <div class="glossary-term">
+            <dt>Algorithme</dt>
+            <dd>Suite finie d'opérations et/ou d'instructions dont l'exécution permet la réalisation d'une tâche à partir d'éléments fournis par l'utilisateur (appelés «&nbsp;requêtes&nbsp;» ou <em>prompts</em>).</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Étiquetage de données <span class="font-normal text-gray-500">(data labeling)</span></dt>
+            <dd>Fait d'ajouter des informations à une donnée d'entrée d'un logiciel d'IA afin que l'algorithme reconnaisse plus facilement la donnée. Cette opération est généralement réalisée par des humains. Par ex. : identifier sur une image les zones correspondant aux parties du visage dans un logiciel de reconnaissance faciale.</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Big Data</dt>
+            <dd>Le terme big data désigne un grand ensemble de données, de sources hétérogènes (données libres (open data), données propriétaires, données achetées commercialement).</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Sciences des données <span class="font-normal text-gray-500">(data science)</span></dt>
+            <dd>Regroupement large des mathématiques, des statistiques, des probabilités, de l'informatique, de la visualisation des données afin d'extraire des connaissances d'un ensemble hétérogène de données (images, son, texte, données génomiques, liens dans les réseaux sociaux, mesures physiques, etc.).</dd>
+          </div>
+        </dl>
+
+        <h4 class="font-bold text-[#003082] text-base mt-8 mb-3">b) Modèles d'apprentissage de l'intelligence artificielle</h4>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
+          <p class="text-sm text-gray-700 leading-relaxed">L'apprentissage est une caractéristique de l'intelligence artificielle. Au-delà de l'exécution de règles prédéterminées dans le cadre d'une programmation, l'intelligence artificielle est capable d'assimiler de nouvelles règles à partir des données accessibles, et donc d'adopter des «&nbsp;comportements&nbsp;» évolutifs. Cet apprentissage peut être ou non supervisé par un humain.</p>
+        </div>
+
+        <dl class="space-y-3">
+          <div class="glossary-term">
+            <dt>Apprentissage automatique <span class="font-normal text-gray-500">(machine learning)</span></dt>
+            <dd>Méthode d'intelligence artificielle qui permet de construire un modèle mathématique à partir de données en incluant un grand nombre de variables.</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Apprentissage profond <span class="font-normal text-gray-500">(deep learning)</span></dt>
+            <dd>Technique de l'IA qui utilise un grand nombre de couches de «&nbsp;neurones&nbsp;» permettant de traiter de grandes quantités de données non-structurées (par exemple : des images ou des vidéos).</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Apprentissage supervisé par un humain</dt>
+            <dd>Type d'apprentissage automatique où les éléments de sortie de l'algorithme sont analysés par un humain afin de diminuer l'écart entre le résultat obtenu par l'algorithme et le résultat attendu. Ces logiciels utilisent généralement des données étiquetées.</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Apprentissage non supervisé par renforcement</dt>
+            <dd>Type d'apprentissage automatique où l'algorithme se base sur une méthodologie d'essai-erreur par rapport à ses propres productions afin d'affiner le modèle.</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Apprentissage non supervisé</dt>
+            <dd>Type d'apprentissage automatique où l'algorithme déduit des modèles parmi des données non étiquetées.</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Apprentissage auto-supervisé</dt>
+            <dd>Type d'apprentissage automatique où l'algorithme déduit des modèles parmi des données non étiquetées, et va lui-même générer un étiquetage de données, sans intervention humaine.</dd>
+          </div>
+        </dl>
+
+        <h4 class="font-bold text-[#003082] text-base mt-8 mb-3">c) Exemples d'applications pratiques de l'IA</h4>
+        <dl class="space-y-3">
+          <div class="glossary-term">
+            <dt>Traitement du langage naturel <span class="font-normal text-gray-500">(NLP — natural language processing)</span></dt>
+            <dd>Technique d'intelligence artificielle permettant d'analyser et simuler le langage naturel (le langage parlé humain).</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Logiciels de reconnaissance de langage</dt>
+            <dd>Logiciels permettant de comparer la production d'un étudiant à celle d'un native speaker et de fournir une rétroaction immédiate pour, par exemple, améliorer son accent.</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Logiciels de reconnaissance de formes / images</dt>
+            <dd>Logiciels capables, par exemple, d'identifier et de reconnaître des expressions mathématiques, de résoudre des exercices simples ou encore reconnaître les objets du quotidien.</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Agent conversationnel <span class="font-normal text-gray-500">(chatbot)</span></dt>
+            <dd>Programme informatique qui utilise des techniques d'intelligence artificielle pour simuler des conversations avec des individus. Certains chatbots se basent sur une reconnaissance de mots-clés permettant d'obtenir des réponses scénarisées ou sur le traitement du langage naturel pour générer des réponses uniques.</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>Réalité virtuelle et réalité augmentée</dt>
+            <dd>Ce sont deux technologies connexes à l'intelligence artificielle et généralement associées afin d'améliorer l'expérience de l'utilisateur (par exemple, visiter l'intérieur d'un volcan). Ces techniques permettent de simuler un environnement de manière immersive.</dd>
+          </div>
+          <div class="glossary-term">
+            <dt>IA générative</dt>
+            <dd>Application capable de générer du contenu, généralement inédit, sur base du modèle déterminé par apprentissage automatique. Par ex. : rédaction de texte, production d'image… Voir le <a href="section-5-generatives.html" class="text-[#003082] underline">Chapitre 5 — Zoom sur les IA génératives</a>.</dd>
+          </div>
+        </dl>
+      </section>
+
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="w-full lg:w-72 shrink-0 space-y-6">
+
+      <button onclick="goRandom()" class="btn-random">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+        Au hasard !
+      </button>
+
+      <!-- PLAN DU LIVRE -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Plan du livre</h3>
+        <div class="space-y-2">
+          <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Section précédente</div>
+          <a href="section-1-introduction.html" class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-gray-300 text-gray-700 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+            <span class="text-sm font-medium text-gray-600 group-hover:text-[#003082]">← Introduction</span>
+          </a>
+          <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-3 mb-1">Section suivante</div>
+          <a href="section-3-enjeux.html" class="flex items-center gap-2 p-2 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-[#003082] text-white flex items-center justify-center text-xs font-bold shrink-0">3</span>
+            <span class="text-sm font-medium text-[#003082] group-hover:underline">Les grands enjeux →</span>
+          </a>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="table-des-matieres.html" class="flex items-center gap-2 text-sm text-gray-500 hover:text-[#003082] transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+            Retour à l'index
+          </a>
+        </div>
+      </div>
+
+      <!-- IN THIS CHAPTER -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Dans ce chapitre</h3>
+        <nav class="space-y-1">
+          <a href="#def-ia" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1 transition-colors">
+            <span class="w-5 h-5 text-xs rounded bg-[#003082]/10 text-[#003082] flex items-center justify-center font-bold">2.1</span>
+            Définitions de l'IA
+          </a>
+          <a href="#types-ia" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1 transition-colors">
+            <span class="w-5 h-5 text-xs rounded bg-[#003082]/10 text-[#003082] flex items-center justify-center font-bold">2.2</span>
+            Types d'IA
+          </a>
+          <a href="#glossaire" class="flex items-center gap-2 text-sm text-gray-600 hover:text-[#003082] py-1 transition-colors">
+            <span class="w-5 h-5 text-xs rounded bg-[#003082]/10 text-[#003082] flex items-center justify-center font-bold">2.3</span>
+            Glossaire
+          </a>
+        </nav>
+      </div>
+
+      <!-- KEY CONCEPTS -->
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5">
+        <h3 class="text-xs font-bold text-amber-700 uppercase tracking-widest mb-3">Concepts clés</h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>L'IA existe depuis 1956</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>IA faible (actuelle) ≠ IA forte (théorique)</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Le machine learning permet l'apprentissage automatique</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>ChatGPT = deep learning + NLP</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>L'IA décide, elle ne choisit pas (Weizenbaum)</li>
+        </ul>
+      </div>
+
+      <a href="table-des-matieres.html" class="flex items-center justify-center gap-2 bg-white border border-gray-200 rounded-xl py-3 text-sm text-gray-600 hover:bg-gray-50 hover:text-[#003082] transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></svg>
+        Retour en haut · Index
+      </a>
+
+    </aside>
+  </div>
+</main>
+
+<footer id="footer-root" class="bg-[#003082] text-blue-200 py-8 mt-4"></footer>
+<script src="footer.js"></script>
+
+<script>
+  const pages = ['section-1-introduction.html','section-2-definitions.html','section-3-enjeux.html','section-4-enseignement.html','section-5-generatives.html','section-6-ressources.html'];
+  function goRandom() { window.location.href = pages[Math.floor(Math.random() * pages.length)]; }
+</script>
+<script src="motion.js"></script>
+</body>
+</html>

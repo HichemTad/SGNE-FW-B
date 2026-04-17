@@ -1,0 +1,1993 @@
+FOCUS
+Les réseaux sociaux
+
+                                                                                       Réalisé par l'Administration générale de l'Enseignement
+                                                                                                            Service général du Numérique éducatif
+TABLE DES MATIÈRES
+
+1. INTRODUCTION                                                         3
+
+2. DÉFINITIONS ET EXEMPLES                                              4
+
+2.1 Définitions de base                                                 4
+
+2.2 Typologie des réseaux sociaux                                       4
+
+2.3 Géopolitique des réseaux sociaux                                    13
+
+2.4 Deux «métiers» indissociables des réseaux sociaux                   14
+
+2.5 Intelligence artificielle et réseaux sociaux                        15
+
+3. LES RÉSEAUX SOCIAUX EN 8 CHIFFRES                                    16
+
+4. ENJEUX ET PROBLÉMATIQUES                                             17
+
+4.1 L'information à l'heure des réseaux sociaux                         17
+
+4.2 La mutation des pratiques de consultation de contenus               19
+
+4.3 Une économie de la donnée... et de l'attention                      20
+
+4.4 L'impact des réseaux sociaux sur les utilisateurs et utilisatrices  21
+
+4.5 L'impact des influenceurs et influenceuses                          24
+
+4.6 Quelques aspects juridiques sur l'usage des réseaux sociaux         28
+
+5. ENSEIGNER À L'HEURE DES RÉSEAUX SOCIAUX                              31
+
+5.1 Enseigner les réseaux sociaux                                       31
+
+5.2 Utiliser les réseaux sociaux comme supports à l'enseignement?       35
+
+6. EN GUISE DE CONCLUSION: UN REGARD D'EXPERT                           36
+
+7. EN SAVOIR PLUS                                                       37
+
+8. RÉFÉRENCES                                                           38
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux          2
+1 INTRODUCTION
+
+Quand Homo erectus apparaît sur Terre, il crée les                   ! Évoquer la question des réseaux sociaux est
+premières formes de communication élaborées et                            impossible sans citer de noms de sociétés
+ébauche le développement de liens sociaux struc-
+turés. Il lui faudra 1,4 million d'années pour évoluer              ou de marques commerciales. Tous les noms de
+jusqu'aux êtres humains que nous sommes.                            réseaux sociaux, médias ou plateformes apparais-
+                                                                    sant dans ce document sont cités dans une optique
+1,4 millions d'années: c'est aussi désormais le temps               d'information, en dehors de tout but promotionnel.
+cumulé que l'humanité passe chaque jour sur les
+réseaux sociaux, à l'échelle mondiale1.
+
+Chaque jour est ainsi consacré à alimenter ce gigan-
+tesque flux numérique. Mais quelle part de temps
+est-elle dédiée à la prise de recul et à la réflexion?
+
+Les réseaux sociaux facilitent la création de liens
+interpersonnels, la diffusion d'idées, l'accès à l'in-
+formation et l'expression personnelle. Mais ils ex-
+posent aussi à la désinformation, aux contenus hai-
+neux, aux influences toxiques, à la pression sociale
+et aux usages problématiques.
+
+Après avoir brossé une typologie des différents ré-
+seaux et médias sociaux, ce focus donne un aperçu
+synthétique des principaux enjeux et probléma-
+tiques, et offre des pistes pour exploiter le thème
+des réseaux sociaux dans l'éducation.
+
+Il se conclut par le regard d'un expert: Pascal
+Minotte, psychologue, psychothérapeute et codi-
+recteur du CRéSaM (Centre de Référence en San-
+té mentale), que nous remercions pour sa contri-
+bution.
+
+(1) Un chiffre obtenu en multipliant le nombre d'utilisateurs
+et utilisatrices mondiaux (5,24 milliards) par le temps passé
+quotidiennement, en moyenne, sur les réseaux sociaux (2h20).
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux                                                      3
+2 DÉFINITIONS ET EXEMPLES
+
+2.1 Définitions de base                                             2.2 Typologie des réseaux sociaux
+
+Selon la définition élaborée par le Conseil supérieur               Il peut sembler surprenant qu'un média comme
+de l'Éducation aux Médias (CSEM), les réseaux so-                   YouTube (techniquement, un site d'hébergement
+ciaux sont des «sites ou des applications en ligne                  de vidéos) soit le «réseau social» le plus utili-
+qui permettent aux utilisateurs de se regrouper, de                 sé de Belgique. Cela tient au fait que la définition
+dialoguer, d'échanger des informations et de tisser                 des réseaux sociaux, telle qu'évoquée précédem-
+du lien» (CSEM, 2022). Bien qu'il existe de nom-                    ment, est suffisamment large pour englober de
+breux réseaux sociaux différents, ils disposent tous                nombreux sites ou applications. Une séparation
+de caractéristiques qui permettent de les rattacher                 est parfois opérée entre «médias sociaux» (plate-
+à un modèle commun.                                                 formes permettant de créer, partager et interagir
+                                                                    avec du contenu (ex.:YouTube, blogs)) et «réseaux
+La première spécificité des réseaux sociaux est la                  sociaux» (plateformes axées sur les interactions
+possibilité de créer un profil: cet espace numé-                    entre individus (ex: Instagram,TikTok, Facebook)1.
+rique rassemble les informations destinées à pré-
+senter l'utilisateur ou l'utilisatrice. En fonction du              La typologie proposée ci-dessous inclut ces deux
+réseau social, ce profil contient généralement une                  types de plateformes, et s'étend même à d'autres,
+bio (biographie sommaire): un texte très court                      afin de considérer à la fois le «coeur» des réseaux
+censé refléter la personnalité, les goûts, les inté-                sociaux, les plus classiques, et ceux situés à la fron-
+rêts de la personne, ainsi qu'une image. Selon les                  tière avec d'autres objets numériques. Comprendre
+fonctionnalités et la politique de confidentialité,                 les réseaux sociaux, c'est aussi comprendre leur
+l'utilisateur peut choisir de mettre son profil et ses              évolution, leurs spécificités et leur diversité. La liste
+informations en mode public (accessible à tous)                     qui suit n'est pas exhaustive: elle permet de classi-
+ou privé (avec dans ce cas, une visibilité restreinte).             fier les réseaux sociaux par grandes catégories, et
+                                                                    d'en citer les plus représentatifs, qu'ils aient joué un
+Les réseaux sociaux ont comme seconde carac-                        rôle fondateur, ou qu'ils soient considérés comme
+téristique d'interconnecter automatiquement les                     les plus «incontournables».
+profils: les utilisatrices ou utilisateurs maintiennent
+ainsi le lien avec leurs proches et connaissances et                (1) C'est ainsi l'approche retenue dans la fiche-outil du tronc
+peuvent également se créer de nouveaux «amis»                       commun Le tribunal des réseaux sociaux, en support à la for-
+virtuels. La visibilité des profils, de leur actualité et           mation économique et sociale, et dont les définitions reprises
+de la mise à jour de leurs contenus est favorisée: à                sont issues. La fiche est disponible sur
+partir des années 2000, les internautes deviennent                  e-classe.be/tronc-commun-s1-tribunal-
+producteurs d'informations, et non plus simples                     reseaux-sociaux
+récepteur passifs (c'est le «web 2.0», ou le passage
+à un modèle d'internet participatif). Dans ce modèle,                                        4
+en rupture avec les médias traditionnels, l'interac-
+tion devient majeure, à travers la possibilité de ré-
+actions, de commentaires et de relais de contenus.
+
+Le classement des réseaux sociaux les plus popu-
+laires en Belgique en 2025 se présente comme suit:
+YouTube, Facebook, LinkedIn, Instagram, Messen-
+ger, Snapchat, TikTok, Pinterest et X (ex-Twitter)
+(We Are Social & Meltwater, 2025?).
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+   a. Les réseaux sociaux de mise                                   b. Les réseaux sociaux généralistes
+   en relation                                                      MySpace, Facebook, Instagram...
+   Classmates, LinkedIn...
+                                                                                                                      p.6
+                                                      p.6
+                                                                    d. Les plateformes de diffusion de
+   c. Les réseaux sociaux de                                        vidéos
+   microblogging                                                    Vimeo, YouTube, TikTok...
+   X (ex-Twitter),Threads...
+                                                                                                                      p.7
+                                                      p.7
+                                                                    f. Les plateformes de bookmarking
+   e. Les messageries instantanées                                  Del.icio.us, Pinterest...
+   Snapchat, WhatsApp...
+                                                                                                                      p.9
+                                                      p.9
+                                                                    h. Les réseaux sociaux émergents
+   g. Les plateformes issues du social                              BeReal, Mastodon,Telegram...
+   gaming
+   Twitch, Discord, Roblox, Fortnite...                                                                             p.12
+
+                                                    p.10                                    5
+
+   i. Les réseaux sociaux à visée
+   éducative
+   ClassDojo, Beneylu School, eTwinning...
+
+                                                    p.13
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+a. Les réseaux sociaux de mise en relation                          Facebook
+
+Les réseaux sociaux de mise en relation figurent                    2006 voit apparaitre Facebook, un des réseaux
+parmi les pionniers du paysage social en ligne. Ils                 sociaux les plus emblématiques, et culturellement
+ont posé les bases de la sociabilisation numérique                  impactant au point d'avoir son propre film dédié
+en permettant avant tout aux individus d'entrer en                  (The Social Network, en 2010). Facebook révolu-
+contact, d'établir et d'entretenir des liens person-                tionne l'expérience utilisateur avec une innovation:
+nels ou professionnels. Parmi eux:                                  le News Feed, ou le «Fil d'actualités». Il n'est alors
+                                                                    plus nécessaire de visiter un par un les profils des
+Classmates                                                          contacts pour suivre leurs publications; celles-ci
+                                                                    apparaissent directement sur la page d'accueil, dans
+Classmates (aujourd'hui appelé «MemoryLane.ai»)                     un flux personnalisé.
+est le premier réseau social, tel qu'on le conçoit
+aujourd'hui. Cette plateforme, apparue en 1995,                     Cette fonctionnalité devient désormais la norme,
+a pour objectif premier la mise en relation avec                    et nécessitera le développement technique d'algo-
+d'anciennes connaissances d'école ou d'université.                  rithmes de recommandation: grâce à des codes
+                                                                    informatiques, basés sur l'intelligence artificielle, les
+LinkedIn                                                            plateformes peuvent proposer des contenus per-
+                                                                    sonnalisés en fonction des préférences et habitu-
+Au cours des années qui ont suivi, d'autres plate-                  des de navigation.
+formes de ce type ont émergé. Notamment en
+2003, avec l'apparition de LinkedIn, le premier                     En 2021, l'entreprise Facebook Inc. (qui possède
+réseau social à vocation professionnelle destiné à                  notamment Facebook, Instagram,Threads, Messen-
+inciter les personnes d'un même secteur d'activité                  ger et WhatsApp) prend le nom de Meta.
+à se contacter et établir des liens.
+                                                                    Instagram
+b. Les réseaux sociaux généralistes
+                                                                    En 2010 apparait Instagram, une plateforme dédiée
+Les réseaux sociaux généralistes sont dotés de di-                  au partage d'images «esthétiques». L'innovation de
+verses fonctionnalités permettant des usages variés                 cette plateforme est d'être optimisée pour les
+et non spécialisés. Ces plateformes numériques                      smartphones, rendant le partage de photos beau-
+permettent à un large public de partager différents                 coup plus simple et instantané. C'est également ce
+types de contenus, d'interagir avec ceux des autres,                réseau social qui a popularisé l'usage des «filtres»,
+mais également de tisser des liens sociaux.                         destinés à embellir n'importe quelle photo sans le
+                                                                    moindre effort. Avec Instagram, mettre en scène
+MySpace                                                             son quotidien et l'enjoliver aux yeux du monde de-
+                                                                    vient pour beaucoup une activité à part entière.
+En 2003, la même année que LinkedIn, apparait
+MySpace, le premier réseau social grand public.                     À partir des années 2010, les réseaux sociaux se
+Il permettait à ses membres de partager leurs mu-                   codifient avec un vocabulaire, des pratiques et
+siques, leurs photos et de discuter de manière ins-                 même des métiers qui émergent (influenceurs/in-
+tantanée. Cette plateforme a permis à de nombreux                   fluenceuses et créateurs/créatrices de contenu).
+chanteurs et musiciens débutants de visibiliser et                  Instagram a largement contribué à l'introduction
+diffuser leurs oeuvres.                                             des placements de produits: les marques ont dé-
+                                                                    celé l'opportunité de promouvoir leurs produits
+                                                                    par l'intermédiaire de personnalités très suivies sur
+                                                                    la plateforme. Le marketing adopte les codes des
+                                                                    réseaux sociaux en vue de proposer des campagnes
+                                                                    publicitaires d'apparence considérée comme plus
+                                                                    subtile, inspirante et engageante.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux                                                             6
+Instagram développera ensuite des fonctionnali-                     X (ex-Twitter)
+tés attractives pour des actions commerciales, par
+exemple le format «Stories» (des contenus photos                    En 2006, l'arrivée de Twitter bouleverse la manière
+ou vidéos éphémères) ou les vidéos courtes appe-                    de diffuser et de consommer l'information. Ce ré-
+lées «Reels».                                                       seau sera particulièrement prisé par le monde des
+                                                                    médias et celui du journalisme, qui le voient à la
+En 2023, le terme «instagrammable» entre dans le                    fois comme un outil de diffusion, d'information et
+Larousse («Se dit d'un lieu, d'un objet, d'un mets,                 de veille. Il contribuera également à faire émerger
+d'un événement, etc., qui, par sa beauté ou son                     le «journalisme citoyen»: n'importe quelle per-
+originalité, est digne d'être photographié, puis pos-               sonne disposant d'un smartphone peut désormais
+té et amplement partagé sur le réseau social Ins-                   documenter en temps réel ce qu'elle voit ou vit,
+tagram»).                                                           et le diffuser au grand public de manière simple et
+                                                                    instantanée. Cela sera principalement favorisé par
+      Le tourisme 2.0                                               le format de messages courts, appelés tweets.
+                                                                    Twitter est également connu pour avoir inventé le
+En 2024, une analyse détermine que les réseaux so-                  «hashtag (#)», destiné à organiser et rechercher
+ciaux et les plateformes de streaming jouent désor-                 les tweets par mots-clés. Le rachat du réseau so-
+mais un rôle prédominant dans les comportements                     cial par Elon Musk, homme d'affaires et politique
+touristiques. Cela s'explique notamment par le fait                 américain, en 2022, marque l'histoire de Twitter.
+que, «les contenus générés par les utilisateurs [des                Aujourd'hui rebaptisé «X», le réseau social prône
+réseaux sociaux] sont perçus comme authentiques                     une liberté d'expression sans limites, et donc une
+et fiables». D'autre part, «les algorithmes de re-                  modération de contenus de moins en moins pré-
+commandation utilisés par les réseaux sociaux                       sente.
+créent des phénomènes de viralité qui se carac-
+térisent par des tendances touristiques difficiles à                Threads
+prédire et contrôler pour les territoires. Une fois
+qu'une image devient populaire, elle incite d'autres                Threads a été lancé par Meta en juillet 2023 aux
+utilisateurs à produire du contenu similaire, ampli-                États-Unis et a ensuite été rendu disponible en dé-
+fiant ainsi l'effet viral. Les destinations autrefois mé-           cembre de la même année en Europe. Ce nouveau
+connues peuvent ainsi devenir des hotspots tou-                     réseau social a été annoncé au même moment où X
+ristiques grâce à leur popularité en ligne, attirant                (ex-Twitter) dévoilait sa nouvelle ligne éditoriale et
+de nouveaux visiteurs et transformant les usages                    ses nouvelles mesures. Dès son lancement,Threads
+touristiques» (Brumont et al., 2024?).                              s'est positionné en concurrent de X/Twitter et s'est
+                                                                    d'ailleurs inspiré de l'ensemble de ses fonctionnali-
+Le phénomène de «ville-hashtag», présenté dans                      tés y compris de son interface. En contrepoint, il se
+cette analyse, traduit la nouvelle dynamique qui se                 présente comme un réseau social garantissant aux
+tisse entre les espaces urbains et le monde virtuel.                internautes un environnement convivial, préservé
+Aujourd'hui, certains lieux sont même spécifique-                   des propos haineux et polémiques.
+ment conçus dès leur création pour être photogra-
+phiés pour les réseaux sociaux.                                     d. Les plateformes de diffusion de vidéos
+
+c. Les réseaux sociaux de microblogging                             Ces plateformes ont pour principal objectif de
+                                                                    permettre l'hébergement, la diffusion et le partage
+Les réseaux sociaux de microblogging ont pour ob-                   de contenus audiovisuels. Il en existe deux types:
+jectif de faciliter la diffusion rapide d'informations              les plateformes orientées sur l'hébergement et
+et de contenus. Ces plateformes incitent leurs uti-                 le visionnage de contenu, mais disposant de
+lisateurs et utilisatrices à condenser leurs commu-                 quelques fonctionnalités sociales sommaires, et les
+nications en messages très courts, susceptibles                     plateformes centrées sur les interactions sociales
+d'être likés, commentés ou repartagés.                              au travers des contenus partagés.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux                                                          7
+De manière générale, les plateformes vidéo ont                      La plateforme a aussi contribué à développer la
+considérablement changé la manière dont les in-                     culture du clickbait (littéralement: «appât à clics»),
+ternautes consomment les contenus, et par consé-                    où les contenus sont formatés pour attirer l'atten-
+quent, la manière dont ces derniers sont créés.                     tion, à travers des titres exagérés, sensationnalistes
+                                                                    ou intrigants, ou des visuels interpellants (visages
+Vimeo                                                               choqués, flèches pointant vers un élément, points
+                                                                    d'exclamation...), le but étant de susciter le plus de
+Fondé en 2004, Vimeo s'impose comme la pre-                         visionnages possible, afin de générer des revenus
+mière plateforme de partage vidéo intégrant une                     publicitaires en rapport avec le nombre de vues.
+dynamique sociale. Cependant, elle s'apparente                      Enfin, YouTube a également joué un rôle clé dans
+bien plus à un site d'hébergement qu'à un réseau                    l'émergence des «challenges», ces défis relevés
+social en tant que tel. Principalement utilisée                     sous format de vidéos virales, dans un but ludique,
+comme un canal de diffusion, ses fonctionnalités                    philanthropique... ou dans le cadre d'un clickbait.
+sociales sont limitées: l'interaction se cantonne aux
+commentaires et aux likes.                                          TikTok
+
+YouTube                                                             Certains réseaux sociaux ont fait de la vidéo le mé-
+                                                                    dia privilégié de leur plateforme, à l'image deTikTok.
+YouTube est la plateforme vidéo la plus populaire                   Lancée en 2016, conçue pour être simple d'utilisa-
+au monde. En 20 ans d'existence, ce média est, de                   tion et proposer des vidéos courtes et dynamiques,
+fait, parvenu à s'imposer comme une plateforme de                   la plateforme repose sur une philosophie centrée
+divertissement et d'information extrêmement                         sur l'amusement et le divertissement. Elle n'est ce-
+consultée, faisant de l'ombre au secteur de l'audio-                pendant pas exempte de critiques, en raison de sa
+visuel. YouTube a considérablement marqué l'his-                    politique de modération permissive: pour capter
+toire des réseaux sociaux pour plusieurs raisons.                   l'attention et acquérir de nouveaux abonnés, cer-
+En premier lieu, la plateforme a contribué à l'appari-              tains profils jouent la carte de la provocation ou
+tion d'un nouveau type d'activité:les vidéastes web.                adoptent et recommandent des comportements
+À l'aide d'une simple caméra et d'une connexion                     dangereux ou irresponsables. C'est ainsi que les
+internet, des anonymes souhaitant partager leurs                    challenges viraux se multiplient.
+passions ou leur quotidien se sont mués en créa-
+teurs et créatrices de contenus, dans certains cas                  TikTok est considérée comme un réseau social
+jusqu'à devenir d'authentiques célébrités. Certains                 particulièrement addictif, notamment en raison de
+apparaitre régulièrement dans le classement des                     la performance de ses algorithmes susceptibles de
+personnalités préférées des enfants, adolescentes                   proposer des contenus correspondant finement
+et adolescents.                                                     aux goûts des personnes visionnant les vidéos et
+                                                                    captant instantanément leur attention. Le format
+YouTube a également révolutionné la création de                     court des vidéos permet de renforcer ce système
+contenu en ligne en popularisant un nouveau mo-                     de recommandation. En effet, grâce aux contenus
+dèle économique appelé la «creator economy» ou                      très concis proposés, l'algorithme de la plateforme
+«l'économie des créateurs»: il s'agit d'une des                     apprend beaucoup plus rapidement à cerner les
+premières plateformes à proposer un programme                       intérêts des utilisateurs et utilisatrices. TikTok fait
+de monétisation structuré: sous certaines condi-                    également partie des réseaux sociaux qui rému-
+tions, les vidéastes peuvent percevoir une rému-                    nèrent directement les utilisateurs et utilisatrices
+nération directe de YouTube, fondée sur le partage                  en fonction du nombre de vues et de l'engagement
+des recettes issues de la publicité.                                générés par leurs vidéos.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux                                                           8
+e. Les messageries instantanées                                     Les espaces dénommés Chaines permettent de
+                                                                    s'abonner aux profils de personnalités et d'organi-
+Ces applications ont pour but premier de per-                       sations et d'être notifié de leurs actualités.
+mettre aux utilisateurs et utilisatrices d'échanger
+en temps réel, via un canal de communication pri-                   f. Les plateformes de bookmarking
+vé, des messages comportant textes, images, vidéos
+ou audios. Initialement hors du champ des réseaux                   Avec l'avènement du numérique et l'usage crois-
+sociaux à proprement parler, la plupart des messa-                  sant d'Internet dans les années 1990-2000, une
+geries instantanées ont développé des fonctionna-                   multitude de sites web ont émergé. La toile devient
+lités qui favorisent l'interconnexion et l'interaction,             un terrain de découverte intéressant, mais un peu
+d'une manière identique aux réseaux sociaux «his-                   brouillon où l'information pertinente et adéquate
+toriques».                                                          est finalement difficile à retrouver. Face à cette
+                                                                    problématique, il devient impératif de pouvoir or-
+Snapchat                                                            ganiser, partager et facilement retrouver des res-
+                                                                    sources en ligne. C'est ainsi que les plateformes
+Lancée en 2011, Snapchat innove en créant                           de bookmarking apparaissent. Elles se centrent sur
+le concept de messages éphémères: les photos                        la découverte et la curation de contenu (c'est-à-
+et les messages envoyés ne pouvaient être vi-                       dire la sélection, la classification et l'étiquetage par
+sionnés qu'une seule et unique fois. Au vu de ce                    mots-clés (bookmarking)). Elles permettent aux uti-
+concept inédit, les jeunes se sont rapi-                            lisateurs et utilisatrices de consulter, sauvegarder,
+dement emparés de l'outil pour en faire                             organiser et partager leurs contenus au moyen de
+un canal de communication privilégié. Ce                            fonctionnalités dédiées. Cette fonction de partage
+concept est décliné par la suite en «story»:                        de contenus, complétée par la possibilité de créer
+des photos et des vidéos, qui disparaissent au                      un profil, place ces plateformes dans la catégorie
+bout de 24h.                                                        élargie des réseaux sociaux. Leur objectif n'est pas
+                                                                    d'inciter les personnes à (re)nouer des relations
+Snapchat contribuera également (tout comme                          virtuelles, mais plutôt de les réunir autour de sujets
+Instagram) à populariser les filtres: des ajustements               qu'elles ont repérés et organisés ensemble. Parmi
+automatiques de couleurs ou des ajouts d'élé-                       les plateformes de bookmarking les plus connues, on
+ments décoratifs statiques sur les photos et vidéos,                peut citer: Delicious, précurseur dans le domaine,
+jusqu'aux filtres 3D et animés en réalité augmen-                   mais aussi Diigo, Pearltrees, Pinterest, StartMe...
+tée, superposés au visage de la personne qui se
+filme ou se prend en photo. Les principaux réseaux                  Del.icio.us
+sociaux répliqueront ces concepts sur leurs
+propres plateformes.                                                Aujourd'hui inactive, la plateforme Delicious a été
+                                                                    pionnière en 2003. Elle a contribué à élaborer le
+WhatsApp                                                            design standard des sites ou fonctionnalités de
+                                                                    classification de contenus: les sujets similaires
+WhatsApp est une application de messagerie                          pouvaient être organisés en dossiers, piles ou co-
+instantanée proposant une alternative gratuite à                    lonnes portant un titre et une description. Elle a
+l'envoi de SMS et de MMS. Popularisée au milieu                     également popularisé le concept de tags: ces «éti-
+des années 2010, l'application s'est dotée depuis de                quettes» prennent la forme de mots-clés utilisés
+nombreuses fonctionnalités de communautés, en                       pour catégoriser un contenu et le retrouver facile-
+vue de devenir un réseau social à part entière. Les                 ment sur un site ou une plateforme.
+statuts (une phrase indiquant la disponibilité ou
+l'humeur de l'utilisateur ou l'utilisatrice) permettent
+désormais le partage de photos ou courtes vidéos,
+susceptibles de mentionner d'autres personnes
+et d'être likées, et disparaissant après 24 heures.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux                                                            9
+Pinterest                                                           directement, via une messagerie instantanée,
+                                                                    avec les créateurs et créatrices de contenu. Ces
+Lancée en 2010, la plateforme Pinterest est au-                     derniers, grâce aux échanges en temps réel,
+jourd'hui considérée comme l'un des sites de                        construisent des communautés engagées et fidèles.
+partage de photographies les plus emblématiques.                    Les caractéristiques de la plateforme rendent pos-
+Pinterest a repris les codes ergonomiques de ses                    sible la création de programmes distincts, similaires
+prédécesseurs, et s'est appuyé sur les développe-                   à des programmes télévisuels, avec une structure,
+ments technologiques pour proposer des fonction-                    des invités, un conducteur... Twitch a ainsi accueilli
+nalités supplémentaires (la réalité augmentée ou la                 progressivement des créateurs et créatrices de conte-
+recherche d'images fondée sur l'intelligence artifi-                nu issus d'autres domaines que le jeu vidéo: médias
+cielle).                                                            traditionnels, journalistes, polémistes, personnalités
+                                                                    politiques1...
+g. Les plateformes issues du social gaming
+                                                                    Discord
+Le social gaming désigne la pratique du jeu vidéo
+avec une forte composante sociale, qu'il s'agisse                   Lancée en 2015, la plateforme Discord a été initia-
+de pratiquer cette activité en simultané avec                       lement pensée pour les personnes pratiquant les
+d'autres joueurs ou joueuses ou d'échanger à pro-                   jeux vidéo. Elle s'organise en une multitude d'es-
+pos des jeux vidéo, considérés comme des médias                     paces virtuels, privés ou publics, chacun dédié à un
+à consommer de la même manière que des films                        groupe ou une communauté précise (une équipe de
+ou des compétitions sportives (e-sport). Il s'appuie                jeu, une bande d'amis, un club de lecture, une classe,
+sur une catégorie particulière de réseaux sociaux                   le public d'un événement, les membres d'une en-
+qui combinent des éléments ludiques propres aux                     treprise...). Chaque espace peut contenir plusieurs
+jeux vidéo et les interactions sociales typiques des                «salons» (canaux de discussion), vocaux ou tex-
+plateformes numériques classiques. Par exemple:                     tuels, organisés par centres d'intérêt ou par fonc-
+les plateformes Twitch et Discord ou des espaces                    tion (annonces, entraide, débats, événements...).
+vidéoludiques comme Roblox ou Fortnite, où les                      Du fait de son architecture favorisant le partage
+personnes utilisatrices ne se contentent pas de                     de contenus et la communication par groupes,
+jouer, mais construisent également des commu-                       Discord a connu un essor notable à la suite de la
+nautés autour d'intérêts partagés. L'univers des                    période de confinement liée à la pandémie de Co-
+réseaux sociaux et celui des jeux vidéo sont inti-                  vid-19 et s'est progressivement élargie à un public
+mement liés. Pour preuve, un rapport paru en 2024                   plus vaste.
+révèle que 64% des joueurs et joueuses sondés dé-
+couvrent de nouveaux jeux vidéo grâce à YouTube                     Second Life, Roblox, Fortnite...: à la fron-
+et TikTok (Big Games Machine, 2024?). Ce constat                    tière entre jeux vidéo et réseaux sociaux
+en amène d'ailleurs un autre: les internautes aiment
+regarder d'autres personnes jouer en direct à un                    La frontière entre jeux vidéo et réseaux sociaux
+jeu vidéo. Certaines plateformes se sont d'ailleurs                 a commencé à s'estomper quand des jeux multi-
+spécialisées en la matière. C'est notamment le cas                  joueurs (où plusieurs personnes participent, à dis-
+de Twitch, une plateforme de streaming vidéo qui                    tance, à la même partie de jeu) ont proposé des
+permet aux membres de diffuser leur contenu en                      modes de jeu sandbox (ou «bac à sable»): un
+direct et d'interagir avec leurs publics.                           mode sans objectif prédéterminé où l'interaction
+                                                                    avec l'environnement (découvrir, construire, tes-
+Twitch                                                              ter...) est primordiale.
+
+Lancée en 2011, la plateforme se distingue par                      (1) Ces informations sont disponibles sur le site RTBF
+de nombreuses fonctionnalités interactives qui                      (www.rtbf.be/article/twitch-c-est-quoi-ce-nouveau-
+en font un véritable réseau social. Les personnes                   label-politique-a-afficher-sur-les-lives-11458611)
+qui l'utilisent peuvent interagir entre elles et échanger
+                                                                                            10
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+En 2003, Second Life est lancé comme un de ces                      Minecraft, Eco, Rocket League, Animal Crossing2...
+«bacs à sable»: un monde virtuel en ligne, qui per-                 De manière globale, de nombreux jeux vidéo mul-
+met à ses utilisateurs et utilisatrices d'explorer,                 tijoueurs tendent à intégrer de plus en plus des
+construire, commercer et interagir dans un univers                  aspects de développement de communautés ou
+entièrement créé par ses membres.                                   des fonctionnalités identiques à celles des réseaux
+                                                                    sociaux, rendant ainsi floue la ligne de démarcation
+Profil personnel, messagerie instantanée publique                   entre ces deux concepts.
+ou privée, chat vocal, documents transmissibles,
+panneaux collaboratifs... sont les outils de com-                   h. Les réseaux sociaux émergents
+munication de ce «jeu vidéo» sans mission ni but
+autre que la découverte, l'interaction et l'expression              Les réseaux sociaux ont évolué avec la société.
+de soi.                                                             Les sujets, problématiques et enjeux d'hier n'étant
+                                                                    pas ceux d'aujourd'hui, de nouvelles plateformes
+Apparue en 2006, Roblox est une plateforme qui                      voient le jour et tentent de rompre avec les modèles
+permet aux enfants, aux adolescentes et aux ado-                    établis. Certaines visent à se démarquer en met-
+lescents (son public cible) de concevoir facilement                 tant en avant la protection des données, la liberté
+leurs propres univers virtuels interactifs, la plupart              d'expression absolue ou l'authenticité. L'énuméra-
+du temps sous forme de mini-jeux et d'y jouer avec                  tion ci-dessous n'est évidemment pas exhaustive:
+d'autres personnes connectées partout dans le                       elle vise à donner des exemples de ces réseaux
+monde. Les personnes qui l'utilisent peuvent explo-                 émergents ou ayant fait l'actualité dans les années
+rer librement des créations partagées par d'autres,                 2020.
+participer à des jeux collaboratifs ou compétitifs, et
+échanger en direct avec leurs pairs. En plus d'être                 BeReal
+un gigantesque catalogue de jeux créés par des
+non-professionnels, la plateforme intègre des élé-                  BeReal permet de partager instantanément, et
+ments constitutifs des réseaux sociaux (profil per-                 uniquement lorsque l'application le suggère, une
+sonnel, ajout d'«amis», canaux de communication,                    photo capturée, avec la caméra avant et arrière
+création de communautés...).                                        de son smartphone: une notification quotidienne
+                                                                    aléatoire invite l'utilisateur ou l'utilisatrice à prendre
+Datant de 2017, Fortnite est à l'origine un jeu de tir,             une photo sur le vif et à publier celle-ci dans un
+intégrant la possibilité d'interaction avec l'environ-              délai de deux minutes. Dès l'apparition de l'applica-
+nement de jeu. Il est devenu un phénomène social1                   tion en 2020, les fondateurs affichaient leur volonté
+en proposant un mode «bac à sable», reprenant                       de rompre avec les standards des réseaux sociaux
+les mêmes fonctionnalités que Second Life avait                     (filtres, formats, creator economy...).
+développées (mini-mondes personnels, messagerie,
+groupes de discussion...). Fortnite propose égale-                  Mastodon, Bluesky
+ment des événements collectifs réguliers: compé-
+titions internes, happenings liés à l'environnement                 Mastodon, apparu en 2016, et Bluesky, lancé
+de jeu ou des concerts donnés par des stars mon-                    en 2021, ont pour ambition de redonner aux per-
+diales.                                                             sonnes utilisatrices le contrôle sur leurs données
+                                                                    personnelles et sur leur expérience en ligne. Ces
+(1) Ces informations sont disponibles sur le site Radio France      plateformes se distinguent notamment par l'ab-
+(www.radiofrance.fr/franceculture/podcasts/les-enjeux-              sence de contenus suggérés automatiquement par
+des-reseaux-sociaux/fortnite-un-jeu-en-ligne-aux-al-                des algorithmes, favorisant ainsi une navigation plus
+lures-de-reseau-social-3358881)                                     libre. De plus, elles sont actuellement dépourvues
+                                                                    de toute forme de publicité.
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+                                                                    (2) Ces informations sont disponibles sur le site Meta-Media
+                                                                    (www.meta-media.fr/2020/05/22/quand-la-vie-quoti-
+                                                                    dienne-migre-sur-animal-crossing-les-acteurs-econo-
+                                                                    miques-sadaptent.html)
+
+                                                                                            11
+     Rumble                                                              qui permet une communication totalement confi-
+                                                                         dentielle. Aucun des messages échangés ne peut
+     Rumble est une plateforme vidéo apparue en                          être transféré et aucune donnée n'est conservée
+     2013 qui se revendique comme un média alterna-                      sur les serveurs de la plateforme. En outre, les per-
+     tif oeuvrant pour la liberté d'expression absolue.                  sonnes utilisatrices peuvent programmer la sup-
+     Refuge assumé des créateurs et créatrices de                        pression automatique des messages, photos, vidéos
+     contenus censurés sur les plateformes concur-                       ou fichiers après leur lecture par le destinataire.
+     rentes, dont YouTube, Rumble est un site
+     controversé, illustrant les limites éthiques de la                  Cara
+     liberté d'expression sur internet. En effet, l'ab-
+     sence volontaire de politique de modération                         Cara est un réseau social créé en 2023. Il se dis-
+     a pour conséquence le libre accès, au milieu d'autres               tingue par sa volonté de valoriser et protéger le
+     contenus, à des vidéos conspirationnistes ou ex-                    travail des artistes à l'ère du numérique. Cara a été
+     trémistes. Depuis 2022, la plateforme est d'ailleurs                créé en réaction à la décision du groupe Meta d'en-
+     inaccessible en France.                                             traîner son outil d'intelligence artificielle à partir
+                                                                         des données et contenus disponibles sur ses ré-
+     Truth Social                                                        seaux sociaux (Facebook, Instagram,WhatsApp...).
+                                                                         L'intelligence artificielle est en effet spécifiquement
+     Truth Social est un réseau social de microblog-                     bannie de cette plateforme, en termes d'usages
+     ging apparu en 2021. Il est né de l'initiative du pré-              comme en termes de contenus.
+     sident américain Donald Trump, à la suite de la dé-
+     sactivation de ses comptes sur les plateformes X                    i. Les réseaux sociaux à visée éducative
+     (ex-Twitter), Facebook etYouTube. Le réseau social
+     arbore la même interface et les mêmes fonctionna-                   Pour finir cette typologie, il convient de distinguer
+     lités que son concurrent direct, X. Comme Rumble,                   les réseaux sociaux dits «éducatifs» des réseaux
+     il promeut une très grande liberté d'expression au                  sociaux «grand public» ou généralistes. Cette dif-
+     détriment des vérités factuelles.                                   férenciation repose à la fois sur les objectifs, les
+                                                                         fonctionnalités et les publics visés par ces plate-
+     Telegram                                                            formes.
+
+     Telegram est une application de messagerie instan-                  Les réseaux sociaux généralistes, tels que ceux cités
+     tanée mise en ligne en 2013. Ce service est régu-                   dans les points précédents, sont des plateformes
+     lièrement au coeur de l'actualité, des polémiques et                commerciales destinées à un usage libre et personnel.
+     des affaires judiciaires car il est devenu un lieu privi-           Ils sont fondés sur la logique de diffusion publique,
+     légié pour les rassemblements virtuels de groupes                   de viralité des contenus et de monétisation de l'at-
+     criminels. Cela s'explique notamment par sa fonc-                   tention. Leur attrait repose notamment sur la par-
+     tionnalité spécifique appelée «échanges secrets»,                   ticipation à des tendances, la diffusion de contenus
+                                                                         courts et ludiques et la recherche de visibilité. S'ils
+           Monsieur Prof a créé un sondage.                              peuvent être ponctuellement utilisés dans un cadre
+           14:16                                                         pédagogique (pour analyser une campagne de com-
+                                                                         munication, sensibiliser à l'identité numérique ou
+Participes-tu à la classe verte ?                                        aborder l'éducation aux médias), leur environne-
+                                                                         ment ouvert présente de nombreuses limites: ges-
+OUI                    VS                                                tion de la confidentialité, exposition à des contenus
+                                                                         inappropriés, publicités ciblées et pression sociale
+NON                                                                      liée à la réputation en ligne.
+
+Je ne sais pas encore
+
+     Service général du Numérique éducatif · Focus: les réseaux sociaux  12
+À l'inverse, les réseaux sociaux éducatifs, tels que                2.3 Géopolitique des réseaux sociaux
+ClassDojo, Beneylu School, Schoology, Seesaw, Pa-
+dlet ou encore eTwinning, ont été conçus spécifi-                   La majorité des réseaux sociaux utilisés mondia-
+quement pour un usage scolaire ou pédagogique.                      lement sont issus des États-Unis. Les plateformes
+Ils permettent aux enseignants et enseignantes de                   telles que Facebook, Instagram, WhatsApp, X
+créer des espaces sécurisés pour communiquer                        (ex-Twitter),YouTube, Snapchat, et plus récemment
+avec leurs élèves et leurs familles, partager des                   TikTok (bien que d'origine chinoise, la plateforme
+contenus pédagogiques, suivre les progrès et orga-                  s'est largement américanisée dans ses usages et ses
+niser des activités de manière collaborative.                       infrastructures) dominent largement le paysage nu-
+                                                                    mérique mondial.
+Des plateformes et applications telles que Kinzoo
+Messenger for Families, Wilby, Woozworld... sont                    Cette hégémonie américaine signifie concrètement:
+des messageries ou réseaux sociaux spécifique-
+ment conçus pour les enfants de moins de 13 ans.                    · Une concentration des données personnelles
+Elles sont considérées comme plus «sûres» que                         des personnes européennes dans des entreprises
+les réseaux sociaux traditionnels et permettent                       américaines, posant des enjeux importants en
+d'expérimenter les concepts de réseau social et de                    matière de protection des données (Règlement
+socialisation numérique. Un accompagnement de                         général sur la protection des données - RGPD)
+l'enfant sur ces plateformes est cependant toujours                   et de souveraineté numérique européenne.
+nécessaire.
+                                                                    · Une influence culturelle et politique impor-
+ ! L'usage d'un réseau social en contexte                             tante: ces plateformes façonnent les discours,
+      éducatif suppose donc une réflexion sur le                      les tendances culturelles et influencent même
+                                                                      les processus démocratiques (tel que l'a montré
+choix de l'outil:                                                     le scandale Cambridge Analytica, par l'ingérence
+                                                                      dans les processus électoraux).
+· Est-il conforme au cadre de l'école?
+                                                                    · Une dépendance technologique des utilisa-
+· Protège-t-il les données?                                           teurs et utilisatrices européens vis-à-vis de ces
+                                                                      géants numériques américains rendant difficile
+· Permet-il un apprentissage actif sans mise en                       l'émergence de concurrents européens solides.
+  danger?
+                                                                    Bien que largement dominée par les plateformes
+Cette distinction entre outils éducatifs et outils gé-              américaines, le marché européen a vu se dévelop-
+néralistes permet de mieux orienter les pratiques                   per quelques réseaux sociaux et plateformes nu-
+et d'offrir aux élèves des repères clairs dans leur                 mériques spécifiques. Ils sont cependant souvent
+navigation numérique.                                               plus spécialisés ou populaires uniquement dans
+                                                                    leur pays d'origine, avec un succès plus modeste.
+      Accéder à des contenus numériques et                          Voici quelques exemples notables:
+      médiatiques adaptés aux plus jeunes:
+                                                                    · Mastodon et BeReal, cités plus haut, sont respec-
+Common Sense Media est une organisation amé-                          tivement allemand et français.
+ricaine à but non lucratif visant à répertorier et
+évaluer les contenus médiatiques (films, livres, ap-                · Copains d'avant (France) a été créé en 2001. Ini-
+plications, sites, jeux...) sous l'angle de leur cor-                 tialement destiné à retrouver des camarades de
+respondance avec les particularités d'un public                       classe, le réseau a évolué pour s'aligner sur les
+d'enfants ou d'ados. Les contenus sont en anglais.                    fonctionnalités des réseaux sociaux généralistes.
+La page www.commonsensemedia.org/lists/safer
+-social-media-and-messaging-apps-for-kids                                                   13
+reprend et évalue sur base d'avis une quinzaine d'ap-
+plications et sites de réseaux sociaux et messageries
+conçus pour les plus jeunes et adaptés à leur âge.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+· Jodel (Allemagne) est une application de discus-                  En produisant régulièrement du contenu, ils et elles
+  sion géolocalisée très populaire chez les jeunes,                 contribuent activement à la vitalité des plateformes
+  principalement utilisée sur les campus universi-                  et à leur attractivité. Pourtant, une confusion per-
+  taires.                                                           siste entre ces deux profils, jusqu'à susciter des
+                                                                    controverses au sein même des communautés
+· Xing (Allemagne) et Viadeo (France) sont deux                     concernées. Il est donc essentiel de mieux les défi-
+  réseaux sociaux professionnels concurrents de                     nir pour comprendre leurs spécificités et leur rôle
+  LinkedIn (États-Unis).                                            dans le paysage numérique.
+
+Malgré ces initiatives, aucun réseau social européen                La Commission européenne définit un influenceur
+n'a atteint une taille critique comparable aux géants               ou une influenceuse comme «une personne phy-
+américains.                                                         sique ou une entité virtuelle qui, sur une plateforme
+                                                                    pertinente, dispose d'une audience supérieure à
+2.4 Deux «métiers» indissociables des ré-                           la moyenne» (Commission européenne, 2021,
+seaux sociaux                                                       pp. 1-21). L'Office québécois de la langue française,
+                                                                    pour sa part, décrit un créateur ou une créatrice
+Depuis le début des années 2010 (période qui voit                   de contenu comme une «personne dont le travail
+l'implémentation durable de FacBeibeonovkenetuTewitter, et          consiste à concevoir des publications originales
+l'apparition d'Instagram et Snapcahuatc),lul'ébc!osystème           destinées aux réseaux sociaux, tout en s'assurant
+des réseaux sociaux s'est considérablement trans-                   que celles-ci forment un ensemble cohérent et en-
+formé.Les plateformes se sont démultipliées et leurs                gageant pour l'audience»1. Bien que ces deux défi-
+fonctionnalités se sont ancrées dans le quotidien.                  nitions permettent de distinguer les deux profils,
+Le champ de possibilités en matière d'information,                  elles laissent également entrevoir la délimitation
+de divertissement et de consommation s'est ain-                     floue qui se situe entre eux.
+si largement étendu sous l'impulsion de nouveaux
+acteurs clés.                                                       La confusion entre créateurs de contenu et influen-
+                                                                    ceurs provient essentiellement du fait que leurs rôles
+Parmi ces figures centrales, les créateurs et créa-                 respectifs sur les réseaux sociaux ont évolué et ont
+trices de contenu, tout comme les influenceurs                      fini par se rejoindre. Ainsi, les influenceurs et les
+et influenceuses, occupent une place stratégique.                   influenceuses, disposant d'une certaine notoriété
+                                                                    sur les plateformes numériques, sont approchés
+live  2k                                                            par les marques pour diffuser leurs communica-
+                                                                    tions publicitaires. Le but étant de convertir l'au-
+                                                                    dience de l'influenceur ou influenceuse en question
+                                                                    en consommateurs des produits ou services de la
+                                                                    marque.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  (1) Ces informations sont disponibles sur le site Office
+                                                                    québécois de la langue française (vitrinelinguistique.oqlf.
+                                                                    gouv.qc.ca/fiche-gdt/fiche/26561613/createur-de-
+                                                                    contenu)
+
+                                                                                            14
+Les créateurs et créatrices de contenu, quant à                     Enfin, les bulles de filtres, créées par l'IA via des
+eux, partagent avant tout leurs passions, leurs idées               algorithmes renforçant des comportements ou des
+ou leurs expertises, à travers des formats variés                   intérêts spécifiques, limitent souvent l'exposition à
+tels que des vidéos, des photos, des textes ou des                  des perspectives diversifiées. Cette homogénéité
+podcasts. Lorsque leurs productions suscitent                       algorithmique peut affecter la capacité des utilisa-
+l'intérêt d'un large public, ils et elles parviennent               teurs et utilisatrices à développer une vision cri-
+à construire des communautés engagées. C'est à                      tique et à accéder à des informations équilibrées.
+partir du moment où ces contenus font l'objet de                    Par conséquent, la transparence et la régulation des
+partenariats commerciaux que la distinction avec                    systèmes d'IA deviennent essentielles pour garan-
+les influenceurs et influenceuses devient plus ténue.               tir un usage éthique et inclusif des réseaux sociaux.
+En effet, un créateur ou une créatrice qui monétise
+son activité en collaborant avec des marques entre                  L'intelligence artificielle peut également être uti-
+dans le champ du marketing d'influence.                             lisée pour permettre la reconnaissance faciale et
+                                                                    ainsi soutenir diverses fonctionnalités. Elle peut
+En somme, bien que leurs intentions initiales dif-                  notamment servir à détecter des deepfakes (vidéos
+fèrent, les créateurs et créatrices de contenu et                   hypertruquées générées par IA) mettant en scène
+les influenceurs et influenceuses ont en commun                     des visages réels à l'insu des personnes, qu'il s'agisse
+leur capacité à rassembler une communauté et à                      de personnalités publiques ou de particuliers. Par
+influencer ses choix, ses pratiques culturelles et ses              exemple, dans le cadre de publicités trompeuses
+comportements. Si tous les créateurs et créatrices                  impliquant des célébrités, la détection automati-
+n'ambitionnent pas de transformer leur travail                      sée nécessite souvent que la personne concernée
+en levier commercial, nombreux sont ceux et                         ait au préalable autorisé l'accès à certaines images
+celles qui saisissent l'opportunité de valoriser leur               d'elle -- comme des photos de profil -- afin de
+audience à travers des partenariats rémunérés,                      permettre une comparaison efficace par l'IA1.
+rejoignant ainsi les dynamiques propres à l'in-
+fluence.                                                            La reconnaissance faciale peut également être uti-
+                                                                    lisée pour une identification du détenteur ou de
+2.5 Intelligence artificielle et réseaux                            la détentrice d'un compte sur les réseaux sociaux:
+sociaux                                                             dans le but de retrouver l'accès à un compte dont
+                                                                    le mot de passe a été perdu, par exemple; ou en-
+L'intelligence artificielle est de plus en plus inté-               core, avec la possibilité d'analyser des selfies pour
+grée dans les réseaux sociaux. Les algorithmes d'IA                 déterminer l'âge de l'utilisateur ou de l'utilisatrice
+permettent de personnaliser les flux de contenu,                    et vérifier la correspondance avec l'âge minimum
+offrant à chaque utilisateur une expérience per-                    requis.
+sonnalisée d'après ses centres d'intérêt. Des plate-
+formes comme TikTok exploitent pleinement cette                     Cependant, si ces usages novateurs de l'intelligence
+capacité. Cette personnalisation est devenue un                     artificielle peuvent se révéler positifs, ils soulèvent
+outil puissant pour fidéliser les utilisateurs et uti-              également d'importantes questions éthiques et ju-
+lisatrices mais elle soulève également des préoc-                   ridiques, en matière de protection de la vie privée
+cupations majeures. En effet, si ces outils automa-                 et de traitement de données personnelles, en par-
+tisés permettent une gestion plus efficace, ils sont                ticulier de données biométriques.
+aussi source de controverses, notamment lorsqu'ils
+échouent à détecter des contenus nuisibles ou am-                   (1) Ces informations sont disponibles sur le site France 24
+plifient des biais existants.                                       (www.france24.com/fr/info-en-continu/20250305-me-
+                                                                    ta-va-utiliser-la-reconnaissance-faciale-de-célébri-
+En outre, l'IA est désormais largement utilisée                     tés-pour-débusquer-les-fausses-publicités)
+pour générer des contenus, ce qui remet en ques-
+tion l'authenticité des informations diffusées sur les                                      15
+plateformes.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+3 LES RÉSEAUX SOCIAUX EN 8 CHIFFRES
+
+5,24 MILLIARDS d'utilisateurs                                       8,98 MILLIONS de Belges sont
+
+ou utilisatrices de réseaux sociaux dans le                         actifs ou actives sur les réseaux sociaux. Cela
+monde, ce qui représente 63,9% de la po-                            signifie donc que 76,4% de la population
+pulation totale (We are Social & Meltwater,                         belge utilise ces plateformes.
+2025?).
+                                                                    60, 57, 51%,c'est la part des réseaux
+73% des élèves de la 5e primaire à la 7e
+                                                                    sociaux (Instagram 60%, TikTok 57%, You-
+secondaire déclarent que la vidéo est leur                          Tube 51%) cités par les élèves de secondaire
+format préféré pour s'informer (Hurd & Or-                          comme étant leurs préférés pour s'informer
+ban de Xivry, 2024).                                                sur l'actualité.
+
+Pour en savoir plus sur l'usage des réseaux sociaux comme vecteurs d'information, rendez-vous en page 17
+
+     75 SECONDES                                                                 1,4%
+
+   C'est la durée moyenne de l'attention                             Le pourcentage des vidéos TikTok dispensant
+portée sur un écran en 2012. Huit ans plus                            des conseils alimentaires et créées par des
+tôt, cette durée était de 2 minutes et demie.                            personnes spécialistes de la diététique.
+
+   Pour en savoir plus sur l'économie de                            Pour en savoir plus sur l'influence des réseaux
+     l'attention, rendez-vous en page 21                                  sociaux sur des questions de santé,
+                                                                                 rendez-vous en page 24
+
+          5 800 000                                                     8 ANS ET DEMI
+
+     Une estimation du revenu mensuel généré                        C'est l'âge moyen estimé, en France, pour la
+   par un influenceur faisant sur les réseaux so-                     première inscription à un réseau social.
+   ciaux l'apologie de la «masculinité toxique».
+                                                                    Pour en savoir plus sur l'âge d'accès et sur
+      Pour en savoir plus sur les influenceurs                         le cadre légal, rendez-vous en page 28
+        «toxiques», rendez-vous en page 25
+                                                                                          16
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+4 ENJEUX ET PROBLÉMATIQUES
+
+4.1 L'information à l'heure des réseaux                             Les réseaux sociaux comme moteurs de
+sociaux                                                             recherche:
+
+Les réseaux sociaux ont profondément bouleversé                     La montée en puissance de TikTok en tant que
+la manière dont les internautes s'informent. Cer-                   moteur de recherche préféré de la génération Z1
+tains créateurs et créatrices de contenu, comme                     illustre une transformation profonde des pratiques
+ceux de la chaîne HugoDécrypte pour l'actualité ou                  numériques. Pour cette génération, TikTok ne se
+Nota Bene pour l'Histoire,ont gagné en popularité en                limite pas seulement à une plateforme de divertis-
+proposant des formats vidéo adaptés aux usages nu-                  sement. Avec ses algorithmes puissants, ce réseau
+mériques des jeunes. Ce changement s'explique par                   social devient une ressource pour répondre à des
+plusieurs facteurs: un format adapté aux habitudes                  besoins variés: tutoriels, inspirations culinaires,
+numériques, avec des vidéos courtes et dynamiques                   idées de coiffures, et bien plus. Contrairement aux
+accessibles rapidement; un ton plus engageant                       moteurs de recherches classiques,TikTok est perçu
+et vulgarisateur, facilitant la compréhension de l'in-              comme offrant des réponses plus rapides, person-
+formation; un accès immédiat via les smartphones,                   nalisées et visuellement engageantes.
+devenus les principaux supports de consultation.
+                                                                    Cette évolution s'explique par deux facteurs ma-
+L'impact médiatique de ces nouveaux formats est                     jeurs. D'une part, le format vidéo court de TikTok
+particulièrement important. Une étude de 2024                       répond à la recherche d'immédiateté propre à une
+indique que, lorsqu'il a été demandé aux répon-                     génération habituée à un accès instantané à l'infor-
+dantes et répondants français de citer leurs sources                mation. D'autre part, l'apparente authenticité des
+d'information, «HugoDécrypte a reçu plus de men-                    contenus renforce la confiance des jeunes envers
+tions que Le Monde, Le Figaro et Libération réunis»                 les créateurs et créatrices qu'ils suivent, bien qu'il
+(Newman, 2024).                                                     soit crucial de noter que cette authenticité peut
+                                                                    être trompeuse, particulièrement dans le cadre de
+                                                                    contenus sponsorisés.
+
+                                                                    Cependant, cette utilisation de TikTok comme mo-
+
+                                                                    teur de rech#epracshe soulève des préoccupations. La                      da#ccpoarsd
+                                                                    plateforme nda'cécocrhd appda#eccpoarpsdas au phé#npoamsdèancecordde dé-
+
+                                                                    sinformation, ce qui impose une vigilance accrue.
+
+                                                                    Croiser les sources, diversifier ses recherches et
+
+                                                                    éduquer à l'esprit critique sont des mesures indis-
+
+                                                                    pensables pour un usage éclairé de cet outil.
+
+                                                                           La multiplication des contenus et des sources
+                                                                           d'information s'accompagne d'un risque majeur:
+                                                                           l'infobésité. Bombardés d'informations en continu,
+                                                                           les internautes peinent à trier, hiérarchiser et ana-
+                                                                           lyser ce qu'ils consomment. Ce flux ininterrompu
+                                                                       It's fatviomreisetoégalement la propagation rapide de fausses
+                                                                    use yoinufrorvmoaictieo!n*s, renforcées par des algorithmes qui
+                                                                           privilégient l'engagement et la viralité au détriment
+                                                                           de la fiabilité des sources.
+
+                                                                             (1) La génération Z est un terme utilisé pour désigner les
+                                                                             personnes occidentales nées entre 1997 et 2012.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux                                                 17
+De plus, l'aspect instantané de ces contenus peut                         Les cas des «fermes à robots»:
+engendrer une consommation passive où l'inter-
+naute est noyé sous un flux d'informations sans vé-                 Une ferme à robots (aussi appelées «usines à
+ritable prise de recul critique. Cette situation favo-              trolls») est une structure utilisant des logiciels au-
+rise l'apparition de bulles de filtres qui exposent                 tomatisés afin de créer, gérer et contrôler simul-
+les utilisateurs et utilisatrices à une information                 tanément un grand nombre de faux comptes sur
+souvent homogène, limitant leur accès à la diversité                les réseaux sociaux. Leur objectif principal est d'in-
+des points de vue.                                                  fluencer l'opinion publique en simulant une large
+                                                                    approbation ou en augmentant artificiellement la
+Un autre enjeu majeur réside dans la prolifération                  popularité apparente d'un contenu spécifique ou
+de contenus automatisés et manipulés. Près de la                    d'une idée particulière.
+moitié du trafic sur internet est généré par des
+«bots»1: des micrologiciels programmés pour ef-                     Ces logiciels automatisés, appelés communément
+fectuer des tâches spécifiques (indexer les pages                   «bad bots», réalisent des actions coordonnées
+web pour un moteur de recherche mais aussi en-                      telles que publier des contenus, commenter des
+voyer des spams (courriels non sollicités), voler                   publications, partager des articles, attribuer des
+des données sensibles ou diffuser des messages                      mentions «j'aime» et même interagir de manière
+sur des réseaux sociaux). Dans ce dernier cas, ils                  proactive avec des utilisateurs et utilisatrices réels.
+peuvent contribuer à l'amplification artificielle de                En opérant simultanément sur un vaste réseau
+la visibilité de certaines thématiques. Ces pratiques               de comptes fictifs, ces bots donnent l'illusion que
+influencent la perception de la réalité des usagers                 certains contenus ou opinions bénéficient d'une
+en favorisant la diffusion de contenus polarisants                  grande popularité ou d'un soutien massif, ce qui ac-
+ou sensationnalistes. Cette manipulation algorith-                  croît artificiellement leur visibilité et leur portée.
+mique pose des questions éthiques fondamentales
+sur la manière dont l'information est contrôlée et                  Ces pratiques exploitent habilement les algo-
+consommée.                                                          rithmes des plateformes sociales qui privilégient
+                                                                    les contenus suscitant un fort engagement. Ainsi,
+                  MANIPULER !                                       des informations trompeuses, des «fake news» ou
+                                                                    des contenus manipulés sont rapidement diffusés à
+                            MANIPULER !                             grande échelle, atteignant une audience étendue en
+                                                                    très peu de temps. Ces techniques sont particuliè-
+(1) Ces informations sont disponibles sur le site Les Échos         rement efficaces sur des plateformes où l'engage-
+(www.lesechos.fr/partenaires/imperva/une-course-a-                  ment utilisateur, symbolisé par les «likes», les com-
+larmement-augmentation-record-de-lactivite-des-ro-                  mentaires et les partages, influence directement la
+bots-malveillants-en-ligne-pour-la-5eme-annee-consecu-              propagation et la visibilité des contenus.
+tive-2088617)
+                                                                    Les fermes à robots peuvent être utilisées dans
+Service général du Numérique éducatif · Focus: les réseaux sociaux  divers contextes mais elles sont particulièrement
+                                                                    préoccupantes lorsqu'elles sont employées à des
+                                                                    fins politiques ou idéologiques. Par exemple, elles
+                                                                    peuvent influencer l'opinion publique pendant des
+                                                                    périodes électorales, orienter les débats sociétaux,
+                                                                    amplifier artificiellement des controverses ou en-
+                                                                    core perturber le fonctionnement démocratique
+                                                                    en diffusant des «fake news» ou des théories
+                                                                    conspirationnistes2.
+
+                                                                    (2) Ces informations sont disponibles sur le site Futura
+                                                                    Sciences
+                                                                    (www.futura-sciences.com/tech/actualites/tech-in-
+                                                                    fox-propagande-industrie-fermes-trolls-121097)
+
+                                                                                            18
+4.2 La mutation des pratiques                                                                           Bienvenue
+de consultation de contenus                                                                              au club !
+
+Au-delà de l'information, les réseaux sociaux sont                  La généralisation de formats courts (dans les
+désormais une pratique de divertissement à part                     vidéos ou les messages) rend moins courante l'habi-
+entière.TikTok et YouTube sont devenues les plate-                  tude de se concentrer sur des formats longs. Cette
+formes de référence pour la consommation de
+vidéos courtes, supplantant progressivement la                      tseignndéaenscoeuàslal'efxralpgirvmeseesniotantiPoonpdceolr'nat2tBerknatiinon(«acéetrévedaéu-
+télévision traditionnelle chez certaines tranches
+d'âge. L'essor des défis et challenges viraux, des                  popcorn») dès 2011, la métaphore des grains de
+tendances de danse jusqu'aux vidéos humoris-                        maïs qui éclatent dans toutes les directions repré-
+tiques, renforce l'attrait des utilisateurs et utilisa-             sentant la propension à des pensées dispersées et
+trices pour ces formats participatifs. Le streaming                 le passage rapide d'un sujet à l'autre. Il s'agit d'un
+en direct et les contenus interactifs sur YouTube,                  «état mental où le cerveau est surstimulé en raison
+Twitch et TikTok Live offrent une expérience im-                    d'un multitâche constant et d'une consommation
+mersive, fidélisant encore davantage l'audience.                    numérique rapide, comme le défilement continu
+                                                                    de formats vidéo courts sur les réseaux sociaux.»
+Grâce à l'optimisation des algorithmes, les conte-                  (Unnati et al., 2025, pp. 1333-1335).
+nus proposés sont de plus en plus adaptés aux pré-
+férences individuelles, avec pour effet une durée de                Ce défilement infini de contenus (infinite scroll)
+consommation de contenus plus grande. L'effet de                    encourage les boucles de consommation passive
+boucle algorithmique peut ainsi capter l'attention                  et influe également sur la prise de décision: «Le
+de façon prolongée, souvent au détriment d'activi-                  cerveau s'habitue à des stimulations rapides ce qui
+tés plus variées, comme la lecture ou le sport. La                  rend la concentration sur les décisions à long terme
+présence accrue de la gamification et des méca-                     plus difficile. Passer d'une tâche ou d'un contenu à
+nismes de récompense (likes,vues,commentaires...)                   l'autre ne permet pas au cerveau de construire des
+renforce cette surexposition aux réseaux sociaux                    connexions neuronales solides ce qui nuit à la mé-
+où la validation sociale devient un moteur essentiel                morisation.» (Ibidem).
+du comportement en ligne.
+
+Si ces nouvelles formes de divertissement créent
+des opportunités d'expression et d'échange, elles
+participent également à une surconnexion préoc-
+cupante.
+
+      Hyperconnexion et surconnexion:
+
+Ces deux termes sont régulièrement employés l'un
+pour l'autre, mais il s'agit de deux phénomènes à
+distinguer:
+
+· L'hyperconnexion représente «un usage élevé
+  et dense d'exposition et d'usage des outils nu-
+  mériques [...] mais sans conséquences négatives
+  particulières ressenties par les utilisateurs»
+
+· La surconnexion correspond à des utilisations
+  du numérique «produisant un ressenti négatif
+  et des conséquences néfastes» pour l'utilisateur
+  (Morand et al., 2023, pp. 93-128).
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  19
+4.3 Une économie         de   la  xx+dos=innncbéex ...c o  s  a
+et de l'attention
+                         cos  b
+     sin(a+b) = sin a x
+Les réseaux sociaau2=x2raepbo+sbe=n(tas+urb)u2n modèle éco-
+nomique basé sur la monétisation des données
+
+personnelles. Ils collectent une quantité massive
+
+d'informations scuors(l2esa)p=ercsoosn2nae-ss: iâng2ea, préférences,
+comportements en ligneC, liincte! raact2i=o2nas,be+tb=m(êam+eb,)2
+dans certains cas, des données biométriques (per-
+
+mettant d'identifier un individu d'après ses carac-
+
+téristiques physiques). Chaque action, que ce soit
+
+un like, un partage ou un commentaire, contribue
+
+à enrichir le «profil utilisateur», permettant aux
+
+annonceurs de cibler précisément les consomma-
+
+teurs avec des messages publicitaires personnali-
+
+sés. Ces données collectées à une échelle mondiale
+
+forment le Big Data et alimentent l'économie de la                    Pour capter et conserver cette ressource, les
+                                                                      réseaux sociaux exploitent des mécanismes
+donnée, un secteur économique en expansion: «le                       conçus pour maintenir les personnes utilisatrices
+                                                                      engagées le plus possible et le plus longtemps
+marché mondial du Big Data représenterait plus de                     possible: notifications constantes, fils d'actualité
+                                                                      infinis, systèmes de récompenses et de valorisa-
+200 milliards de dollars en 20201 et le volume mon-                   tion sociale («Le contenu que j'ai partagé est liké,
+                                                                      apprécié par d'autres.»). Ces fonctionnalités sont
+dial des données devrait augmenter de 530 % d'ici                     spécifiquement pensées pour exploiter la psycho-
+                                                                      logie humaine et créer un effet de «revenez-y».
+à 2025, selon la Commission européenne.» (Duboc                       Les utilisateurs et utilisatrices sont susceptibles
+                                                                      de se retrouver dans un cycle où chaque interac-
+& Noël, 2021).                                                        tion produit une «récompense» psychologique
+                                                                      qui renforce l'envie de rester sur la plateforme et
+La collecte des données va au-delà des simples                        de continuer à l'utiliser ou d'y revenir rapidement
+interactions sur la plateforme. Elle inclut égale-                    pour de nouvelles consultations de contenus, de
+ment la géolocalisation, les habitudes d'achat, les                   réactions ou de nombre de likes.
+interactions avec d'autres sites web connectés aux
+réseaux sociaux, et même dans certains cas, des in-                   Par ailleurs, en termes de récolte de données, les
+formations extraites des messages privés. Ces don-                    conditions générales d'utilisation (CGU) stipulent
+nées sont ensuite analysées par des algorithmes ca-                   souvent que les contenus postés appartiennent à
+pables de déduire des informations très sensibles                     la plateforme, ce qui soulève des questions sur le
+(jusqu'aux préférences politiques ou à l'orientation                  droit à l'image et sur la propriété des données par-
+sexuelle), rendant les utilisateurs et utilisatrices ex-              tagées.
+trêmement vulnérables à la publicité commerciale.
+Ces plateformes maximisent le temps passé en                                Dopamine, la série d'Arte, décortique les
+ligne grâce à des algorithmes sophistiqués qui re-                          mécanismes basés sur l'activation du circuit
+commandent du contenu en fonction des préfé-                          de récompense et déployés par les principales
+rences détectées. Ces recommandations créent un                       plateformes de réseaux sociaux: Facebook, You-
+cycle d'engagement, où l'utilisateur ou l'utilisatrice                Tube, LinkedIn, Twitch... www.arte.tv/fr/videos/
+est sans cesse incité à consommer davantage de                        RC-017841/dopamine
+contenu. Cette stratégie renforce l'engagement des
+personnes, augmentant ainsi la valeur des données
+collectées pour les annonceurs. Cet engagement
+devient une ressource en soi, au coeur de l'écono-
+mie de l'attention.
+
+(1) À titre de comparaison et d'exemples, le marché mon-
+dial des aliments bio était évalué à 227 milliards de dollars
+en 2021; celui de l'industrie du jeu vidéo à 221 milliards de
+dollars en 2024.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux    20
+4.4 L'impact des réseaux sociaux sur les                            De plus, un usage excessif des réseaux sociaux, par-
+utilisateurs et utilisatrices                                       fois proche de la dépendance, déséquilibre la répar-
+                                                                    tition du temps entre ces plateformes et d'autres
+Dans un contexte éducatif où les réseaux sociaux                    activités. Les apprenants et apprenantes peuvent
+occupent une place importante dans le quotidien                     alors éprouver des difficultés à hiérarchiser leurs
+des jeunes comme des adultes, leur impact sur                       priorités et à se concentrer sur leurs objectifs
+le développement neurologique, cognitif et émo-                     pédagogiques, ce qui rend leur apprentissage plus
+tionnel suscite des préoccupations majeures. Ces                    malaisé.
+plateformes numériques exposent à de nouvelles
+vulnérabilités. Les enseignants et enseignantes se                  Quand il s'agit d'attention portée vers les écrans,
+retrouvent face à des défis inédits, mêlant accom-                  des études indiquent que la capacité d'attention
+pagnement pédagogique et prévention des risques                     a baissé dans la population générale au cours des
+liés à ces environnements virtuels.                                 dernières années: «En 2004, nous avons constaté
+                                                                    que la durée d'attention moyenne sur un écran
+a. Impact neurologique et cognitif                                  était en moyenne de deux minutes et demie.
+                                                                    Au fil des ans, elle a diminué. Vers 2012, elle était
+La surutilisation des réseaux sociaux exerce une                    de 75 secondes.»
+influence sur le cerveau, en sollicitant particulière-
+ment le système de récompense grâce aux notifica-                   b. Impact émotionnel
+tions, «likes» et commentaires, qui stimulent la libé-
+ration de dopamine. Dans un cadre d'apprentissage,                  Sur le plan émotionnel, un investissement trop
+les impacts de ce mécanisme se manifestent sou-                     grand dans l'usage des réseaux sociaux peut exer-
+vent par une attention réduite chez les apprenantes                 cer une pression significative, notamment à tra-
+et apprenants. Habitués aux flux rapides et fragmen-                vers les standards irréalistes qu'ils véhiculent. Les
+tés de contenus sur les réseaux sociaux, ils peuvent                adolescentes ­ et de plus en plus les adolescents
+potentiellement éprouver des difficultés à s'engager                ­ sont fréquemment confrontés de façon problé-
+dans des activités nécessitant une concentration                    matique à des images du corps idéalisées et à des
+prolongée, comme l'analyse critique ou la résolu-                   attentes sociales inatteignables, ce qui peut affecter
+tion de problèmes complexes. Cette fragmentation                    négativement leur estime de soi.
+cognitive pose des défis supplémentaires aux ensei-
+gnants et enseignantes, qui doivent composer avec                   La quête de validation sociale modifie également
+des capacités attentionnelles diminuées1.                           les dynamiques relationnelles entre pairs. Les utili-
+                                                                    sateurs et utilisatrices de réseaux sociaux peuvent
+                                                                    subir, même inconsciemment, une pression à se
+                                                                    conformer aux normes de leur communauté nu-
+                                                                    mérique, ce qui peut les amener à adopter des
+                                                                    comportements à risque ou à s'engager dans des
+                                                                    défis en ligne viraux. Ce phénomène est amplifié
+                                                                    par le FOMO («Fear of Missing Out»): l'angoisse
+                                                                    ressentie à l'idée de manquer quelque chose d'ex-
+                                                                    citant, d'intéressant ou relevant d'une expérience
+                                                                    potentiellement gratifiante, souvent déclenchée
+                                                                    par les réseaux sociaux.
+
+(1) Ces informations sont disponibles sur le site RTBF              21
+(www.rtbf.be/article/plus-les-enfants-regardent-des-
+videos-courtes-plus-leurs-resultats-scolaires-de-
+clinent-11493806)
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+Le cyberharcèlement, facilité par l'anonymat et la                  · des applications dédiées au bien-être: des ap-
+viralité des contenus, constitue une autre consé-                     plications comme Wellty ou SafeSpace sont
+quence potentielle de l'usage des réseaux so-                         conçues pour fournir un soutien moral en ligne.
+ciaux. Les enseignants et enseignantes notamment                      Elles offrent des espaces virtuels bienveillants où
+peuvent contribuer, aux côtés d'autres actrices et                    les utilisateurs et utilisatrices peuvent échanger
+acteurs éducatifs, à des actions de prévention et de                  sur leurs défis quotidiens, trouver du réconfort
+détection du cyberharcèlement, afin d'en limiter les                  et se rendre compte qu'ils ne sont pas seuls.
+effets dévastateurs (isolement, dépression, désen-
+gagement scolaire).                                                 · des initiatives solidaires pendant des crises: lors
+                                                                      de situations de crise, comme la pandémie de
+      Comment lutter contre le cyberharcèle-                          Covid-19, les réseaux sociaux ont été le théâtre
+      ment, notamment dans un cadre scolaire ou                       de nombreuses initiatives d'entraide.
+académique?
+                                                                    Cette dimension des réseaux sociaux est particuliè-
+Le focus dédié à cette problématique est disponible                 rement prégnante à l'adolescence: «Pour les ado-
+sur www.e-classe.be/focus-cyberharcelement                          lescents, ces espaces numériques sont des prolon-
+                                                                    gements naturels de leur vie sociale, qui permettent
+c. Impact social                                                    de bavarder, flirter, échanger des infos, exactement
+                                                                    comme dans «la vraie vie». Les réseaux deviennent
+En contrepoint, les réseaux sociaux favorisent                      ainsi des terrains d'expérimentation identitaire, où
+l'appartenance à des communautés et renforcent                      se jouent les dynamiques de groupe, les liens d'ap-
+les interactions sociales. Ils offrent la possibilité               partenance, et même des formes d'engagement ci-
+de rejoindre des groupes autour de centres d'in-                    toyen. Les réseaux sociaux sont aussi décrits par
+térêt partagés, qu'il s'agisse de musique, de sport,                leurs utilisateurs adolescents comme des zones de
+de causes humanitaires ou de projets collaboratifs.                 liberté structurées, certes de façon informelle, mais
+Ces espaces deviennent des lieux d'échanges et de                   qui leur permettent d'explorer leurs interactions
+découvertes, permettant aux utilisateurs et utilisa-                sociales dans un cadre perçu comme globalement
+trices d'explorer et de partager des perspectives                   sécurisant.» (CSEM, 2025, p. 7)
+variées.
+
+Les réseaux sociaux peuvent aussi apporter un
+soutien moral et émotionnel. Des individus isolés
+peuvent y trouver un réconfort précieux en se
+connectant à des personnes partageant leurs ex-
+périences ou leurs préoccupations. Cette dimen-
+sion sociale contribue au bien-être et à l'épanouis-
+sement personnel des utilisateurs, à travers par
+exemple:
+
+· des groupes de soutien en ligne: des groupes
+  dédiés où des personnes confrontées à des si-
+  tuations semblables, telles que des maladies
+  chroniques ou des situations de deuil, peuvent
+  partager leurs expériences, offrir et recevoir du
+  soutien émotionnel. Ces espaces permettent de
+  briser l'isolement et de créer des liens significa-
+  tifs.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  22
+d. Impact sociétal
+
+Les réseaux sociaux ont joué et jouent un rôle                      #pas     da#ccpoarsd  #pasdaccord  da#ccpoarsd
+central dans l'émergence et la diffusion de mou-
+vements majeurs. Par exemple, en 2010, les évé-                     daccord
+nements du «Printemps arabe» sont favorisés
+par l'utilisation de ces nouvelles technologies, qui
+permettent de contourner le contrôle de l'infor-
+mation traditionnelle par les régimes autoritaires.
+Il s'agit alors d'une des premières Twitter Revolution,
+coordonnée sur les réseaux sociaux.
+
+Des campagnes telles que #BlackLivesMatter en                       «Les chaînes YouTube culturelles
+2013 ou #MeToo en 2017 ont permis de mobiliser                      et scientifiques francophones»
+des millions de personnes à travers le monde. Elles
+
+ont aidé à libérer la parole, sensibiliser l'opinion pu-            En 2018, le Ministère français de la Culture a réali-
+
+blique et instaurer des changements sociétaIutx'statni-me tosé un recensement de 350 chaînes YouTube cultu-
+gibles. Les réseaux sociaux permettent uunseemyoobuilir- voicere!l*les et scientifiques francophones potentielle-
+sation rapide et étendue, transcendant les barrières
+                                                                    ment adaptées à un usage éducatif et sélectionnées
+géographiques et culturelles. Ils ont permis le relais
+                                                                    pour la qualité de leur contenu. Les chaînes y sont
+de témoignages, ceux-ci contribuant à l'ouverture
+                                                                    classifiées selon les disciplines traditionnellement
+d'enquêtes et de procès de grande envergure.
+                                                                    enseignées à l'école en France: littérature, langue,
+A l'inverse, ils sont également le lieu privilégié du
+                                                                    histoire, géographie, éducation civique, philosophie,
+«tribunal d'internet», phénomène de jugement
+                                                                    économie, mathématiques, physique-chimie, biolo-
+moral collectif, expéditif et pouvant conduire au
+                                                                    gie, technologie, arts et sport. Elles sont référen-
+lynchage médiatique.
+                                                                    cées à titre indicatif, et le recensement réalisé ne
+
+e. Impact sur les possibilités d'apprentissage                      constitue ni une approbation ni une validation de
+                                                                    leurs contenus.
+
+Enfin, les réseaux sociaux participent d'une                        www.culture.gouv.fr/thematiques/langue-
+certaine manière à la démocratisation de l'ap-                      francaise-et-langues-de-france/ressources/
+prentissage. Par exemple, des enseignants et                        Ressources-pedagogiques-et-sensibilisa-
+enseignantes utilisent les réseaux sociaux pour                     tion2/350-ressources-culturelles-et-scienti-
+créer des discussions interactives ou partager des                  fiques*-fIrlanecsotphtoenmesp-send-v'iudetoiliser votre voix.
+ressources en ligne, enrichissant ainsi l'expérience
+pédagogique.
+
+Des plateformes comme YouTube proposent
+également des tutoriels et des vidéos éducatives,
+des contenus de vulgarisation ou des explications
+plus poussées, réalisés par des personnes passion-
+nées ou professionnelles. La circonspection est
+cependant de mise, puisqu'aucune validation péda-
+gogique ne garantit l'exactitude et la véracité de
+ces contenus.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux                                     23
+4.5 L'impact des influenceurs et                                    Cette pratique peut induire les followers en erreur,
+influenceuses                                                       en particulier les plus jeunes, souvent moins enclins
+                                                                    à questionner ces stratégies marketing. Exposés à
+Les réseaux sociaux ne sont plus de simples                         une grande quantité de contenus commerciaux
+espaces de consommation de contenus. Ils sont                       présentés de manière subtile, ils peuventw en être
+devenus des lieux de production, d'expression et                    durablement influencés, tant dans leurs habitudes
+d'influence. Suivis par des milliers voire des millions             de consommation que dans leur perception du réel.
+d'abonnés, les influenceurs et influenceuses jouent
+souvent un rôle pivot dans la construction des                      Ensuite, la propagation de rumeurs, de théories
+tendances culturelles, des comportements d'achat                    complotistes et de contenus idéologiques mili-
+et, dans certains cas, des opinions politiques.                     tants participe à la radicalisation des opinions et à
+                                                                    la désinformation. Le manque de régulation et de
+Cependant, l'impact de leur influence soulève deux                  contrôle des contenus amplifie ces phénomènes.
+enjeux. Le premier concerne la question de la publi-
+cité déguisée et des placements de produits, parfois                L'association de ces deux enjeux (rentabilité éco-
+peu transparents: «Le marketing d'influence appa-                   nomique et idéologie) est susceptible de produire
+rait souvent à côté de contenus éditoriaux, de mes-                 des dérives aux impacts sociétaux importants. De
+sages personnels de connaissances ou de messages                    nombreux influenceurs et influenceuses propagent
+distrayants et est généralement présenté dans un                    des opinions éthiquement controversées, possible-
+«look & feel» très similaire. Il n'est donc pas tou-                ment par conviction intime et également par inté-
+jours immédiatement évident pour le consomma-                       rêt financier.
+teur de savoir s'il est confronté à ce type de conte-
+nu ou à du contenu commercial.»1 En s'appuyant
+sur la relation de confiance qu'ils entretiennent
+avec leur communauté, certains influenceurs et in-
+fluenceuses peuvent promouvoir des produits ou
+services sans en signaler clairement la dimension
+commerciale.
+
+(1) Ces informations sont disponibles sur le site Jury d'Éthique    24
+Publicitaire (JEP) (www.jep.be/fr/codes-regles)
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+                                                                    !
+
+Deux exemples parmi d'autres permettent d'illus-                       incel4, composante de l'écosystème du supréma-
+trer la toxicité des discours idéologiques propagés                    cisme masculin en ligne.
+par certains influenceurs et influenceuses, en s'ap-
+puyant sur la vulnérabilité de leur public, souvent                    La viralité de ces contenus est par ailleurs favorisée
+jeune et potentiellement en recherche de repères,                      par les algorithmes des réseaux sociaux qui tendent
+parfois en détresse psychologique.                                     à mettre en avant les contenus les plus «spectacu-
+                                                                       laires» - dont les plus transgressifs et ceux suscep-
+    La manosphère1 et la promotion de la                               tibles de provoquer le plus de réactions. «Malgré
+masculinité toxique                                                    tous les exemples et citations qui le dépeignent
+                                                                       comme le patriarcal autoritaire, sexiste et
+L'influenceur anglo-américain Andrew Tate, no-                         homophobe qu'il est, comme le prouve son conte-
+tamment, «incarne une masculinité violente et                          nu, il a un large public, pour lequel il est un gourou
+ostentatoire, construite sur le culte de la richesse,                  motivant du self-help et l'une des figures les plus
+la haine des femmes et l'obsession de la domina-                       célèbres avec des milliards de vues.» (Bermperian,
+tion. Il appelle à «sortir de la Matrice», cette sup-                  2023).
+posée prison mentale orchestrée par les femmes,
+les médias et l'État.»2                                                Cette influence de la manosphère sur certains ado-
+                                                                       lescents est illustrée notamment à travers la mi-
+Son discours est devenu viral sur les réseaux so-                      ni-série britannique Adolescence, diffusée en 2025.
+ciaux à partir du début des années 2020. Ses pro-                      Sans le filtre de l'esprit critique, cette idéologie
+pos et prises de position, si brutaux et radicaux                      propagée et répétée s'apparente à du lavage de
+qu'ils devraient légitimement susciter un sentiment                    cerveau.
+de rejet3, rencontrent au contraire une adhésion
+importante, notamment auprès de la sous-culture                        «C'est grâce à des contenus «en apparence ano-
+                                                                       dins» (exposition de voitures rutilantes, conseils
+(1) «Le terme manosphère désigne l'ensemble des com-                   fitness et muscu ...) que les jeunes garçons intègrent
+munautés en ligne qui promeuvent de façon croissante des               les propos du trentenaire dont la «réussite osten-
+conceptions rigides et hostiles de la masculinité, tout en vé-         tatoire» rendrait le matraquage misogyne redou-
+hiculant l'idée fausse selon laquelle le féminisme et l'égalité        tablement efficace, notamment auprès de certains
+des sexes se seraient construits au détriment des droits des           profils. « Ce sont les plus fragiles et les moins à l'aise
+hommes. Ces communautés valorisent le contrôle des émo-                en société qui sont attirés et trouvent là un sentiment
+tions, la réussite matérielle, l'apparence physique et la domina-      d'appartenance, mais d'appartenance très dangereuse,
+tion ­ surtout envers les femmes ­ comme autant de critères            confie une enseignante. Les garçons boivent ses paroles
+qui définissent la valeur d'un homme.». Ces informations sont          parce qu'il leur raconte qu'il réussit et qu'il est riche»,
+disponibles sur le site UNWomen (www.unwomen.org/fr/                   rapporte une autre, bien décidée à ouvrir les yeux
+articles/article-explicatif/quest-ce-que-la-manosphere-                à ses élèves. Les enseignants peinent cependant
+et-pourquoi-devrions-nous-nous-en-inquieter)                           à mesurer les effets de leurs interventions, les
+                                                                       jugeant parfois même contre-productifs.
+(2) Ces informations sont disponibles sur le site Radio France
+(www.radiofrance.fr/mouv/podcasts/la-chro-                             (4) «Les célibataires involontaires («incels») sont des
+nique-de-constance-vilanova/andrew-tate-l-une-des-fi-
+gures-les-plus-inquietantes-d-internet-de-nouveau-vise-                hommes qui se considèrent incapables d'établir des relations
+par-des-accusations-de-viols-1997917)
+                                                                       sexuelles consensuelles en raison de leur manque d'attrait
+(3) Ces informations sont disponibles sur le site The Inde-
+pendent (www.independent.co.uk/tech/twitter-andrew-                    physique perçu. L'écosystème en ligne des incels propose des
+tate-raped-verify-kickboxer-b1996239.html)
+                                                                       contenus misogynes, ses membres célébrant la violence faite
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+                                                                       aux femmes et les attaques sociétales telles que la tuerie de
+
+                                                                       masse d'Isla Vista en 2014.» (Commission européenne-RAN,
+
+                                                                       2021)  25
+                                                                                            #pas                                                         da#ccpoarsd
+
+                                                                                            daccord
+
+D'après un responsable scolaire, les élèves n'hési-                 Mais ce phénomène de promotion d'une «culture
+teraient pas à tourner en ridicule les réunions au                  alimentaire toxique» est amplifié par les algo-
+sujet de l'influenceur en les postant sur TikTok.»1                 rithmes de contenu des réseaux sociaux: plus un
+                                                                    contenu est visionné, plus des contenus similaires
+      Le parcours Cybersexisme et masculinisme                      sont proposés, créant un effet boule de neige.
+      disponible sur e-classe propose des res-
+sources pour comprendre la «manosphère» et                          L'influenceuse n'est pas un phénomène isolé: une
+aborder le sujet avec des apprenants:
+www.e-classe.be/cybersexisme-et-masculi-                            étude de 2022 portant sur l'analyse de contenus
+nisme
+                                                                    dédiés à la nutrition sur TikTok révélait l'ampleur
+    La tendance «#Skinny» et la promotion
+de la maigreur extrême                                              des conseils fantaisistes ­ et potentiellement dan-
+
+L'influenceuse américaine Liv Schmidt est une des                   gereux ­ dispensés par des vidéastes sans qualifi-
+personnes ayant contribué à propager la tendance
+«#Skinny». Ses publications font la promotion de                    cation professionnelle. «Sur l'ensemble des vidéos,
+la privation volontaire de nourriture, dans l'objectif
+de rencontrer un standard de minceur corporelle,                    1,4  %    osnutggéètrIéetcq'rsuéeétel'siampppaelricadtteioos ndioéftféretictireènss  agréés,
+irréaliste et incompatible avec un état de bonne                    ce   qui                                                                             peu de
+santé physique.
+                                                                    conseils nuustreitioynoneulsr spvéociiacliseés!.*Des utilisateurs
+Il ne s'agit ni de lutter contre le surpoids, ni de visi-
+biliser et expliquer les troubles du comportement                   sans connaissances professionnelles partagent des
+alimentaires: les discours sont culpabilisants, le fait
+de se nourrir est vu comme une menace pour l'ap-                    conseils nutritionnels parfois inexacts, souvent
+parence corporelle et l'ensemble contribue à pro-
+poser une image du corps (spécifiquement du corps                   à des fins de perte de poids. Ce type de vidéos
+féminin) perpétuellement insatisfaisante. Cette
+tendance est une résurgence des blogs «pro-ana»                     est susceptible de propager et d'encourager des
+(promouvant l'anorexie) des années 2000.
+                                                                    régimes alimentaires néfastes auprès d'un public
+(1) Ces informations sont disponibles sur le site L'ADN
+(www.ladn.eu/nouveaux-usages/les-propos-masculi-                    vulnérable, parfois peu familiarisé avec les médias.»
+nistes-dandrew-tate-convertissent-les-ecoliers-et-in-
+quietent-les-profs)                                                 (Minadeo & Pope, 2022)
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  Selon cette étude, un des moyens pour contrer ce
+                                                                    phénomène est le développement de la littératie
+                                                                    numérique, en particulier l'éducation aux médias
+                                                                    numériques: «Développer l'éducation aux médias
+                                                                    chez les jeunes adultes est important car des re-
+                                                                    cherches antérieures ont montré que l'éducation
+                                                                    aux médias peut contribuer à réduire l'insatisfac-
+                                                                    tion corporelle et l'intériorisation de l'idéal de
+                                                                    minceur. Il pourrait également être utile aux spécia-
+                                                                    listes de la santé d'aborder avec les jeunes adultes
+                                                                    le type de contenu qu'ils voient sur TikTok et de
+
+                                                                    déterminer comment ils pourraient co*mIml eencsetr àtemp
+
+                                                                    éviter, s'ils le souhaitent, les contenus normatifs sur
+                                                                    le poids présents sur l'application, en bloquant ou
+                                                                    en se désabonnant de certains comptes. Aider les
+                                                                    jeunes adultes à gérer leurs flux sur les réseaux so-
+                                                                    ciaux est un moyen de réduire leur exposition aux
+                                                                    messages liés à la culture diététique.» (Minadeo &
+                                                                    Pope, 2022).
+
+                                                                                                                                                         26
+Deux questions se posent à propos de ces types                      une forme de «censure»2. Ces suppressions de
+de contenus:                                                        comptes ne suffisent pas à juguler le phénomène:
+                                                                    les contenus sont toujours disponibles d'une façon
+1. Pourquoi des influenceurs et                                     ou d'une autre sur le net, et d'autres influenceurs
+influenceuses continuent-ils de propager                            et influenceuses surfent sur ce type de tendances.
+ce type de discours?
+                                                                    Enfin, les politiques de modération fluctuent selon
+Quand une personne fait polémique sur les                           l'époque et sont établies majoritairement par les
+réseaux sociaux, sa réaction est généralement                       propriétaires des plateformes. «Mark Zuckerberg,
+d'amenuiser la portée de ses propos (en les                         le patron de Meta (maison mère de Facebook et
+contextualisant, en présentant des excuses, en sup-                 Instagram) [...] a décidé, en janvier 2025, d'autori-
+primant la publication...). Le cas de la diffusion de               ser, aux États-Unis, les commentaires discriminants
+ces idéologies «toxiques» est particulier puisque                   envers les femmes et les personnes LGBT+. Il s'est,
+celle-ci va souvent de pair avec un intérêt finan-                  en quelque sorte, aligné sur Elon Musk, qui, quand
+cier, jusqu'à représenter un véritable business model.              il a racheté Twitter en 2022, a supprimé le système
+Ainsi, Andrew Tate propose des cours en ligne                       qui modérait les contenus haineux.»3
+masculinistes payants («une audience estimée en
+2023 à 127 000 membres, payant £39 par mois                         Dans l'Union européenne, le Digital Services Act
+pour accéder à ces contenus» (Bermperian,                           (DSA), d'application depuis 2024, offre davantage
+2023)). Liv Schmidt a créé une newsletter propo-                    de leviers qu'aux Etats-Unis pour limiter la pro-
+sant des contenus spécifiques et ses 6500 abonne-                   pagation de ces discours «toxiques» en impo-
+ments payants génèrent 130 000$ mensuellement1.                     sant aux plateformes une obligation de retrait de
+La logique de ce business model est donc de conti-                  contenus en cas de signalement par un des régu-
+nuer à proposer le même type de contenus et                         lateurs nationaux des États membres. La base de
+même de verser dans la surenchère. En effet, plus                   ces signalements est l'illégalité de ces contenus
+les contenus sont provocants, plus ils deviennent                   au regard des textes de loi européens ou natio-
+viraux sur les plateformes; plus ils font polémique,                naux, et ils peuvent concerner les appels à la haine,
+plus ils sont médiatisés, ce qui augmente leur visibi-              le cyberharcèlement, la promotion de la violence,
+lité et élargit le public potentiel.                                la mise en danger de mineurs, etc.
+
+2. Pourquoi les plateformes autorisent-elles                        (2) Ibidem
+la propagation de ce type de discours?
+                                                                    (3) Ces informations sont disponibles sur le site Radio France
+Les politiques de modération des plateformes
+de réseaux sociaux se révèlent souvent hésitantes                   (www.radiofrance.fr/franceinfo/podcasts/le-vrai-ou-faux-
+quand il s'agit de bannir ce type de contenus pro-
+blématiques, notamment en raison de la concep-                      junior/adolescence-sur-netflix-qu-est-ce-que-le-pheno-
+tion anglo-saxonne de liberté d'expression et de
+censure. Cependant, à partir de 2021, les comptes                   mene-de-la-manosphere-8764117)  27
+d'Andrew Tate sur les différentes plateformes ont
+été désactivés les uns après les autres, en raison
+de leurs contenus finalement jugés haineux et
+violents. TikTok a désactivé en 2025 le compte de
+Liv Schmidt, l'influenceuse dénonçant dans la foulée
+
+(1) Ces informations sont disponibles sur le site Radio
+France (www.radiofrance.fr/mouv/podcasts/la-chro-
+nique-de-constance-vilanova/liv-schmidt-gourou-de-la-
+maigreur-bannie-de-tiktok-5946482)
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+4.6 Quelques aspects juridiques sur l'usage                         social semble intervenir actuellement en moyenne
+des réseaux sociaux                                                 vers 8 ans et demi.»1
+
+L'usage des réseaux sociaux peut amener une sé-                                            *****
+rie de questions juridiques relevant de régimes dis-
+tincts, comme celui de la protection des données,                   Aux dispositions du RGPD s'ajoutent celles du
+des services de la société de l'information, de la                  règlement sur les services numériques (Digital Ser-
+protection du droit d'auteur ou encore de la liber-                 vices Act, ou DSA). Ce règlement s'inscrit dans la
+té d'expression. Une question centrale lorsque l'on                 continuité de la législation antérieure de l'Union
+parle de réseaux sociaux est celle de l'âge auquel                  européenne sur le commerce électronique. Il im-
+on considère qu'un mineur ou une mineure peut                       pose aux plateformes en ligne ­ dont les réseaux
+valablement et légalement s'inscrire sur un réseau                  sociaux ­ une série d'obligations afin de garantir un
+social et, par conséquent, voir ses données traitées                espace numérique plus sûr, plus transparent et res-
+par celui-ci.                                                       pectueux des droits fondamentaux, notamment via
+                                                                    une meilleure régulation des contenus. Parmi ses
+13 ans est un âge bascule pour l'utilisation des ré-                mesures: la lutte contre les contenus illicites, la mo-
+seaux sociaux. Aux États-Unis, le Children's Online                 dération renforcée, l'interdiction du ciblage publici-
+Privacy Protection Act, d'application depuis l'an 2000,             taire sur les mineurs, l'obligation de fournir des ex-
+interdit la collecte en ligne des données person-                   plications sur les algorithmes de recommandation
+nelles des enfants de moins de 13 ans, à moins                      et la mise en place de dispositifs pour signaler les
+d'obtenir le consentement explicite d'un de leurs                   abus. Les très grandes plateformes (comme TikTok,
+parents. Cette loi concerne toutes les sociétés de                  Instagram ou YouTube) doivent, en plus, évaluer et
+services numériques dont le siège social est situé                  limiter les risques systémiques qu'elles font peser
+aux États-Unis, même si tout ou partie de leur ac-                  sur la société, notamment en ce qui concerne la
+tivité touche un public à l'étranger. En raison des                 désinformation ou la santé mentale des jeunes2.
+difficultés matérielles pour assurer leur conformité
+à cette loi (et de la quasi-impossibilité à vérifier                (1) Ces informations sont disponibles sur le site CNIL
+un consentement parental systématique), la plupart                  (www.cnil.fr/fr/droits-numeriques-des-mineurs-la-cnil-
+des réseaux sociaux, étant basés aux États-Unis, in-                publie-les-resultats-du-sondage-et-de-la-consultation-
+terdisent purement et simplement leur accès aux                     publique)
+moins de 13 ans, partout à travers le monde.                        (2) Ces informations sont disponibles sur le site Com-
+                                                                    mission européenne (commission.europa.eu/strate-
+Dans l'Union européenne, la réglementation sur                      gy-and-policy/priorities-2019-2024/europe-fit-digi-
+les réseaux sociaux est largement influencée par                    tal-age/digital-services-act_en)
+le RGPD, d'application depuis 2018. Ce règlement
+impose des normes strictes concernant la collecte,                                          28
+le traitement et la conservation des données per-
+sonnelles des utilisateurs, y compris celles des mi-
+neurs. Chaque État membre conserve cependant
+une marge de manoeuvre pour fixer des règles
+spécifiques. Ainsi, le RGPD autorise chaque pays
+à fixer l'âge minimum entre 13 et 16 ans pour qu'un
+enfant puisse consentir seul et sans intervention pa-
+rentale au traitement de ses données. En Belgique,
+l'âge de cette «majorité numérique» a été fixé à 13
+ans. Il s'agit cependant d'une limite théorique: dans
+les faits, il est très facile d'indiquer une fausse date
+de naissance lorsqu'il s'agit d'accéder à un réseau
+social. En France, une enquête réalisée en 2021
+indiquait que «la première inscription à un réseau
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+      En savoir davantage sur le Digital Services                   Au niveau européen, en juin 2025, plusieurs États
+      Act (DSA) et ses implications?                                membres ont appelé à un renforcement de la vé-
+                                                                    rification de l'âge sur les réseaux sociaux et à une
+Le SPF Economie publie une FAQ dédiée:                              «majorité numérique» européenne, qui serait fixée
+economie.fgov.be/fr/themes/line/economie-                           à 15 ans (Conseil de l'Union européenne, 2025).
+des-plateformes-en/digital-services-act-dsa-le                      Réguler l'accès selon l'âge pourrait être rendu pos-
+                                                                    sible grâce au projet de EU mini wallet («mini-por-
+Chaque État membre de l'UE a, en outre, dû dé-                      tefeuille européen»), une application utilisable par
+signer un "coordinateur des services numériques"                    les gouvernements et les entreprises pour vérifier
+(DSC), autorité indépendante chargée de contrôler                   l'âge des personnes souhaitant accéder à certains
+le respect du DSA et de recevoir les plaintes à l'en-               sites et services. Cette utilisation soulève cepen-
+contre des plateformes numériques. En Belgique, il                  dant de nombreuses questions: confidentialité des
+s'agit de l'IBPT (Institut belge des services postaux               données, respect de la vie privée et sécurité, mais
+et des télécommunications), qui collabore avec les                  également le risque de considérer les limitations
+régulateurs des médias des entités fédérées (le                     d'accès comme une solution miracle, comme le
+Conseil Supérieur de l'Audiovisuel (CSA) au niveau                  souligne le réseau European Digital Rights. «Des
+de la Fédération Wallonie-Bruxelles). C'est dans le                 questions plus larges [que la vérification de l'âge]
+cadre de ce dispositif que la Belgique, avec d'autres               telles que la conception des plateformes et des
+États membres, a porté plainte contre l'absence de                  services, l'autonomisation des jeunes et les solu-
+régulation de contenus par la plateforme TikTok, en                 tions sociétales globales passent au second plan.»2
+particulier contre la propagation de mots-clés fai-
+sant l'apologie de la maigreur extrême (cf. ci-dessus               Dans sa publication dédiée au sujet3, le Conseil
+4.5: L'impact des influenceurs et influenceuses).                   supérieur de l'Éducation aux Médias relève un
+Elle a obtenu gain de cause en juin 2025. Cepen-                    autre écueil, la question du contrôle: «Qui por-
+dant, si certains mots-clés ont été effectivement                   terait cette responsabilité du contrôle? Les États?
+bannis, cette interdiction ne supprime pas pour                     Les parents? Les plateformes? Les boutiques d'ap-
+autant les contenus problématiques. Et l'impact de                  plication (stores)? L'incertitude sur la responsabi-
+la mesure est temporaire: «Dès qu'un mot est in-                    lité est révélatrice d'un désengagement collectif.»
+terdit, un autre le remplace. [...] Les sous-cultures
+problématiques en ligne trouveront toujours des
+langages cryptés.»1
+
+Face aux difficultés pour faire interdire certains
+contenus, différents pays envisagent une réglemen-
+tation plus stricte sur l'âge minimal pour accéder
+aux réseaux sociaux. L'Australie a, par exemple,
+décidé d'interdire l'accès aux réseaux sociaux
+aux moins de 16 ans, à partir de décembre 2025.
+Certains pays envisagent d'adopter une législation
+similaire.
+
+(1) Ces informations sont disponibles sur le site Radio             (2) Ces informations sont disponibles sur le site EDRi
+France (www.radiofrance.fr/mouv/podcasts/la-chro-                   (edri.org/our-work/showing-your-id-to-get-online-mi-
+nique-de-constance-vilanova/fin-du-skinnytok-sur-                   ght-become-a-reality-a-closer-look-at-the-eus-new-
+tiktok-le-culte-de-la-maigreur-n-a-pas-disparu-de-la-               age-verification-app)
+plateforme-9507380)
+                                                                    (3) Op. cit.
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+                                                                                            29
+À côté ou en complément de la limitation d'accès
+aux plateformes, plusieurs pays européens1 s'at-
+tachent à limiter l'accès au matériel numérique.
+En Fédération Wallonie-Bruxelles, l'usage récréatif
+du téléphone portable et autres appareils connec-
+tés en milieu scolaire est interdit par décret à partir
+de la rentrée 2025 (Fédération Wallonie-Bruxelles,
+2025, pp 1-2). Cette mesure concerne les élèves
+de l'enseignement obligatoire et est en vigueur
+non seulement au sein des établissements scolaires
+mais aussi lors de sorties scolaires. L'interdiction
+ne porte pas sur les usages à des fins pédagogiques.
+Les élèves présentant un handicap ou un trouble de
+santé nécessitant l'utilisation de dispositifs connec-
+tés sont autorisés à les utiliser.
+
+Pour atteindre leur objectif, ces différentes mesures
+doivent être complétées par «des efforts soutenus
+pour favoriser la littératie numérique et l'éducation
+aux médias, ainsi que l'esprit critique des mineurs,
+des parents et des éducateurs.»2 L'éducation à un
+usage responsable et sûr des réseaux sociaux, et
+l'éducation au numérique en général, s'inscrit dans
+une dynamique qui concerne l'ensemble de la so-
+ciété, à tous les âges de la vie.
+
+(1) Ces informations sont disponibles sur le site European          30
+news room (enr) (europeannewsroom.com/fr/sante-les-
+ecoles-europeennes-partent-en-guerre-contre-le-te-
+lephone-portable)
+(2) Op. cit.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+5 ENSEIGNER À L'HEURE DES RÉSEAUX SOCIAUX
+
+5.1 Enseigner les réseaux sociaux                                   La question de l'interdiction des réseaux sociaux
+                                                                    pose également la question de l'apprentissage de
+Les débats qui entourent l'âge minimal d'accès aux                  la socialisation: «L'interdiction pourrait accentuer
+réseaux sociaux révèlent un paradoxe: l'objectif                    les disparités sociales, certains adolescents et ado-
+est que les citoyens et citoyennes prémajeurs et                    lescentes n'ayant pas facilement accès à des lieux
+adultes adoptent des pratiques responsables, sûres                  physiques de rencontre (activités extrascolaires,
+et éthiques... mais est-ce réalisable sans proposer                 structures de jeunesse, centres culturels), notam-
+au préalable, une éducation critique et structu-                    ment dans les zones rurales ou les milieux plus
+rée au numérique ­ et donc un accès aux réseaux                     précarisés. Les réseaux sociaux y sont souvent les
+sociaux?                                                            seuls espaces accessibles de lien social, de soutien,
+                                                                    voire d'évasion.» (CSEM, 2025, p. 9).
+Ce paradoxe amène une question: comment déve-
+lopper l'esprit critique face aux réseaux sociaux?                  Si l'interdiction d'accès aux réseaux sociaux en
+Doit-on prohiber l'accès à tout prix? Doit-on pri-                  dessous d'un certain âge poursuit des objectifs de
+vilégier une préparation active à une citoyenneté                   protection des utilisateurs et utilisatrices, elle ne
+numérique, y compris en abordant la question des                    dispense pas de l'apprentissage des compétences
+réseaux sociaux avec des élèves théoriquement                       numériques. Cet apprentissage peut explorer di-
+trop jeunes pour y être exposés?                                    vers axes selon les âges, les contextes de maturité
+                                                                    et les usages réels des apprenants.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  31
+                   POUR LES ÉLÈVES DE 9 À 11 ANS (P4-P6):
+                           SENSIBILISER SANS EXPOSER
+
+Les balises «3-6-9-12» proposées par Yapaka1 dans les campagnes Maîtrisons les écrans et Ne laissons pas les
+écrans faire écran recommandent de ne pas autoriser l'accès aux réseaux sociaux avant l'âge de 12 ans minimum.
+
+Cependant, de nombreux enfants sont familiers ou utilisateurs des réseaux sociaux avant 12 ans. Pour certains,
+il s'agit de la porte d'entrée à leur première expérience du numérique en autonomie. Par ailleurs, plusieurs
+attendus du tronc commun de P3 à P6, s'ils ne sont pas mis en lien avec le contexte des réseaux sociaux, sont
+susceptibles de manquer d'ancrage concret et d'être exploités sous un angle théorique ou abstrait.
+
+Année / Âge théorique Référentiel2                    Exemples de contenus d'apprentissage en lien
+                                                      notamment avec les réseaux sociaux
+
+P4 / 9 ans         FMTTN                              Notion de fake news ­ Principes de droit à l'image
+
+P5 / 10 ans        FMTTN                              Notion de nétiquette ­ Interagir et communiquer sur internet
+
+P6 / 11 ans        FMTTN                              Notion d'identité numérique ­ Identifier le cyberharcèlement
+
+P5-P6 / 10-11 ans  EPS                                Images stéréotypées du corps (par les médias, les réseaux
+                                                      sociaux)
+P5-P6 / 10-11 ans  EPC
+                                                      Préserver sa sécurité, son identité numérique et son intimité
+                                                      sur internet
+
+Il est possible, par exemple, de sensibiliser à la réalité des fake news ou aux implications de l'identité nu-
+mérique sans évoquer les réseaux sociaux. Mais cela reviendrait à faire disparaître un pan important de la
+réalité et d'entraver la progression spiralaire des apprentissages telle que prévue dans le tronc commun.
+Dans l'enseignement primaire, les enseignants et enseignantes devraient donc, de façon préférentielle, s'orien-
+ter vers une prévention anticipée:
+
+· Nommer sans normaliser: parler des réseaux sociaux comme d'un environnement existant sans les
+  présenter comme une évidence ou un passage obligé.
+
+· Expliquer sans conditionner: il ne s'agit pas d'initier les élèves à des plateformes qui leur sont déconseillées
+  mais de leur fournir des clés d'usage et des outils de vigilance avant même l'entrée dans ces univers.
+
+Pour initier aux concepts propres aux réseaux sociaux, des plateformes spécifiquement conçues pour un
+usage par des enfants3 peuvent être utilisées ou non, selon le choix de l'enseignant ou de l'enseignante. Les
+cas d'utilisation de plateformes comme Roblox (dont 20% des utilisateurs et utilisatrices ont moins de 9 ans4)
+pourraient également être abordés.
+
+(1) Yapaka est la cellule de coordination de la prévention de la maltraitance du Ministère de la FW-B. «3-6-9-12» correspond aux
+règles «pas d'écrans ou objets connectés avant 3 ans; pas d'outil numérique personnel avant 6 ans; pas d'usage d'internet seul avant
+9 ans; pas de smartphone ni de réseaux sociaux avant 12 ans»
+
+(2) FMTTN: référentiel de Formation manuelle, technique, technologique et numérique; EPS: référentiel d'Éducation physique et à la
+santé; EPC: référentiel d'Éducation à la philosophie et à la citoyenneté.
+
+(3) Voir la partie 2.2 Typologie des réseaux sociaux
+
+(4) Ces informations sont disponibles sur le site Statista                                                32
+(www.statista.com/statistics/1190869/roblox-games-users-global-distribution-age)
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+                       POUR LES ÉLÈVES DE 12 À 14 ANS (S1-S3):
+                   ANCRER LA RÉFLEXION CRITIQUE ET ÉTHIQUE
+
+Dès 13 ans - l'âge minimum théorique repris dans les conditions d'utilisation pour utiliser la plupart des réseaux
+sociaux -, les élèves sont pleinement exposés aux problématiques propres à l'interaction numérique.1
+
+Année / Âge théorique Référentiel1  Exemples de contenus d'apprentissage en lien
+                                    notamment avec les réseaux sociaux
+S1 / 12 ans        FMTTN            Expliciter les spécificités des différents réseaux sociaux ­
+                                    Notions de droit à l'oubli, liberté d'expression, censure,
+S2 / 13 ans        FMTTN            modération, confidentialité, anonymat ­ Gérer son identité
+                                    numérique ­ Réagir au cyberharcèlement et à la cybermani-
+                                    pulation
+
+                                    Évaluer la fiabilité contextuelle d'une source
+
+S3 / 14 ans        FMTTN            Partager un contenu numérique - Notion de veille par le
+S1-S3 / 12-14 ans  EPS              numérique
+S1-S3 / 12-14 ans  EPS              Images stéréotypées du corps (par les médias, les réseaux
+                                    sociaux)
+
+                                    Analyser les influences du numérique sur sa pratique physique
+
+S1-S3 / 12-14 ans  EPC              Préserver sa sécurité, son identité numérique et son intimité
+                                    sur les réseaux sociaux
+S1-S3 / 12-14 ans  EPC
+                                    S'interroger sur les intentions des diffuseurs d'information
+
+Toutes les informations délivrées dans les parties 2.2 Typologie des réseaux sociaux et 4. Enjeux et pro-
+blématiques peuvent servir de supports pour des pistes d'exploration de ces contenus d'apprentissage, à
+travers différents thèmes et concepts:
+
+· Spécificités des réseaux sociaux: boucle algorithmique, infinite scroll, économie de l'attention...
+
+· Impact sur la santé physique et la perception du corps: hyperconnexion et surconnexion, impact émotion-
+  nel, influenceurs et influenceuses...
+
+· Préserver sa sécurité sur les réseaux sociaux: cyberharcèlement, challenges...
+
+· Informations véhiculées par les réseaux sociaux: créateurs de contenus, infobésité, bulles de filtres, fake
+  news, fermes à robots...
+
+Des activités pédagogiques à mener avec les 8-13 ans
+
+Les fiches pédagogiques Les Cyber Héros sont créées par l'ASBL Blibliothèques sans frontières et mises à dis-
+position des enseignants et enseignantes afin de développer les compétences numériques nécessaires pour
+explorer internet (et les réseaux sociaux) en toute sécurité.
+Elles sont regroupées sur www.e-classe.be/bsf-cyber-heros.
+
+(1) FMTTN: référentiel de Formation manuelle, technique, technologique et numérique; EPS: référentiel d'Éducation physique et à la
+
+santé; EPC: référentiel d'Éducation à la philosophie et à la citoyenneté.                         33
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+ POUR LES 16 ANS ET PLUS, Y COMPRIS LES ADULTES:
+ACCOMPAGNER LA RÉFLEXION ET LA RESPONSABILITÉ
+
+À partir de 16 ans (âge approximatif à partir duquel                Dans l'enseignement qualifiant, l'apprentissage de
+la question de l'identité numérique devient cen-                    la maîtrise des réseaux sociaux peut s'inscrire
+trale) et chez les apprenants et apprenantes adultes,               en lien avec le monde du travail: gestion d'une iden-
+la réflexion et l'usage de l'esprit critique peuvent                tité numérique professionnelle, diffusion de conte-
+porter sur les usages personnels comme sur des                      nus à des fins promotionnelles ou commerciales,
+enjeux plus larges. Les apprentissages peuvent ainsi                construction et élargissement d'un réseau pro-
+contribuer à:                                                       fessionnel, actions de veille... Dans un contexte
+                                                                    d'enseignement supérieur ou d'enseignement pour
+· Relier l'usage des réseaux sociaux à des enjeux                   les adultes, il peut également être pertinent d'utili-
+  de santé mentale, de construction identitaire, de                 ser les réseaux sociaux pour enseigner les pratiques
+  propagande toxique...                                             de communication numérique ou apprendre à or-
+                                                                    ganiser une veille numérique, par exemple à travers
+· Explorer le thème de l'identité numérique à tra-                  le bookmarking collaboratif (voir partie 2.2 Typo-
+  vers la question de la réputation professionnelle.                logie des réseaux sociaux).
+
+· Aborder les réseaux sociaux à travers les en-
+  jeux citoyens et socio-économiques globaux:
+  polarisation de l'opinion, radicalisation, place de
+  la technologie dans la société, économie des ré-
+  seaux sociaux, modèle économique des influen-
+  ceurs et influenceuses...
+
+· Aborder la gestion du bien-être numérique per-
+  sonnel.
+
+      Qu'est-ce que le bien-être numérique
+      et comment le favoriser?
+
+Technostress, technoférence, troubles d'usage,
+nomophobie, impacts sur la santé physique...:
+le focus dédié au bien-être numérique et à
+l'utilisation responsable et positive des technologies
+est disponible sur www.e-classe.be/focus-bien-
+etre-numerique
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  34
+5.2 Utiliser les réseaux sociaux comme                                    La plateforme Happi
+supports à l'enseignement?
+                                                                    Happi est la plateforme d'enseignement hybride et
+Comment évoquer concrètement les réseaux so-                        à distance mise à disposition des établissements
+ciaux sans s'y connecter? Si un réseau social est                   d'enseignement obligatoire en Fédération Wallo-
+nécessaire à un apprentissage (par exemple comme                    nie-Bruxelles. Elle offre un cadre de confiance tout
+support illustratif, dans le cadre de l'éducation au                en protégeant les données personnelles des élèves
+numérique ou de l'éducation aux médias), il n'est                   ainsi que leurs parcours d'apprentissage, leurs tra-
+pas pour autant nécessaire de créer un compte sur                   vaux et leurs évaluations. Les données à caractère
+ce réseau. Des outils en ligne tels que Simitator,                  personnel des enseignants, des enseignantes et des
+Status Clone ou PrankMeNot permettent de créer                      élèves sont traitées en conformité avec les lois
+des profils ou statuts factices, accompagnés d'un                   concernant la protection des données et de la vie
+espace de publication et de commentaires.                           privée, en ce compris le règlement général de pro-
+                                                                    tection des données. La plateforme est accessible
+Certains enseignants et enseignantes, surtout dans                  sur happi.cfwb.be
+l'enseignement non obligatoire, utilisent des plate-
+formes comme Discord, des messageries telles que                    Enfin, de nombreux enseignants et enseignantes
+WhatsApp ou des groupes comme ceux disponibles                      utilisent les réseaux sociaux dans le cadre de la
+sur Facebook pour mettre à disposition des sup-                     communication professionnelle, du réseautage et
+ports de cours ou relayer des informations auprès                   de la veille. Les problématiques citées ci-dessus
+des apprenants et apprenantes. Cet usage repose le                  s'appliquent tout autant. Quand il s'agit de partage
+plus souvent sur des initiatives personnelles. Il n'est             de ressources éducatives, s'y ajoutent les questions
+pas à proscrire mais pose de nombreuses ques-                       relatives au droit d'auteur et à la pertinence péda-
+tions en termes de gestion de la sécurité, des accès,               gogique des contenus. Et de la même façon, l'utili-
+des données personnelles, des interactions entre                    sation d'une plateforme institutionnelle permet de
+personnes, de la modération, etc. Dans l'enseigne-                  prendre en compte ces paramètres.
+ment obligatoire, l'utilisation d'une plateforme ins-
+titutionnelle permet de prendre en charge ces pro-                        La plateforme e-classe
+blématiques. Des ENT (Environnement Numérique
+de Travail) comme Moodle, Chamilo, Smartschool,                     e-classe est la plateforme de ressources éducatives
+Microsoft Education, Google Classroom... ne sont                    mise à disposition des membres des équipes éduca-
+pas exempts de risques, notamment lorsqu'aucune                     tives et des CPMS en FédérationWallonie-Bruxelles.
+gestion rigoureuse de la sécurité, des droits d'accès               Elle intègre des fonctionnalités de découverte, de
+ou des données personnelles n'est mise en place.                    (co-)création et de partage de ressources, ainsi
+                                                                    que de discussions au sein de groupes d'échange.
+      Guide: Les outils numériques de communica-                    L'environnement est sécurisé, sans traçage ni ex-
+      tion entre les parents et l'école                             ploitation commerciale des données utilisateurs.
+                                                                    La plateforme est accessible aux membres de la
+Ce guide liste des logiciels et plateformes de com-                 communauté éducative sur e-classe.be
+munication, notamment des ENT. Un ENT (Envi-
+ronnement Numérique de Travail) propose des                               Guide: Usages professionnels des réseaux
+fonctions visant à faciliter la communication entre                       sociaux
+tous les acteurs de la vie scolaire: emploi du temps,
+cahier de texte, carnet de liaison avec les élèves                  Ce guide est destiné aux membres du personnel
+mais aussi les parents, cours/devoirs, du contenu                   éducatif qui utilisent les réseaux sociaux dans un
+audio et vidéo à la demande ou en direct, etc. Ce                   contexte professionnel.Les conseils et balises,pistes
+guide est disponible sur e-classe.be/guide-pra-                     et règles d'usage qui y sont proposés soutiennent
+tique-outils-communication-parents                                  un comportement éthique et responsable en ligne.
+                                                                    Ce guide est disponible sur e-classe.be/guide-pra-
+                                                                    tique-usages-professionnels-reseaux-sociaux
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  35
+6 EN GUISE DE CONCLUSION: UN REGARD D'EXPERT
+
+Pascal Minotte est psychologue, psychothérapeute                    Du côté des pratiques éducatives, il ne s'agit pas
+et codirecteur du CRESAM (Centre de Référence                       de diaboliser ni de banaliser les réseaux sociaux.
+en Santé mentale). Son champ d'expertise com-                       L'important est d'accompagner les jeunes dans
+prend l'usage problématique des réseaux sociaux,                    leurs usages, en s'appuyant sur ce qu'ils vivent
+notamment chez les jeunes. Ses propos, recueillis                   réellement. Plutôt que de poser des interdictions
+à l'occasion de la rédaction de ce focus, peuvent                   rigides ou de fixer un «temps d'écran» standardi-
+également concerner les adultes dans leur utilisa-                  sé, il est plus pertinent de s'interroger sur l'impact
+tion des réseaux sociaux.                                           des usages numériques sur le quotidien du jeune:
+                                                                    son sommeil, sa concentration, sa vie sociale, ses
+«Les réseaux sociaux occupent aujourd'hui une                       résultats scolaires. Un usage devient problématique
+place centrale dans la vie des adolescents et adoles-               s'il devient rigide, s'il persiste malgré des effets né-
+centes. Pourtant, leur impact sur la santé mentale                  gatifs, s'il isole ou s'il coupe du monde réel.
+doit être nuancé. Contrairement à certaines repré-
+sentations alarmistes, les études internationales les               Dans ce cadre, les enseignants et les ensei-
+plus solides montrent que leur influence est faible.                gnantes ont un rôle essentiel à jouer, mais ils
+Ils ne sont pas à l'origine des troubles psychiques                 ne doivent pas être seuls. La collaboration avec
+des jeunes, mais ils peuvent agir comme amplifi-                    les familles, les centres PMS, les éducatrices et les
+cateur d'un mal-être déjà présent. C'est pourquoi                   éducateurs est indispensable. Il faut créer des es-
+il est essentiel d'éviter de tout leur attribuer: un                paces de parole, prendre le temps d'analyser des
+adolescent ou une adolescente qui va mal ne va pas                  situations parfois complexes (comme le cyberhar-
+forcément mal à cause des écrans. Il faut prendre                   cèlement) et ne pas céder à la tentation d'agir dans
+en compte l'ensemble du contexte: relations fami-                   l'urgence. Chaque situation mérite une lecture fine,
+liales, qualité de vie, estime de soi, environnement                sans jugement hâtif. Une victime peut aussi avoir
+scolaire...                                                         été actrice d'un conflit à un moment donné, sans
+                                                                    pour autant que cela enlève sa souffrance.
+Les réseaux sociaux ne sont pas non plus fonda-
+mentalement négatifs. Ils peuvent jouer un rôle                     Enfin, il est essentiel de partir des pratiques
+structurant dans la vie des jeunes en leur offrant                  numériques des jeunes pour construire des dispo-
+des espaces de soutien, d'identification et d'expres-               sitifs pédagogiques efficaces. Proposer aux élèves
+sion. Pour certains, notamment ceux qui vivent une                  d'analyser ensemble des contenus issus de leurs
+situation particulière ­ maladie rare, questionne-                  réseaux (une vidéo TikTok, une story, un challenge
+ment identitaire, isolement familial ­ ces plate-                   viral), c'est leur permettre de prendre du recul, de
+formes représentent une forme d'ouverture pré-                      développer leur esprit critique et surtout de se sen-
+cieuse, un lieu où il est possible de ne pas se sentir              tir concernés. On ne sensibilise pas un adolescent
+seul, de poser des mots, de se reconnaître dans                     ou une adolescente à partir de concepts abstraits.
+d'autres vécus. À condition d'en faire un usage                     On le fait en parlant son langage, en s'appuyant sur
+équilibré, ils peuvent contribuer au développement                  ce qu'il vit, sur ce qui le touche.»
+personnel.
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  36
+7 EN SAVOIR PLUS
+
+Ce focus vise à présenter brièvement les enjeux liés                En nouant un partenariat avec Pix, la Fédération
+aux réseaux sociaux et à proposer des éléments de                   Wallonie-Bruxelles entend sensibiliser et accompa-
+réflexion. Il constitue une base de départ pour une                 gner l'ensemble des citoyens et citoyennes belges
+exploration plus approfondie des différents thèmes                  francophones dans le développement de leurs
+abordés.                                                            compétences numériques.
+                                                                    Différents publics sont ciblés et des parcours
+Pour les membres d'une équipe éducative souhai-                     Pix spécifiques leur sont destinés:
+tant explorer des pistes supplémentaires, appré-                    · Des parcours thématiques sont disponibles pour
+hender l'un ou l'autre sujet de façon plus fine et
+prolonger la réflexion sur les problématiques sou-                    les établissements du secondaire afin d'être pro-
+levées par les réseaux sociaux, e-classe propose un                   posés à leurs élèves.
+parcours comprenant des ressources éducatives                       · Des parcours spécifiques destinés à soutenir les
+articulées dans une progression exploratoire par                      membres des personnels de l'enseignement dans
+grands thèmes: www.e-classe.be/reseaux-sociaux                        l'exercice de leur métier. Ils sont accessibles via
+                                                                      e-classe: www.e-classe.be/pix-enseignement.
+      e-classe est la plateforme de ressources édu-                   Le parcours Réseaux sociaux concerne l'utilisa-
+      catives mise à disposition des membres des                      tion des différents réseaux sociaux (Facebook,
+équipes éducatives et des CPMS en Fédération                          LinkedIn, Twitter, Instagram...) et la maîtrise de
+Wallonie-Bruxelles. Elle intègre des fonctionnali-                    sa présence en ligne.
+tés de découverte, de (co)création et de partage                    La plateforme Pix est également accessible
+de ressources, ainsi que de discussion au sein de                   pour tous les citoyens et citoyennes à l'adresse
+groupes d'échange.                                                  pix.org/fr-be.
+
+L'accès sécurisé permet de respecter les droits                                             37
+d'auteur des ressources protégées et permet éga-
+lement aux utilisateurs et utilisatrices de bénéficier
+d'un profil unique tout au long de leur carrière.
+L'accès à e-classe est possible de deux façons:
+
+1. via Mon Espace (connexion avec eID ou itsme):
+  monespace.fw-b.be. Dans l'espace «Ma car-
+  rière» réservé aux professionnels de l'enseigne-
+  ment, e-classe figure dans l'onglet «Mes applica-
+  tions».
+
+2. via e-classe directement (connexion avec un
+  compte Cerbère): www.e-classe.be.
+
+e-classe est un projet de la Stratégie numérique
+pour l'éducation issue des travaux du Pacte pour
+un Enseignement d'excellence, réalisé en partena-
+riat avec la RTBF et la SONUMA. La plateforme
+est développée par l'ETNIC, le partenaire informa-
+tique du progrès en Fédération Wallonie-Bruxelles.
+
+Pour en savoir plus: www.e-classe.be/apropos
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux
+    8 RÉFÉRENCES
+
+Bermperian, C. (2023). The Viral Virus of Toxic Masculinity: Andrew Tate's Messaging as a Case Study.
+    Boston College.
+    > dx.doi.org/10.13140/RG.2.2.19670.22081
+
+Big Games Machine. (2024?). How Gamers discover what to play in 2024. Big Games Machine.
+    > www.biggamesmachine.com/wp-content/uploads/2024/05/BGM-Game-discovery-survey-2024.pdf
+
+Brumont, M., Gajic, Y., Hafsi, M., Kohler, A. & Peyricot, K. (2024?). Les synthèses du LAB 2024.
+    Sciences Po ­ École urbaine.
+    > www.sciencespo.fr/ecole-urbaine/sites/sciencespo.fr.ecole-urbaine/files/Synth%C3%A8se%20
+    PUCA%20(2)_STU_2024.pdf
+
+Commission européenne. (2020). Lignes directrices concernant la transparence en matière de classement,
+    conformément au règlement (UE) 2019/1150 du Parlement européen et du conseil (2020/C 424/01).
+    Commission européenne.
+    > eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:52020XC1208(01)
+
+Commission européenne. (s.d.). La législation sur les services numériques. Commission européenne.
+    Consulté le 05 décembre 2024 sur
+    > commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digi-
+    tal-services-act_fr
+
+Commission européenne ­ RAN (Radicalisation Awareness Network. (2021). Incels: première ana-
+    lyse du phénomène (dans l'UE), et impact et difficultés associées sur le plan de la prévention et de la lutte contre
+    l'extrémisme violent. Commission européenne.
+    > home-affairs.ec.europa.eu/document/download/02d19d72-ecf4-4643-a9d2-86f803ccc031_fr
+
+Commission nationale de l'informatique et des libertés (CNIL). (2021, 11 janvier).
+    Droits numériques des mineurs: la CNIL publie les résultats du sondage et de la consultation publique. CNIL.
+    Consulté le 13 mai 2025 sur
+    > www.cnil.fr/fr/droits-numeriques-des-mineurs-la-cnil-publie-les-resultats-du-sondage-et-de-la-
+    consultation-publique
+
+Conseil de l'Union européenne. (2025). AOB for the meeting of the Transport,Telecommunications and
+    Energy Council on 6 June 2025: Protecting Minors from Online harms and risks: Age verification, age-appropriate
+    design and a pan-European digital age of majority - Information from Cyprus, Denmark, France, Greece, Slove-
+    nia and Spain [Note]. Union européenne.
+    > data.consilium.europa.eu/doc/document/ST-9110-2025-INIT/en/pdf
+
+Conseil supérieur de l'Éducation aux médias (CSEM). (2022). L'impact des réseaux sociaux sur la
+    démocratie. Fédération Wallonie-Bruxelles.
+    > www.csem.be/sites/default/files/2022-08/FWB-Brochure%20Reperes-democratin-impact%20
+    reseaux%20sociaux-WEB.pdf
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  38
+Conseil supérieur de l'Éducation aux médias (CSEM). (2025). L'interdiction des réseaux sociaux
+    au moins de 15 ans. Éclairages, (4), p. 7. Fédération Wallonie-Bruxelles.
+    > www.csem.be/sites/default/files/2025-07/Interdiction%20RS%2015%20ans%20def_2.pdf
+
+Coromines, L. (2023, 16 janvier). Les discours masculinistes d'Andrew Tate font bien flipper les profs. L'ADN,
+    Tendances & Mutations. Consulté le 15 janvier 2025 sur
+    > www.ladn.eu/nouveaux-usages/les-propos-masculinistes-dandrew-tate-convertissent-les-eco-
+    liers-et-inquietent-les-profs
+
+Décret. N°68-5, 13 mars 2025, Décret relatif à l'interdiction de l'usage récréatif des téléphones portables et de tout
+autre équipement terminal de communications électroniques à l'école.
+
+    > gallilex.cfwb.be/sites/default/files/textes-normatifs/2025-04/53356_0000.pdf
+
+Deutsche Presse-Agentur GmbH. (2024, 11 septembre). Santé: les écoles européennes partent en guerre
+    contre le téléphone portable. European news room. Consulté le 20 novembre 2024 sur
+    > europeannewsroom.com/fr/sante-les-ecoles-europeennes-partent-en-guerre-contre-
+    le-telephone-portable
+
+Duboc, S. & Noël, D.-J. (2021). Économie et gouvernance de la donnée.Avis du Conseil économique,
+    social et environnemental [...]. Journal officiel de la République française, (06).
+    > www.lecese.fr/sites/default/files/pdf/Avis/2021/2021_06_eco_gouv_donnee.pdf
+
+European Digital Rights (EDRi). (2025, 07 mai). Showing your ID to get online might become a reality ­
+    a closer look at the EU's new age verification app. EDRi. Consulté le 27 mars 2025 sur
+    > edri.org/our-work/showing-your-id-to-get-online-might-become-a-reality-a-closer-look-at-the-
+    eus-new-age-verification-app
+
+Floc'h, M. & Delmoly, L. (2020, 22 mai). Quand la vie quotidienne migre sur Animal Crossing, les acteurs
+    économiques s'adaptent. Méta-Media. Consulté le 22 janvier 2025 sur
+    > www.meta-media.fr/2020/05/22/quand-la-vie-quotidienne-migre-sur-animal-crossing-les-
+    acteurs-economiques-sadaptent.html
+
+France Médias Monde. (2025, 05 mars). Meta va utiliser la reconnaissance faciale de célébrités pour débus-
+    quer les fausses publicités. France 24. Consulté le 04 avril 2025 sur
+    > www.france24.com/fr/info-en-continu/20250305-meta-va-utiliser-la-reconnaissance-faciale-de-
+    c%C3%A9l%C3%A9brit%C3%A9s-pour-d%C3%A9busquer-les-fausses-publicit%C3%A9s
+
+Hurd, S. & Orban de Xivry, A.-C. (2024). #Génération 2024. Les jeunes et les pratiques numériques.
+    ASBL Média Animation & Conseil Supérieur de l'Éducation aux Médias (CSEM).
+    > media-animation.be/IMG/pdf/publication_re_sultats-gene2024-web_v2.pdf
+
+Imperva. (2024, 18 avril). Une «course à l'armement»: augmentation record de l'activité des robots
+    malveillants en ligne pour la 5ème année consécutive. Les Echos. Consulté le 04 février 2025 sur
+    > www.lesechos.fr/partenaires/imperva/une-course-a-larmement-augmentation-record-de-lacti-
+    vite-des-robots-malveillants-en-ligne-pour-la-5eme-annee-consecutive-2088617
+
+Incel. (2025, 03 juillet). Dans Wikipédia.
+    > fr.wikipedia.org/wiki/Incel
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  39
+Jury d'Ethique Publicitaire (JEP). (s.d.). Codes / Règles. JEP. Consulté le 17 mars 2025 sur
+    > www.jep.be/fr/codes-regles
+
+La cellule Vrai ou faux (prod.). (2025, 18 avril). «Adolescence» sur Netflix: qu'est-ce que le phénomène
+    de la «manosphère»? [Podcast]. Société Nationale de Radiodiffusion Radio France.
+    > www.radiofrance.fr/franceinfo/podcasts/le-vrai-ou-faux-junior/adolescence-sur-netflix-qu-est-
+    ce-que-le-phenomene-de-la-manosphere-8764117
+
+Mark, G. (2023, février). Speaking of Psychology: why our attention spans are shrinking (episode 225)
+    [Podcast]. American Psychological Association.
+    > www.apa.org/news/podcasts/speaking-of-psychology/attention-spans
+
+Minadeo, M. & Pope L. (2022, 01 novembre).Weight-normative messaging predominates on TikTok -
+    A qualitative content analysis. PLOS One, 17(11).
+    > doi.org/10.1371/journal.pone.0267997
+
+Morand, O., Cahour, B., Grosjean, V. & Bobillier-Chaumon, M.-É. (2023). Digital overconnectivity
+    at work: a qualitative and quantitative study. Human Work, 86(2), p. 93-128.
+    > hal.science/hal-04328870/document
+
+Ndjaki, A. (2025, 03 mai). Infox et propagande: l'industrie des fermes à trolls. Futura. Consulté le 28 mai 2025 sur
+    > www.futura-sciences.com/tech/actualites/tech-infox-propagande-industrie-fermes-trolls-121097
+
+Newman, N., Fletcher, R., Robertson, C. T., Ross Arguedas, A. & Nielsen, K. R. (s.d.).
+    Reuters Institute Digital News Report 2024. Reuters Institute & University Oxford.
+    > reutersinstitute.politics.ox.ac.uk/sites/default/files/2024-06/RISJ_DNR_2024_Digital_v10%20lr.pdf
+
+Office québécois de la langue française. (2023). Créateur de contenu, créatrice de contenu.
+    Dans Banque de dépannage linguistique.
+    > vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26561613/createur-de-contenu
+
+Organisation des Nations Unies (ONU). (2025, 15 mai). Qu'est-ce que la manosphère et pourquoi
+    devrions-nous nous en inquiéter? ONU Femmes. Consulté le 03 juin 2025 sur
+    > www.unwomen.org/fr/articles/article-explicatif/quest-ce-que-la-manosphere-et-pourquoi-de-
+    vrions-nous-nous-en-inquieter
+
+Radio Télévision Belge de la Communauté Française (RTBF) & ETX. (2025, 24 janvier). Plus les
+    enfants regardent des vidéos courtes, plus leurs résultats scolaires déclinent. RTBF Actus. Consulté le 24 avril
+    2025 sur
+    > www.rtbf.be/article/plus-les-enfants-regardent-des-videos-courtes-plus-leurs-resultats-
+    scolaires-declinent-11493806
+
+Service public fédéral Economie (SPF Economie). (2024, 07 octobre). Digital Services Act (DSA):
+    le règlement sur les services numériques. SPF Economie. Consulté le 28 avril 2025 sur
+    > economie.fgov.be/fr/themes/line/economie-des-plateformes-en/digital-services-act-dsa-le
+
+Smith, A. (2022, 25 janvier). Twitter ignored its own rules to verify kickboxer who said women should `bear some
+    responsibility' for being raped. Independent. Consulté le 17 avril 2025 sur
+    > www.independent.co.uk/tech/twitter-andrew-tate-raped-verify-kickboxer-b1996239.html
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  40
+Société Nationale de Radiodiffusion Radia France. (2021, 30 septembre). Fortnite, un jeu en ligne
+    aux allures de réseau social. Radio France - France Culture. Consulté le 13 novembre 2024 sur
+    > www.radiofrance.fr/franceculture/podcasts/les-enjeux-des-reseaux-sociaux/fortnite-un-jeu-en-
+    ligne-aux-allures-de-reseau-social-3358881
+
+Stroili, M. (2024, 04 novembre). Twitch: c'est quoi ce nouveau label «politique» à afficher sur les lives?.
+    RTBF Actus. Consulté le 09 décembre 2024 sur
+    > www.rtbf.be/article/twitch-c-est-quoi-ce-nouveau-label-politique-a-afficher-sur-les-li-
+    ves-11458611
+
+Statista. (2024, 31 décembre). Distribution of Roblox audiences worldwide as of December 2024,
+    by age group. Statista. Consulté le 17 janvier 2025 sur
+    > www.statista.com/statistics/1190869/roblox-games-users-global-distribution-age
+
+Unnati, D., Bansi, G., Rinkal, V. & Doshi, D. R. (Dr). (2025).A psychological Survey on Popcorn Brain.
+    Journal of Innovative research in technology (IJIRT), 11(9), 1333-1335.
+    > ijirt.org/Article?manuscript=172936
+
+Vilanova, C. (2025, 02 avril). Andrew Tate, l'une des figures les plus inquiétantes d'Internet, de nouveau visé par
+    des accusations de viols [Podcast]. Société Nationale de Radiodiffusion Radio France.
+    > www.radiofrance.fr/mouv/podcasts/la-chronique-de-constance-vilanova/andrew-tate-l-une-des-
+    figures-les-plus-inquietantes-d-internet-de-nouveau-vise-par-des-accusations-de-viols-1997917
+
+Vilanova, C. (2025, 27 mai). Liv Schmidt, gourou de la maigreur, bannie de TikTok [Podcast]. Société Nationale
+    de Radiodiffusion Radio France.
+    > www.radiofrance.fr/mouv/podcasts/la-chronique-de-constance-vilanova/liv-schmidt-gourou-de-
+    la-maigreur-bannie-de-tiktok-5946482
+
+Vilanova, C. (2025, 09 juin). Fin du #SkinnyTok sur TikTok: le culte de la maigreur n'a pas disparu de la plate-
+    forme [Podcast]. Société Nationale de Radiodiffusion Radio France.
+    > www.radiofrance.fr/mouv/podcasts/la-chronique-de-constance-vilanova/fin-du-skinnytok-sur-
+    tiktok-le-culte-de-la-maigreur-n-a-pas-disparu-de-la-plateforme-9507380
+
+We Are Social Ltd & Meltwater. (2025?). Digital 2025 Belgium.The essential guide to digital Trends.
+    We Are Social & Meltwater.
+    > indd.adobe.com/embed/971a299d-b400-466f-8acb-caad01d2f514
+
+We Are Social Ltd & Meltwater. (2025?). Digital 2025 Global overview report.The essential guide to the
+    world's connected behaviours. We Are Social & Meltwater.
+    > indd.adobe.com/embed/9d9a68f6-38a9-4278-b61c-4506b24240b0
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux  41
+AUTRES TITRES DISPONIBLES...
+
+COLLECTION DOSSIERS
+> Enseignement et multimédia
+> La classe inversée
+> Le numérique et les troubles d'apprentissage
+> Les réseaux sociaux
+> Osons la collaboration numérique
+> Se lancer dans la pédagogie hybride et à distance avec le numérique
+
+COLLECTION GUIDES PRATIQUES
+> Autoévaluer ses compétences numériques en tant qu'enseignant
+> Choisir et adapter l'écosystème de son école
+> Choisir un type d'équipement numérique dans le cadre scolaire
+> Comprendre et appliquer le RGPD en classe
+> Des outils de visioconférence pour l'enseignement à distance
+> Enseigner avec la vidéo, de l'usage à la création
+> La cybersécurité pour les écoles
+> Le respect du droit d'auteur dans les pratiques pédagogiques
+> Les outils numériques de communication entre les parents et l'école
+
+COLLECTION AIDE & ASSISTANCE
+> Cartographie des acteurs du soutien au numérique éducatif
+> Répertoire des lieux accessibles aux élèves pour un enseignement à distance
+
+COLLECTION FOCUS
+> Et si on luttait contre la fracture numérique?
+> La place des femmes dans le numérique
+> La réalité étendue dans l'éducation
+> Le cyberharcèlement
+> L'impact environnemental du numérique
+> L'intelligence artificielle
+
+Fédération Wallonie-Bruxelles / Ministère · www.fw-b.be                VOTRE AVIS NOUS
+02 413 3000 (les jours ouvrables, de 8h30 à 17h)                            INTÉRESSE!
+
+Administration générale de l'Enseignement                           form.jotform.com/241053243543346
+Service général du Numérique éducatif
+Avenue du port 16, 1080 Bruxelles                                   pàunQ(uDabnnuleuit'craccéavoeeteuiQzoarp-tnRvep?orceouDonxsdqiitmuepeêseaet-ttnelievsedeénne:odr2suéeasmptioecisnnenfaudtcsttacteeniasotn)n-.
+contact.sgne@cfwb.be
+
+www.enseignement.be
+D/2025/16043/0007
+
+Rédaction: Laurence Ilunga, David Nyssen
+Graphisme: Laura Maugeri
+
+Éditeur responsable: Fabrice Aerts-Bancken,Administrateur général a.i. · Avenue du Port 16, 1080 Bruxelles
+
+Service général du Numérique éducatif · Focus: les réseaux sociaux                                                                                                                                                 42
+

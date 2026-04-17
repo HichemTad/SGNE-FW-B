@@ -1,0 +1,1638 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="rs">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RÃ©seaux Sociaux â€” Document complet Â· FW-B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero { background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+    blockquote { border-left: 4px solid #0d9488; }
+  </style>
+  <link rel="stylesheet" href="ds.css">
+
+<style>
+.chapter-section { scroll-margin-top: 5rem; }
+#plan-nav a.chapter-active { font-weight: 700; color: #3A5C48; background: #EDFAF2; border-radius: 6px; }
+#sidebar-anchors a { display: flex; align-items: flex-start; gap: 0.35rem; font-size: 0.72rem; color: #4b5563; padding: 0.2rem 0.4rem; border-radius: 4px; text-decoration: none; transition: background 0.12s, color 0.12s; line-height: 1.35; }
+#sidebar-anchors a:hover { background: #f3f4f6; color: #111827; }
+#sidebar-anchors a.sidebar-link-active { font-weight: 600; color: #3A5C48; background: #EDFAF2; }
+</style>
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-teal-700 text-white px-4 py-2 rounded-md z-[100] text-sm font-medium">Aller au contenu principal</a>
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-50 bg-[#003082] shadow-xl" role="navigation" aria-label="Navigation principale">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 gap-4">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0 rounded-lg p-1" aria-label="Accueil Numérique Éducatif FW-B">
+        <div class="w-9 h-9 bg-white/15 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div class="leading-tight">
+          <div class="text-white font-bold text-sm tracking-wide">Numérique Éducatif</div>
+          <div class="text-white/60 text-xs">Fédération Wallonie-Bruxelles</div>
+        </div>
+      </a>
+
+      <!-- Desktop links -->
+      <div class="hidden lg:flex items-center gap-0.5 flex-1 justify-center">
+        <a href="index.html" class="px-3 py-2 rounded-md text-sm font-semibold text-white hover:bg-white/10 transition-colors">Accueil</a>
+        <div class="w-px h-5 bg-white/20 mx-1"></div>
+
+        <!-- IA Dropdown -->
+        <div class="relative" id="dropdown-ia">
+          <button class="nav-dropdown-btn flex items-center gap-1 px-3 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors" aria-expanded="false" aria-haspopup="true">
+            Intelligence Artificielle
+            <svg class="w-3.5 h-3.5 opacity-70 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown-menu hidden absolute top-full left-0 mt-1 w-64 bg-[#003082] border border-white/15 rounded-xl shadow-2xl py-2 z-50">
+            <a href="table-des-matieres.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white font-semibold hover:bg-white/10 transition-colors border-b border-white/10 mb-1">Table des matières</a>
+            <a href="section-1-introduction.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">1</span>Introduction</a>
+            <a href="section-2-definitions.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">2</span>Définitions et concepts clés</a>
+            <a href="section-3-enjeux.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">3</span>Les grands enjeux de l'IA</a>
+            <a href="section-4-enseignement.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">4</span>Les professionnels face à l'IA</a>
+            <a href="section-5-generatives.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">5</span>Zoom sur les IA génératives</a>
+            <a href="section-6-ressources.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">6</span>En savoir plus &amp; Références</a>
+          </div>
+        </div>
+
+        <div class="w-px h-5 bg-white/20 mx-1"></div>
+
+        <!-- RS Dropdown -->
+        <div class="relative" id="dropdown-rs">
+          <button class="nav-dropdown-btn flex items-center gap-1 px-3 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors" aria-expanded="false" aria-haspopup="true">
+            Réseaux Sociaux
+            <svg class="w-3.5 h-3.5 opacity-70 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown-menu hidden absolute top-full left-0 mt-1 w-64 bg-[#003082] border border-white/15 rounded-xl shadow-2xl py-2 z-50">
+            <a href="rs-table-des-matieres.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white font-semibold hover:bg-white/10 transition-colors border-b border-white/10 mb-1">Table des matières</a>
+            <a href="rs-section-1.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">1</span>Introduction</a>
+            <a href="rs-section-2.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">2</span>Définitions et exemples</a>
+            <a href="rs-section-3.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">3</span>Les réseaux sociaux en 8 chiffres</a>
+            <a href="rs-section-4.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">4</span>Enjeux et problématiques</a>
+            <a href="rs-section-5.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">5</span>Enseigner à l'heure des RS</a>
+            <a href="rs-section-6.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"><span class="text-white/50 font-bold w-4 shrink-0">6</span>Conclusion, ressources &amp; références</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Burger -->
+      <button id="burgerBtn" class="lg:hidden p-2 rounded-md text-white hover:bg-white/10 transition-colors" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden lg:hidden pb-4 border-t border-white/10 pt-2">
+      <div class="flex flex-col gap-1">
+        <a href="index.html" class="px-3 py-2.5 rounded-md text-sm text-white font-medium hover:bg-white/10">Accueil</a>
+        <div class="px-3 py-1 text-xs text-white/50 font-bold uppercase tracking-widest mt-2">Intelligence Artificielle</div>
+        <a href="table-des-matieres.html" class="px-4 py-2 rounded-md text-sm text-white font-semibold hover:bg-white/10">Table des matières</a>
+        <a href="section-1-introduction.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">1 — Introduction</a>
+        <a href="section-2-definitions.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">2 — Définitions et concepts clés</a>
+        <a href="section-3-enjeux.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">3 — Les grands enjeux de l'IA</a>
+        <a href="section-4-enseignement.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">4 — Les professionnels face à l'IA</a>
+        <a href="section-5-generatives.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">5 — Zoom sur les IA génératives</a>
+        <a href="section-6-ressources.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">6 — En savoir plus &amp; Références</a>
+        <div class="px-3 py-1 text-xs text-white/50 font-bold uppercase tracking-widest mt-2">Réseaux Sociaux</div>
+        <a href="rs-table-des-matieres.html" class="px-4 py-2 rounded-md text-sm text-white font-semibold hover:bg-white/10">Table des matières</a>
+        <a href="rs-section-1.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">1 — Introduction</a>
+        <a href="rs-section-2.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">2 — Définitions et exemples</a>
+        <a href="rs-section-3.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">3 — Les réseaux sociaux en 8 chiffres</a>
+        <a href="rs-section-4.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">4 — Enjeux et problématiques</a>
+        <a href="rs-section-5.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">5 — Enseigner à l'heure des RS</a>
+        <a href="rs-section-6.html" class="px-4 py-2 rounded-md text-sm text-white/80 hover:bg-white/10 hover:text-white">6 — Conclusion, ressources &amp; références</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <div class="flex flex-col lg:flex-row gap-10">
+    <div class="flex-1 min-w-0">
+<section id="chapitre-1" class="chapter-section pt-6">
+  <div class="gradient-hero py-7 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-8 rounded-2xl">
+     py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a href="rs-table-des-matieres.html" class="inline-flex items-center gap-1 text-teal-200 hover:text-white text-sm mb-6 transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+      Index du chapitre
+    </a>
+    <div class="flex items-start gap-5">
+      <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-white font-extrabold text-2xl">1</span>
+      </div>
+      <div>
+        <p class="text-teal-200 text-sm font-semibold uppercase tracking-widest mb-1">Focus Réseaux Sociaux</p>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Introduction</h1>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="min-w-0">
+    <!-- Share / Page bar -->
+      <div class="flex items-center gap-3 mb-8">
+        <button class="inline-flex items-center gap-2 bg-white border border-gray-200 text-gray-600 text-sm px-4 py-2 rounded-lg hover:border-teal-400 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Partager
+        </button>
+      </div>
+
+      <!-- Content -->
+      <article class="prose prose-gray max-w-none space-y-6">
+
+        <p class="text-gray-700 leading-relaxed text-base">
+          Quand <em>Homo erectus</em> apparaît sur Terre, il crée les premières formes de communication élaborées et ébauche le développement de liens sociaux structurés. Il lui faudra <strong>1,4 million d'années</strong> pour évoluer jusqu'aux êtres humains que nous sommes.
+        </p>
+
+        <div class="bg-teal-50 border border-teal-200 rounded-2xl p-6 my-6">
+          <p class="text-teal-800 text-lg font-bold text-center">1,4 million d'années</p>
+          <p class="text-teal-600 text-center text-sm mt-1">C'est aussi désormais le temps cumulé que l'humanité passe <strong>chaque jour</strong> sur les réseaux sociaux, à l'échelle mondiale.</p>
+          <p class="text-teal-500 text-xs text-center mt-2">(5,24 milliards d'utilisateurs × 2h20 de moyenne quotidienne)</p>
+        </div>
+
+        <p class="text-gray-700 leading-relaxed">
+          Chaque jour est ainsi consacré à alimenter ce gigantesque flux numérique. Mais quelle part de temps est-elle dédiée à la prise de recul et à la réflexion ?
+        </p>
+
+        <p class="text-gray-700 leading-relaxed">
+          Les réseaux sociaux facilitent la création de liens interpersonnels, la diffusion d'idées, l'accès à l'information et l'expression personnelle. Mais ils exposent aussi à la désinformation, aux contenus haineux, aux influences toxiques, à la pression sociale et aux usages problématiques.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Objectifs de ce focus</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Après avoir brossé une <strong>typologie des différents réseaux et médias sociaux</strong>, ce focus donne un aperçu synthétique des principaux <strong>enjeux et problématiques</strong>, et offre des pistes pour <strong>exploiter le thème des réseaux sociaux dans l'éducation</strong>.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed">
+          Il se conclut par le regard d'un expert : <strong>Pascal Minotte</strong>, psychologue, psychothérapeute et codirecteur du CRéSaM (Centre de Référence en Santé mentale), que nous remercions pour sa contribution.
+        </p>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5 mt-6">
+          <p class="text-amber-800 text-sm font-semibold mb-1">⚠️ Note importante</p>
+          <p class="text-amber-700 text-sm leading-relaxed">
+            Évoquer la question des réseaux sociaux est impossible sans citer de noms de sociétés ou de marques commerciales. Tous les noms de réseaux sociaux, médias ou plateformes apparaissant dans ce Focus sont cités dans une optique d'information, en dehors de tout but promotionnel.
+          </p>
+        </div>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Structure du document</h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+            <span class="text-gray-700"><strong>Définitions et exemples</strong> — Typologies complètes des réseaux sociaux, géopolitique, métiers émergents</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+            <span class="text-gray-700"><strong>Les réseaux sociaux en 8 chiffres</strong> — Données clés et statistiques</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span>
+            <span class="text-gray-700"><strong>Enjeux et problématiques</strong> — Information, économie de l'attention, impact sur les utilisateurs, influenceurs, aspects juridiques</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">5</span>
+            <span class="text-gray-700"><strong>Enseigner à l'heure des réseaux sociaux</strong> — Approches pédagogiques par niveau, outils et plateformes</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">6</span>
+            <span class="text-gray-700"><strong>Conclusion &amp; ressources</strong> — Regard d'expert, en savoir plus, références</span>
+          </li>
+        </ul>
+
+      </article>
+    </div>
+
+    <!-- SIDEBAR -->
+  </div>
+</section>
+<hr class="border-gray-200">
+<section id="chapitre-2" class="chapter-section pt-6">
+  <div class="gradient-hero py-7 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-8 rounded-2xl">
+     py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a href="rs-table-des-matieres.html" class="inline-flex items-center gap-1 text-teal-200 hover:text-white text-sm mb-6 transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+      Index du chapitre
+    </a>
+    <div class="flex items-start gap-5">
+      <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-white font-extrabold text-2xl">2</span>
+      </div>
+      <div>
+        <p class="text-teal-200 text-sm font-semibold uppercase tracking-widest mb-1">Focus Réseaux Sociaux</p>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Définitions et exemples</h1>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="min-w-0">
+    <!-- 2.1 -->
+      <section id="definitions">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">2.1 Définitions de base</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Selon la définition élaborée par le Conseil supérieur de l'éducation aux Médias (CSEM), les réseaux sociaux sont des <strong>« sites ou des applications en ligne qui permettent aux utilisateurs de se regrouper, de dialoguer, d'échanger des informations et de tisser du lien »</strong> (CSEM, 2022).
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">Bien qu'il existe de nombreux réseaux sociaux différents, ils disposent tous de caractéristiques communes :</p>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-start gap-3">
+            <span class="w-2 h-2 rounded-full bg-teal-500 mt-2 shrink-0"></span>
+            <span class="text-gray-700"><strong>Création d'un profil</strong> : espace numérique rassemblant les informations destinées à présenter l'utilisateur (bio, image, préférences), en mode public ou privé.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-2 h-2 rounded-full bg-teal-500 mt-2 shrink-0"></span>
+            <span class="text-gray-700"><strong>Interconnexion automatique des profils</strong> : les utilisateurs maintiennent le lien avec leurs proches et peuvent se créer de nouveaux « amis » virtuels.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-2 h-2 rounded-full bg-teal-500 mt-2 shrink-0"></span>
+            <span class="text-gray-700"><strong>Modèle participatif (web 2.0)</strong> : à partir des années 2000, les internautes deviennent producteurs d'informations. L'interaction est centrale — réactions, commentaires, relais de contenus.</span>
+          </li>
+        </ul>
+        <div class="bg-teal-50 border border-teal-200 rounded-xl p-4">
+          <p class="text-teal-800 text-sm font-semibold mb-1">Classement 2025 en Belgique</p>
+          <p class="text-teal-700 text-sm">YouTube · Facebook · LinkedIn · Instagram · Messenger · Snapchat · TikTok · Pinterest · X (ex-Twitter) <span class="text-teal-500">(We Are Social &amp; Meltwater, 2025)</span></p>
+        </div>
+      </section>
+
+      <!-- 2.2 -->
+      <section id="typologie">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">2.2 Typologie des réseaux sociaux</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">La liste suivante n'est pas exhaustive : elle permet de classifier les réseaux sociaux par grandes catégories, et d'en citer les plus représentatifs.</p>
+
+        <!-- a -->
+        <div class="mb-8">
+          <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">a</span>
+            Réseaux de mise en relation
+          </h3>
+          <div class="grid sm:grid-cols-2 gap-4" data-stagger-grid>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Classmates <span class="text-gray-400 font-normal text-sm">(1995)</span></p>
+              <p class="text-gray-600 text-sm">Premier réseau social tel qu'on le conçoit aujourd'hui (aujourd'hui "MemoryLane.ai"). Objectif : mise en relation avec d'anciennes connaissances d'école.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">LinkedIn <span class="text-gray-400 font-normal text-sm">(2003)</span></p>
+              <p class="text-gray-600 text-sm">Premier réseau social à vocation professionnelle, destiné à inciter les personnes d'un même secteur d'activité à se contacter.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- b -->
+        <div class="mb-8">
+          <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">b</span>
+            Réseaux généralistes
+          </h3>
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">MySpace <span class="text-gray-400 font-normal text-sm">(2003)</span></p>
+              <p class="text-gray-600 text-sm">Premier réseau social grand public. Partage de musiques, photos et discussions instantanées. Tremplin pour de nombreux artistes.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Facebook / Meta <span class="text-gray-400 font-normal text-sm">(2006)</span></p>
+              <p class="text-gray-600 text-sm">Révolutionne l'expérience avec le <em>News Feed</em>. Les algorithmes de recommandation personnalisent le contenu. Rebaptisé Meta en 2021 (Facebook, Instagram, Threads, Messenger, WhatsApp).</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Instagram <span class="text-gray-400 font-normal text-sm">(2010)</span></p>
+              <p class="text-gray-600 text-sm">Optimisé smartphones, popularise les filtres, Stories et Reels. Le terme <em>« instagrammable »</em> entre dans le Larousse en 2023.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- c -->
+        <div class="mb-8">
+          <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">c</span>
+            Microblogging
+          </h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">X / Twitter <span class="text-gray-400 font-normal text-sm">(2006)</span></p>
+              <p class="text-gray-600 text-sm">Bouleverse la diffusion de l'information. Invente le hashtag (#). Prisé du journalisme. Racheté par Elon Musk en 2022 → libéralisation de la modération des contenus.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Threads <span class="text-gray-400 font-normal text-sm">(2023)</span></p>
+              <p class="text-gray-600 text-sm">Lancé par Meta en réponse à X/Twitter. Se positionne comme un environnement convivial, préservé des propos haineux et polémiques.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- d -->
+        <div class="mb-8">
+          <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">d</span>
+            Plateformes de diffusion de vidéos
+          </h3>
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Vimeo <span class="text-gray-400 font-normal text-sm">(2004)</span></p>
+              <p class="text-gray-600 text-sm">Première plateforme de partage vidéo intégrant une dynamique sociale. Surtout un canal de diffusion.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">YouTube <span class="text-gray-400 font-normal text-sm">(2005)</span></p>
+              <p class="text-gray-600 text-sm">Plateforme la plus populaire au monde. Crée la <em>creator economy</em>, popularise le clickbait et les challenges viraux. Concurrence directe à la TV traditionnelle.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">TikTok <span class="text-gray-400 font-normal text-sm">(2016)</span></p>
+              <p class="text-gray-600 text-sm">Vidéos courtes, algorithme extrêmement performant. Considéré comme particulièrement addictif. Rémunère directement les créateurs selon les vues.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- e -->
+        <div class="mb-8">
+          <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">e</span>
+            Messageries instantanées
+          </h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Snapchat <span class="text-gray-400 font-normal text-sm">(2011)</span></p>
+              <p class="text-gray-600 text-sm">Invente les messages éphémères et les stories (disparition après 24h). Popularise les filtres en réalité augmentée.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">WhatsApp</p>
+              <p class="text-gray-600 text-sm">Alternative gratuite aux SMS/MMS. Fonctionnalités de communauté, statuts photos/vidéos éphémères. Appartient à Meta.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- f -->
+        <div class="mb-8">
+          <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">f</span>
+            Plateformes de bookmarking
+          </h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Del.icio.us <span class="text-gray-400 font-normal text-sm">(2003, pionnier)</span></p>
+              <p class="text-gray-600 text-sm">Pionnier de la classification de contenus par tags. Design standard des dossiers, piles, colonnes. Aujourd'hui inactive.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Pinterest <span class="text-gray-400 font-normal text-sm">(2010)</span></p>
+              <p class="text-gray-600 text-sm">Site de partage de photographies emblématique. Intègre réalité augmentée et recherche d'images par IA. Aussi Diigo, Pearltrees, StartMe…</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- g -->
+        <div class="mb-8">
+          <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">g</span>
+            Plateformes issues du social gaming
+          </h3>
+          <p class="text-gray-600 text-sm mb-4">Le <strong>social gaming</strong> combine éléments ludiques propres aux jeux vidéo et interactions sociales. 64 % des joueurs découvrent de nouveaux jeux via YouTube et TikTok (Big Games Machine, 2024).</p>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Twitch <span class="text-gray-400 font-normal text-sm">(2011)</span></p>
+              <p class="text-gray-600 text-sm">Streaming en direct, interactions en temps réel avec les créateurs. S'est ouvert aux médias, journalistes, politiques.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Discord <span class="text-gray-400 font-normal text-sm">(2015)</span></p>
+              <p class="text-gray-600 text-sm">Espaces virtuels organisés en salons thématiques. Essor post-Covid. Très populaire dans l'enseignement.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Roblox <span class="text-gray-400 font-normal text-sm">(2006)</span></p>
+              <p class="text-gray-600 text-sm">Plateforme de mini-jeux créés par les utilisateurs. Public : enfants et ados. 20 % des utilisateurs ont moins de 9 ans.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Fortnite <span class="text-gray-400 font-normal text-sm">(2017)</span></p>
+              <p class="text-gray-600 text-sm">Mode « bac à sable », événements collectifs, concerts de stars mondiales. Frontière floue entre jeu vidéo et réseau social.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- h -->
+        <div class="mb-8">
+          <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">h</span>
+            Réseaux sociaux émergents
+          </h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">BeReal <span class="text-gray-400 font-normal text-sm">(2020, France)</span></p>
+              <p class="text-gray-600 text-sm">Photo instantanée double-face sur notification aléatoire. Rupture avec les filtres et la mise en scène.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Mastodon / Bluesky</p>
+              <p class="text-gray-600 text-sm">Décentralisés, sans algorithmes de suggestion automatique, sans publicité. Redonnent le contrôle aux utilisateurs.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Telegram <span class="text-gray-400 font-normal text-sm">(2013)</span></p>
+              <p class="text-gray-600 text-sm">Messagerie avec « échanges secrets » totalement chiffrés. Régulièrement au cœur d'affaires judiciaires en raison de son anonymat.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Rumble <span class="text-gray-400 font-normal text-sm">(2013)</span></p>
+              <p class="text-gray-600 text-sm">Revendique la liberté d'expression absolue. Absence de modération → accès libre à des contenus conspirationnistes. Inaccessible en France depuis 2022.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Truth Social <span class="text-gray-400 font-normal text-sm">(2021)</span></p>
+              <p class="text-gray-600 text-sm">Créé par Donald Trump après suspension de ses comptes. Promeut une liberté d'expression au détriment des vérités factuelles.</p>
+            </div>
+            <div class="platform-card bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+              <p class="font-bold text-gray-800 mb-1">Cara <span class="text-gray-400 font-normal text-sm">(2023)</span></p>
+              <p class="text-gray-600 text-sm">Créé en réaction à la décision de Meta d'entraîner son IA sur les données de ses réseaux. L'IA y est totalement bannie — plateforme de protection des artistes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- i -->
+        <div class="mb-4">
+          <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+            <span class="bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">i</span>
+            Réseaux sociaux à visée éducative
+          </h3>
+          <div class="bg-teal-50 border border-teal-200 rounded-xl p-5 mb-4">
+            <p class="text-teal-800 text-sm font-semibold mb-2">Distinction clé : éducatif vs. grand public</p>
+            <p class="text-teal-700 text-sm leading-relaxed">Les réseaux éducatifs (ClassDojo, Beneylu School, eTwinning, Padlet…) ont été conçus pour un usage scolaire : espaces sécurisés, protection des données, sans publicité ciblée ni pression sociale liée à la réputation en ligne.</p>
+          </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-5">
+            <p class="text-amber-800 text-sm font-semibold mb-2">❓ Checklist pour le choix d'un outil en contexte éducatif</p>
+            <ul class="text-amber-700 text-sm space-y-1">
+              <li>✓ Est-il conforme au cadre de l'école ?</li>
+              <li>✓ Protège-t-il les données personnelles ?</li>
+              <li>✓ Permet-il un apprentissage actif sans mise en danger ?</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2.3 -->
+      <section id="geopolitique">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">2.3 Géopolitique des réseaux sociaux</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">La majorité des réseaux sociaux utilisés mondialement sont issus des <strong>États-Unis</strong>. Cette hégémonie américaine implique :</p>
+        <div class="grid sm:grid-cols-3 gap-4 mb-6">
+          <div class="bg-white border border-red-100 rounded-xl p-4">
+            <p class="font-bold text-red-700 text-sm mb-1">Données personnelles</p>
+            <p class="text-gray-600 text-sm">Concentration des données des Européens dans des entreprises américaines — enjeux RGPD et souveraineté numérique.</p>
+          </div>
+          <div class="bg-white border border-orange-100 rounded-xl p-4">
+            <p class="font-bold text-orange-700 text-sm mb-1">Influence culturelle</p>
+            <p class="text-gray-600 text-sm">Façonnent les discours et tendances culturelles. Cambridge Analytica : ingérence dans des processus électoraux.</p>
+          </div>
+          <div class="bg-white border border-yellow-100 rounded-xl p-4">
+            <p class="font-bold text-yellow-700 text-sm mb-1">Dépendance technologique</p>
+            <p class="text-gray-600 text-sm">Difficile émergence de concurrents européens solides face aux géants américains.</p>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm">Alternatives européennes notables : <strong>BeReal</strong> et <strong>Mastodon</strong> (France/Allemagne), Copains d'avant (France), Jodel (Allemagne, campus), Xing et Viadeo (professionnels, concurrents de LinkedIn).</p>
+      </section>
+
+      <!-- 2.4 -->
+      <section id="metiers">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">2.4 Deux « métiers » indissociables</h2>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="bg-white border border-teal-200 rounded-xl p-5">
+            <p class="font-bold text-teal-800 text-base mb-2">Influenceur / Influenceuse</p>
+            <blockquote class="text-gray-600 text-sm italic leading-relaxed">
+              « Une personne physique ou une entité virtuelle qui, sur une plateforme pertinente, dispose d'une audience supérieure à la moyenne. »
+            </blockquote>
+            <p class="text-gray-500 text-xs mt-2">— Commission européenne (2021)</p>
+          </div>
+          <div class="bg-white border border-teal-200 rounded-xl p-5">
+            <p class="font-bold text-teal-800 text-base mb-2">Créateur / Créatrice de contenu</p>
+            <blockquote class="text-gray-600 text-sm italic leading-relaxed">
+              « Personne dont le travail consiste à concevoir des publications originales destinées aux réseaux sociaux, tout en s'assurant que celles-ci forment un ensemble cohérent et engageant pour l'audience. »
+            </blockquote>
+            <p class="text-gray-500 text-xs mt-2">— Office québécois de la langue française</p>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm mt-4 leading-relaxed">Ces deux profils sont souvent confondus, suscitant parfois des controverses au sein des communautés concernées. Les influenceurs produisent régulièrement du contenu, contribuant à la vitalité des plateformes.</p>
+      </section>
+
+      <!-- 2.5 -->
+      <section id="ia">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">2.5 Intelligence artificielle et réseaux sociaux</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">L'IA est au cœur du fonctionnement des réseaux sociaux modernes :</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+            <p class="font-semibold text-gray-800 text-sm mb-1">🤖 Algorithmes de recommandation</p>
+            <p class="text-gray-600 text-sm">News Feed de Facebook, page « Pour toi » de TikTok — personnalisation du contenu selon les préférences détectées.</p>
+          </div>
+          <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+            <p class="font-semibold text-gray-800 text-sm mb-1">📸 Reconnaissance d'images</p>
+            <p class="text-gray-600 text-sm">Filtres en réalité augmentée sur Instagram et Snapchat, recherche visuelle sur Pinterest.</p>
+          </div>
+          <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+            <p class="font-semibold text-gray-800 text-sm mb-1">🛡️ Modération des contenus</p>
+            <p class="text-gray-600 text-sm">Détection automatique de contenus illicites, haineux ou dangereux — avec des limites importantes.</p>
+          </div>
+          <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+            <p class="font-semibold text-gray-800 text-sm mb-1">📊 Analyse des tendances</p>
+            <p class="text-gray-600 text-sm">Identification de sujets viraux, analyse des comportements d'achat, ciblage publicitaire ultra-précis.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR -->
+  </div>
+</section>
+<hr class="border-gray-200">
+<section id="chapitre-3" class="chapter-section pt-6">
+  <div class="gradient-hero py-7 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-8 rounded-2xl">
+     py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a href="rs-table-des-matieres.html" class="inline-flex items-center gap-1 text-teal-200 hover:text-white text-sm mb-6 transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+      Index du chapitre
+    </a>
+    <div class="flex items-start gap-5">
+      <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-white font-extrabold text-2xl">3</span>
+      </div>
+      <div>
+        <p class="text-teal-200 text-sm font-semibold uppercase tracking-widest mb-1">Focus Réseaux Sociaux</p>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Les réseaux sociaux en 8 chiffres ⚡</h1>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="min-w-0">
+    <p class="text-gray-600 leading-relaxed mb-8 text-center text-lg">
+        Les données ci-dessous donnent une mesure concrète de l'ampleur des réseaux sociaux dans nos sociétés.
+      </p>
+
+      <!-- STATS GRID -->
+      <div id="stats-container" class="grid sm:grid-cols-2 xl:grid-cols-4 gap-5 mb-10" data-stagger-grid>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg" data-target="5240000000" data-suffix=" " data-prefix="" data-display="5,24 milliards" data-duration="2000">
+          <div class="text-4xl mb-1">🌍</div>
+          <p class="stat-number text-3xl font-extrabold text-teal-300 mb-1 counter" data-val="5.24" data-unit="milliards">5,24 milliards</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Utilisateurs actifs</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Nombre d'utilisateurs et utilisatrices des réseaux sociaux dans le monde.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">⏱️</div>
+          <p class="stat-number text-3xl font-extrabold text-teal-300 mb-1 counter" data-val="2" data-unit="h20" data-type="time">2h20</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Temps quotidien moyen</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Durée moyenne passée chaque jour sur les réseaux sociaux dans le monde.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">📅</div>
+          <p class="stat-number text-3xl font-extrabold text-teal-300 mb-1 counter" data-val="1.4" data-unit="million d'années">1,4 million d'années</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Temps cumulé quotidien</p>
+          <p class="text-teal-300 text-xs leading-relaxed">L'humanité passe chaque jour l'équivalent de 1,4 million d'années sur les réseaux sociaux.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">📊</div>
+          <p class="stat-number text-3xl font-extrabold text-teal-300 mb-1 counter" data-val="80" data-unit="%">0%</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Des 16-64 ans</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Utilisent les réseaux sociaux chaque mois dans le monde.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">👶</div>
+          <p class="stat-number text-3xl font-extrabold text-yellow-300 mb-1 counter" data-val="8.5" data-unit=" ans">0 ans</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Âge moyen d'inscription</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Âge estimé (France) de la première inscription à un réseau social — bien en dessous de 13 ans.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">⚖️</div>
+          <p class="stat-number text-3xl font-extrabold text-yellow-300 mb-1 counter" data-val="13" data-unit=" ans">0 ans</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Âge minimum légal</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Âge minimum théorique pour s'inscrire sur la plupart des réseaux sociaux (RGPD, Belgique).</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">💰</div>
+          <p class="stat-number text-3xl font-extrabold text-red-300 mb-1 counter" data-val="5800000" data-unit=" $">0 $</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Revenu mensuel estimé</p>
+          <p class="text-teal-300 text-xs leading-relaxed">D'un influenceur faisant l'apologie de la « masculinité toxique » sur les réseaux sociaux.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">🤖</div>
+          <p class="stat-number text-3xl font-extrabold text-red-300 mb-1 counter" data-val="50" data-unit="%">0%</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Du trafic internet</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Près de la moitié du trafic sur internet est généré par des bots (logiciels automatisés).</p>
+        </div>
+
+      </div>
+
+      <!-- Additional context -->
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="font-bold text-gray-800 text-lg mb-4">Pour mettre en contexte</h2>
+        <div class="grid sm:grid-cols-3 gap-4 text-sm text-gray-600">
+          <div class="bg-slate-50 rounded-xl p-4">
+            <p class="font-bold text-gray-700 mb-1">Le Big Data en chiffres</p>
+            <p>Le marché mondial du Big Data représentait plus de <strong>200 milliards de dollars</strong> en 2020 — comparable au marché mondial des aliments bio (227 Mrd$) ou du jeu vidéo (221 Mrd$ en 2024).</p>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4">
+            <p class="font-bold text-gray-700 mb-1">La génération Z et TikTok</p>
+            <p>TikTok est devenu le <strong>moteur de recherche préféré de la génération Z</strong> (nés entre 1997 et 2012), supplantant Google pour les tutoriels, recettes et inspirations du quotidien.</p>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4">
+            <p class="font-bold text-gray-700 mb-1">HugoDécrypte vs. la presse</p>
+            <p>En 2024, <strong>HugoDécrypte</strong> a reçu plus de mentions comme source d'information que Le Monde, Le Figaro et Libération réunis auprès des Français interrogés (Newman, 2024).</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+  </div>
+</section>
+<hr class="border-gray-200">
+<section id="chapitre-4" class="chapter-section pt-6">
+  <div class="gradient-hero py-7 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-8 rounded-2xl">
+     py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a href="rs-table-des-matieres.html" class="inline-flex items-center gap-1 text-teal-200 hover:text-white text-sm mb-6 transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+      Index du chapitre
+    </a>
+    <div class="flex items-start gap-5">
+      <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-white font-extrabold text-2xl">4</span>
+      </div>
+      <div>
+        <p class="text-teal-200 text-sm font-semibold uppercase tracking-widest mb-1">Focus Réseaux Sociaux</p>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Enjeux et problématiques</h1>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="min-w-0">
+    <!-- 4.1 -->
+      <section id="information">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">4.1 L'information à l'heure des réseaux sociaux</h2>
+
+        <p class="text-gray-700 leading-relaxed mb-4">Les réseaux sociaux ont profondément bouleversé la manière dont les internautes s'informent. Des créateurs comme <strong>HugoDécrypte</strong> (actualité) ou <strong>Nota Bene</strong> (Histoire) ont gagné en popularité en proposant des formats vidéo adaptés aux usages numériques des jeunes : courts, dynamiques, accessibles sur smartphone.</p>
+
+        <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 mb-5">
+          <p class="text-teal-800 text-sm font-semibold">Étude 2024 (Newman)</p>
+          <p class="text-teal-700 text-sm mt-1">HugoDécrypte a reçu plus de mentions comme source d'information que <strong>Le Monde, Le Figaro et Libération réunis</strong> auprès des Français interrogés.</p>
+        </div>
+
+        <h3 class="font-bold text-gray-800 mb-2">TikTok comme moteur de recherche</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">La génération Z utilise TikTok comme moteur de recherche préféré pour des tutoriels, inspirations, idées du quotidien. Le format vidéo court répond à une recherche d'immédiateté. Mais cette utilisation soulève des préoccupations : la plateforme n'échappe pas au phénomène de désinformation.</p>
+
+        <h3 class="font-bold text-gray-800 mb-2">L'infobésité et les bulles de filtre</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">La multiplication des sources s'accompagne d'un risque majeur : l'<strong>infobésité</strong>. Bombardés d'informations en continu, les internautes peinent à trier, hiérarchiser et analyser ce qu'ils consomment. Les algorithmes privilégient l'engagement et la viralité au détriment de la fiabilité, favorisant les <strong>bulles de filtre</strong> — une vision restrictive des informations qui enferme l'utilisateur dans ses convictions.</p>
+
+        <div class="bg-red-50 border border-red-200 rounded-xl p-5 mb-4">
+          <h3 class="font-bold text-red-800 mb-2">⚠️ Les fermes à robots (troll farms)</h3>
+          <p class="text-gray-700 text-sm leading-relaxed mb-2">Une ferme à robots utilise des logiciels automatisés pour créer et gérer simultanément un grand nombre de faux comptes. Leur objectif : influencer l'opinion publique en simulant une large approbation ou en augmentant artificiellement la popularité d'un contenu.</p>
+          <p class="text-gray-700 text-sm leading-relaxed">Ces <em>« bad bots »</em> publient, commentent, partagent et likent de façon coordonnée. Ils sont particulièrement préoccupants lors des périodes électorales ou pour amplifier des théories conspirationnistes. <strong>Près de la moitié du trafic sur internet est généré par des bots.</strong></p>
+        </div>
+      </section>
+
+      <!-- 4.2 -->
+      <section id="mutation">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">4.2 La mutation des pratiques de consultation</h2>
+
+        <p class="text-gray-700 leading-relaxed mb-4">TikTok et YouTube sont devenues les plateformes de référence pour la consommation de vidéos courtes, supplantant progressivement la télévision traditionnelle chez certaines tranches d'âge. La gamification (likes, vues, commentaires) renforce la surexposition aux réseaux sociaux.</p>
+
+        <div class="grid sm:grid-cols-2 gap-5 mb-5" data-stagger-grid>
+          <div class="bg-white border border-orange-200 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-orange-700 mb-2">🍿 Le « Popcorn Brain »</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Concept théorisé dès 2011 par David Levy : <em>« un état mental où le cerveau est surstimulé en raison d'un multitâche constant et d'une consommation numérique rapide, comme le défilement continu de formats vidéo courts. »</em></p>
+            <p class="text-gray-500 text-xs mt-2">(Unnati et al., 2025)</p>
+          </div>
+          <div class="bg-white border border-red-200 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-red-700 mb-2">📉 Attention en chute libre</p>
+            <p class="text-gray-600 text-sm leading-relaxed">L'<em>infinite scroll</em> encourage les boucles de consommation passive. <em>« Passer d'une tâche ou d'un contenu à l'autre ne permet pas au cerveau de construire des connexions neuronales solides, ce qui nuit à la mémorisation. »</em></p>
+            <blockquote class="border-l-4 border-red-300 pl-3 mt-2 text-xs text-gray-500 italic">En 2004 : durée d'attention moyenne sur écran = 2,5 min. Vers 2012 : 75 secondes.</blockquote>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+          <p class="font-bold text-gray-800 mb-2">Hyperconnexion vs. surconnexion</p>
+          <div class="grid sm:grid-cols-2 gap-4 text-sm">
+            <div>
+              <p class="font-semibold text-gray-700">Hyperconnexion</p>
+              <p class="text-gray-600">Usage élevé et dense des outils numériques, <strong>sans conséquences négatives</strong> particulières ressenties.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-red-700">Surconnexion</p>
+              <p class="text-gray-600">Utilisations du numérique <strong>produisant un ressenti négatif et des conséquences néfastes</strong> pour l'utilisateur.</p>
+              <p class="text-gray-500 text-xs mt-1">(Morand et al., 2023)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4.3 -->
+      <section id="economie">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">4.3 Une économie de la donnée et de l'attention</h2>
+
+        <p class="text-gray-700 leading-relaxed mb-4">Les réseaux sociaux reposent sur un modèle économique basé sur la <strong>monétisation des données personnelles</strong>. Ils collectent une quantité massive d'informations sur les personnes : âge, préférences, comportements en ligne, interactions, géolocalisation, habitudes d'achat, et même dans certains cas des données biométriques.</p>
+
+        <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 mb-5">
+          <p class="text-teal-800 text-sm">Le marché mondial du <strong>Big Data</strong> représentait plus de <strong>200 milliards de dollars en 2020</strong>. Le volume mondial des données devrait augmenter de <strong>530 %</strong> d'ici 2025 (Commission européenne).</p>
+        </div>
+
+        <p class="text-gray-700 leading-relaxed mb-4">Ces données alimentent des algorithmes capables de déduire des informations très sensibles — jusqu'aux préférences politiques ou à l'orientation sexuelle — rendant les utilisateurs extrêmement vulnérables à la publicité commerciale ciblée.</p>
+
+        <h3 class="font-bold text-gray-800 mb-3">L'économie de l'attention</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">Pour capter et conserver l'attention, les réseaux sociaux exploitent des mécanismes psychologiques :</p>
+        <div class="grid sm:grid-cols-3 gap-4 mb-4">
+          <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm text-center">
+            <p class="text-2xl mb-2">🔔</p>
+            <p class="font-semibold text-gray-700 text-sm">Notifications constantes</p>
+            <p class="text-gray-500 text-xs mt-1">Créent un sentiment d'urgence et d'obligation de vérification.</p>
+          </div>
+          <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm text-center">
+            <p class="text-2xl mb-2">♾️</p>
+            <p class="font-semibold text-gray-700 text-sm">Fils d'actualité infinis</p>
+            <p class="text-gray-500 text-xs mt-1">Aucune fin naturelle → consommation sans limite.</p>
+          </div>
+          <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm text-center">
+            <p class="text-2xl mb-2">❤️</p>
+            <p class="font-semibold text-gray-700 text-sm">Récompenses sociales</p>
+            <p class="text-gray-500 text-xs mt-1">Likes et commentaires libèrent de la dopamine.</p>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+          <p class="text-amber-800 text-sm font-semibold mb-1">📋 Les CGU : qui possède vos contenus ?</p>
+          <p class="text-amber-700 text-sm">Les conditions générales d'utilisation stipulent souvent que les <strong>contenus postés appartiennent à la plateforme</strong>, soulevant des questions sur le droit à l'image et la propriété des données partagées.</p>
+        </div>
+      </section>
+
+      <!-- 4.4 -->
+      <section id="impact">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">4.4 L'impact des réseaux sociaux sur les utilisateurs</h2>
+
+        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <h3 class="font-bold text-gray-800 mb-3 flex items-center gap-2"><span class="text-xl">🧠</span> Impact neurologique et cognitif</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-3">La surutilisation sollicite particulièrement le <strong>système de récompense</strong> via les notifications, likes et commentaires, stimulant la libération de dopamine. Résultat : attention réduite, difficultés à se concentrer sur des activités nécessitant une concentration prolongée (analyse critique, résolution de problèmes complexes).</p>
+            <p class="text-gray-700 text-sm leading-relaxed">Un usage excessif peut déséquilibrer la répartition du temps et rendre plus difficile la hiérarchisation des priorités pédagogiques.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-800 mb-3 flex items-center gap-2"><span class="text-xl">💔</span> Impact émotionnel</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-3">Les réseaux sociaux véhiculent des <strong>standards irréalistes</strong> du corps et des attentes sociales inatteignables, affectant négativement l'estime de soi — particulièrement chez les adolescentes.</p>
+            <p class="text-gray-700 text-sm leading-relaxed mb-2">La quête de validation sociale entraîne une pression à se conformer aux normes de la communauté numérique. Le <strong>FOMO</strong> (<em>Fear of Missing Out</em>) amplifie ce phénomène.</p>
+            <p class="text-gray-700 text-sm leading-relaxed">Le <strong>cyberharcèlement</strong>, facilité par l'anonymat et la viralité, constitue une conséquence grave — avec des effets dévastateurs : isolement, dépression, décrochage scolaire.</p>
+          </div>
+        </div>
+
+        <div class="bg-teal-50 border border-teal-200 rounded-xl p-5">
+          <p class="font-bold text-teal-800 mb-2">✅ Les aspects positifs</p>
+          <p class="text-gray-700 text-sm leading-relaxed">Pour certains jeunes — notamment ceux vivant une situation particulière (maladie rare, questionnement identitaire, isolement familial) — les réseaux sociaux représentent une <strong>forme d'ouverture précieuse</strong> : un lieu où ne pas se sentir seul, poser des mots sur ce que l'on vit, se reconnaître dans d'autres vécus.</p>
+        </div>
+      </section>
+
+      <!-- 4.5 -->
+      <section id="influenceurs">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">4.5 L'impact des influenceurs et influenceuses</h2>
+
+        <p class="text-gray-700 leading-relaxed mb-4">Les influenceurs et influenceuses jouent un rôle pivot dans la construction des tendances culturelles, des comportements d'achat et, dans certains cas, des opinions politiques. Deux enjeux majeurs se posent :</p>
+
+        <div class="grid sm:grid-cols-2 gap-5 mb-6">
+          <div class="bg-white border border-orange-100 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-orange-700 mb-2">🎯 Publicité déguisée</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Le marketing d'influence apparaît souvent à côté de contenus éditoriaux ou personnels, dans un <em>look &amp; feel</em> très similaire. Il n'est pas toujours immédiatement évident pour le consommateur de savoir s'il est confronté à du contenu commercial. <span class="text-gray-400">(JEP, jury d'éthique publicitaire)</span></p>
+          </div>
+          <div class="bg-white border border-red-100 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-red-700 mb-2">🚨 Contenus idéologiques</p>
+            <p class="text-gray-600 text-sm leading-relaxed">La propagation de rumeurs, théories complotistes et contenus militants participe à la radicalisation des opinions. Le manque de régulation des contenus amplifie ces phénomènes.</p>
+          </div>
+        </div>
+
+        <div class="space-y-5">
+          <!-- Andrew Tate -->
+          <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+            <h3 class="font-bold text-red-800 mb-2">La manosphère et la promotion de la masculinité toxique</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-2">L'influenceur Andrew Tate <em>« incarne une masculinité violente et ostentatoire, construite sur le culte de la richesse, la haine des femmes et l'obsession de la domination. »</em> Son discours est devenu viral sur les réseaux sociaux à partir du début des années 2020, rencontrant une adhésion importante auprès de jeunes garçons en quête de repères.</p>
+            <p class="text-gray-700 text-sm leading-relaxed mb-2">Cette influence est illustrée notamment dans la mini-série britannique <strong>Adolescence</strong> (2025). Des enseignants rapportent que <em>« les garçons les plus fragiles et les moins à l'aise en société sont attirés et trouvent là un sentiment d'appartenance très dangereuse. »</em></p>
+            <p class="text-gray-600 text-xs">À partir de 2021, les comptes d'Andrew Tate ont été désactivés sur les différentes plateformes en raison de contenus jugés haineux et violents.</p>
+            <div class="mt-3 bg-white rounded-lg p-3 border border-red-100">
+              <p class="text-teal-700 text-xs font-semibold">📚 Ressource pédagogique</p>
+              <p class="text-gray-600 text-xs">Le parcours <strong>Cybersexisme et masculinisme</strong> disponible sur e-classe propose des ressources pour comprendre la « manosphère » et aborder le sujet avec des apprenants : <span class="text-teal-600">e-classe.be/cybersexisme-et-masculinisme</span></p>
+            </div>
+          </div>
+
+          <!-- #Skinny -->
+          <div class="bg-orange-50 border border-orange-200 rounded-xl p-5">
+            <h3 class="font-bold text-orange-800 mb-2">La tendance #Skinny et la promotion de la maigreur extrême</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-2">L'influenceuse Liv Schmidt a propagé la tendance <em>#Skinny</em> : promotion de la privation volontaire de nourriture pour atteindre un standard de minceur irréaliste. Ces discours sont culpabilisants et contribuent à une image du corps (féminin) perpétuellement insatisfaisante.</p>
+            <p class="text-gray-700 text-sm leading-relaxed mb-2">Une étude de 2022 analysant des contenus nutrition sur TikTok révèle que <strong>seulement 1,4 % des vidéos suggèrent de faire appel à des professionnels agréés</strong>. TikTok a désactivé le compte de Liv Schmidt en 2025. La Belgique a porté plainte contre TikTok pour propagation de mots-clés faisant l'apologie de la maigreur — et a obtenu gain de cause en juin 2025.</p>
+          </div>
+
+          <!-- Pourquoi les plateformes laissent faire -->
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+            <h3 class="font-bold text-gray-800 mb-2">Pourquoi les plateformes autorisent-elles ces discours ?</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-2">Les politiques de modération s'avèrent souvent hésitantes en raison de la conception anglo-saxonne de la liberté d'expression. Plus les contenus sont provocants, plus ils deviennent viraux ; plus ils font polémique, plus ils élargissent l'audience potentielle — et les revenus publicitaires.</p>
+            <p class="text-gray-700 text-sm leading-relaxed">Dans l'Union européenne, le <strong>Digital Services Act (DSA)</strong>, d'application depuis 2024, impose aux plateformes une obligation de retrait de contenus illicites signalés par les régulateurs nationaux, couvrant les appels à la haine, le cyberharcèlement, la promotion de la violence et la mise en danger de mineurs.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4.6 -->
+      <section id="juridique">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">4.6 Quelques aspects juridiques</h2>
+
+        <div class="grid sm:grid-cols-2 gap-5 mb-6">
+          <div class="bg-white border border-blue-100 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-blue-700 mb-2">🇺🇸 États-Unis — COPPA (2000)</p>
+            <p class="text-gray-600 text-sm">Children's Online Privacy Protection Act : interdit la collecte en ligne de données personnelles des enfants de moins de 13 ans sans consentement parental. Résultat pratique : la plupart des réseaux sociaux interdisent leur accès aux moins de 13 ans dans le monde entier.</p>
+          </div>
+          <div class="bg-white border border-blue-100 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-blue-700 mb-2">🇪🇺 Union européenne — RGPD (2018)</p>
+            <p class="text-gray-600 text-sm">Chaque État membre fixe l'âge minimum entre 13 et 16 ans pour le consentement sans intervention parentale. En <strong>Belgique : 13 ans</strong>. Mais dans les faits, la première inscription se fait en moyenne à <strong>8 ans et demi</strong>.</p>
+          </div>
+          <div class="bg-white border border-teal-100 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-teal-700 mb-2">📋 Digital Services Act — DSA (2024)</p>
+            <p class="text-gray-600 text-sm">Impose aux plateformes : lutte contre les contenus illicites, modération renforcée, <strong>interdiction du ciblage publicitaire sur les mineurs</strong>, obligation d'expliquer les algorithmes de recommandation.</p>
+          </div>
+          <div class="bg-white border border-orange-100 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-orange-700 mb-2">🏫 FWB — Décret 2025</p>
+            <p class="text-gray-600 text-sm">L'usage récréatif du téléphone portable et autres appareils connectés en milieu scolaire est <strong>interdit par décret à partir de la rentrée 2025</strong> en Fédération Wallonie-Bruxelles. L'interdiction ne porte pas sur les usages pédagogiques.</p>
+          </div>
+        </div>
+
+        <div class="bg-teal-50 border border-teal-200 rounded-xl p-5">
+          <p class="font-bold text-teal-800 mb-2">🌍 Tendances internationales</p>
+          <ul class="text-teal-700 text-sm space-y-2">
+            <li>• <strong>Australie :</strong> interdiction d'accès aux réseaux sociaux pour les moins de 16 ans à partir de décembre 2025.</li>
+            <li>• <strong>Union européenne :</strong> plusieurs États membres appellent à une « majorité numérique » européenne fixée à 15 ans et à un EU mini wallet pour la vérification de l'âge (juin 2025).</li>
+            <li>• Ces mesures doivent être complétées par des efforts soutenus en faveur de la <strong>littératie numérique</strong> et de l'éducation aux médias.</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR -->
+  </div>
+</section>
+<hr class="border-gray-200">
+<section id="chapitre-5" class="chapter-section pt-6">
+  <div class="gradient-hero py-7 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-8 rounded-2xl">
+     py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a href="rs-table-des-matieres.html" class="inline-flex items-center gap-1 text-teal-200 hover:text-white text-sm mb-6 transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+      Index du chapitre
+    </a>
+    <div class="flex items-start gap-5">
+      <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-white font-extrabold text-2xl">5</span>
+      </div>
+      <div>
+        <p class="text-teal-200 text-sm font-semibold uppercase tracking-widest mb-1">Focus Réseaux Sociaux</p>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Enseigner à l'heure des réseaux sociaux</h1>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="min-w-0">
+    <!-- 5.1 -->
+      <section id="enseigner">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">5.1 Enseigner les réseaux sociaux</h2>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6">
+          <p class="font-bold text-amber-800 mb-2">Le paradoxe de l'éducation numérique</p>
+          <p class="text-amber-700 text-sm leading-relaxed">L'objectif est que les citoyens adoptent des pratiques responsables, sûres et éthiques sur les réseaux sociaux… mais est-ce réalisable <strong>sans proposer au préalable une éducation critique et structurée au numérique</strong> — et donc un accès aux réseaux sociaux ? Cette tension amène une question : comment développer l'esprit critique face aux réseaux sociaux ? Doit-on prohiber l'accès à tout prix, ou privilégier une préparation active à une citoyenneté numérique ?</p>
+        </div>
+
+        <!-- TABS -->
+        <div class="mb-4">
+          <p class="text-sm font-semibold text-gray-600 mb-3">Approches pédagogiques par niveau :</p>
+          <div class="flex flex-wrap gap-2 mb-4" role="tablist">
+            <button class="tab-btn active px-4 py-2 rounded-xl text-sm font-semibold border border-teal-300 text-teal-700 hover:bg-teal-600 hover:text-white hover:border-teal-600" onclick="showTab('tab1', this)" role="tab" aria-selected="true" aria-controls="tab1">
+              9–11 ans (P4–P6)
+            </button>
+            <button class="tab-btn px-4 py-2 rounded-xl text-sm font-semibold border border-teal-300 text-teal-700 hover:bg-teal-600 hover:text-white hover:border-teal-600" onclick="showTab('tab2', this)" role="tab" aria-selected="false" aria-controls="tab2">
+              12–14 ans (S1–S3)
+            </button>
+            <button class="tab-btn px-4 py-2 rounded-xl text-sm font-semibold border border-teal-300 text-teal-700 hover:bg-teal-600 hover:text-white hover:border-teal-600" onclick="showTab('tab3', this)" role="tab" aria-selected="false" aria-controls="tab3">
+              15 ans et plus (S4–S6)
+            </button>
+          </div>
+
+          <!-- TAB 1 -->
+          <div id="tab1" class="tab-panel active bg-white border border-teal-100 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-teal-100 text-teal-800 font-bold text-sm px-3 py-1 rounded-full">P4–P6 · 9 à 11 ans</span>
+              <span class="font-bold text-gray-700">Sensibiliser sans exposer</span>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">Les balises <strong>« 3-6-9-12 »</strong> proposées par Yapaka recommandent de ne pas autoriser l'accès aux réseaux sociaux avant l'âge de <strong>12 ans minimum</strong>. Cependant, de nombreux enfants sont déjà utilisateurs avant cet âge. L'approche recommandée :</p>
+            <div class="grid sm:grid-cols-2 gap-4 mb-5" data-stagger-grid>
+              <div class="bg-teal-50 rounded-xl p-4">
+                <p class="font-semibold text-teal-800 text-sm mb-1">Nommer sans normaliser</p>
+                <p class="text-teal-700 text-sm">Parler des réseaux sociaux comme d'un environnement existant sans les présenter comme une évidence ou un passage obligé.</p>
+              </div>
+              <div class="bg-teal-50 rounded-xl p-4">
+                <p class="font-semibold text-teal-800 text-sm mb-1">Expliquer sans conditionner</p>
+                <p class="text-teal-700 text-sm">Fournir des clés d'usage et des outils de vigilance avant même l'entrée dans ces univers, sans initier les élèves aux plateformes déconseillées.</p>
+              </div>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm rounded-xl overflow-hidden">
+                <thead>
+                  <tr>
+                    <th class="px-4 py-2 text-left font-semibold">Année / Âge</th>
+                    <th class="px-4 py-2 text-left font-semibold">Référentiel</th>
+                    <th class="px-4 py-2 text-left font-semibold">Contenus d'apprentissage liés aux RS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">P4 / 9 ans</td><td class="px-4 py-2 text-gray-500">FMTTN</td><td class="px-4 py-2 text-gray-600">Notion de fake news · Principes du droit à l'image</td></tr>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">P5 / 10 ans</td><td class="px-4 py-2 text-gray-500">FMTTN</td><td class="px-4 py-2 text-gray-600">Notion de nétiquette · Interagir et communiquer sur internet</td></tr>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">P6 / 11 ans</td><td class="px-4 py-2 text-gray-500">FMTTN</td><td class="px-4 py-2 text-gray-600">Notion d'identité numérique · Identifier le cyberharcèlement</td></tr>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">P5–P6 / 10–11 ans</td><td class="px-4 py-2 text-gray-500">EPS</td><td class="px-4 py-2 text-gray-600">Images stéréotypées du corps (par les médias, les réseaux sociaux)</td></tr>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">P5–P6 / 10–11 ans</td><td class="px-4 py-2 text-gray-500">EPC</td><td class="px-4 py-2 text-gray-600">Préserver sa sécurité, son identité numérique et son intimité sur internet</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-gray-500 text-xs mt-3">FMTTN : Formation manuelle, technique, technologique et numérique · EPS : Éducation physique et à la santé · EPC : Éducation à la philosophie et à la citoyenneté</p>
+          </div>
+
+          <!-- TAB 2 -->
+          <div id="tab2" class="tab-panel bg-white border border-teal-100 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-teal-100 text-teal-800 font-bold text-sm px-3 py-1 rounded-full">S1–S3 · 12 à 14 ans</span>
+              <span class="font-bold text-gray-700">Ancrer la réflexion critique et éthique</span>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">Dès 13 ans — l'âge minimum théorique pour utiliser la plupart des réseaux sociaux — les élèves sont <strong>pleinement exposés</strong> aux problématiques propres à l'interaction numérique.</p>
+            <div class="overflow-x-auto mb-5">
+              <table class="w-full text-sm rounded-xl overflow-hidden">
+                <thead>
+                  <tr>
+                    <th class="px-4 py-2 text-left font-semibold">Année / Âge</th>
+                    <th class="px-4 py-2 text-left font-semibold">Référentiel</th>
+                    <th class="px-4 py-2 text-left font-semibold">Contenus d'apprentissage liés aux RS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">S1 / 12 ans</td><td class="px-4 py-2 text-gray-500">FMTTN</td><td class="px-4 py-2 text-gray-600">Spécificités des différents RS · Droit à l'oubli, liberté d'expression, censure, modération, confidentialité, anonymat</td></tr>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">S2 / 13 ans</td><td class="px-4 py-2 text-gray-500">FMTTN</td><td class="px-4 py-2 text-gray-600">Gérer son identité numérique · Réagir au cyberharcèlement et à la cyberманipulation</td></tr>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">S3 / 14 ans</td><td class="px-4 py-2 text-gray-500">FMTTN</td><td class="px-4 py-2 text-gray-600">Évaluer la fiabilité d'une source · Partager un contenu · Notion de veille numérique</td></tr>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">S1–S3</td><td class="px-4 py-2 text-gray-500">EPS</td><td class="px-4 py-2 text-gray-600">Images stéréotypées du corps · Analyser les influences du numérique sur la pratique physique</td></tr>
+                  <tr><td class="px-4 py-2 font-medium text-gray-700">S1–S3</td><td class="px-4 py-2 text-gray-500">EPC</td><td class="px-4 py-2 text-gray-600">Préserver sa sécurité et son identité numérique sur les RS · S'interroger sur les intentions des diffuseurs</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="bg-teal-50 rounded-xl p-4">
+              <p class="font-semibold text-teal-800 text-sm mb-2">Thèmes et concepts à explorer</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-white text-teal-700 border border-teal-200 text-xs px-3 py-1 rounded-full">Boucle algorithmique</span>
+                <span class="bg-white text-teal-700 border border-teal-200 text-xs px-3 py-1 rounded-full">Infinite scroll</span>
+                <span class="bg-white text-teal-700 border border-teal-200 text-xs px-3 py-1 rounded-full">Économie de l'attention</span>
+                <span class="bg-white text-teal-700 border border-teal-200 text-xs px-3 py-1 rounded-full">Impact émotionnel</span>
+                <span class="bg-white text-teal-700 border border-teal-200 text-xs px-3 py-1 rounded-full">Cyberharcèlement</span>
+                <span class="bg-white text-teal-700 border border-teal-200 text-xs px-3 py-1 rounded-full">Fake news</span>
+                <span class="bg-white text-teal-700 border border-teal-200 text-xs px-3 py-1 rounded-full">Influenceurs</span>
+                <span class="bg-white text-teal-700 border border-teal-200 text-xs px-3 py-1 rounded-full">Aspects juridiques</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3 -->
+          <div id="tab3" class="tab-panel bg-white border border-teal-100 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-teal-100 text-teal-800 font-bold text-sm px-3 py-1 rounded-full">S4–S6 · 15 ans et plus</span>
+              <span class="font-bold text-gray-700">Approfondir l'analyse et la posture critique</span>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">À partir de 15 ans, les élèves peuvent aborder les réseaux sociaux avec une profondeur analytique plus grande : décryptage des modèles économiques, analyse critique des discours d'influence, enjeux géopolitiques et réglementaires.</p>
+            <div class="grid sm:grid-cols-2 gap-4 mb-5">
+              <div class="bg-teal-50 rounded-xl p-4">
+                <p class="font-semibold text-teal-800 text-sm mb-2">Analyse des modèles économiques</p>
+                <ul class="text-teal-700 text-sm space-y-1">
+                  <li>• Économie de la donnée et du Big Data</li>
+                  <li>• Monétisation de l'attention</li>
+                  <li>• Creator economy et influenceurs</li>
+                  <li>• Marketing d'influence et publicité ciblée</li>
+                </ul>
+              </div>
+              <div class="bg-teal-50 rounded-xl p-4">
+                <p class="font-semibold text-teal-800 text-sm mb-2">Enjeux sociétaux et géopolitiques</p>
+                <ul class="text-teal-700 text-sm space-y-1">
+                  <li>• Géopolitique des GAFAM</li>
+                  <li>• DSA et RGPD en pratique</li>
+                  <li>• Démocratie et désinformation</li>
+                  <li>• Alternatives décentralisées</li>
+                </ul>
+              </div>
+              <div class="bg-teal-50 rounded-xl p-4">
+                <p class="font-semibold text-teal-800 text-sm mb-2">Décryptage des discours d'influence</p>
+                <ul class="text-teal-700 text-sm space-y-1">
+                  <li>• Manosphère et masculinité toxique</li>
+                  <li>• Radicalisation en ligne</li>
+                  <li>• Fact-checking et éducation aux médias</li>
+                </ul>
+              </div>
+              <div class="bg-teal-50 rounded-xl p-4">
+                <p class="font-semibold text-teal-800 text-sm mb-2">Usage professionnel et éthique</p>
+                <ul class="text-teal-700 text-sm space-y-1">
+                  <li>• Personal branding</li>
+                  <li>• Droit à l'image et propriété des données</li>
+                  <li>• Communication professionnelle en ligne</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+              <p class="font-semibold text-amber-800 text-sm mb-1">📱 Bien-être numérique</p>
+              <p class="text-amber-700 text-sm">Technostress, technophérence, troubles d'usage, nomophobie, impacts sur la santé physique : le focus dédié au bien-être numérique est disponible sur <span class="font-semibold">e-classe.be/focus-bien-etre-numerique</span></p>
+            </div>
+          </div>
+        </div><!-- /tabs -->
+
+        <!-- Interdiction et paradoxe -->
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-5 mt-6">
+          <p class="font-bold text-gray-800 mb-2">La question de l'interdiction des réseaux sociaux</p>
+          <p class="text-gray-700 text-sm leading-relaxed">L'interdiction pourrait accentuer les disparités sociales : certains adolescents n'ont pas facilement accès à des lieux physiques de rencontre (activités extrascolaires, structures de jeunesse). <em>« Les réseaux sociaux y sont souvent les seuls espaces accessibles de lien social, de soutien, voire d'évasion. »</em> (CSEM, 2025). L'interdiction d'accès ne dispense pas de l'apprentissage des compétences numériques.</p>
+        </div>
+      </section>
+
+      <!-- 5.2 -->
+      <section id="supports">
+        <h2 class="text-2xl font-bold text-teal-800 border-b-2 border-teal-100 pb-3 mb-5">5.2 Utiliser les réseaux sociaux comme supports à l'enseignement</h2>
+
+        <p class="text-gray-700 leading-relaxed mb-5">Comment évoquer concrètement les réseaux sociaux sans s'y connecter ? Si un réseau social est nécessaire à un apprentissage, il n'est pas pour autant nécessaire de créer un compte.</p>
+
+        <!-- Simulateurs -->
+        <div class="bg-white border border-teal-100 rounded-xl p-5 shadow-sm mb-5">
+          <h3 class="font-bold text-gray-800 mb-3">🎭 Outils de simulation</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-3">Des outils en ligne permettent de créer des profils ou statuts factices, accompagnés d'un espace de publication et de commentaires, sans créer de vrais comptes :</p>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-teal-50 border border-teal-200 text-teal-700 text-sm px-4 py-2 rounded-xl font-semibold">Simitator</span>
+            <span class="bg-teal-50 border border-teal-200 text-teal-700 text-sm px-4 py-2 rounded-xl font-semibold">Status Clone</span>
+            <span class="bg-teal-50 border border-teal-200 text-teal-700 text-sm px-4 py-2 rounded-xl font-semibold">PrankMeNot</span>
+          </div>
+        </div>
+
+        <!-- Plateformes institutionnelles -->
+        <div class="grid sm:grid-cols-2 gap-5 mb-5">
+          <div class="bg-white border border-teal-200 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-teal-700 mb-2">🏫 Plateforme Happi</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-2">Plateforme d'enseignement hybride et à distance mise à disposition des établissements d'enseignement obligatoire en FW-B. Protège les données personnelles des élèves, conforme au RGPD.</p>
+            <p class="text-teal-600 text-xs font-semibold">happi.cfwb.be</p>
+          </div>
+          <div class="bg-white border border-teal-200 rounded-xl p-5 shadow-sm">
+            <p class="font-bold text-teal-700 mb-2">📚 Plateforme e-classe</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-2">Plateforme de ressources éducatives pour les équipes éducatives et CPMS en FW-B. Environnement sécurisé, sans traçage ni exploitation commerciale des données. Co-développée avec la RTBF et la SONUMA par l'ETNIC.</p>
+            <p class="text-teal-600 text-xs font-semibold">e-classe.be</p>
+          </div>
+        </div>
+
+        <!-- Usage perso des enseignants -->
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-5">
+          <h3 class="font-bold text-amber-800 mb-2">⚠️ Usage de plateformes grand public par les enseignants</h3>
+          <p class="text-amber-700 text-sm leading-relaxed">Certains enseignants utilisent Discord, WhatsApp ou Facebook pour mettre à disposition des supports de cours. Ces usages posent des questions importantes :</p>
+          <ul class="text-amber-700 text-sm mt-2 space-y-1">
+            <li>• Gestion de la sécurité et des données personnelles</li>
+            <li>• Modération des interactions entre personnes</li>
+            <li>• Droit d'auteur des ressources éducatives partagées</li>
+          </ul>
+          <p class="text-amber-600 text-xs mt-2">L'utilisation d'une plateforme institutionnelle (e-classe, Happi, ENT) permet de prendre en charge ces problématiques.</p>
+        </div>
+
+        <!-- Guide usages pro -->
+        <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+          <h3 class="font-bold text-gray-800 mb-2">📖 Guide : Usages professionnels des réseaux sociaux</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Ce guide est destiné aux membres du personnel éducatif qui utilisent les réseaux sociaux dans un contexte professionnel. Les conseils et balises, pistes et règles d'usage proposés soutiennent un comportement éthique et responsable en ligne.</p>
+          <p class="text-teal-600 text-xs font-semibold mt-2">e-classe.be/guide-pratique-usages-professionnels-reseaux-sociaux</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR -->
+  </div>
+</section>
+<hr class="border-gray-200">
+<section id="chapitre-6" class="chapter-section pt-6">
+  <div class="gradient-hero py-7 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-8 rounded-2xl">
+     py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a href="rs-table-des-matieres.html" class="inline-flex items-center gap-1 text-teal-200 hover:text-white text-sm mb-6 transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+      Index du chapitre
+    </a>
+    <div class="flex items-start gap-5">
+      <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-white font-extrabold text-2xl">6</span>
+      </div>
+      <div>
+        <p class="text-teal-200 text-sm font-semibold uppercase tracking-widest mb-1">Focus Réseaux Sociaux</p>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Conclusion &amp; Ressources</h1>
+        <p class="text-teal-200 mt-2 text-sm">Regard d'expert · En savoir plus · Références</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="min-w-0">
+    <!-- Share / Page bar -->
+      <div class="flex items-center gap-3 mb-8">
+        <button class="inline-flex items-center gap-2 bg-white border border-gray-200 text-gray-600 text-sm px-4 py-2 rounded-lg hover:border-teal-400 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Partager
+        </button>
+        <span class="inline-flex items-center gap-2 bg-white border border-gray-200 text-gray-600 text-sm px-4 py-2 rounded-lg">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+          Pages 36–42
+        </span>
+      </div>
+
+      <!-- SECTION 6: Expert View -->
+      <article class="space-y-10">
+
+        <section id="expert">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-9 h-9 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm font-bold shrink-0">6</span>
+            <h2 class="text-2xl font-extrabold text-gray-800">En guise de conclusion : un regard d'expert</h2>
+          </div>
+
+          <!-- Expert profile card -->
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-6 flex items-start gap-5">
+            <div class="w-14 h-14 rounded-full bg-teal-100 flex items-center justify-center shrink-0">
+              <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-900 text-lg">Pascal Minotte</p>
+              <p class="text-gray-600 text-sm">Psychologue, psychothérapeute et codirecteur du <strong>CRéSaM</strong> (Centre de Référence en Santé mentale)</p>
+              <p class="text-teal-600 text-xs mt-1">Expert en usage problématique des réseaux sociaux, notamment chez les jeunes</p>
+            </div>
+          </div>
+
+          <!-- Full quote -->
+          <blockquote class="bg-teal-50 rounded-2xl p-8 space-y-5 border-l-4 border-teal-500">
+            <p class="text-gray-700 leading-relaxed text-base italic">
+              « Les réseaux sociaux occupent aujourd'hui une place centrale dans la vie des adolescents et adolescentes. Pourtant, leur impact sur la santé mentale doit être nuancé. Contrairement à certaines représentations alarmistes, les études internationales les plus solides montrent que leur influence est faible. Ils ne sont pas à l'origine des troubles psychiques des jeunes, mais ils peuvent agir comme amplificateur d'un mal-être déjà présent. C'est pourquoi il est essentiel d'éviter de tout leur attribuer : un adolescent ou une adolescente qui va mal ne va pas forcément mal à cause des écrans. Il faut prendre en compte l'ensemble du contexte : relations familiales, qualité de vie, estime de soi, environnement scolaire… »
+            </p>
+
+            <div class="border-t border-teal-200 pt-5">
+              <p class="text-gray-700 leading-relaxed text-base italic">
+                « Les réseaux sociaux ne sont pas non plus fondamentalement négatifs. Ils peuvent jouer un rôle structurant dans la vie des jeunes en leur offrant des espaces de soutien, d'identification et d'expression. Pour certains, notamment ceux qui vivent une situation particulière — maladie rare, questionnement identitaire, isolement familial — ces plateformes représentent une forme d'ouverture précieuse, un lieu où il est possible de ne pas se sentir seul, de poser des mots, de se reconnaître dans d'autres vécus. À condition d'en faire un usage équilibré, ils peuvent contribuer au développement personnel. »
+              </p>
+            </div>
+          </blockquote>
+
+          <!-- Key insight cards -->
+          <div class="grid sm:grid-cols-3 gap-4 mt-6" data-stagger-grid>
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-5">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
+              </div>
+              <p class="font-semibold text-gray-800 text-sm mb-1">Un amplificateur, pas une cause</p>
+              <p class="text-gray-600 text-xs leading-relaxed">Les RS amplifient un mal-être existant, ils n'en sont pas la source. Le contexte global du jeune prime.</p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-5">
+              <div class="w-10 h-10 rounded-lg bg-teal-100 flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197"/></svg>
+              </div>
+              <p class="font-semibold text-gray-800 text-sm mb-1">Rôle de l'enseignant·e</p>
+              <p class="text-gray-600 text-xs leading-relaxed">Les enseignants ont un rôle essentiel mais ne doivent pas être seuls — collaboration avec familles et PMS indispensable.</p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-5">
+              <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342"/></svg>
+              </div>
+              <p class="font-semibold text-gray-800 text-sm mb-1">Partir des pratiques réelles</p>
+              <p class="text-gray-600 text-xs leading-relaxed">Analyser une vidéo TikTok ou un challenge viral en classe : parler le langage des jeunes pour développer leur esprit critique.</p>
+            </div>
+          </div>
+
+          <!-- Remaining quote parts -->
+          <blockquote class="bg-teal-50 rounded-2xl p-8 space-y-5 border-l-4 border-teal-500 mt-6">
+            <p class="text-gray-700 leading-relaxed text-base italic">
+              « Du côté des pratiques éducatives, il ne s'agit pas de diaboliser ni de banaliser les réseaux sociaux. L'important est d'accompagner les jeunes dans leurs usages, en s'appuyant sur ce qu'ils vivent réellement. Plutôt que de poser des interdictions rigides ou de fixer un "temps d'écran" standardisé, il est plus pertinent de s'interroger sur l'impact des usages numériques sur le quotidien du jeune : son sommeil, sa concentration, sa vie sociale, ses résultats scolaires. Un usage devient problématique s'il devient rigide, s'il persiste malgré des effets négatifs, s'il isole ou s'il coupe du monde réel. »
+            </p>
+
+            <div class="border-t border-teal-200 pt-5">
+              <p class="text-gray-700 leading-relaxed text-base italic">
+                « Dans ce cadre, les enseignants et les enseignantes ont un rôle essentiel à jouer, mais ils ne doivent pas être seuls. La collaboration avec les familles, les centres PMS, les éducatrices et les éducateurs est indispensable. Il faut créer des espaces de parole, prendre le temps d'analyser des situations parfois complexes (comme le cyberharcèlement) et ne pas céder à la tentation d'agir dans l'urgence. Chaque situation mérite une lecture fine, sans jugement hâtif. Une victime peut aussi avoir été actrice d'un conflit à un moment donné, sans pour autant que cela enlève sa souffrance. »
+              </p>
+            </div>
+
+            <div class="border-t border-teal-200 pt-5">
+              <p class="text-gray-700 leading-relaxed text-base italic">
+                « Enfin, il est essentiel de partir des pratiques numériques des jeunes pour construire des dispositifs pédagogiques efficaces. Proposer aux élèves d'analyser ensemble des contenus issus de leurs réseaux (une vidéo TikTok, une story, un challenge viral), c'est leur permettre de prendre du recul, de développer leur esprit critique et surtout de se sentir concernés. On ne sensibilise pas un adolescent ou une adolescente à partir de concepts abstraits. On le fait en parlant son langage, en s'appuyant sur ce qu'il vit, sur ce qui le touche. »
+              </p>
+            </div>
+          </blockquote>
+
+          <!-- Usage criteria box -->
+          <div class="bg-white rounded-2xl border border-gray-200 p-6 mt-6">
+            <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+              Quand un usage devient-il problématique ?
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">Selon Pascal Minotte, un usage numérique mérite attention lorsqu'il affecte le quotidien du jeune. Les questions à se poser :</p>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <div class="flex items-center gap-3 bg-red-50 rounded-lg px-4 py-3">
+                <span class="w-2 h-2 rounded-full bg-red-400 shrink-0"></span>
+                <span class="text-sm text-gray-700">Impact sur le <strong>sommeil</strong></span>
+              </div>
+              <div class="flex items-center gap-3 bg-orange-50 rounded-lg px-4 py-3">
+                <span class="w-2 h-2 rounded-full bg-orange-400 shrink-0"></span>
+                <span class="text-sm text-gray-700">Difficultés de <strong>concentration</strong></span>
+              </div>
+              <div class="flex items-center gap-3 bg-yellow-50 rounded-lg px-4 py-3">
+                <span class="w-2 h-2 rounded-full bg-yellow-400 shrink-0"></span>
+                <span class="text-sm text-gray-700">Isolement de la <strong>vie sociale</strong></span>
+              </div>
+              <div class="flex items-center gap-3 bg-blue-50 rounded-lg px-4 py-3">
+                <span class="w-2 h-2 rounded-full bg-blue-400 shrink-0"></span>
+                <span class="text-sm text-gray-700">Baisse des <strong>résultats scolaires</strong></span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs mt-4 italic">Un usage devient problématique s'il est rigide, s'il persiste malgré des effets négatifs, s'il isole ou coupe du monde réel.</p>
+          </div>
+        </section>
+
+        <!-- SECTION 7: En savoir plus -->
+        <section id="en-savoir-plus" class="pt-4">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-9 h-9 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm font-bold shrink-0">7</span>
+            <h2 class="text-2xl font-extrabold text-gray-800">En savoir plus</h2>
+          </div>
+
+          <p class="text-gray-700 leading-relaxed mb-6">
+            Ce focus vise à présenter brièvement les enjeux liés aux réseaux sociaux et à proposer des éléments de réflexion. Il constitue une base de départ pour une exploration plus approfondie des différents thèmes abordés.
+          </p>
+
+          <!-- e-classe parcours -->
+          <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 mb-5">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-600 flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1">
+                  <h3 class="font-bold text-gray-800">Parcours e-classe — Réseaux sociaux</h3>
+                  <span class="bg-teal-100 text-teal-700 text-xs px-2 py-0.5 rounded-full font-medium">Ressources éducatives</span>
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                  Pour les membres d'une équipe éducative souhaitant explorer des pistes supplémentaires, e-classe propose un parcours comprenant des ressources éducatives articulées dans une progression exploratoire par grands thèmes.
+                </p>
+                <div class="flex items-center gap-2 bg-teal-50 rounded-lg px-3 py-2 text-sm">
+                  <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+                  <code class="text-teal-700">www.e-classe.be/reseaux-sociaux</code>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pix platform -->
+          <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 mb-5">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-600 flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636-.707.707M21 12h-1M4 12H3m3.343-5.657-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547Z"/></svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1">
+                  <h3 class="font-bold text-gray-800">Plateforme Pix</h3>
+                  <span class="bg-purple-100 text-purple-700 text-xs px-2 py-0.5 rounded-full font-medium">Compétences numériques</span>
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                  En nouant un partenariat avec Pix, la Fédération Wallonie-Bruxelles entend sensibiliser et accompagner l'ensemble des citoyens et citoyennes belges francophones dans le développement de leurs compétences numériques.
+                </p>
+                <div class="space-y-2 mb-3">
+                  <div class="flex items-start gap-2">
+                    <span class="w-5 h-5 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                    <p class="text-sm text-gray-700"><strong>Parcours thématiques</strong> disponibles pour les établissements du secondaire, à proposer à leurs élèves.</p>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="w-5 h-5 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                    <p class="text-sm text-gray-700"><strong>Parcours enseignement</strong> : le parcours <em>Réseaux sociaux</em> couvre l'utilisation de Facebook, LinkedIn, Twitter, Instagram… et la maîtrise de sa présence en ligne.</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <div class="flex items-center gap-2 bg-purple-50 rounded-lg px-3 py-2 text-sm">
+                    <svg class="w-4 h-4 text-purple-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+                    <code class="text-purple-700">www.e-classe.be/pix-enseignement</code>
+                  </div>
+                  <div class="flex items-center gap-2 bg-purple-50 rounded-lg px-3 py-2 text-sm">
+                    <svg class="w-4 h-4 text-purple-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+                    <code class="text-purple-700">pix.org/fr-be</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- e-classe platform description -->
+          <div class="bg-teal-50 border border-teal-200 rounded-2xl p-5">
+            <p class="text-teal-800 font-semibold text-sm mb-2">La plateforme e-classe</p>
+            <p class="text-teal-700 text-sm leading-relaxed mb-3">
+              e-classe est la plateforme de ressources éducatives mise à disposition des membres des équipes éducatives et des CPMS en Fédération Wallonie-Bruxelles. Elle intègre des fonctionnalités de découverte, de (co-)création et de partage de ressources, ainsi que de discussions au sein de groupes d'échange. L'environnement est sécurisé, sans traçage ni exploitation commerciale des données utilisateurs.
+            </p>
+            <div class="flex flex-wrap gap-3 text-xs">
+              <span class="bg-white rounded-lg px-3 py-1.5 text-teal-700 font-medium">Via Mon Espace (eID / itsme) → monespace.fw-b.be</span>
+              <span class="bg-white rounded-lg px-3 py-1.5 text-teal-700 font-medium">Via compte Cerbère → www.e-classe.be</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 8: Références -->
+        <section id="references" class="pt-4">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-9 h-9 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm font-bold shrink-0">8</span>
+            <h2 class="text-2xl font-extrabold text-gray-800">Références bibliographiques</h2>
+          </div>
+
+          <p class="text-gray-600 text-sm mb-6">Ensemble des sources citées dans ce focus, classées par ordre alphabétique d'auteur.</p>
+
+          <div class="space-y-4">
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Bermperian, C. (2023). <em>The Viral Virus of Toxic Masculinity: Andrew Tate's Messaging as a Case Study</em>. Boston College.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">dx.doi.org/10.13140/RG.2.2.19670.22081</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Big Games Machine. (2024). <em>How Gamers discover what to play in 2024</em>. Big Games Machine.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.biggamesmachine.com/wp-content/uploads/2024/05/BGM-Game-discovery-survey-2024.pdf</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Brumont, M., Gajic, Y., Hafsi, M., Kohler, A. &amp; Peyricot, K. (2024). <em>Les synthèses du LAB 2024</em>. Sciences Po – École urbaine.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.sciencespo.fr/ecole-urbaine/…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Commission européenne. (2020). <em>Lignes directrices concernant la transparence en matière de classement</em> (2020/C 424/01). Commission européenne.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:52020XC1208(01)</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Commission européenne. (s.d.). <em>La législation sur les services numériques</em>. Commission européenne.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">commission.europa.eu/strategy-and-policy/…/digital-services-act_fr</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Commission européenne – RAN. (2021). <em>Incels : première analyse du phénomène (dans l'UE)</em>. Commission européenne.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">home-affairs.ec.europa.eu/document/download/02d19d72-ecf4-4643-a9d2-86f803ccc031_fr</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">CNIL. (2021, 11 janvier). <em>Droits numériques des mineurs : la CNIL publie les résultats du sondage et de la consultation publique</em>. CNIL.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.cnil.fr/fr/droits-numeriques-des-mineurs-…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Conseil de l'Union européenne. (2025). <em>Protecting Minors from Online harms and risks: Age verification… — Information from Cyprus, Denmark, France, Greece, Slovenia and Spain</em> [Note]. Union européenne.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">data.consilium.europa.eu/doc/document/ST-9110-2025-INIT/en/pdf</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">CSEM. (2022). <em>L'impact des réseaux sociaux sur la démocratie</em>. Fédération Wallonie-Bruxelles.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.csem.be/sites/default/files/2022-08/FWB-Brochure%20Reperes-democratin-impact%20reseaux%20sociaux-WEB.pdf</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">CSEM. (2025). <em>L'interdiction des réseaux sociaux au moins de 15 ans</em>. Éclairages, (4), p. 7. Fédération Wallonie-Bruxelles.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.csem.be/sites/default/files/2025-07/Interdiction%20RS%2015%20ans%20def_2.pdf</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Coromines, L. (2023, 16 janvier). <em>Les discours masculinistes d'Andrew Tate font bien flipper les profs</em>. L'ADN.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.ladn.eu/nouveaux-usages/les-propos-masculinistes-dandrew-tate-…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Décret N°68-5, 13 mars 2025. <em>Décret relatif à l'interdiction de l'usage récréatif des téléphones portables et de tout autre équipement terminal de communications électroniques à l'école</em>.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">gallilex.cfwb.be/sites/default/files/textes-normatifs/2025-04/53356_0000.pdf</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Duboc, S. &amp; Noël, D.-J. (2021). <em>Économie et gouvernance de la donnée</em>. Avis du Conseil économique, social et environnemental. Journal officiel de la République française, (06).</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.lecese.fr/sites/default/files/pdf/Avis/2021/2021_06_eco_gouv_donnee.pdf</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">EDRi. (2025, 07 mai). <em>Showing your ID to get online might become a reality — a closer look at the EU's new age verification app</em>. EDRi.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">edri.org/our-work/showing-your-id-to-get-online-…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Hurd, S. &amp; Orban de Xivry, A.-C. (2024). <em>#Génération 2024. Les jeunes et les pratiques numériques</em>. ASBL Média Animation &amp; CSEM.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">media-animation.be/IMG/pdf/publication_re_sultats-gene2024-web_v2.pdf</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Imperva. (2024, 18 avril). <em>Une "course à l'armement" : augmentation record de l'activité des robots malveillants en ligne pour la 5ème année consécutive</em>. Les Echos.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.lesechos.fr/partenaires/imperva/une-course-a-larmement-…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Mark, G. (2023, février). <em>Speaking of Psychology: why our attention spans are shrinking</em> (episode 225) [Podcast]. American Psychological Association.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.apa.org/news/podcasts/speaking-of-psychology/attention-spans</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Minadeo, M. &amp; Pope L. (2022, 01 novembre). <em>Weight-normative messaging predominates on TikTok — A qualitative content analysis</em>. PLOS One, 17(11).</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">doi.org/10.1371/journal.pone.0267997</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Morand, O., Cahour, B., Grosjean, V. &amp; Bobillier-Chaumon, M.-É. (2023). <em>Digital overconnectivity at work: a qualitative and quantitative study</em>. Human Work, 86(2), p. 93-128.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">hal.science/hal-04328870/document</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Ndjaki, A. (2025, 03 mai). <em>Infox et propagande : l'industrie des fermes à trolls</em>. Futura.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.futura-sciences.com/tech/actualites/tech-infox-propagande-industrie-fermes-trolls-121097</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Newman, N., Fletcher, R., Robertson, C. T., Ross Arguedas, A. &amp; Nielsen, K. R. (2024). <em>Reuters Institute Digital News Report 2024</em>. Reuters Institute &amp; University of Oxford.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">reutersinstitute.politics.ox.ac.uk/sites/default/files/2024-06/RISJ_DNR_2024_Digital_v10%20lr.pdf</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">ONU Femmes. (2025, 15 mai). <em>Qu'est-ce que la manosphère et pourquoi devrions-nous nous en inquiéter ?</em></p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.unwomen.org/fr/articles/article-explicatif/quest-ce-que-la-manosphere-…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">RTBF &amp; ETX. (2025, 24 janvier). <em>Plus les enfants regardent des vidéos courtes, plus leurs résultats scolaires déclinent</em>. RTBF Actus.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.rtbf.be/article/plus-les-enfants-regardent-des-videos-courtes-…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">SPF Économie. (2024, 07 octobre). <em>Digital Services Act (DSA) : le règlement sur les services numériques</em>. SPF Économie.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">economie.fgov.be/fr/themes/line/economie-des-plateformes-en/digital-services-act-dsa-le</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Unnati, D., Bansi, G., Rinkal, V. &amp; Doshi, D. R. (2025). <em>A psychological Survey on Popcorn Brain</em>. Journal of Innovative research in technology (IJIRT), 11(9), 1333-1335.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">ijirt.org/Article?manuscript=172936</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Vilanova, C. (2025, 02 avril). <em>Andrew Tate, l'une des figures les plus inquiétantes d'Internet, de nouveau visé par des accusations de viols</em> [Podcast]. Radio France.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.radiofrance.fr/mouv/podcasts/la-chronique-de-constance-vilanova/…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Vilanova, C. (2025, 27 mai). <em>Liv Schmidt, gourou de la maigreur, bannie de TikTok</em> [Podcast]. Radio France.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.radiofrance.fr/mouv/podcasts/la-chronique-de-constance-vilanova/liv-schmidt-…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">Vilanova, C. (2025, 09 juin). <em>Fin du #SkinnyTok sur TikTok : le culte de la maigreur n'a pas disparu de la plateforme</em> [Podcast]. Radio France.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">www.radiofrance.fr/mouv/podcasts/la-chronique-de-constance-vilanova/fin-du-skinnytok-…</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">We Are Social &amp; Meltwater. (2025). <em>Digital 2025 Belgium. The essential guide to digital Trends</em>. We Are Social &amp; Meltwater.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">indd.adobe.com/embed/971a299d-b400-466f-8acb-caad01d2f514</p>
+            </div>
+
+            <div class="ref-entry bg-white rounded-xl p-4 pl-5 shadow-sm">
+              <p class="text-gray-800 text-sm leading-relaxed">We Are Social &amp; Meltwater. (2025). <em>Digital 2025 Global overview report. The essential guide to the world's connected behaviours</em>. We Are Social &amp; Meltwater.</p>
+              <p class="text-teal-600 text-xs mt-1 font-mono">indd.adobe.com/embed/9d9a68f6-38a9-4278-b61c-4506b24240b0</p>
+            </div>
+
+          </div>
+
+          <!-- Credits -->
+          <div class="mt-8 bg-gray-50 rounded-2xl border border-gray-200 p-5">
+            <p class="text-xs text-gray-500 font-semibold uppercase tracking-widest mb-3">À propos de ce document</p>
+            <div class="grid sm:grid-cols-2 gap-3 text-sm text-gray-600">
+              <div><span class="font-medium text-gray-800">Rédaction :</span> Laurence Ilunga, David Nyssen</div>
+              <div><span class="font-medium text-gray-800">Graphisme :</span> Laura Maugeri</div>
+              <div><span class="font-medium text-gray-800">Éditeur responsable :</span> Fabrice Aerts-Bancken, Administrateur général a.i.</div>
+              <div><span class="font-medium text-gray-800">Dépôt légal :</span> D/2025/16043/0007</div>
+              <div><span class="font-medium text-gray-800">Adresse :</span> Avenue du Port 16, 1080 Bruxelles</div>
+              <div><span class="font-medium text-gray-800">Contact :</span> contact.sgne@cfwb.be</div>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+
+    <!-- SIDEBAR -->
+  </div>
+</section>
+    </div>
+    <aside class="w-full lg:w-72 shrink-0 space-y-4">
+  <button onclick="goRandom()" class="btn-random">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+    Au hasard !
+  </button>
+  <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+    <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Plan du document</h3>
+    <nav class="space-y-0.5" id="plan-nav">
+      <a href="#chapitre-1" class="flex items-center gap-2 text-sm text-gray-600 hover:text-teal-700 py-1.5 px-2 rounded-md transition-colors"><span class="text-teal-700 font-bold text-xs w-5 shrink-0">1</span>Introduction</a>
+      <a href="#chapitre-2" class="flex items-center gap-2 text-sm text-gray-600 hover:text-teal-700 py-1.5 px-2 rounded-md transition-colors"><span class="text-teal-700 font-bold text-xs w-5 shrink-0">2</span>DÃ©finitions</a>
+      <a href="#chapitre-3" class="flex items-center gap-2 text-sm text-gray-600 hover:text-teal-700 py-1.5 px-2 rounded-md transition-colors"><span class="text-teal-700 font-bold text-xs w-5 shrink-0">3</span>8 chiffres clÃ©s âš¡</a>
+      <a href="#chapitre-4" class="flex items-center gap-2 text-sm text-gray-600 hover:text-teal-700 py-1.5 px-2 rounded-md transition-colors"><span class="text-teal-700 font-bold text-xs w-5 shrink-0">4</span>Enjeux</a>
+      <a href="#chapitre-5" class="flex items-center gap-2 text-sm text-gray-600 hover:text-teal-700 py-1.5 px-2 rounded-md transition-colors"><span class="text-teal-700 font-bold text-xs w-5 shrink-0">5</span>Enseigner avec les RS</a>
+      <a href="#chapitre-6" class="flex items-center gap-2 text-sm text-gray-600 hover:text-teal-700 py-1.5 px-2 rounded-md transition-colors"><span class="text-teal-700 font-bold text-xs w-5 shrink-0">6</span>Conclusion & ressources</a>
+    </nav>
+  </div>
+  <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+    <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Sur cette page</h3>
+    <nav id="sidebar-anchors"><span style="font-size:.75rem;color:#9ca3af;font-style:italic">Faites dÃ©filer...</span></nav>
+  </div>
+</aside>
+  </div>
+</main>
+
+<footer class="bg-teal-800 text-white mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex flex-col sm:flex-row justify-between items-start gap-6">
+      <div>
+        <div class="font-bold text-lg mb-1">NumÃ©rique Ã‰ducatif FW-B</div>
+        <div class="text-teal-200 text-sm">Service gÃ©nÃ©ral du NumÃ©rique Ã‰ducatif Â· FÃ©dÃ©ration Wallonie-Bruxelles</div>
+      </div>
+      <div class="flex gap-4 text-sm">
+        <a href="rs-table-des-matieres.html" class="text-teal-200 hover:text-white transition-colors">Table des matiÃ¨res</a>
+        <a href="index.html" class="text-teal-200 hover:text-white transition-colors">Accueil</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+
+function goRandom() {
+  var anchors = ['#chapitre-1','#chapitre-2','#chapitre-3','#chapitre-4','#chapitre-5','#chapitre-6'];
+  var cur = window.location.hash;
+  var others = anchors.filter(function(a){ return a !== cur; });
+  var target = others[Math.floor(Math.random() * others.length)];
+  window.location.hash = target;
+  var el = document.querySelector(target);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
+(function () {
+  var chapters = document.querySelectorAll('.chapter-section');
+  var planLinks = document.querySelectorAll('#plan-nav a');
+  var anchorsNav = document.getElementById('sidebar-anchors');
+  var currentChapterId = null;
+  var currentAnchorSpy = null;
+
+  function updateAnchors(chapterEl) {
+    if (!anchorsNav || !chapterEl) return;
+    var headings = chapterEl.querySelectorAll('h2[id], h3[id]');
+    if (!headings.length) {
+      anchorsNav.innerHTML = '<span style="font-size:.75rem;color:#9ca3af;font-style:italic">â€”</span>';
+      return;
+    }
+    anchorsNav.innerHTML = Array.from(headings).map(function(h) {
+      var indent = h.tagName === 'H3' ? 'padding-left:1rem;' : '';
+      return '<a href="#' + h.id + '" style="' + indent + '">' + h.textContent.trim() + '</a>';
+    }).join('');
+
+    if (currentAnchorSpy) { currentAnchorSpy.disconnect(); }
+
+    var anchorLinks = anchorsNav.querySelectorAll('a');
+    var anchorTargets = Array.from(anchorLinks).map(function(a) {
+      return document.getElementById(a.getAttribute('href').slice(1));
+    }).filter(Boolean);
+
+    currentAnchorSpy = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          anchorLinks.forEach(function(a) { a.classList.remove('sidebar-link-active'); });
+          var active = anchorsNav.querySelector('a[href="#' + e.target.id + '"]');
+          if (active) active.classList.add('sidebar-link-active');
+        }
+      });
+    }, { rootMargin: '-15% 0px -60% 0px', threshold: 0 });
+    anchorTargets.forEach(function(t) { currentAnchorSpy.observe(t); });
+  }
+
+  var chapterSpy = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting && e.target.id !== currentChapterId) {
+        currentChapterId = e.target.id;
+        planLinks.forEach(function(a) {
+          a.classList.toggle('chapter-active', a.getAttribute('href') === '#' + currentChapterId);
+        });
+        updateAnchors(e.target);
+      }
+    });
+  }, { rootMargin: '-5% 0px -50% 0px', threshold: 0 });
+
+  chapters.forEach(function(c) { chapterSpy.observe(c); });
+})();
+</script>
+<script src="motion.js">
+</script>
+<script src="motion.js"></script>
+</body>
+</html>

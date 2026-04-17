@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="rs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3. Les réseaux sociaux en 8 chiffres — RÃ©seaux Sociaux · FW-B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero { background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%); }
+    .stat-card { background: linear-gradient(135deg, #134e4a 0%, #0f766e 100%); }
+    .stat-number { font-variant-numeric: tabular-nums; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+  </style>
+  <link rel="stylesheet" href="ds.css">
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased">
+
+<!-- NAVBAR -->
+<nav id="nav-root" class="sticky top-0 z-50 bg-[#003082] shadow-xl" role="navigation" aria-label="Navigation principale"></nav>
+<script src="navbar.js"></script>
+
+<!-- HERO -->
+<header class="gradient-hero py-10 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a href="rs-table-des-matieres.html" class="inline-flex items-center gap-1 text-teal-200 hover:text-white text-sm mb-6 transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+      Index du chapitre
+    </a>
+    <div class="flex items-start gap-5">
+      <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-white font-extrabold text-2xl">3</span>
+      </div>
+      <div>
+        <p class="text-teal-200 text-sm font-semibold uppercase tracking-widest mb-1">Focus · Réseaux Sociaux</p>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Les réseaux sociaux en 8 chiffres ⚡</h1>
+        <p class="text-teal-200 mt-2 text-base">Statistiques clés sur les usages et comportements en ligne</p>
+      </div>
+    </div>
+  </div>
+  <img src="assets/robot-angry.svg" alt="" aria-hidden="true" class="robot-hero robot-flipped">
+</header>
+
+<main id="main" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <div class="flex flex-col lg:flex-row gap-8">
+
+    <!-- CONTENT -->
+    <div class="flex-1 min-w-0">
+
+      <p class="text-gray-600 leading-relaxed mb-8 text-center text-lg">
+        Les données ci-dessous donnent une mesure concrète de l'ampleur des réseaux sociaux dans nos sociétés.
+      </p>
+
+      <!-- STATS GRID -->
+      <div id="stats-container" class="grid sm:grid-cols-2 xl:grid-cols-4 gap-5 mb-10" data-stagger-grid>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg" data-target="5240000000" data-suffix=" " data-prefix="" data-display="5,24 milliards" data-duration="2000">
+          <div class="text-4xl mb-1">🌍</div>
+          <p class="stat-number text-3xl font-extrabold text-teal-300 mb-1 counter" data-val="5.24" data-unit="milliards">5,24 milliards</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Utilisateurs actifs</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Nombre d'utilisateurs et utilisatrices des réseaux sociaux dans le monde.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">⏱️</div>
+          <p class="stat-number text-3xl font-extrabold text-teal-300 mb-1 counter" data-val="2" data-unit="h20" data-type="time">2h20</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Temps quotidien moyen</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Durée moyenne passée chaque jour sur les réseaux sociaux dans le monde.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">📅</div>
+          <p class="stat-number text-3xl font-extrabold text-teal-300 mb-1 counter" data-val="1.4" data-unit="million d'années">1,4 million d'années</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Temps cumulé quotidien</p>
+          <p class="text-teal-300 text-xs leading-relaxed">L'humanité passe chaque jour l'équivalent de 1,4 million d'années sur les réseaux sociaux.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">📊</div>
+          <p class="stat-number text-3xl font-extrabold text-teal-300 mb-1 counter" data-val="80" data-unit="%">0%</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Des 16-64 ans</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Utilisent les réseaux sociaux chaque mois dans le monde.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">👶</div>
+          <p class="stat-number text-3xl font-extrabold text-yellow-300 mb-1 counter" data-val="8.5" data-unit=" ans">0 ans</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Âge moyen d'inscription</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Âge estimé (France) de la première inscription à un réseau social — bien en dessous de 13 ans.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">⚖️</div>
+          <p class="stat-number text-3xl font-extrabold text-yellow-300 mb-1 counter" data-val="13" data-unit=" ans">0 ans</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Âge minimum légal</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Âge minimum théorique pour s'inscrire sur la plupart des réseaux sociaux (RGPD, Belgique).</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">💰</div>
+          <p class="stat-number text-3xl font-extrabold text-red-300 mb-1 counter" data-val="5800000" data-unit=" $">0 $</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Revenu mensuel estimé</p>
+          <p class="text-teal-300 text-xs leading-relaxed">D'un influenceur faisant l'apologie de la « masculinité toxique » sur les réseaux sociaux.</p>
+        </div>
+
+        <div class="stat-card rounded-2xl p-6 text-white shadow-lg">
+          <div class="text-4xl mb-1">🤖</div>
+          <p class="stat-number text-3xl font-extrabold text-red-300 mb-1 counter" data-val="50" data-unit="%">0%</p>
+          <p class="text-teal-100 font-semibold text-sm mb-1">Du trafic internet</p>
+          <p class="text-teal-300 text-xs leading-relaxed">Près de la moitié du trafic sur internet est généré par des bots (logiciels automatisés).</p>
+        </div>
+
+      </div>
+
+      <!-- Additional context -->
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="font-bold text-gray-800 text-lg mb-4">Pour mettre en contexte</h2>
+        <div class="grid sm:grid-cols-3 gap-4 text-sm text-gray-600">
+          <div class="bg-slate-50 rounded-xl p-4">
+            <p class="font-bold text-gray-700 mb-1">Le Big Data en chiffres</p>
+            <p>Le marché mondial du Big Data représentait plus de <strong>200 milliards de dollars</strong> en 2020 — comparable au marché mondial des aliments bio (227 Mrd$) ou du jeu vidéo (221 Mrd$ en 2024).</p>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4">
+            <p class="font-bold text-gray-700 mb-1">La génération Z et TikTok</p>
+            <p>TikTok est devenu le <strong>moteur de recherche préféré de la génération Z</strong> (nés entre 1997 et 2012), supplantant Google pour les tutoriels, recettes et inspirations du quotidien.</p>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4">
+            <p class="font-bold text-gray-700 mb-1">HugoDécrypte vs. la presse</p>
+            <p>En 2024, <strong>HugoDécrypte</strong> a reçu plus de mentions comme source d'information que Le Monde, Le Figaro et Libération réunis auprès des Français interrogés (Newman, 2024).</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="w-full lg:w-72 shrink-0 space-y-4">
+      <button onclick="goRandom()" class="btn-random">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+        Au hasard !
+      </button>
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Plan du livre</h3>
+        <div class="space-y-2">
+          <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Section précédente</div>
+          <a href="rs-section-2.html" class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-gray-300 text-gray-700 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+            <span class="text-sm font-medium text-gray-600 group-hover:text-teal-700">← Définitions et exemples</span>
+          </a>
+          <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-3 mb-1">Section suivante</div>
+          <a href="rs-section-4.html" class="flex items-center gap-2 p-2 rounded-lg bg-teal-50 hover:bg-teal-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-teal-700 text-white flex items-center justify-center text-xs font-bold shrink-0">4</span>
+            <span class="text-sm font-medium text-teal-700 group-hover:underline">Enjeux et problématiques →</span>
+          </a>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="rs-table-des-matieres.html" class="flex items-center gap-2 text-sm text-gray-500 hover:text-teal-700 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+            Retour à l'index
+          </a>
+        </div>
+      </div>
+      <div class="bg-teal-700 rounded-2xl p-5 text-white">
+        <p class="font-bold text-sm mb-2">💡 Le saviez-vous ?</p>
+        <p class="text-teal-100 text-xs leading-relaxed">À 8 ans et demi, l'enfant moyen (en France) crée son premier compte sur un réseau social — soit 4 ans avant l'âge légal de 13 ans.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer id="footer-root" class="bg-[#003082] text-blue-200 py-8 mt-4"></footer>
+<script src="footer.js"></script>
+
+<script>
+  const rsSections = ['rs-section-1.html','rs-section-2.html','rs-section-3.html','rs-section-4.html','rs-section-5.html','rs-section-6.html'];
+  function goRandom() { window.location.href = rsSections[Math.floor(Math.random()*rsSections.length)]; }
+
+  // Counter animation
+  function animateCounter(el, endVal, duration, unit, prefix) {
+    let start = null;
+    const isFloat = endVal % 1 !== 0;
+    function step(timestamp) {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      let current = eased * endVal;
+      let display;
+      if (endVal >= 1000000) {
+        display = (current / 1000000).toFixed(1).replace('.', ',') + ' million' + (current/1000000 >= 2 ? 's' : '') + (unit || '');
+      } else if (endVal >= 1000) {
+        display = Math.floor(current).toLocaleString('fr-FR') + (unit || '');
+      } else if (isFloat) {
+        display = current.toFixed(1).replace('.', ',') + (unit || '');
+      } else {
+        display = Math.floor(current) + (unit || '');
+      }
+      el.textContent = (prefix || '') + display;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  const counters = [
+    { selector: '[data-val="5.24"]', end: 5.24, unit: ' milliards', duration: 2000 },
+    { selector: '[data-val="2"]',    end: 140, unit: ' min (2h20)', duration: 1500 },
+    { selector: '[data-val="1.4"]',  end: 1.4, unit: ' million d\'années', duration: 2000 },
+    { selector: '[data-val="80"]',   end: 80,  unit: '%', duration: 1500 },
+    { selector: '[data-val="8.5"]',  end: 8.5, unit: ' ans', duration: 1200 },
+    { selector: '[data-val="13"]',   end: 13,  unit: ' ans', duration: 1000 },
+    { selector: '[data-val="5800000"]', end: 5800000, unit: ' $', duration: 2500 },
+    { selector: '[data-val="50"]',   end: 50,  unit: '%', duration: 1500 },
+  ];
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        counters.forEach(c => {
+          const el = document.querySelector(c.selector);
+          if (el && !el.dataset.animated) {
+            el.dataset.animated = 'true';
+            animateCounter(el, c.end, c.duration, c.unit, c.prefix);
+          }
+        });
+      }
+    });
+  }, { threshold: 0.2 });
+
+  const container = document.getElementById('stats-container');
+  if (container) observer.observe(container);
+</script>
+<script src="motion.js"></script>
+</body>
+</html>

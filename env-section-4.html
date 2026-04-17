@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="env">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agir à l'échelle de l'établissement — Impact environnemental du numérique · Fédération Wallonie-Bruxelles">
+  <title>Agir à l'établissement — Impact environnemental du numérique · FW-B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero { background: linear-gradient(135deg, #1C4A2A 0%, #2D7040 100%); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #f59e0b; outline-offset: 2px; border-radius: 4px; }
+    .prose p { margin-bottom: 1.25rem; line-height: 1.8; }
+    .prose h3 { font-size: 1.15rem; font-weight: 700; color: #1C4A2A; margin-top: 2rem; margin-bottom: 0.75rem; }
+    blockquote { border-left: 4px solid #2D7040; background: #f0faf2; padding: 1rem 1.25rem; border-radius: 0 0.5rem 0.5rem 0; margin: 1.5rem 0; color: #374151; }
+  </style>
+  <link rel="stylesheet" href="ds.css">
+</head>
+<body class="bg-slate-50 text-gray-900 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-green-800 text-white px-4 py-2 rounded-md z-[100] text-sm font-medium">Aller au contenu principal</a>
+
+<nav id="nav-root" class="sticky top-0 z-50 bg-green-900 shadow-xl" role="navigation" aria-label="Navigation principale"></nav>
+<script src="navbar.js"></script>
+
+<header class="gradient-hero py-12 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center gap-3 mb-4">
+      <a href="env-table-des-matieres.html" class="text-green-200 hover:text-white text-sm flex items-center gap-1 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        Index du chapitre
+      </a>
+    </div>
+    <div class="flex items-start gap-5">
+      <div class="w-20 h-20 bg-white/15 rounded-2xl flex items-center justify-center shrink-0">
+        <span class="text-4xl font-black text-white/80">4</span>
+      </div>
+      <div>
+        <p class="text-green-300 text-sm font-semibold uppercase tracking-widest mb-1">Focus · Impact environnemental</p>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white">Agir à l'échelle de l'établissement</h1>
+        <p class="text-green-200 mt-2 text-base">Vision stratégique, acteurs et équipement responsable</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-2 mt-6">
+      <a href="#strategie" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">4.1 Vision stratégique</a>
+      <a href="#acteurs" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">4.2 Acteurs</a>
+      <a href="#equipement" class="bg-white/15 hover:bg-white/25 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">4.3 Équipement</a>
+    </div>
+  </div>
+  <img src="assets/robot-finger pointing.svg" alt="" aria-hidden="true" class="robot-hero robot-flipped">
+</header>
+
+<main id="main" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <div class="flex flex-col lg:flex-row gap-10">
+
+    <article class="flex-1 min-w-0">
+
+      <div class="flex items-center gap-3 mb-8 flex-wrap">
+      </div>
+
+      <div class="prose max-w-none text-gray-800">
+
+        <p>Il est possible d'agir à l'échelle de l'établissement en abordant la question de l'acquisition des équipements numériques et de leur consommation énergétique. Pour favoriser des actions soutenables à long terme, il est préférable d'élaborer une <strong>vision stratégique globale</strong> qui mobilise les différents acteurs au sein de l'établissement.</p>
+
+        <h3 id="strategie">4.1 Favoriser une vision stratégique</h3>
+
+        <p>Il s'agit de réfléchir collectivement aux moyens de réduire l'impact environnemental lié à l'utilisation du numérique dans le cadre scolaire, en réalisant une analyse portant sur :</p>
+
+        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+          <li>Quels équipements et infrastructures numériques acquérir en tenant compte de leur impact environnemental (critère de longévité des matériels et logiciels, indice de réparabilité, réutilisation de composants recyclés…) ?</li>
+          <li>Quelles règles de conduite établir et quels <strong>éco-gestes</strong> systématiser pour limiter la consommation d'énergie des équipements numériques ?</li>
+          <li>Quelles actions mettre en place pour promouvoir un usage responsable des outils numériques ?</li>
+          <li>Comment prolonger au maximum la durée de vie de l'équipement numérique disponible ?</li>
+        </ul>
+
+      </div>
+
+      <!-- SELFIE tool -->
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-6 my-6">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-green-700 rounded-xl flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <p class="font-bold text-green-800 text-base mb-2">Outil SELFIE</p>
+            <p class="text-sm text-gray-700 leading-relaxed mb-3">SELFIE est un outil développé par l'Union européenne, gratuit, visant à aider les écoles à évaluer leur usage du numérique. Une telle évaluation peut servir de base à un dialogue au sein des équipes éducatives et à la formulation d'un plan d'actions.</p>
+            <p class="text-sm text-gray-700">L'Administration générale de l'Enseignement participe à la diffusion de cet outil dans les écoles de la Fédération Wallonie-Bruxelles.</p>
+            <a href="https://ec.europa.eu/education/schools-go-digital_fr" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-green-700 font-semibold hover:underline">
+              ec.europa.eu/education/schools-go-digital_fr
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="prose max-w-none text-gray-800">
+
+        <p>Il est également recommandé aux établissements scolaires d'intégrer à leur <strong>plan de pilotage</strong> une stratégie numérique, qui constitue une occasion de réfléchir collectivement aux moyens de réduire l'impact environnemental lié à l'acquisition et à l'utilisation du numérique au sein de l'école.</p>
+
+        <h3 id="acteurs">4.2 Mobiliser tous les acteurs de l'établissement</h3>
+
+        <p>La vision stratégique, formulée sur la base d'une réflexion collective, devrait être déclinée en actions concrètes assignées aux différents acteurs au sein de l'établissement :</p>
+
+      </div>
+
+      <!-- Acteurs cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-4">
+          <p class="font-bold text-green-700 text-sm mb-2">🏫 La direction</p>
+          <ul class="text-xs text-gray-700 space-y-1">
+            <li>• Mobiliser le personnel pour coordonner les choix d'équipement</li>
+            <li>• Organiser des formations et campagnes de sensibilisation</li>
+            <li>• Informer les parents des actions menées</li>
+            <li>• Intégrer des critères environnementaux dans les appels d'offre</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-4">
+          <p class="font-bold text-green-700 text-sm mb-2">👨‍🏫 Les enseignants</p>
+          <ul class="text-xs text-gray-700 space-y-1">
+            <li>• Promouvoir un usage responsable du numérique</li>
+            <li>• Intégrer la sobriété numérique dans les apprentissages</li>
+            <li>• Adopter eux-mêmes des habitudes de sobriété numérique</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-4">
+          <p class="font-bold text-green-700 text-sm mb-2">🔧 Le délégué référent au numérique</p>
+          <ul class="text-xs text-gray-700 space-y-1">
+            <li>• Soutenir l'équipe éducative dans sa réflexion</li>
+            <li>• Identifier les économies réalisables en matière d'équipement</li>
+            <li>• Optimiser l'utilisation du matériel disponible</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-4">
+          <p class="font-bold text-green-700 text-sm mb-2">👥 L'équipe éducative</p>
+          <ul class="text-xs text-gray-700 space-y-1">
+            <li>• Organiser des activités de sensibilisation</li>
+            <li>• Favoriser la collaboration et le dialogue entre équipes</li>
+            <li>• Coordonner l'utilisation optimale du matériel</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="prose max-w-none text-gray-800">
+
+        <h3 id="equipement">4.3 S'équiper de manière responsable et sensibiliser</h3>
+
+        <p>Les principaux impacts environnementaux et sociaux du numérique se situant dans la <strong>fabrication de l'équipement</strong>, l'équipe éducative peut tenter de s'équiper de manière responsable. Quelques pistes :</p>
+
+        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+          <li>Développer le parc informatique de l'école de manière écoresponsable, en veillant à la consommation énergétique des équipements</li>
+          <li>Prolonger l'utilisation des équipements — favoriser la réparation plutôt que le remplacement</li>
+          <li>Choisir un équipement efficace et approprié en tenant compte des objectifs pédagogiques pour éviter la surconsommation</li>
+          <li>Questionner l'opportunité de s'équiper d'un TBI si l'objectif est essentiellement la projection de contenus en classe</li>
+        </ul>
+
+        <p>En ce qui concerne la <strong>sensibilisation à la sobriété numérique</strong>, l'avis n°3 du Pacte pour un enseignement d'excellence précise que les compétences numériques à développer comprennent des aspects sociaux, informationnels et techniques, tous impactés par la culture numérique.</p>
+
+        <p>Quelle que soit la discipline enseignée, l'apprentissage d'une matière scolaire par le numérique peut être l'occasion de conscientiser les apprenants aux impacts environnementaux du numérique.</p>
+
+      </div>
+
+
+    </article>
+
+    <aside class="w-full lg:w-72 shrink-0 space-y-6">
+
+      <button onclick="goRandom()" class="btn-random">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+        Au hasard !
+      </button>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Navigation</h3>
+        <div class="space-y-2">
+          <a href="env-section-3.html" class="flex items-center gap-2 p-2 rounded-lg hover:bg-green-50 transition-colors group">
+            <span class="w-6 h-6 rounded bg-green-100 text-green-700 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+            <span class="text-sm text-gray-600 group-hover:text-green-700">← Constats et chiffres</span>
+          </a>
+          <a href="env-section-5.html" class="flex items-center gap-2 p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors group">
+            <span class="w-6 h-6 rounded bg-green-700 text-white flex items-center justify-center text-xs font-bold shrink-0">5</span>
+            <span class="text-sm font-medium text-green-700 group-hover:underline">Éduquer au numérique →</span>
+          </a>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="env-table-des-matieres.html" class="flex items-center gap-2 text-sm text-gray-500 hover:text-green-700 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+            Retour à l'index
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5">
+        <h3 class="text-xs font-bold text-amber-700 uppercase tracking-widest mb-3">Points clés</h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Élaborer une vision stratégique collective et cohérente</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Impliquer tous les acteurs : direction, enseignants, référent numérique</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Privilégier la durée de vie et la réparabilité des équipements</li>
+          <li class="flex items-start gap-2"><span class="text-amber-500 mt-0.5">▸</span>Utiliser l'outil SELFIE pour évaluer les pratiques numériques</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
+        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Sections dans ce chapitre</p>
+        <div class="space-y-1">
+          <a href="#strategie" class="flex items-center gap-2 text-sm text-gray-600 hover:text-green-700 px-2 py-1.5 rounded-lg hover:bg-green-50 transition-colors">
+            4.1 — Vision stratégique
+          </a>
+          <a href="#acteurs" class="flex items-center gap-2 text-sm text-gray-600 hover:text-green-700 px-2 py-1.5 rounded-lg hover:bg-green-50 transition-colors">
+            4.2 — Mobiliser les acteurs
+          </a>
+          <a href="#equipement" class="flex items-center gap-2 text-sm text-gray-600 hover:text-green-700 px-2 py-1.5 rounded-lg hover:bg-green-50 transition-colors">
+            4.3 — Équipement responsable
+          </a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</main>
+
+<footer id="footer-root" class="bg-green-900 text-green-200 py-8 mt-4"></footer>
+<script src="footer.js"></script>
+<script>
+  const pages = ['env-section-1.html','env-section-2.html','env-section-3.html','env-section-4.html','env-section-5.html','env-section-6.html'];
+  function goRandom() { window.location.href = pages[Math.floor(Math.random() * pages.length)]; }
+</script>
+<script src="motion.js"></script>
+</body>
+</html>

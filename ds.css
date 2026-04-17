@@ -1,0 +1,777 @@
+﻿/* =================================================================
+   Design System — Numérique Éducatif FW-B
+   Aesthetic: Editorial authority × Material clarity
+   Fonts: Fraunces (display) + DM Sans (body)
+   ================================================================= */
+
+/* ── Google Fonts ────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap');
+
+/* ── Design Tokens ───────────────────────────────────────────────── */
+:root {
+  /* Fonts */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:    'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  /* Surfaces */
+  --ds-bg:          #F4F2EC;
+  --ds-surface:     #FFFFFF;
+  --ds-surface-v:   #EDEAE3;
+  --ds-surface-2:   #E6E3DA;
+
+  /* Text */
+  --ds-text:        #1C1B18;
+  --ds-text-v:      #49453E;
+  --ds-text-dim:    #79766E;
+  --ds-text-subtle: #9C9992;
+
+  /* Borders */
+  --ds-outline:     #79766E;
+  --ds-outline-v:   #CAC7BE;
+  --ds-outline-s:   #E6E3DA;
+
+  /* FWB Institutional */
+  --fwb-blue:       #003082;
+
+  /* IA — Plum purple */
+  --ia-hero:        #3A1F52;
+  --ia-primary:     #6B3D82;
+  --ia-on-hero:     #FFFFFF;
+  --ia-container:   #EDD9F7;
+  --ia-on-cont:     #1E0A2E;
+  --ia-mid:         #8855A0;
+
+  /* RS — Petrol teal */
+  --rs-hero:        #1B4A56;
+  --rs-primary:     #2A6478;
+  --rs-on-hero:     #FFFFFF;
+  --rs-container:   #D0EBF2;
+  --rs-on-cont:     #071E26;
+  --rs-mid:         #4A8A9C;
+
+  /* Cyber — Indigo periwinkle */
+  --cyber-hero:     #2E2B6E;
+  --cyber-primary:  #4A478A;
+  --cyber-container:#DDDAF5;
+  --cyber-on-cont:  #0A0930;
+  --cyber-mid:      #6663B0;
+
+  /* Env — Forest green */
+  --env-hero:       #1C4A2A;
+  --env-primary:    #2D7040;
+  --env-on-hero:    #FFFFFF;
+  --env-container:  #D1EDD8;
+  --env-on-cont:    #071509;
+  --env-mid:        #4A8C5C;
+
+  /* Elevation */
+  --shadow-1:   0 1px 2px rgba(0,0,0,.07),  0 1px 4px rgba(0,0,0,.04);
+  --shadow-2:   0 2px 6px rgba(0,0,0,.09),  0 1px 8px rgba(0,0,0,.05);
+  --shadow-3:   0 6px 18px rgba(0,0,0,.11), 0 2px 18px rgba(0,0,0,.07);
+  --shadow-nav: 0 1px 4px rgba(0,0,0,.18),  0 4px 14px rgba(0,0,0,.10);
+
+  /* Motion */
+  --ease-std:    cubic-bezier(0.2, 0, 0, 1);
+  --ease-decel:  cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.3, 0.64, 1);
+  --dur-fast:    140ms;
+  --dur-med:     260ms;
+  --dur-slow:    440ms;
+}
+
+/* ── Base ────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--ds-bg) !important;
+  color: var(--ds-text);
+}
+
+body.bg-slate-50 {
+  background-color: var(--ds-bg) !important;
+}
+
+/* ── Grain Overlay ───────────────────────────────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  z-index: 9990;
+  opacity: 0.028;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* ── Accessibility ───────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2.5px solid #F59E0B !important;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Typography ──────────────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-body);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Display headings (heroes, section titles) use the serif */
+header h1,
+.display-serif {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+/* Hero h1 — larger, more dramatic */
+header h1 {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+}
+
+/* Eyebrow / overline labels above headings */
+header p.text-sm.font-semibold,
+header p.text-xs.font-semibold {
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Article section titles */
+article h2, main h2:not(nav h2) {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* Section-level h3 */
+article h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+/* Body text rhythm */
+p, li {
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+/* Code / monospace */
+code, kbd {
+  font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  font-size: 0.875em;
+}
+
+/* ── Scroll behaviour (partagé) ──────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+/* ── Hero gradients par thème ────────────────────────────────────── */
+html[data-theme="ia"] .gradient-hero {
+  background: var(--ia-hero) !important;
+}
+
+html[data-theme="rs"] .gradient-hero {
+  background: var(--rs-hero) !important;
+}
+
+html[data-theme="home"] .gradient-hero {
+  background: var(--fwb-blue) !important;
+}
+
+html[data-theme="cyber"] .gradient-hero {
+  background: var(--cyber-hero) !important;
+}
+
+html[data-theme="env"] .gradient-hero {
+  background: var(--env-hero) !important;
+}
+
+/* Hero number badge — refined */
+header .w-16.h-16,
+header .w-20.h-20,
+header .w-14.h-14 {
+  background: rgba(255,255,255,0.14) !important;
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(4px);
+}
+
+header .w-16.h-16 span,
+header .w-20.h-20 span {
+  font-family: var(--font-display);
+  font-weight: 900;
+}
+
+/* ── Home page cards ─────────────────────────────────────────────── */
+html[data-theme="home"] .ia-card {
+  background: #3A1F52 !important; /* prune doux — inspiré de l'illustration IA */
+}
+html[data-theme="home"] .rs-card {
+  background: #1B4A56 !important; /* bleu pétrole — inspiré de l'illustration RS */
+}
+html[data-theme="home"] .cyber-card {
+  background: #2E2B6E !important; /* indigo périnwinkle — inspiré de l'illustration Cyber */
+}
+html[data-theme="home"] .env-card {
+  background: #1C4A2A !important; /* vert forêt — inspiré de l'illustration Environnement */
+}
+
+/* Les cartes doivent remplir toute la hauteur de leur cellule de grille */
+html[data-theme="home"] .ia-card,
+html[data-theme="home"] .rs-card,
+html[data-theme="home"] .cyber-card,
+html[data-theme="home"] .env-card {
+  height: 100%;
+}
+
+/* Remove dot patterns */
+.pattern-dots {
+  background-image: none !important;
+}
+
+/* ── Navbar, dropdowns & footer couleur par thème ───────────────── */
+html[data-theme="ia"] #nav-root,
+html[data-theme="ia"] footer { background-color: var(--ia-hero) !important; }
+
+html[data-theme="rs"] #nav-root,
+html[data-theme="rs"] footer { background-color: var(--rs-hero) !important; }
+
+html[data-theme="cyber"] #nav-root,
+html[data-theme="cyber"] footer { background-color: var(--cyber-hero) !important; }
+
+html[data-theme="env"] #nav-root,
+html[data-theme="env"] footer { background-color: var(--env-hero) !important; }
+
+/* Dropdowns : héritent la couleur de la navbar du thème */
+html[data-theme="ia"]    .nav-dropdown-menu { background-color: var(--ia-hero) !important; }
+html[data-theme="rs"]    .nav-dropdown-menu { background-color: var(--rs-hero) !important; }
+html[data-theme="cyber"] .nav-dropdown-menu { background-color: var(--cyber-hero) !important; }
+html[data-theme="env"]   .nav-dropdown-menu { background-color: var(--env-hero) !important; }
+
+/* ── Bouton Au hasard ────────────────────────────────────────────── */
+.btn-random {
+  background-color: var(--fwb-blue);
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: filter var(--dur-fast) var(--ease-std);
+  border: none;
+  cursor: pointer;
+}
+.btn-random:hover { filter: brightness(1.18); }
+html[data-theme="ia"]    .btn-random { background-color: var(--ia-hero); }
+html[data-theme="rs"]    .btn-random { background-color: var(--rs-hero); }
+html[data-theme="cyber"] .btn-random { background-color: var(--cyber-hero); }
+html[data-theme="env"]   .btn-random { background-color: var(--env-hero); }
+
+/* ── Sidebar & éléments UI couleur par thème (IA) ───────────────── */
+html[data-theme="ia"] .bg-\[#003082\]            { background-color: var(--ia-primary) !important; }
+html[data-theme="ia"] .text-\[#003082\]           { color: var(--ia-primary) !important; }
+html[data-theme="ia"] .hover\:text-\[#003082\]:hover { color: var(--ia-hero) !important; }
+html[data-theme="ia"] .hover\:border-\[#003082\]:hover { border-color: var(--ia-primary) !important; }
+html[data-theme="ia"] .hover\:bg-blue-700         { background-color: #4A2865 !important; }
+html[data-theme="ia"] .border-\[#003082\]          { border-color: var(--ia-primary) !important; }
+
+/* ── Navbar ──────────────────────────────────────────────────────── */
+nav {
+  transition: box-shadow var(--dur-med) var(--ease-std);
+}
+nav.nav-scrolled {
+  box-shadow: var(--shadow-nav) !important;
+}
+
+/* Navbar brand text uses DM Sans (already body) — ensure it */
+nav .font-bold {
+  font-family: var(--font-body);
+  letter-spacing: -0.01em;
+}
+
+/* Hover subtil : soulignement glissant, pas de fond */
+nav .nav-dropdown-btn,
+nav a.px-2\.5 {
+  position: relative;
+  background: transparent !important;
+}
+nav .nav-dropdown-btn::after,
+nav a.px-2\.5::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  width: 0;
+  height: 1.5px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 2px;
+  transition: width 0.2s var(--ease-std), left 0.2s var(--ease-std);
+}
+nav .nav-dropdown-btn:hover::after,
+nav a.px-2\.5:hover::after,
+nav .nav-dropdown-btn[aria-expanded="true"]::after {
+  width: calc(100% - 1.25rem);
+  left: 0.625rem;
+}
+nav .nav-dropdown-btn:hover,
+nav a.px-2\.5:hover {
+  color: #fff !important;
+}
+
+/* Page active : trait permanent + texte plein blanc */
+nav a.px-2\.5[aria-current="page"]::after,
+nav .nav-dropdown-btn[data-active="true"]::after {
+  width: calc(100% - 1.25rem);
+  left: 0.625rem;
+  background: rgba(255,255,255,0.85);
+}
+nav a.px-2\.5[aria-current="page"],
+nav .nav-dropdown-btn[data-active="true"] {
+  color: #fff !important;
+}
+
+/* ── Card Elevation ──────────────────────────────────────────────── */
+.bg-white.rounded-2xl,
+.bg-white.rounded-xl {
+  box-shadow: var(--shadow-1) !important;
+  border-color: var(--ds-outline-s) !important;
+  transition:
+    box-shadow var(--dur-med) var(--ease-std),
+    transform  var(--dur-med) var(--ease-std);
+}
+
+.bg-white.rounded-2xl:hover,
+.bg-white.rounded-xl:hover {
+  box-shadow: var(--shadow-2) !important;
+}
+
+/* ── TOC Chapter Cards ───────────────────────────────────────────── */
+/* The chapter title text inside the colored band */
+.toc-chapter a {
+  font-family: var(--font-body);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* Number badges */
+.toc-chapter + div span.w-7,
+.toc-chapter + div .w-7 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+/* TOC item hover transition */
+.toc-item {
+  transition: background-color var(--dur-fast) var(--ease-std),
+              color var(--dur-fast) var(--ease-std);
+  border-radius: 8px;
+}
+
+/* ── Stat cards (rs-section-3) ───────────────────────────────────── */
+.stat-card {
+  background: var(--ds-surface) !important;
+  box-shadow: var(--shadow-2) !important;
+  transition:
+    box-shadow var(--dur-med) var(--ease-std),
+    transform  var(--dur-med) var(--ease-std) !important;
+}
+.stat-card:hover {
+  box-shadow: var(--shadow-3) !important;
+  transform: translateY(-3px) !important;
+}
+
+/* Stat values — use Fraunces for big numbers */
+.stat-card [data-val] {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+/* ── Reference entries ───────────────────────────────────────────── */
+.ref-entry {
+  transition: border-color var(--dur-fast) var(--ease-std),
+              background-color var(--dur-fast) var(--ease-std);
+}
+.ref-entry:hover {
+  background-color: var(--ds-surface-v);
+}
+
+/* ── IA Color overrides (plum theme) ────────────────────────────── */
+html[data-theme="ia"] .text-blue-100   { color: #F0E5F8 !important; }
+html[data-theme="ia"] .text-blue-200   { color: #DEC8F0 !important; }
+html[data-theme="ia"] .text-blue-300   { color: #CBA8E8 !important; }
+html[data-theme="ia"] .text-blue-600   { color: #8040A8 !important; }
+html[data-theme="ia"] .text-blue-700   { color: var(--ia-primary) !important; }
+html[data-theme="ia"] .text-blue-800   { color: #4A2865 !important; }
+html[data-theme="ia"] .hover\:text-blue-700:hover { color: var(--ia-hero) !important; }
+html[data-theme="ia"] .bg-blue-50      { background-color: #F5EEF9 !important; }
+html[data-theme="ia"] .bg-blue-100     { background-color: var(--ia-container) !important; }
+html[data-theme="ia"] .border-blue-200 { border-color: #D4B8EC !important; }
+html[data-theme="ia"] .border-blue-400 { border-color: #A070C8 !important; }
+html[data-theme="ia"] blockquote       { border-left-color: var(--ia-primary) !important; }
+
+/* ── RS Color overrides (petrol teal theme) ─────────────────────── */
+html[data-theme="rs"] .bg-teal-50   { background-color: var(--rs-container) !important; }
+html[data-theme="rs"] .bg-teal-100  { background-color: #B8DCEA !important; }
+html[data-theme="rs"] .bg-teal-600  { background-color: var(--rs-primary) !important; }
+html[data-theme="rs"] .bg-teal-700  { background-color: var(--rs-hero) !important; }
+
+html[data-theme="rs"] .border-teal-200 { border-color: #8FC8D8 !important; }
+html[data-theme="rs"] .border-teal-400 { border-color: var(--rs-primary) !important; }
+
+html[data-theme="rs"] .text-teal-800  { color: var(--rs-on-cont) !important; }
+html[data-theme="rs"] .text-teal-700  { color: var(--rs-hero) !important; }
+html[data-theme="rs"] .text-teal-600  { color: var(--rs-primary) !important; }
+html[data-theme="rs"] .text-teal-500  { color: var(--rs-mid) !important; }
+html[data-theme="rs"] .text-teal-300  { color: #8FC4D5 !important; }
+html[data-theme="rs"] .text-teal-200  { color: #A8D5E2 !important; }
+html[data-theme="rs"] .text-teal-100  { color: var(--rs-container) !important; }
+html[data-theme="rs"] .hover\:text-teal-700:hover { color: var(--rs-hero) !important; }
+
+html[data-theme="rs"] blockquote { border-left-color: var(--rs-primary) !important; }
+
+/* ── Cyber Color overrides (indigo periwinkle theme) ────────────── */
+html[data-theme="cyber"] .text-violet-100   { color: #E0DEF8 !important; }
+html[data-theme="cyber"] .text-violet-200   { color: #C5C2F0 !important; }
+html[data-theme="cyber"] .text-violet-300   { color: #A8A5E8 !important; }
+html[data-theme="cyber"] .text-violet-600   { color: var(--cyber-mid) !important; }
+html[data-theme="cyber"] .text-violet-700   { color: var(--cyber-primary) !important; }
+html[data-theme="cyber"] .text-violet-800   { color: var(--cyber-on-cont) !important; }
+html[data-theme="cyber"] .hover\:text-violet-700:hover { color: var(--cyber-hero) !important; }
+html[data-theme="cyber"] .bg-violet-50      { background-color: #ECEAF8 !important; }
+html[data-theme="cyber"] .bg-violet-100     { background-color: var(--cyber-container) !important; }
+html[data-theme="cyber"] .border-violet-200 { border-color: #C0BDE8 !important; }
+html[data-theme="cyber"] .border-violet-400 { border-color: #8885D0 !important; }
+html[data-theme="cyber"] blockquote         { border-left-color: var(--cyber-primary) !important; }
+
+/* ── Env Color overrides (forest green theme) ───────────────────── */
+html[data-theme="env"] .bg-\[#003082\]             { background-color: var(--env-primary) !important; }
+html[data-theme="env"] .text-\[#003082\]            { color: var(--env-primary) !important; }
+html[data-theme="env"] .hover\:text-\[#003082\]:hover { color: var(--env-hero) !important; }
+html[data-theme="env"] .hover\:border-\[#003082\]:hover { border-color: var(--env-primary) !important; }
+html[data-theme="env"] .border-\[#003082\]           { border-color: var(--env-primary) !important; }
+
+html[data-theme="env"] .bg-green-50       { background-color: #EBF5EE !important; }
+html[data-theme="env"] .bg-green-100      { background-color: var(--env-container) !important; }
+html[data-theme="env"] .bg-green-600      { background-color: var(--env-primary) !important; }
+html[data-theme="env"] .bg-green-700      { background-color: var(--env-hero) !important; }
+
+html[data-theme="env"] .border-green-200  { border-color: #A4D4B0 !important; }
+html[data-theme="env"] .border-green-400  { border-color: var(--env-primary) !important; }
+
+html[data-theme="env"] .text-green-800    { color: var(--env-on-cont) !important; }
+html[data-theme="env"] .text-green-700    { color: var(--env-hero) !important; }
+html[data-theme="env"] .text-green-600    { color: var(--env-primary) !important; }
+html[data-theme="env"] .text-green-500    { color: var(--env-mid) !important; }
+html[data-theme="env"] .text-green-300    { color: #8FC49E !important; }
+html[data-theme="env"] .text-green-200    { color: #A8D5B4 !important; }
+html[data-theme="env"] .text-green-100    { color: var(--env-container) !important; }
+html[data-theme="env"] .hover\:text-green-700:hover { color: var(--env-hero) !important; }
+html[data-theme="env"] .hover\:bg-green-50:hover    { background-color: #EBF5EE !important; }
+
+html[data-theme="env"] blockquote         { border-left-color: var(--env-primary) !important; }
+
+/* ── Tabs (rs-section-5) ─────────────────────────────────────────── */
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+.tab-btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition:
+    background-color var(--dur-fast) var(--ease-std),
+    color            var(--dur-fast) var(--ease-std),
+    box-shadow       var(--dur-fast) var(--ease-std);
+}
+html[data-theme="rs"] .tab-btn.active {
+  background-color: var(--rs-hero) !important;
+  color: #FFFFFF !important;
+  box-shadow: var(--shadow-1);
+}
+html[data-theme="cyber"] .tab-btn.active {
+  background-color: var(--cyber-hero) !important;
+  color: #FFFFFF !important;
+  box-shadow: var(--shadow-1);
+}
+
+/* ── Blockquote ──────────────────────────────────────────────────── */
+blockquote {
+  border-radius: 0 8px 8px 0;
+}
+
+blockquote p {
+  font-family: var(--font-body);
+  font-style: normal;
+  line-height: 1.75;
+}
+
+/* ── Button / interactive refinements ───────────────────────────── */
+button, [role="button"] {
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+/* ── Scroll Reveal ───────────────────────────────────────────────── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity   var(--dur-slow)  var(--ease-decel),
+    transform var(--dur-slow)  var(--ease-decel);
+  will-change: opacity, transform;
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+[data-reveal][data-delay="1"] { transition-delay:  70ms; }
+[data-reveal][data-delay="2"] { transition-delay: 140ms; }
+[data-reveal][data-delay="3"] { transition-delay: 210ms; }
+[data-reveal][data-delay="4"] { transition-delay: 280ms; }
+[data-reveal][data-delay="5"] { transition-delay: 350ms; }
+[data-reveal][data-delay="6"] { transition-delay: 420ms; }
+
+/* ── Ripple Effect ───────────────────────────────────────────────── */
+[data-ripple] {
+  position: relative;
+  overflow: hidden;
+}
+.ripple-ink {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.28);
+  transform: scale(0);
+  animation: ripple-expand 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  pointer-events: none;
+}
+@keyframes ripple-expand {
+  to { transform: scale(4); opacity: 0; }
+}
+
+/* ── Card hover lift ─────────────────────────────────────────────── */
+.card-lift,
+.card-hover {
+  transition:
+    transform  var(--dur-med) var(--ease-spring),
+    box-shadow var(--dur-med) var(--ease-std) !important;
+}
+.card-lift:hover,
+.card-hover:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: var(--shadow-3) !important;
+}
+
+/* ── Decorative section number (added via JS) ────────────────────── */
+.hero-ghost-num { display: none !important; }
+.hero-ghost-num {
+  position: absolute;
+  right: -0.5rem;
+  bottom: -1rem;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(7rem, 18vw, 14rem);
+  line-height: 1;
+  color: rgba(255,255,255,0.06);
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.05em;
+  overflow: hidden;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Footer ──────────────────────────────────────────────────────── */
+footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  font-family: var(--font-body);
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: var(--ds-surface-v); }
+::-webkit-scrollbar-thumb  { background: var(--ds-outline-v); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ds-outline); }
+
+/* ── Chip / badge refinements ────────────────────────────────────── */
+html[data-theme="rs"] .bg-teal-100.text-teal-700 {
+  background-color: var(--rs-container) !important;
+  color: var(--rs-hero) !important;
+  font-weight: 600;
+}
+html[data-theme="ia"] .bg-blue-100.text-blue-700,
+html[data-theme="ia"] .bg-blue-100.text-\[#003082\] {
+  background-color: var(--ia-container) !important;
+  color: var(--ia-primary) !important;
+  font-weight: 600;
+}
+html[data-theme="cyber"] .bg-violet-100.text-violet-700 {
+  background-color: var(--cyber-container) !important;
+  color: var(--cyber-primary) !important;
+  font-weight: 600;
+}
+
+/* ── Sticky sidebar ──────────────────────────────────────────────── */
+@media (min-width: 1024px) {
+  main > div > aside,
+  main > div > div > aside {
+    position: sticky;
+    top: 5.25rem;
+    max-height: calc(100vh - 6.5rem);
+    overflow-y: auto;
+    align-self: flex-start;
+    scrollbar-width: thin;
+    scrollbar-color: #e5e7eb transparent;
+  }
+}
+
+/* ── TOC chapter border par thème ────────────────────────────────── */
+html[data-theme="ia"]    .toc-chapter { border-left: 4px solid var(--ia-primary); }
+html[data-theme="rs"]    .toc-chapter { border-left: 4px solid var(--rs-primary); }
+html[data-theme="cyber"] .toc-chapter { border-left: 4px solid var(--cyber-primary); }
+html[data-theme="env"]   .toc-chapter { border-left: 4px solid var(--env-primary); }
+
+html[data-theme="ia"]    .toc-item:hover { background: #F5EEF9; }
+html[data-theme="rs"]    .toc-item:hover { background: #D8EEF4; }
+html[data-theme="cyber"] .toc-item:hover { background: #ECEAF8; }
+html[data-theme="env"]   .toc-item:hover { background: var(--env-container); }
+
+
+/* ── Sidebar scroll-spy active link ─────────────────────────────── */
+.sidebar-link-active {
+  font-weight: 600 !important;
+  color: var(--ia-primary) !important;
+  background: #F5EEF9 !important;
+  border-radius: 4px;
+}
+html[data-theme=rs] .sidebar-link-active {
+  color: var(--rs-hero) !important;
+  background: #D8EEF4 !important;
+}
+html[data-theme=cyber] .sidebar-link-active {
+  color: var(--cyber-hero) !important;
+  background: #ECEAF8 !important;
+}
+
+/* ── Scroll-to-top button ────────────────────────────────────────── */
+#scroll-top-btn {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 90;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ds-outline, #6B7280);
+  color: #fff;
+  box-shadow: var(--shadow-2);
+  opacity: 0;
+  transform: translateY(12px) scale(0.85);
+  transition:
+    opacity     0.25s var(--ease-decel),
+    transform   0.25s var(--ease-decel),
+    background  0.18s var(--ease-std),
+    box-shadow  0.18s var(--ease-std);
+  pointer-events: none;
+}
+html[data-theme="ia"]    #scroll-top-btn { background-color: #7C3AED; } /* violet-600 — vif, lisible sur fond clair */
+html[data-theme="rs"]    #scroll-top-btn { background-color: #0D9488; } /* teal-600   — cyan saturé */
+html[data-theme="cyber"] #scroll-top-btn { background-color: #4F46E5; } /* indigo-600 — indigo lumineux */
+html[data-theme="env"]   #scroll-top-btn { background-color: #16A34A; } /* green-600  — vert vif */
+
+#scroll-top-btn.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+#scroll-top-btn:hover {
+  box-shadow: var(--shadow-3);
+  transform: translateY(-2px) scale(1.06);
+}
+#scroll-top-btn:active {
+  transform: translateY(0) scale(0.96);
+}
+#scroll-top-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* ── Robot Mascot (table des matières / contenu) ─────────────────── */
+.robot-mascot {
+  animation: robot-float 4s ease-in-out infinite;
+  flex-shrink: 0;
+  pointer-events: none;
+  user-select: none;
+}
+@keyframes robot-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* ── Robot Hero (dans le hero de chaque section) ─────────────────── */
+.robot-hero {
+  position: absolute;
+  bottom: -52px;
+  right: 1.75rem;
+  height: 9.5rem;       /* ~152px */
+  width: auto;
+  pointer-events: none;
+  user-select: none;
+  animation: robot-bob-hero 3.5s ease-in-out infinite;
+}
+@keyframes robot-bob-hero {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-24px); }
+}
+/* Version miroir (angry, finger pointing, relax, playful → orienté vers la gauche) */
+.robot-hero.robot-flipped {
+  animation: robot-bob-hero-flip 3.5s ease-in-out infinite;
+}
+@keyframes robot-bob-hero-flip {
+  0%, 100% { transform: scaleX(-1) translateY(0); }
+  50%       { transform: scaleX(-1) translateY(-24px); }
+}
+@media (max-width: 480px) {
+  .robot-hero { right: 0.5rem; height: 7rem; bottom: -40px; }
+}
+
+/* ── Reduced Motion ──────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal]        { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .card-lift:hover,
+  .card-hover:hover,
+  .stat-card:hover     { transform: none !important; }
+  .ripple-ink          { animation: none !important; }
+  #scroll-top-btn      { transition: opacity 0.15s linear, transform 0.15s linear !important; }
+}
